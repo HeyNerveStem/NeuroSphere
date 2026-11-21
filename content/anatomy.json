@@ -1,0 +1,630 @@
+{
+ "_meta": {
+  "lastReviewed": "2026-11-20",
+  "reviewStatus": "Draft — written for education from the cited general references; awaiting review by a qualified neuroanatomist before any non-educational use.",
+  "note": "Entries are keyed by contentId. Left/right meshes share one entry; hemisphere-specific notes are given in 'lateralization'."
+ },
+ "entries": {
+  "brain": {
+   "summary": "The brain is the part of the central nervous system enclosed by the skull. It integrates sensory information, generates movement, regulates the body's internal state and supports cognition and emotion.",
+   "beginner": "The brain is the body's control centre — it receives signals from the senses, sends commands to muscles and organs, and lets us think and remember.",
+   "location": "Cranial cavity, continuous inferiorly with the spinal cord at the foramen magnum.",
+   "description": "Classically divided into the cerebrum, diencephalon, brainstem and cerebellum. It is covered by the meninges and bathed in cerebrospinal fluid that circulates through the ventricular system.",
+   "functions": ["Integration of sensory input", "Planning and execution of movement", "Homeostatic and endocrine regulation", "Cognition, language, memory and emotion (through distributed networks)"],
+   "connections": [{"to": "brainstem", "text": "Connected to the spinal cord through the brainstem."}],
+   "clinical": "Injury or disease produces deficits that depend on which regions and networks are involved, which is why neurological examination localises lesions by pattern of symptoms.",
+   "references": ["ninds-know-your-brain", "openstax-13-2"]
+  },
+  "cerebrum": {
+   "summary": "The cerebrum is the largest part of the brain, made of two cerebral hemispheres with an outer cortex of grey matter, underlying white matter and deep grey nuclei.",
+   "beginner": "The cerebrum is the big, wrinkled top part of the brain where most conscious thinking happens.",
+   "location": "Occupies the anterior and middle cranial fossae and lies above the tentorium cerebelli.",
+   "description": "The hemispheres are separated by the longitudinal fissure and joined by commissures, chiefly the corpus callosum. The cortex is folded into gyri and sulci and grouped into lobes.",
+   "functions": ["Voluntary movement", "Perception", "Language", "Memory", "Executive function"],
+   "connections": [{"to": "thalamus", "text": "Reciprocal thalamocortical connections relay and modulate nearly all sensory input to cortex."}, {"to": "basal-nuclei", "text": "Cortico-basal ganglia loops shape movement and behaviour."}],
+   "clinical": "Cerebral lesions cause focal deficits such as weakness, sensory loss, aphasia or visual field loss depending on location.",
+   "references": ["openstax-13-2", "ninds-know-your-brain"]
+  },
+  "cerebral-hemisphere": {
+   "summary": "Each cerebral hemisphere contains frontal, parietal, temporal and occipital lobes plus the insula and limbic cortex, overlying white matter and deep nuclei.",
+   "beginner": "The brain has a left and a right half; each half mostly controls and feels the opposite side of the body.",
+   "location": "Left and right halves of the cerebrum, separated by the longitudinal fissure.",
+   "description": "Motor and somatosensory pathways cross, so each hemisphere mainly controls the contralateral body. Some functions are lateralised — in most people language depends more on the left hemisphere.",
+   "functions": ["Contralateral motor control and sensation", "Lateralised functions such as language (often left-dominant) and visuospatial attention (often right-dominant)"],
+   "connections": [{"to": "corpus-callosum", "text": "The corpus callosum links corresponding cortical areas of the two hemispheres."}],
+   "clinical": "Hemispheric stroke commonly causes weakness and sensory loss on the opposite side of the body.",
+   "lateralization": "Lateralisation is a population tendency, not a rule for every individual.",
+   "references": ["openstax-13-2"]
+  },
+  "cerebral-midline": {
+   "summary": "A navigation group collecting midline and commissural structures of the cerebrum that are not assigned to one hemisphere in the source model.",
+   "beginner": "These parts sit in the middle of the brain and connect or support the two halves.",
+   "location": "Along the midline between the hemispheres.",
+   "description": "Includes the corpus callosum, commissure of the fornix, septum pellucidum and the white-matter envelope.",
+   "functions": ["Interhemispheric communication", "Structural separation of the lateral ventricles"],
+   "connections": [],
+   "clinical": "See individual structures.",
+   "references": ["openstax-13-2"]
+  },
+  "frontal-lobe": {
+   "summary": "The frontal lobe is the most anterior lobe of each hemisphere, extending back to the central sulcus. It contains primary motor, premotor and prefrontal cortex.",
+   "beginner": "The frontal lobe, behind your forehead, helps you plan, make decisions, control behaviour and move your body.",
+   "location": "Anterior to the central sulcus and above the lateral (Sylvian) fissure.",
+   "description": "Main lateral gyri are the precentral, superior, middle and inferior frontal gyri; the orbital surface rests on the orbital roof. In this model the inferior frontal gyrus is not available, so the lobe group contains the superior, middle and precentral gyri only.",
+   "functions": ["Voluntary motor control (precentral gyrus)", "Planning, working memory and other executive functions (prefrontal networks)", "Speech production (inferior frontal gyrus, usually left)", "Regulation of behaviour and social conduct"],
+   "connections": [{"to": "basal-nuclei", "text": "Frontal cortex projects heavily to the striatum in cortico-basal ganglia-thalamocortical loops."}, {"to": "thalamus", "text": "Reciprocal connections with mediodorsal and ventral thalamic nuclei."}, {"to": "parietal-lobe", "text": "Fronto-parietal association fibres support attention and sensorimotor integration."}],
+   "clinical": "Frontal lesions may cause contralateral weakness, expressive (Broca's) aphasia when the dominant inferior frontal gyrus is involved, or changes in planning, motivation and behaviour. Frontotemporal dementia and traumatic brain injury commonly affect frontal regions.",
+   "references": ["openstax-13-2", "ninds-know-your-brain"]
+  },
+  "parietal-lobe": {
+   "summary": "The parietal lobe lies behind the central sulcus. It processes body sensation and integrates sensory information for spatial awareness and guided movement.",
+   "beginner": "The parietal lobe, near the top-back of your head, handles touch and helps you know where your body is in space.",
+   "location": "Between the central sulcus anteriorly and the parieto-occipital sulcus posteriorly, above the temporal lobe.",
+   "description": "Comprises the postcentral gyrus, superior parietal lobule, precuneus (medially) and the inferior parietal lobule (supramarginal and angular gyri).",
+   "functions": ["Somatosensation (postcentral gyrus)", "Spatial attention and body schema", "Sensorimotor integration for reaching and grasping", "Contributions to reading, writing and calculation (dominant inferior parietal lobule)"],
+   "connections": [{"to": "thalamus", "text": "Receives somatosensory input relayed from the ventral posterior thalamus."}, {"to": "frontal-lobe", "text": "Fronto-parietal networks for attention and action."}],
+   "clinical": "Lesions cause contralateral sensory loss; right parietal damage commonly produces hemispatial neglect, while dominant inferior parietal lesions can impair reading, writing and calculation.",
+   "references": ["openstax-13-2", "ninds-know-your-brain"]
+  },
+  "temporal-lobe": {
+   "summary": "The temporal lobe lies below the lateral fissure. It contains auditory cortex, language-related cortex, visual association areas for object recognition and, medially, structures important for memory.",
+   "beginner": "The temporal lobe, near your ears, helps with hearing, understanding words, recognising faces and forming memories.",
+   "location": "Inferior to the lateral fissure, in the middle cranial fossa.",
+   "description": "Lateral surface: superior, middle and inferior temporal gyri. Inferior surface: fusiform and parahippocampal gyri. The hippocampus and amygdala lie in its medial part.",
+   "functions": ["Hearing (transverse temporal gyri on the superior temporal gyrus)", "Language comprehension (posterior superior temporal region, usually left)", "Visual object and face recognition (ventral temporal cortex)", "Declarative memory (medial temporal lobe)"],
+   "connections": [{"to": "hippocampus", "text": "Medial temporal cortex funnels input to and from the hippocampus."}, {"to": "medial-geniculate-body", "text": "Auditory input relayed via the medial geniculate body."}],
+   "clinical": "The temporal lobe is the most common origin of focal seizures in adults. Medial temporal involvement is an early feature of Alzheimer's disease, and dominant posterior superior temporal lesions can cause receptive (Wernicke's) aphasia.",
+   "references": ["openstax-13-2", "ninds-know-your-brain"]
+  },
+  "occipital-lobe": {
+   "summary": "The occipital lobe is the most posterior lobe and contains primary visual cortex and visual association areas.",
+   "beginner": "The occipital lobe, at the back of your head, is where the brain begins to make sense of what you see.",
+   "location": "Posterior pole of each hemisphere, above the tentorium cerebelli.",
+   "description": "Primary visual cortex lies along the calcarine sulcus on the medial surface. The source model provides each occipital lobe as a single element, so its subdivisions (cuneus, lingual gyrus) cannot be selected separately.",
+   "functions": ["Primary visual processing of the contralateral visual field", "Early visual analysis of form, colour and motion"],
+   "connections": [{"to": "lateral-geniculate-body", "text": "Receives the optic radiation from the lateral geniculate body."}, {"to": "temporal-lobe", "text": "Ventral visual stream to inferior temporal cortex (what)."}, {"to": "parietal-lobe", "text": "Dorsal visual stream to parietal cortex (where/how)."}],
+   "clinical": "Damage to one occipital lobe typically causes a contralateral homonymous visual field defect, which can be caused by posterior cerebral artery stroke.",
+   "references": ["openstax-13-2", "ninds-know-your-brain"]
+  },
+  "insula": {
+   "summary": "The insula is cortex folded deep within the lateral fissure, hidden by the frontal, parietal and temporal opercula.",
+   "beginner": "The insula is a hidden fold of brain deep inside the side groove; it helps you sense what is happening inside your body.",
+   "location": "Floor of the lateral fissure, lateral to the claustrum and putamen.",
+   "description": "Divided by the central insular sulcus into short anterior gyri and long posterior gyri; an accessory short gyrus is modelled separately in the source asset. It is only visible after removing or making transparent the overlying opercula.",
+   "functions": ["Interoception (awareness of internal bodily states)", "Taste (gustatory cortex)", "Autonomic and emotional processing", "Contributions to speech motor planning"],
+   "connections": [{"to": "amygdala", "text": "Interconnected with the amygdala and cingulate cortex in salience and emotion networks."}, {"to": "thalamus", "text": "Receives interoceptive and gustatory input via the thalamus."}],
+   "clinical": "The insula is frequently involved in middle cerebral artery stroke. Insular seizures can mimic temporal or frontal seizures.",
+   "references": ["openstax-13-2"]
+  },
+  "superior-frontal-gyrus": {
+   "summary": "The superior frontal gyrus runs along the upper frontal lobe parallel to the longitudinal fissure.",
+   "beginner": "A long fold on the top of the frontal lobe involved in planning and controlling movement and thought.",
+   "location": "Uppermost frontal gyrus, bordered laterally by the superior frontal sulcus and medially by the longitudinal fissure.",
+   "description": "Its posterior part contains premotor and supplementary motor areas; its medial surface continues down to the cingulate sulcus.",
+   "functions": ["Supplementary motor area: initiation and sequencing of movement", "Contributions to working memory and executive control"],
+   "connections": [{"to": "precentral-gyrus", "text": "Supplementary motor area projects to primary motor cortex."}, {"to": "basal-nuclei", "text": "Projects to the striatum."}],
+   "clinical": "Damage to the supplementary motor area can cause reduced spontaneous movement and speech.",
+   "references": ["openstax-13-2"]
+  },
+  "middle-frontal-gyrus": {
+   "summary": "The middle frontal gyrus lies between the superior and inferior frontal sulci and forms part of the dorsolateral prefrontal cortex.",
+   "beginner": "A frontal fold that helps hold information in mind and control attention.",
+   "location": "Lateral frontal lobe, between the superior and inferior frontal gyri.",
+   "description": "Contains much of the dorsolateral prefrontal cortex; its posterior part includes the frontal eye field.",
+   "functions": ["Working memory and cognitive control", "Voluntary eye movements (frontal eye field)"],
+   "connections": [{"to": "parietal-lobe", "text": "Fronto-parietal attention network."}, {"to": "caudate-nucleus", "text": "Projects to the caudate in the dorsolateral prefrontal loop."}],
+   "clinical": "Acute lesions of the frontal eye field can cause the eyes to deviate toward the side of the lesion.",
+   "references": ["openstax-13-2"]
+  },
+  "precentral-gyrus": {
+   "summary": "The precentral gyrus contains the primary motor cortex, which initiates voluntary movement of the opposite side of the body.",
+   "beginner": "The strip of brain that sends 'move!' signals to your muscles on the opposite side of your body.",
+   "location": "Immediately anterior to the central sulcus.",
+   "description": "Body parts are represented in an orderly map (the motor homunculus): leg medially, then trunk, arm, hand and face laterally.",
+   "functions": ["Execution of voluntary movement", "Origin of a large part of the corticospinal and corticobulbar tracts"],
+   "connections": [{"to": "internal-capsule", "text": "Descending motor fibres pass through the internal capsule."}, {"to": "cerebral-peduncle", "text": "Corticospinal fibres continue through the cerebral peduncles."}, {"to": "thalamus", "text": "Receives cerebellar and basal ganglia influence via ventral lateral thalamus."}],
+   "clinical": "Lesions cause contralateral weakness whose distribution follows the motor map. Upper motor neurons here degenerate in amyotrophic lateral sclerosis.",
+   "references": ["openstax-13-2", "ninds-know-your-brain"]
+  },
+  "postcentral-gyrus": {
+   "summary": "The postcentral gyrus contains the primary somatosensory cortex for touch, vibration, position sense, pain and temperature from the opposite side of the body.",
+   "beginner": "The strip of brain that feels touch, pain and temperature from the opposite side of your body.",
+   "location": "Immediately posterior to the central sulcus.",
+   "description": "Organised as a sensory map (the sensory homunculus) parallel to the motor map in front of it.",
+   "functions": ["Primary somatosensory processing", "Localisation and discrimination of touch"],
+   "connections": [{"to": "thalamus", "text": "Input from the ventral posterior nuclei of the thalamus."}, {"to": "superior-parietal-lobule-precuneus", "text": "Projects to somatosensory association cortex."}],
+   "clinical": "Lesions cause contralateral loss of discriminative sensation; focal seizures here can cause sensory symptoms.",
+   "references": ["openstax-13-2"]
+  },
+  "supramarginal-gyrus": {
+   "summary": "The supramarginal gyrus forms the anterior part of the inferior parietal lobule, arching around the end of the lateral fissure.",
+   "beginner": "A parietal fold involved in linking sounds, words and body actions.",
+   "location": "Inferior parietal lobule, above the posterior end of the lateral fissure.",
+   "description": "Lies anterior to the angular gyrus and behind the postcentral gyrus.",
+   "functions": ["Phonological processing and verbal working memory (dominant side)", "Planning of skilled actions"],
+   "connections": [{"to": "superior-temporal-gyrus", "text": "Linked with posterior temporal language areas."}, {"to": "frontal-lobe", "text": "Linked with frontal language and motor areas through association fibres."}],
+   "clinical": "Dominant-hemisphere lesions may contribute to conduction aphasia or apraxia.",
+   "references": ["openstax-13-2"]
+  },
+  "angular-gyrus": {
+   "summary": "The angular gyrus forms the posterior part of the inferior parietal lobule, at the junction of the parietal, temporal and occipital lobes.",
+   "beginner": "A parietal fold that helps with reading, numbers and connecting ideas.",
+   "location": "Around the upturned end of the superior temporal sulcus.",
+   "description": "A multimodal association area lying behind the supramarginal gyrus.",
+   "functions": ["Reading and writing (dominant side)", "Number processing", "Semantic processing"],
+   "connections": [{"to": "occipital-lobe", "text": "Receives visual association input."}, {"to": "temporal-lobe", "text": "Linked with lateral temporal language cortex."}],
+   "clinical": "Dominant angular gyrus lesions are associated with alexia with agraphia and features of Gerstmann syndrome.",
+   "references": ["openstax-13-2"]
+  },
+  "superior-parietal-lobule-precuneus": {
+   "summary": "This element combines the superior parietal lobule (lateral) and the precuneus (medial surface), which BodyParts3D models as a single part.",
+   "beginner": "A parietal region that helps guide your hand to things you see and keeps track of your body.",
+   "location": "Upper posterior parietal lobe, above the intraparietal sulcus, continuing onto the medial surface.",
+   "description": "The superior parietal lobule lies behind the postcentral gyrus; the precuneus lies on the medial surface in front of the parieto-occipital sulcus.",
+   "functions": ["Visuomotor integration and reaching", "Spatial orientation", "Self-referential and episodic memory processes (precuneus)"],
+   "connections": [{"to": "postcentral-gyrus", "text": "Receives somatosensory input."}, {"to": "occipital-lobe", "text": "Dorsal visual stream input."}],
+   "clinical": "Lesions can impair visually guided reaching (optic ataxia). The precuneus and posterior cingulate are often affected early in Alzheimer's disease on functional imaging.",
+   "references": ["openstax-13-2"]
+  },
+  "superior-temporal-gyrus": {
+   "summary": "The superior temporal gyrus contains primary auditory cortex and, posteriorly in the dominant hemisphere, cortex important for language comprehension.",
+   "beginner": "The fold next to your ear that helps you hear and understand speech.",
+   "location": "Uppermost temporal gyrus, just below the lateral fissure.",
+   "description": "The source model divides it into anterior and posterior parts. Transverse temporal (Heschl's) gyri on its upper surface hold primary auditory cortex.",
+   "functions": ["Auditory processing", "Speech perception and language comprehension (posterior, usually left)"],
+   "connections": [{"to": "medial-geniculate-body", "text": "Auditory radiation from the medial geniculate body."}, {"to": "frontal-lobe", "text": "Arcuate fasciculus links posterior temporal and frontal language areas."}],
+   "clinical": "Dominant posterior lesions can cause receptive aphasia; it is commonly involved in middle cerebral artery stroke and temporal lobe seizures.",
+   "references": ["openstax-13-2"]
+  },
+  "middle-temporal-gyrus": {
+   "summary": "The middle temporal gyrus lies between the superior and inferior temporal sulci and supports semantic and multimodal processing.",
+   "beginner": "A temporal fold involved in understanding the meaning of words and things.",
+   "location": "Lateral temporal lobe.",
+   "description": "Posterior parts border visual motion-sensitive cortex near the temporo-occipital junction.",
+   "functions": ["Semantic memory and word meaning", "Visual motion processing (posterior part)"],
+   "connections": [{"to": "occipital-lobe", "text": "Visual input posteriorly."}, {"to": "frontal-lobe", "text": "Participates in language networks."}],
+   "clinical": "Involved in some aphasias and in temporal lobe pathology.",
+   "references": ["openstax-13-2"]
+  },
+  "inferior-temporal-gyrus": {
+   "summary": "The inferior temporal gyrus lies along the inferolateral temporal lobe and is part of the ventral visual stream.",
+   "beginner": "A temporal fold that helps recognise objects you see.",
+   "location": "Inferolateral margin of the temporal lobe.",
+   "description": "Continues onto the inferior surface toward the fusiform gyrus.",
+   "functions": ["Visual object recognition", "Visual memory"],
+   "connections": [{"to": "occipital-lobe", "text": "Ventral visual stream from occipital cortex."}, {"to": "hippocampus", "text": "Indirect connections to medial temporal memory structures."}],
+   "clinical": "Ventral temporal lesions can impair object recognition (visual agnosia).",
+   "references": ["openstax-13-2"]
+  },
+  "fusiform-gyrus": {
+   "summary": "The fusiform gyrus lies on the inferior surface of the temporal and occipital lobes and includes regions specialised for faces and written words.",
+   "beginner": "A fold under the brain that helps you recognise faces and words.",
+   "location": "Inferior temporal-occipital surface, between the inferior temporal and parahippocampal gyri.",
+   "description": "Also called the lateral occipitotemporal gyrus.",
+   "functions": ["Face recognition (often right-dominant)", "Visual word form processing (often left-dominant)", "High-level object and colour processing"],
+   "connections": [{"to": "occipital-lobe", "text": "Ventral visual stream input."}, {"to": "parahippocampal-gyrus", "text": "Adjacent to and connected with medial temporal cortex."}],
+   "clinical": "Bilateral or right-sided lesions can cause prosopagnosia (face blindness).",
+   "references": ["openstax-13-2"]
+  },
+  "parahippocampal-gyrus": {
+   "summary": "The parahippocampal gyrus lies on the medial-inferior temporal lobe beside the hippocampus; its anterior part includes entorhinal cortex.",
+   "beginner": "A fold next to the hippocampus that passes information in and out of the memory system.",
+   "location": "Medial temporal lobe, below the hippocampus.",
+   "description": "Its anterior end hooks medially as the uncus. Entorhinal cortex in this region is the main cortical gateway to the hippocampus.",
+   "functions": ["Relays cortical information to and from the hippocampus", "Scene and spatial context processing"],
+   "connections": [{"to": "hippocampus", "text": "Entorhinal cortex projects to the hippocampus via the perforant path."}, {"to": "cingulate-gyrus", "text": "Continuous with the cingulate gyrus as part of the limbic lobe."}],
+   "clinical": "Entorhinal cortex shows early neurofibrillary tangle pathology in Alzheimer's disease. Uncal herniation can compress the midbrain and oculomotor nerve.",
+   "references": ["openstax-13-2"]
+  },
+  "cingulate-gyrus": {
+   "summary": "The cingulate gyrus arches around the corpus callosum on the medial surface of each hemisphere and is part of the limbic lobe.",
+   "beginner": "A curved fold above the brain's central bridge that links emotion, attention and action.",
+   "location": "Medial surface, between the callosal sulcus and the cingulate sulcus.",
+   "description": "Anterior, middle and posterior divisions differ in connections and function.",
+   "functions": ["Emotion and pain affect (anterior)", "Error monitoring and motivation", "Memory and spatial orientation (posterior)"],
+   "connections": [{"to": "thalamus", "text": "Receives input from anterior thalamic nuclei (Papez circuit)."}, {"to": "parahippocampal-gyrus", "text": "Projects via the cingulum toward the parahippocampal region."}],
+   "clinical": "Posterior cingulate hypometabolism is a frequent finding in Alzheimer's disease; anterior cingulate is implicated in apathy and some seizure types.",
+   "references": ["openstax-13-2"]
+  },
+  "orbital-and-straight-gyri": {
+   "summary": "The orbital gyri and the straight gyrus (gyrus rectus) form the inferior (orbital) surface of the frontal lobes. BodyParts3D supplies them as one bilateral element.",
+   "beginner": "The underside of the frontal lobes, above the eyes, involved in decisions, reward and social behaviour.",
+   "location": "Inferior frontal lobe surface, resting on the orbital plates; gyrus rectus lies medially beside the olfactory sulcus.",
+   "description": "Part of the orbitofrontal cortex. The olfactory bulb and tract lie beneath it (not modelled).",
+   "functions": ["Reward valuation and decision making", "Emotional and social behaviour regulation", "Olfactory processing (posterior orbitofrontal)"],
+   "connections": [{"to": "amygdala", "text": "Strong reciprocal connections with the amygdala."}, {"to": "hypothalamus", "text": "Influences autonomic function via the hypothalamus."}],
+   "clinical": "Frequently contused in traumatic brain injury because it lies against the bony orbital roof; damage can change personality and judgement.",
+   "references": ["openstax-13-2"]
+  },
+  "hippocampus": {
+   "summary": "The hippocampus is a curved structure in the medial temporal lobe that is essential for forming new long-term declarative (episodic) memories and for spatial memory.",
+   "beginner": "A seahorse-shaped structure that helps you form new memories and find your way around.",
+   "location": "Floor of the temporal horn of the lateral ventricle, medial temporal lobe.",
+   "description": "Has a head, body and tail; its output fibres gather as the fimbria and continue as the fornix. Together with the dentate gyrus and subiculum it forms the hippocampal formation. It is internal and becomes visible only after removing or making transparent the temporal lobe.",
+   "functions": ["Formation of new episodic memories", "Memory consolidation", "Spatial navigation", "Contextual learning"],
+   "connections": [{"to": "parahippocampal-gyrus", "text": "Main cortical input from entorhinal cortex."}, {"to": "fornix", "text": "Major output through the fornix."}, {"to": "mammillary-body", "text": "Fornix fibres reach the mammillary bodies (Papez circuit)."}, {"to": "amygdala", "text": "Interacts with the amygdala in emotional memory."}],
+   "clinical": "Hippocampal damage impairs the ability to form new memories. It is involved — by different mechanisms and to different degrees — in Alzheimer's disease, mesial temporal lobe epilepsy with hippocampal sclerosis, and hypoxic-ischaemic injury, to which hippocampal neurons are especially vulnerable. Involvement does not mean every patient is affected identically.",
+   "references": ["openstax-13-2", "mp-memory", "ninds-know-your-brain"]
+  },
+  "amygdala": {
+   "summary": "The amygdala is an almond-shaped cluster of nuclei in the anterior medial temporal lobe involved in emotional learning, threat detection and emotional memory.",
+   "beginner": "An almond-shaped structure that helps detect danger and attach emotion to memories.",
+   "location": "Anterior medial temporal lobe, in front of the hippocampus and the tip of the temporal horn.",
+   "description": "Composed of several nuclear groups (basolateral, central, corticomedial). It is internal and hidden by the temporal lobe.",
+   "functions": ["Emotional learning and fear conditioning", "Assigning emotional significance to stimuli", "Modulating memory consolidation", "Influencing autonomic and endocrine responses"],
+   "connections": [{"to": "hypothalamus", "text": "Outputs to the hypothalamus and brainstem drive autonomic responses."}, {"to": "orbital-and-straight-gyri", "text": "Reciprocal connections with orbitofrontal cortex."}, {"to": "hippocampus", "text": "Modulates hippocampal memory formation."}],
+   "clinical": "Involved in temporal lobe seizures (which can begin with fear or other emotional auras) and studied in anxiety disorders. Bilateral damage is rare and impairs recognition of fear.",
+   "references": ["openstax-13-2"]
+  },
+  "basal-nuclei": {
+   "summary": "The basal nuclei (basal ganglia) are deep grey-matter nuclei — caudate, putamen and globus pallidus in this model — that form loops with cortex and thalamus to regulate movement, learning and motivation.",
+   "beginner": "Deep brain nuclei that help start wanted movements and stop unwanted ones.",
+   "location": "Deep within each hemisphere, lateral to the thalamus and around the internal capsule.",
+   "description": "The caudate and putamen form the striatum (input nucleus); the globus pallidus is a major output nucleus. Functionally the subthalamic nucleus and substantia nigra belong to the same circuits but are not separately modelled here.",
+   "functions": ["Selection and initiation of movement", "Habit and reward-based learning", "Contributions to cognition and motivation"],
+   "connections": [{"to": "frontal-lobe", "text": "Cortex → striatum → pallidum → thalamus → cortex loops."}, {"to": "thalamus", "text": "Pallidal output to ventral anterior/ventral lateral thalamus."}, {"to": "cerebral-peduncle", "text": "Dopaminergic input from the substantia nigra (within the midbrain peduncle region)."}],
+   "clinical": "Dysfunction underlies movement disorders: loss of dopaminergic input causes Parkinson's disease, and striatal degeneration is central to Huntington's disease.",
+   "references": ["openstax-13-2", "mp-movement"]
+  },
+  "caudate-nucleus": {
+   "summary": "The caudate nucleus is a C-shaped part of the striatum that follows the lateral ventricle.",
+   "beginner": "A curved nucleus that helps with planning actions and learning habits.",
+   "location": "Forms the lateral wall of the lateral ventricle; head in the frontal horn, body and tail curving back and down into the temporal lobe.",
+   "description": "Separated from the putamen by the anterior limb of the internal capsule except anteriorly, where they join.",
+   "functions": ["Goal-directed action and learning", "Cognitive loops with prefrontal cortex", "Eye-movement control"],
+   "connections": [{"to": "frontal-lobe", "text": "Receives prefrontal cortex input."}, {"to": "globus-pallidus", "text": "Projects to the globus pallidus."}],
+   "clinical": "Atrophy of the caudate is characteristic of Huntington's disease and can be seen on imaging as enlargement of the frontal horns.",
+   "references": ["openstax-13-2", "mp-movement", "ninds-huntingtons"]
+  },
+  "putamen": {
+   "summary": "The putamen is the lateral part of the striatum, most closely involved in motor loops.",
+   "beginner": "A deep nucleus that helps make movements smooth and automatic.",
+   "location": "Lateral to the globus pallidus and internal capsule, medial to the external capsule and insula.",
+   "description": "Together with the globus pallidus it forms the lentiform nucleus.",
+   "functions": ["Motor learning and automatic movement", "Receives motor and somatosensory cortical input"],
+   "connections": [{"to": "precentral-gyrus", "text": "Receives motor cortex input."}, {"to": "globus-pallidus", "text": "Projects to the globus pallidus."}, {"to": "cerebral-peduncle", "text": "Receives dopamine from the substantia nigra pars compacta."}],
+   "clinical": "Dopamine loss in the putamen produces the motor signs of Parkinson's disease. The putamen is a common site of hypertensive intracerebral haemorrhage.",
+   "references": ["openstax-13-2", "mp-movement", "ninds-parkinsons"]
+  },
+  "globus-pallidus": {
+   "summary": "The globus pallidus is a major output nucleus of the basal ganglia, with external and internal segments.",
+   "beginner": "A deep nucleus that acts like a brake on movement signals.",
+   "location": "Medial to the putamen and lateral to the internal capsule.",
+   "description": "The internal segment sends inhibitory output to the thalamus.",
+   "functions": ["Regulation of thalamocortical motor activity"],
+   "connections": [{"to": "thalamus", "text": "Inhibitory projection to the ventral thalamus."}, {"to": "putamen", "text": "Receives striatal input."}],
+   "clinical": "The internal pallidum is a target for deep brain stimulation in some movement disorders.",
+   "references": ["openstax-13-2", "mp-movement"]
+  },
+  "fornix": {
+   "summary": "The fornix is a C-shaped bundle of fibres that carries hippocampal output to the mammillary bodies, septal area and other targets.",
+   "beginner": "A curved cable that carries memory signals from the hippocampus.",
+   "location": "Arches beneath the corpus callosum from the hippocampus to the mammillary bodies; the two sides are joined by the commissure of the fornix.",
+   "description": "Parts: fimbria, crus, body (joined across the midline) and columns.",
+   "functions": ["Main output pathway of the hippocampus", "Part of the Papez circuit"],
+   "connections": [{"to": "hippocampus", "text": "Arises from the hippocampus."}, {"to": "mammillary-body", "text": "Terminates in the mammillary bodies."}],
+   "clinical": "Bilateral fornix damage (for example from surgery or tumours near the third ventricle) can cause memory impairment.",
+   "references": ["openstax-13-2"]
+  },
+  "internal-capsule": {
+   "summary": "The internal capsule is a compact band of white matter carrying fibres between the cortex and the thalamus, brainstem and spinal cord. Only its anterior limb is available in this model.",
+   "beginner": "A dense highway of nerve fibres connecting the cortex to deeper parts of the brain.",
+   "location": "Between the caudate and thalamus medially and the lentiform nucleus laterally.",
+   "description": "Has an anterior limb, genu and posterior limb; the posterior limb (not modelled here) carries most corticospinal fibres.",
+   "functions": ["Anterior limb: frontopontine and thalamocortical fibres linking frontal cortex with thalamus and pons"],
+   "connections": [{"to": "thalamus", "text": "Anterior thalamic radiation."}, {"to": "frontal-lobe", "text": "Frontal cortical fibres."}],
+   "clinical": "Small strokes in the internal capsule can cause disproportionate deficits because many fibres are packed into a small space.",
+   "references": ["openstax-13-2"]
+  },
+  "lateral-ventricle": {
+   "summary": "Each lateral ventricle is a C-shaped cavity in a cerebral hemisphere filled with cerebrospinal fluid (CSF).",
+   "beginner": "Fluid-filled spaces inside each half of the brain.",
+   "location": "Within each hemisphere: frontal horn, body, atrium, occipital and temporal horns.",
+   "description": "Separated from the opposite side by the septum pellucidum; communicates with the third ventricle through the interventricular foramen.",
+   "functions": ["CSF production (choroid plexus) and circulation", "Cushioning and chemical stability of the brain"],
+   "connections": [{"to": "third-ventricle", "text": "Drains to the third ventricle via the interventricular foramen."}, {"to": "choroid-plexus", "text": "Contains choroid plexus."}],
+   "clinical": "Enlargement occurs in hydrocephalus and, ex vacuo, with brain atrophy.",
+   "references": ["openstax-13-3"]
+  },
+  "choroid-plexus": {
+   "summary": "The choroid plexus is vascular tissue in the ventricles that produces most cerebrospinal fluid.",
+   "beginner": "Tissue inside the brain's fluid spaces that makes the brain's cushioning fluid.",
+   "location": "Body, atrium and temporal horn of the lateral ventricle (also roofs of third and fourth ventricles).",
+   "description": "Ependymal epithelium over capillaries forms the blood–CSF barrier.",
+   "functions": ["CSF secretion", "Blood–CSF barrier"],
+   "connections": [{"to": "lateral-ventricle", "text": "Lies within the lateral ventricle."}],
+   "clinical": "Choroid plexus tumours are rare causes of hydrocephalus; the plexus often calcifies with age.",
+   "references": ["openstax-13-3"]
+  },
+  "cerebral-white-matter": {
+   "summary": "Cerebral white matter consists of myelinated axons connecting cortical areas with each other and with deeper structures.",
+   "beginner": "The brain's wiring — bundles of insulated nerve fibres.",
+   "location": "Beneath the cortex of each hemisphere.",
+   "description": "Fibres are association (within a hemisphere), commissural (between hemispheres) or projection (to and from deeper structures). In this model it is a single coarse envelope, not a tract-level reconstruction.",
+   "functions": ["Rapid signal conduction between brain regions"],
+   "connections": [{"to": "corpus-callosum", "text": "Commissural fibres cross in the corpus callosum."}, {"to": "internal-capsule", "text": "Projection fibres converge into the internal capsule."}],
+   "clinical": "White matter is the main site of lesions in multiple sclerosis and ADEM and is vulnerable to diffuse axonal injury and small-vessel disease.",
+   "references": ["openstax-13-2", "ninds-ms"]
+  },
+  "corpus-callosum": {
+   "summary": "The corpus callosum is the largest commissure, a broad band of fibres connecting the two cerebral hemispheres.",
+   "beginner": "A thick bridge of fibres that lets the two halves of the brain talk to each other.",
+   "location": "Midline, forming much of the roof of the lateral ventricles beneath the longitudinal fissure.",
+   "description": "Parts from front to back: rostrum, genu, body and splenium.",
+   "functions": ["Interhemispheric transfer of sensory, motor and cognitive information"],
+   "connections": [{"to": "cerebral-hemisphere", "text": "Links homologous areas of left and right hemispheres."}],
+   "clinical": "Commonly involved in multiple sclerosis (callosal lesions) and diffuse axonal injury. Surgical section (callosotomy) is sometimes used for severe drop-attack epilepsy.",
+   "references": ["openstax-13-2"]
+  },
+  "septum-pellucidum": {
+   "summary": "The septum pellucidum is a thin midline membrane separating the frontal horns and bodies of the lateral ventricles.",
+   "beginner": "A thin wall between the two fluid-filled spaces of the brain.",
+   "location": "Between the corpus callosum above and the fornix below.",
+   "description": "Composed of two thin laminae.",
+   "functions": ["Structural partition of the lateral ventricles"],
+   "connections": [{"to": "lateral-ventricle", "text": "Forms the medial wall of each lateral ventricle."}],
+   "clinical": "Absence of the septum pellucidum is associated with some developmental conditions such as septo-optic dysplasia.",
+   "references": ["openstax-13-3"]
+  },
+  "diencephalon": {
+   "summary": "The diencephalon lies between the cerebrum and the midbrain and includes the thalamus, hypothalamus and epithalamus surrounding the third ventricle.",
+   "beginner": "The 'in-between brain', deep in the centre, that relays signals and controls hormones and body balance.",
+   "location": "Central core of the brain, surrounding the third ventricle.",
+   "description": "Internal; it is largely hidden by the cerebral hemispheres and is visible on the inferior surface (hypothalamus, mammillary bodies).",
+   "functions": ["Sensory and motor relay to the cortex", "Homeostasis and endocrine control", "Circadian rhythm regulation"],
+   "connections": [{"to": "cerebrum", "text": "Thalamocortical connections."}, {"to": "pituitary-gland", "text": "Hypothalamic control of the pituitary."}],
+   "clinical": "Diencephalic lesions can affect consciousness, sensation, sleep and hormone balance.",
+   "references": ["openstax-13-2"]
+  },
+  "thalamus": {
+   "summary": "The thalamus is a paired egg-shaped mass of nuclei that relays and modulates sensory, motor and limbic information to the cerebral cortex.",
+   "beginner": "The brain's relay station: most sensory signals pass through it on their way to the cortex.",
+   "location": "Either side of the third ventricle, above the hypothalamus and medial to the internal capsule.",
+   "description": "Contains many nuclei (anterior, medial, lateral, ventral, pulvinar, geniculate) with distinct cortical targets.",
+   "functions": ["Relay of somatosensory, visual and auditory information", "Relay of cerebellar and basal ganglia output to motor cortex", "Regulation of arousal and attention", "Limbic circuits for memory (anterior nuclei)"],
+   "connections": [{"to": "cerebrum", "text": "Reciprocal thalamocortical connections."}, {"to": "cerebellum", "text": "Receives cerebellar output (ventral lateral nucleus)."}, {"to": "basal-nuclei", "text": "Receives pallidal output."}],
+   "clinical": "Thalamic stroke can cause contralateral sensory loss and sometimes chronic pain (thalamic pain syndrome); bilateral involvement can impair memory and arousal.",
+   "references": ["openstax-13-2", "ninds-know-your-brain"]
+  },
+  "lateral-geniculate-body": {
+   "summary": "The lateral geniculate body is the thalamic relay for vision, receiving optic tract fibres and projecting to primary visual cortex.",
+   "beginner": "A relay point that passes signals from the eyes to the vision area at the back of the brain.",
+   "location": "Posterolateral thalamus, at the end of the optic tract.",
+   "description": "Layered nucleus receiving input from both eyes (separate layers) for the contralateral visual field.",
+   "functions": ["Relay of visual information to the occipital cortex"],
+   "connections": [{"to": "optic-tract", "text": "Input from the optic tract."}, {"to": "occipital-lobe", "text": "Projects via the optic radiation."}],
+   "clinical": "Lesions cause contralateral homonymous visual field defects.",
+   "references": ["openstax-13-2"]
+  },
+  "medial-geniculate-body": {
+   "summary": "The medial geniculate body is the thalamic relay for hearing.",
+   "beginner": "A relay point passing sound signals to the hearing area of the brain.",
+   "location": "Posterior thalamus, medial to the lateral geniculate body.",
+   "description": "Receives input from the inferior colliculus.",
+   "functions": ["Relay of auditory information to auditory cortex"],
+   "connections": [{"to": "inferior-colliculus", "text": "Input from the inferior colliculus."}, {"to": "superior-temporal-gyrus", "text": "Projects to primary auditory cortex."}],
+   "clinical": "Because auditory pathways are bilateral above the brainstem, a unilateral lesion rarely causes deafness.",
+   "references": ["openstax-13-2"]
+  },
+  "hypothalamus": {
+   "summary": "The hypothalamus is a small region below the thalamus that coordinates autonomic, endocrine and behavioural responses to keep the body in balance (homeostasis).",
+   "beginner": "A small but powerful area that controls body temperature, hunger, thirst, sleep and hormones.",
+   "location": "Floor and lower walls of the third ventricle, above the pituitary gland.",
+   "description": "Includes the mammillary bodies and tuber cinereum (modelled separately here) plus many nuclei. The infundibulum connects it to the pituitary.",
+   "functions": ["Temperature, hunger and thirst regulation", "Control of the pituitary gland", "Circadian rhythm (suprachiasmatic nucleus)", "Autonomic nervous system control"],
+   "connections": [{"to": "pituitary-gland", "text": "Neural and vascular control of the pituitary."}, {"to": "amygdala", "text": "Limbic input."}, {"to": "brainstem", "text": "Descending autonomic pathways."}],
+   "clinical": "Hypothalamic lesions can disturb temperature, appetite, sleep, water balance and hormones.",
+   "references": ["openstax-13-2", "mp-pituitary"]
+  },
+  "mammillary-body": {
+   "summary": "The mammillary bodies are paired round hypothalamic nuclei on the inferior brain surface, part of the memory (Papez) circuit.",
+   "beginner": "Two small bumps under the brain that are part of the memory circuit.",
+   "location": "Posterior hypothalamus, just in front of the cerebral peduncles. Modelled as one element.",
+   "description": "Receive the fornix and project to the anterior thalamus via the mammillothalamic tract.",
+   "functions": ["Recollective memory (as part of the Papez circuit)"],
+   "connections": [{"to": "fornix", "text": "Input from the fornix."}, {"to": "thalamus", "text": "Output to the anterior thalamic nuclei."}],
+   "clinical": "Atrophy occurs in Wernicke–Korsakoff syndrome due to thiamine deficiency.",
+   "references": ["openstax-13-2"]
+  },
+  "tuber-cinereum": {
+   "summary": "The tuber cinereum is the part of the hypothalamic floor between the optic chiasm and the mammillary bodies, from which the infundibulum descends.",
+   "beginner": "A small patch under the brain that connects to the stalk of the pituitary gland.",
+   "location": "Inferior hypothalamus, behind the optic chiasm.",
+   "description": "Contains the median eminence region involved in releasing hormones into pituitary portal vessels.",
+   "functions": ["Neuroendocrine control of the anterior pituitary"],
+   "connections": [{"to": "pituitary-gland", "text": "Continuous with the infundibulum."}],
+   "clinical": "Hamartomas of the tuber cinereum can cause early puberty and gelastic seizures.",
+   "references": ["openstax-13-2"]
+  },
+  "pituitary-gland": {
+   "summary": "The pituitary gland is an endocrine gland attached to the hypothalamus that releases hormones controlling growth, metabolism, stress, reproduction and water balance.",
+   "beginner": "A pea-sized 'master gland' under the brain that releases many hormones.",
+   "location": "In the sella turcica of the sphenoid bone, below the optic chiasm.",
+   "description": "Anterior lobe (adenohypophysis) and posterior lobe (neurohypophysis) connected to the hypothalamus by the infundibulum. It is an endocrine organ rather than brain tissue.",
+   "functions": ["Secretion of growth hormone, ACTH, TSH, LH/FSH and prolactin (anterior)", "Release of vasopressin and oxytocin (posterior)"],
+   "connections": [{"to": "hypothalamus", "text": "Controlled by hypothalamic hormones and axons."}, {"to": "optic-chiasm", "text": "Lies just below the optic chiasm."}],
+   "clinical": "Pituitary tumours can cause hormone excess or deficiency and, by compressing the optic chiasm, bitemporal visual field loss.",
+   "references": ["mp-pituitary", "openstax-13-2"]
+  },
+  "epithalamus": {
+   "summary": "The epithalamus is the dorsal posterior part of the diencephalon, including the pineal gland and habenula.",
+   "beginner": "A small area at the back of the centre of the brain containing the pineal gland.",
+   "location": "Posterior roof of the third ventricle.",
+   "description": "Also includes the stria medullaris and posterior commissure (not modelled).",
+   "functions": ["Melatonin secretion (pineal)", "Reward and aversion signalling (habenula)"],
+   "connections": [{"to": "pineal-gland", "text": "Contains the pineal gland."}],
+   "clinical": "See pineal gland.",
+   "references": ["openstax-13-2"]
+  },
+  "pineal-gland": {
+   "summary": "The pineal gland is a small endocrine gland that secretes melatonin, mainly at night, contributing to circadian rhythms.",
+   "beginner": "A tiny gland that releases melatonin, the 'darkness hormone' linked to sleep.",
+   "location": "Midline, above the superior colliculi and behind the third ventricle.",
+   "description": "Often calcifies with age, making it a radiological midline landmark.",
+   "functions": ["Melatonin secretion regulated by light via the suprachiasmatic nucleus"],
+   "connections": [{"to": "hypothalamus", "text": "Indirect circadian input from the suprachiasmatic nucleus."}],
+   "clinical": "Pineal region tumours can compress the cerebral aqueduct, causing hydrocephalus, and the tectum, causing upgaze palsy (Parinaud syndrome).",
+   "references": ["openstax-13-2"]
+  },
+  "habenula": {
+   "summary": "The habenula is a small paired epithalamic nucleus involved in reward prediction and aversive signalling.",
+   "beginner": "A tiny region that helps the brain learn from disappointment.",
+   "location": "Posterior dorsal thalamus near the pineal stalk. Modelled as one element.",
+   "description": "Connected to the limbic forebrain by the stria medullaris and to the midbrain by the fasciculus retroflexus.",
+   "functions": ["Regulation of dopaminergic and serotonergic midbrain neurons"],
+   "connections": [{"to": "midbrain", "text": "Projects to the midbrain monoaminergic nuclei."}],
+   "clinical": "An active research target in mood disorders (emerging research).",
+   "references": ["openstax-13-2"]
+  },
+  "third-ventricle": {
+   "summary": "The third ventricle is a narrow midline CSF-filled cavity between the two halves of the diencephalon.",
+   "beginner": "A thin fluid-filled space in the middle of the brain.",
+   "location": "Between the left and right thalami and hypothalamus.",
+   "description": "Connects to the lateral ventricles via the interventricular foramina and to the fourth ventricle via the cerebral aqueduct.",
+   "functions": ["CSF circulation"],
+   "connections": [{"to": "lateral-ventricle", "text": "Receives CSF from the lateral ventricles."}, {"to": "cerebral-aqueduct", "text": "Drains into the cerebral aqueduct."}],
+   "clinical": "Colloid cysts at its roof can block CSF flow and cause acute hydrocephalus.",
+   "references": ["openstax-13-3"]
+  },
+  "visual-pathway": {
+   "summary": "The anterior visual pathway carries signals from the retinas through the optic nerves, chiasm and tracts to the lateral geniculate bodies.",
+   "beginner": "The 'cables' that carry signals from your eyes into the brain.",
+   "location": "From the orbits through the optic canals to the base of the brain.",
+   "description": "At the chiasm, fibres from the nasal half of each retina cross, so each optic tract carries information about the opposite visual field.",
+   "functions": ["Transmission of visual information"],
+   "connections": [{"to": "lateral-geniculate-body", "text": "Optic tracts end in the lateral geniculate bodies."}, {"to": "superior-colliculus", "text": "Some fibres reach the superior colliculus and pretectum."}],
+   "clinical": "The pattern of visual field loss localises the lesion: one eye (optic nerve), bitemporal (chiasm), or contralateral homonymous (tract and beyond).",
+   "references": ["openstax-13-2"]
+  },
+  "optic-nerve": {
+   "summary": "The optic nerve (cranial nerve II) carries visual information from the retina to the optic chiasm. Embryologically it is an outgrowth of the brain, myelinated by oligodendrocytes.",
+   "beginner": "The nerve that carries signals from each eye to the brain.",
+   "location": "From the back of the eye through the optic canal to the chiasm.",
+   "description": "Surrounded by meninges and CSF along its length.",
+   "functions": ["Transmission of retinal signals"],
+   "connections": [{"to": "optic-chiasm", "text": "Joins the opposite optic nerve at the chiasm."}],
+   "clinical": "Optic neuritis is a common presentation of multiple sclerosis; raised intracranial pressure causes optic disc swelling (papilloedema).",
+   "references": ["openstax-13-2", "ninds-ms"]
+  },
+  "optic-chiasm": {
+   "summary": "The optic chiasm is where the two optic nerves meet and fibres from the nasal halves of the retinas cross.",
+   "beginner": "The X-shaped crossing point of the nerves from your eyes.",
+   "location": "Above the pituitary gland, in front of the tuber cinereum.",
+   "description": "Continues posterolaterally as the optic tracts.",
+   "functions": ["Partial decussation of visual fibres, allowing each hemisphere to receive the opposite visual field"],
+   "connections": [{"to": "optic-nerve", "text": "Receives both optic nerves."}, {"to": "optic-tract", "text": "Gives rise to the optic tracts."}, {"to": "pituitary-gland", "text": "Lies just above the pituitary."}],
+   "clinical": "Compression from below by pituitary tumours classically causes bitemporal hemianopia.",
+   "references": ["openstax-13-2", "mp-pituitary"]
+  },
+  "optic-tract": {
+   "summary": "Each optic tract carries visual information about the contralateral visual field from the chiasm to the lateral geniculate body.",
+   "beginner": "The path from the eye-nerve crossing to the brain's vision relay.",
+   "location": "Winds around the cerebral peduncle from the chiasm to the lateral geniculate body.",
+   "description": "Contains fibres from the ipsilateral temporal retina and contralateral nasal retina.",
+   "functions": ["Transmission of contralateral visual field information"],
+   "connections": [{"to": "optic-chiasm", "text": "Arises from the chiasm."}, {"to": "lateral-geniculate-body", "text": "Ends in the lateral geniculate body."}],
+   "clinical": "Lesions cause contralateral homonymous hemianopia.",
+   "references": ["openstax-13-2"]
+  },
+  "brainstem": {
+   "summary": "The brainstem — midbrain, pons and medulla — connects the forebrain with the spinal cord and contains cranial nerve nuclei and centres for breathing, heart rate and consciousness.",
+   "beginner": "The stalk of the brain that keeps you breathing, your heart beating and connects the brain to the spinal cord.",
+   "location": "Between the diencephalon above and the spinal cord below, in front of the cerebellum.",
+   "description": "Carries all ascending and descending tracts between brain and spinal cord; contains the reticular formation and nuclei of cranial nerves III–XII.",
+   "functions": ["Breathing and cardiovascular control", "Arousal and consciousness (reticular activating system)", "Cranial nerve functions: eye movement, facial sensation and movement, hearing, balance, swallowing"],
+   "connections": [{"to": "cerebellum", "text": "Connected to the cerebellum by the cerebellar peduncles."}, {"to": "thalamus", "text": "Ascending sensory and arousal pathways to the thalamus."}],
+   "clinical": "Small brainstem lesions can cause severe deficits, including crossed signs (cranial nerve deficit on one side, limb weakness on the other) and impaired consciousness.",
+   "references": ["openstax-13-2", "ninds-know-your-brain"]
+  },
+  "midbrain": {
+   "summary": "The midbrain (mesencephalon) is the uppermost part of the brainstem, containing the tectum (colliculi), tegmentum and cerebral peduncles.",
+   "beginner": "The top of the brainstem, involved in eye movements, reflexes to sights and sounds, and movement control.",
+   "location": "Between the diencephalon and the pons, surrounding the cerebral aqueduct.",
+   "description": "In this model it is split into colliculi, cerebral peduncles, the aqueduct and a remaining-tissue element.",
+   "functions": ["Eye movement (oculomotor and trochlear nuclei)", "Visual and auditory reflexes (colliculi)", "Motor control (substantia nigra, red nucleus)", "Arousal"],
+   "connections": [{"to": "basal-nuclei", "text": "Nigrostriatal dopamine pathway."}, {"to": "thalamus", "text": "Ascending pathways."}],
+   "clinical": "Midbrain compression from herniation causes pupil changes and impaired consciousness; dopaminergic neuron loss here underlies Parkinson's disease.",
+   "references": ["openstax-13-2"]
+  },
+  "cerebral-peduncle": {
+   "summary": "The cerebral peduncles form the anterior bulk of the midbrain. They contain descending cortical fibres (crus cerebri) and, behind them, the substantia nigra and tegmentum.",
+   "beginner": "Two thick pillars at the front of the midbrain carrying movement signals downward; they also contain the substantia nigra.",
+   "location": "Anterior midbrain, either side of the interpeduncular fossa. Modelled as one element covering both sides.",
+   "description": "The substantia nigra lies within this region but is NOT separately segmented in this model; disease highlights using this element are schematic.",
+   "functions": ["Conduct corticospinal, corticobulbar and corticopontine fibres", "Dopaminergic modulation of the striatum (substantia nigra pars compacta, within this region)"],
+   "connections": [{"to": "internal-capsule", "text": "Continuation of internal capsule fibres."}, {"to": "pons", "text": "Fibres descend into the pons."}, {"to": "putamen", "text": "Nigrostriatal projection to the striatum."}],
+   "clinical": "Loss of pigmented dopaminergic neurons in the substantia nigra pars compacta is a defining pathological feature of Parkinson's disease.",
+   "references": ["openstax-13-2", "ninds-parkinsons"]
+  },
+  "superior-colliculus": {
+   "summary": "The superior colliculi are paired swellings on the dorsal midbrain that orient the eyes and head toward visual stimuli.",
+   "beginner": "Small bumps on the back of the midbrain that make your eyes turn toward something that moves.",
+   "location": "Upper tectum, below the pineal gland.",
+   "description": "Layered structure integrating visual, auditory and somatosensory maps.",
+   "functions": ["Visual orienting and saccadic eye movements"],
+   "connections": [{"to": "optic-tract", "text": "Receives some retinal input."}, {"to": "occipital-lobe", "text": "Receives visual cortical input."}],
+   "clinical": "Compression by pineal tumours contributes to impaired upward gaze (Parinaud syndrome).",
+   "references": ["openstax-13-2"]
+  },
+  "inferior-colliculus": {
+   "summary": "The inferior colliculi are paired swellings on the lower dorsal midbrain, a major relay in the auditory pathway.",
+   "beginner": "Small bumps on the back of the midbrain that relay sound signals.",
+   "location": "Lower tectum, above the superior medullary velum.",
+   "description": "Projects to the medial geniculate body through the brachium of the inferior colliculus.",
+   "functions": ["Auditory integration and sound localisation"],
+   "connections": [{"to": "medial-geniculate-body", "text": "Projects to the medial geniculate body."}],
+   "clinical": "Rarely affected in isolation.",
+   "references": ["openstax-13-2"]
+  },
+  "cerebral-aqueduct": {
+   "summary": "The cerebral aqueduct is the narrow channel carrying CSF from the third ventricle through the midbrain to the fourth ventricle.",
+   "beginner": "A narrow tube that lets brain fluid flow from the middle of the brain down to the back.",
+   "location": "Midbrain, between tectum and tegmentum.",
+   "description": "Surrounded by periaqueductal grey matter.",
+   "functions": ["CSF flow"],
+   "connections": [{"to": "third-ventricle", "text": "From the third ventricle."}, {"to": "fourth-ventricle", "text": "To the fourth ventricle."}],
+   "clinical": "Aqueductal stenosis is a common cause of non-communicating hydrocephalus.",
+   "references": ["openstax-13-3", "ninds-hydrocephalus"]
+  },
+  "pons": {
+   "summary": "The pons is the middle part of the brainstem, a bridge between the cerebrum and cerebellum that also contains cranial nerve nuclei and respiratory centres.",
+   "beginner": "The bulge in the brainstem that links the brain with the cerebellum and helps control breathing, facial movement and sleep.",
+   "location": "Between the midbrain and medulla, in front of the cerebellum.",
+   "description": "Ventral basilar part (pontine nuclei and transverse fibres) and dorsal tegmentum (cranial nerve nuclei V–VIII, reticular formation).",
+   "functions": ["Relay from cerebral cortex to cerebellum", "Facial sensation and movement, eye abduction, hearing and balance nuclei", "Regulation of breathing and sleep"],
+   "connections": [{"to": "cerebellum", "text": "Middle cerebellar peduncles carry pontocerebellar fibres."}, {"to": "cerebral-peduncle", "text": "Receives descending cortical fibres."}],
+   "clinical": "Pontine strokes can cause crossed deficits; a large ventral pontine lesion can cause locked-in syndrome.",
+   "references": ["openstax-13-2"]
+  },
+  "medulla-oblongata": {
+   "summary": "The medulla oblongata is the lowest part of the brainstem, continuous with the spinal cord, containing vital cardiovascular and respiratory centres.",
+   "beginner": "The bottom of the brainstem that controls breathing, heart rate and swallowing.",
+   "location": "Between the pons and the spinal cord at the foramen magnum.",
+   "description": "Contains the pyramids (where most corticospinal fibres cross), olives and nuclei of cranial nerves IX–XII.",
+   "functions": ["Respiratory and cardiovascular regulation", "Swallowing, coughing and vomiting reflexes", "Decussation of motor pathways"],
+   "connections": [{"to": "cerebellum", "text": "Inferior cerebellar peduncles."}, {"to": "pons", "text": "Continuous with the pons above."}],
+   "clinical": "Compression of the medulla (for example in tonsillar herniation or Chiari malformation) can affect breathing and swallowing.",
+   "references": ["openstax-13-2"]
+  },
+  "fourth-ventricle": {
+   "summary": "The fourth ventricle is a tent-shaped CSF cavity between the brainstem and cerebellum.",
+   "beginner": "A fluid-filled space behind the brainstem.",
+   "location": "Posterior to the pons and upper medulla, anterior to the cerebellum.",
+   "description": "Communicates with the subarachnoid space through its median and lateral apertures and continues into the central canal of the spinal cord.",
+   "functions": ["CSF circulation to the subarachnoid space"],
+   "connections": [{"to": "cerebral-aqueduct", "text": "Receives CSF from the aqueduct."}],
+   "clinical": "Obstruction of its outflow causes hydrocephalus; posterior fossa tumours often compress it.",
+   "references": ["openstax-13-3"]
+  },
+  "cerebellum": {
+   "summary": "The cerebellum lies behind the brainstem and coordinates movement, posture and balance; it also contributes to motor learning and some cognitive functions.",
+   "beginner": "The 'little brain' at the back that keeps your movements smooth, coordinated and balanced.",
+   "location": "Posterior cranial fossa, below the occipital lobes and tentorium cerebelli.",
+   "description": "Has two hemispheres and a midline vermis with a highly folded cortex (folia) and deep nuclei. In this model it is a single element: hemispheres and vermis cannot be selected separately.",
+   "functions": ["Coordination and timing of movement", "Balance and posture (vermis and flocculonodular lobe)", "Motor learning", "Contributions to cognition and language"],
+   "connections": [{"to": "pons", "text": "Input from cerebral cortex via pontine nuclei (middle peduncle)."}, {"to": "thalamus", "text": "Output via deep nuclei to the ventral lateral thalamus and motor cortex."}, {"to": "medulla-oblongata", "text": "Spinal and vestibular input via the inferior peduncle."}],
+   "clinical": "Cerebellar lesions cause ataxia on the same side of the body, intention tremor, dysarthria and abnormal eye movements; midline lesions mainly affect gait and balance.",
+   "references": ["openstax-13-2", "mp-cerebellar", "ninds-ataxia"]
+  }
+ }
+}

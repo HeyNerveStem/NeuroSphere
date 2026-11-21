@@ -221,3 +221,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---- NeuroSphere 3D ----
+# The Python template above ignores every `lib/` directory; keep the frontend's source lib.
+!frontend/src/lib/
+node_modules/
+test-results/
+playwright-report/
+*.db
+.venv/
+# Source STLs (~97 MB) are re-downloaded by scripts/model-optimization/fetch_bodyparts3d.sh
+assets/source-models/bodyparts3d/*.stl
+assets/processed-models/*.raw.glb
