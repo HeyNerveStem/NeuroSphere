@@ -15,7 +15,10 @@ import { create } from 'zustand'
 import { Quaternion, Vector3 } from 'three'
 import { MESH_IDS } from '@/lib/anatomy'
 
-export interface ManualTransform { offset: Vector3; rotation: Quaternion }
+export interface ManualTransform {
+  offset: Vector3
+  rotation: Quaternion
+}
 
 const manual = new Map<string, ManualTransform>()
 for (const id of MESH_IDS) manual.set(id, { offset: new Vector3(), rotation: new Quaternion() })
@@ -28,13 +31,21 @@ const undoStack: Snapshot[] = []
 const redoStack: Snapshot[] = []
 
 export const useTransformMeta = create<{ version: number; moved: number; canUndo: boolean; canRedo: boolean }>(() => ({
-  version: 0, moved: 0, canUndo: false, canRedo: false,
+  version: 0,
+  moved: 0,
+  canUndo: false,
+  canRedo: false,
 }))
 
 function bump() {
   let moved = 0
   for (const t of manual.values()) if (t.offset.lengthSq() > 1e-10 || Math.abs(t.rotation.w) < 0.999999) moved++
-  useTransformMeta.setState((s) => ({ version: s.version + 1, moved, canUndo: undoStack.length > 0, canRedo: redoStack.length > 0 }))
+  useTransformMeta.setState((s) => ({
+    version: s.version + 1,
+    moved,
+    canUndo: undoStack.length > 0,
+    canRedo: redoStack.length > 0,
+  }))
 }
 
 function snapshot(): Snapshot {

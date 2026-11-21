@@ -19,7 +19,8 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: (id: string) => {
-          if (id.includes('node_modules/three/') || id.includes('three-mesh-bvh') || id.includes('three-stdlib')) return 'three'
+          if (id.includes('node_modules/three/') || id.includes('three-mesh-bvh') || id.includes('three-stdlib'))
+            return 'three'
           if (id.includes('@react-three') || id.includes('camera-controls')) return 'r3f'
           return undefined
         },

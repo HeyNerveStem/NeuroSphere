@@ -1,510 +1,1380 @@
 [
- {
-  "id": "multiple-sclerosis", "name": "Multiple sclerosis", "category": "demyelinating", "classification": "Chronic immune-mediated demyelinating disease of the CNS",
-  "synonyms": ["MS"],
-  "overview": "Multiple sclerosis is a chronic disease in which the immune system damages myelin and axons in the brain, optic nerves and spinal cord, causing episodes or progression of neurological symptoms.",
-  "pathophysiology": "Immune cells enter the CNS and cause focal inflammatory demyelinating lesions (plaques) with variable axonal loss. Lesions are microscopic to centimetre-sized and scattered in time and space; they do not affect whole anatomical structures. Progressive forms involve diffuse neurodegeneration.",
-  "causes": "Unknown; combination of genetic susceptibility and environmental factors.",
-  "riskFactors": ["Female sex", "Epstein–Barr virus infection (strong association)", "Low vitamin D / higher latitude", "Smoking", "Adolescent obesity", "Genetic factors (e.g. HLA-DRB1*15:01)"],
-  "regionsSummary": "Scattered white-matter lesions, typically periventricular, juxtacortical, infratentorial (brainstem, cerebellum) and in the optic nerves and spinal cord; the corpus callosum is often involved. Cortical lesions also occur.",
-  "symptoms": ["Vision loss with painful eye movement (optic neuritis)", "Numbness or tingling", "Weakness", "Balance problems and vertigo", "Double vision", "Fatigue", "Bladder dysfunction", "Cognitive changes"],
-  "progression": "Most commonly relapsing-remitting at onset; some people later develop secondary progression; a minority have primary progressive MS.",
-  "diagnosis": ["Clinical history and examination", "MRI demonstrating dissemination in space and time (established criteria)", "CSF oligoclonal bands", "Exclusion of alternative diagnoses"],
-  "imaging": "Ovoid T2/FLAIR lesions perpendicular to the ventricles, juxtacortical and infratentorial lesions; gadolinium-enhancing lesions indicate active inflammation.",
-  "treatments": ["Disease-modifying therapies (injectable, oral and infusion) to reduce relapses and new lesions", "Corticosteroids for significant relapses", "Symptomatic treatments (spasticity, bladder, fatigue)"],
-  "rehabilitation": "Physiotherapy, occupational therapy, cognitive rehabilitation, fatigue management.",
-  "complications": ["Disability progression", "Depression", "Infections related to immunotherapy"],
-  "prognosis": "Highly variable; disease-modifying therapies have changed long-term outlook.",
-  "prevention": "No proven prevention; not smoking is advised.",
-  "emergingResearch": "Remyelination therapies, BTK inhibitors, and EBV-targeted approaches are under investigation.",
-  "faq": [{"q": "Can demyelination be seen on the 3D model?", "a": "No. Demyelination is microscopic; the model highlights typical lesion locations schematically, and the separate axon animation explains the process."}],
-  "associations": [
-   {"target": "cerebral-white-matter", "type": "primary", "distribution": "scattered", "evidence": "established", "explanation": "Focal lesions are scattered through hemispheric white matter, especially periventricular and juxtacortical regions — not the entire white matter."},
-   {"target": "corpus-callosum", "type": "primary", "distribution": "scattered", "evidence": "established", "explanation": "Callosal lesions are characteristic."},
-   {"target": "optic-nerve", "type": "primary", "distribution": "focal", "evidence": "established", "explanation": "Optic neuritis is a common presentation."},
-   {"target": "lateral-ventricle", "type": "secondary", "distribution": "scattered", "evidence": "established", "explanation": "Marks the periventricular location of typical lesions (the ventricle itself is not diseased)."},
-   {"target": "brainstem", "type": "secondary", "distribution": "scattered", "evidence": "established", "explanation": "Infratentorial lesions cause double vision, vertigo and other brainstem symptoms."},
-   {"target": "cerebellum", "type": "secondary", "distribution": "scattered", "evidence": "established", "explanation": "Cerebellar and peduncular lesions cause ataxia and tremor."}
-  ],
-  "references": ["ninds-ms", "mp-ms"]
- },
- {
-  "id": "acute-disseminated-encephalomyelitis", "name": "Acute disseminated encephalomyelitis", "category": "demyelinating", "classification": "Acute immune-mediated demyelinating syndrome",
-  "synonyms": ["ADEM", "post-infectious encephalomyelitis"],
-  "overview": "ADEM is a brief but intense attack of inflammation in the brain and spinal cord that damages myelin, typically following an infection and most common in children.",
-  "pathophysiology": "An immune response — often after infection — targets CNS myelin, producing widespread, often large and poorly marginated white matter and deep grey matter lesions. Antibodies to MOG are found in a subset.",
-  "causes": "Often follows viral or bacterial infection; rarely after vaccination; frequently no trigger is identified.",
-  "riskFactors": ["Childhood", "Recent infection"],
-  "regionsSummary": "Multifocal white matter of the cerebral hemispheres, deep grey matter (thalamus, basal ganglia), brainstem, cerebellum and spinal cord.",
-  "symptoms": ["Rapid onset of encephalopathy (confusion, drowsiness)", "Fever, headache, vomiting", "Weakness, visual loss, ataxia", "Seizures in some cases"],
-  "progression": "Usually monophasic; some people have recurrences or are later diagnosed with MS or MOG antibody-associated disease.",
-  "diagnosis": ["Clinical features including encephalopathy", "MRI showing multifocal demyelination", "CSF analysis", "Testing for MOG and aquaporin-4 antibodies", "Exclusion of infection and other causes"],
-  "imaging": "Large, bilateral, asymmetric T2/FLAIR lesions in white and deep grey matter, typically of similar age.",
-  "treatments": ["High-dose intravenous corticosteroids", "Intravenous immunoglobulin or plasma exchange if steroids fail", "Supportive care"],
-  "rehabilitation": "Physical, occupational and cognitive rehabilitation as needed.",
-  "complications": ["Residual neurological or cognitive deficits", "Recurrence"],
-  "prognosis": "Many people, especially children, recover substantially; outcomes vary.",
-  "prevention": "No specific prevention.",
-  "emergingResearch": "Defining MOG antibody-associated disease as a distinct entity.",
-  "faq": [{"q": "How is ADEM different from MS?", "a": "ADEM is usually a single episode with encephalopathy and widespread lesions of similar age; MS involves recurrent attacks over time."}],
-  "associations": [
-   {"target": "cerebral-white-matter", "type": "primary", "distribution": "scattered", "evidence": "established", "explanation": "Multifocal white matter lesions — not the whole white matter."},
-   {"target": "thalamus", "type": "secondary", "distribution": "focal", "evidence": "established", "explanation": "Deep grey matter lesions are common."},
-   {"target": "basal-nuclei", "type": "secondary", "distribution": "focal", "evidence": "established", "explanation": "Basal ganglia may be involved."},
-   {"target": "brainstem", "type": "secondary", "distribution": "scattered", "evidence": "established", "explanation": "Brainstem lesions occur."},
-   {"target": "cerebellum", "type": "secondary", "distribution": "scattered", "evidence": "established", "explanation": "Cerebellar involvement causes ataxia."}
-  ],
-  "references": ["statpearls-adem", "tenembaum-adem-2013"]
- },
- {
-  "id": "autoimmune-encephalitis", "name": "Autoimmune encephalitis", "category": "demyelinating", "classification": "Group of immune-mediated inflammatory brain disorders",
-  "synonyms": ["AE", "limbic encephalitis (one pattern)", "anti-NMDA receptor encephalitis (one subtype)"],
-  "overview": "Autoimmune encephalitis is a group of conditions in which the immune system attacks brain cells, causing inflammation and symptoms such as memory loss, behaviour change and seizures.",
-  "pathophysiology": "Antibodies target neuronal surface proteins (e.g. NMDA receptor, LGI1) or intracellular antigens (often paraneoplastic, T-cell mediated). Limbic structures are frequently affected.",
-  "causes": "Can be triggered by tumours (paraneoplastic), infections (e.g. after herpes simplex encephalitis) or occur without a known trigger.",
-  "riskFactors": ["Certain tumours (e.g. ovarian teratoma for anti-NMDAR)", "Prior herpes simplex encephalitis", "Personal or family history of autoimmunity"],
-  "regionsSummary": "Limbic encephalitis: medial temporal lobes (hippocampus, amygdala). Anti-NMDAR encephalitis often has normal or non-specific MRI despite widespread network dysfunction.",
-  "symptoms": ["Subacute memory loss", "Psychiatric symptoms and behaviour change", "Seizures", "Movement disorders", "Reduced consciousness", "Autonomic instability"],
-  "progression": "Develops over days to weeks; may relapse.",
-  "diagnosis": ["Clinical criteria", "MRI", "EEG", "CSF analysis", "Neural antibody testing in serum and CSF", "Tumour screening"],
-  "imaging": "May show T2/FLAIR hyperintensity in the medial temporal lobes; frequently normal in some subtypes.",
-  "treatments": ["Immunotherapy (corticosteroids, IVIG, plasma exchange; second-line agents)", "Tumour removal if present", "Seizure and supportive management"],
-  "rehabilitation": "Cognitive, psychological and physical rehabilitation; recovery can take months.",
-  "complications": ["Status epilepticus", "Persistent memory deficits", "Relapse"],
-  "prognosis": "Many people recover with treatment; outcome varies by subtype and time to treatment.",
-  "prevention": "None specific.",
-  "emergingResearch": "Discovery of new antibodies and targeted immunotherapies.",
-  "faq": [{"q": "Is autoimmune encephalitis an infection?", "a": "No. It is caused by the immune system, although infection can sometimes trigger it."}],
-  "associations": [
-   {"target": "hippocampus", "type": "primary", "distribution": "diffuse", "evidence": "established", "explanation": "Limbic encephalitis commonly involves the hippocampi, causing memory loss and seizures."},
-   {"target": "amygdala", "type": "primary", "distribution": "diffuse", "evidence": "established", "explanation": "Amygdala inflammation is common in limbic encephalitis."},
-   {"target": "temporal-lobe", "type": "secondary", "distribution": "regional", "evidence": "variable", "explanation": "Medial temporal involvement; extent varies by antibody."}
-  ],
-  "references": ["cc-autoimmune-encephalitis", "ninds-encephalitis"]
- },
- {
-  "id": "meningitis", "name": "Meningitis", "category": "infectious", "classification": "Infection/inflammation of the meninges (medical emergency when bacterial)",
-  "synonyms": [],
-  "overview": "Meningitis is inflammation of the membranes (meninges) covering the brain and spinal cord, usually due to infection. Bacterial meningitis is a medical emergency.",
-  "pathophysiology": "Pathogens reach the subarachnoid space, triggering inflammation in the meninges and CSF. Complications arise from raised intracranial pressure, vasculitis, and impaired CSF absorption.",
-  "causes": "Viruses (most common, often milder), bacteria (e.g. Streptococcus pneumoniae, Neisseria meningitidis), fungi, and non-infectious causes.",
-  "riskFactors": ["Lack of vaccination", "Extremes of age", "Weakened immune system", "Crowded living settings", "Cochlear implants or CSF leaks"],
-  "regionsSummary": "Meninges and subarachnoid space surrounding the whole brain (not modelled). Secondary effects can include hydrocephalus and cortical or cranial nerve involvement.",
-  "symptoms": ["Fever", "Severe headache", "Stiff neck", "Sensitivity to light", "Confusion", "Nausea and vomiting", "Rash (some bacterial causes)", "In infants: irritability, poor feeding, bulging fontanelle"],
-  "progression": "Bacterial meningitis can progress within hours; viral meningitis is usually self-limiting.",
-  "diagnosis": ["Urgent clinical assessment", "Lumbar puncture with CSF analysis", "Blood cultures", "Brain imaging before lumbar puncture in selected patients"],
-  "imaging": "Often normal; may show meningeal enhancement or complications.",
-  "treatments": ["Immediate intravenous antibiotics for suspected bacterial meningitis", "Corticosteroids in certain bacterial cases", "Antivirals for specific viral causes", "Supportive care"],
-  "rehabilitation": "Hearing assessment and rehabilitation; cognitive and physical therapy after severe illness.",
-  "complications": ["Hearing loss", "Seizures", "Hydrocephalus", "Stroke", "Sepsis", "Death"],
-  "prognosis": "Varies greatly with cause and speed of treatment.",
-  "prevention": "Vaccination (e.g. pneumococcal, meningococcal, Hib); prophylactic antibiotics for close contacts of some bacterial cases.",
-  "emergingResearch": "Rapid molecular diagnostics.",
-  "faq": [{"q": "Why are no brain structures highlighted as primary?", "a": "Meningitis affects the membranes around the brain, which are not modelled; secondary effects are shown."}],
-  "associations": [
-   {"target": "lateral-ventricle", "type": "secondary", "distribution": "regional", "evidence": "established", "explanation": "Hydrocephalus can complicate meningitis."},
-   {"target": "cerebral-hemisphere", "type": "secondary", "distribution": "regional", "evidence": "variable", "explanation": "The meninges overlying the hemispheres are inflamed; cortex beneath can be secondarily affected."}
-  ],
-  "references": ["ninds-meningitis", "mp-meningitis"]
- },
- {
-  "id": "encephalitis", "name": "Encephalitis", "category": "infectious", "classification": "Inflammation of brain tissue (infectious or immune)",
-  "synonyms": [],
-  "overview": "Encephalitis is inflammation of the brain itself, most often caused by viral infection or an autoimmune process. This entry focuses on infectious encephalitis.",
-  "pathophysiology": "Viruses infect brain tissue directly, causing inflammation, neuronal injury and swelling. Herpes simplex virus has a predilection for the medial temporal and inferior frontal lobes and insula.",
-  "causes": "Herpes simplex virus, varicella zoster, enteroviruses, arthropod-borne viruses (e.g. West Nile), and others; autoimmune causes are covered separately.",
-  "riskFactors": ["Weakened immunity", "Mosquito or tick exposure in endemic areas", "Extremes of age", "Lack of vaccination for preventable causes"],
-  "regionsSummary": "Herpes simplex encephalitis: medial temporal lobes, orbitofrontal cortex, insula (often asymmetric). Other viruses show different patterns (e.g. thalamus, basal ganglia, brainstem).",
-  "symptoms": ["Fever and headache", "Confusion and altered behaviour", "Seizures", "Focal deficits (e.g. speech problems)", "Reduced consciousness"],
-  "progression": "Develops over hours to days; may be life-threatening.",
-  "diagnosis": ["Lumbar puncture with PCR for viruses", "MRI", "EEG", "Blood tests"],
-  "imaging": "HSV encephalitis typically shows T2/FLAIR signal change in the medial temporal lobes and insula.",
-  "treatments": ["Empirical intravenous aciclovir when HSV is suspected", "Supportive and intensive care", "Seizure management"],
-  "rehabilitation": "Cognitive, memory and physical rehabilitation.",
-  "complications": ["Memory impairment", "Epilepsy", "Behavioural change", "Secondary autoimmune encephalitis after HSV"],
-  "prognosis": "Depends on the cause and speed of treatment.",
-  "prevention": "Vaccination for preventable causes; avoiding mosquito and tick bites.",
-  "emergingResearch": "Metagenomic sequencing to identify causative organisms.",
-  "faq": [{"q": "Why are temporal structures highlighted?", "a": "They are typical targets of herpes simplex encephalitis, the most common identified sporadic cause in many countries. Other viruses affect other regions."}],
-  "associations": [
-   {"target": "hippocampus", "type": "subtype", "distribution": "diffuse", "evidence": "established", "explanation": "HSV encephalitis commonly affects medial temporal structures."},
-   {"target": "amygdala", "type": "subtype", "distribution": "diffuse", "evidence": "established", "explanation": "Involved in HSV encephalitis."},
-   {"target": "insula", "type": "subtype", "distribution": "regional", "evidence": "established", "explanation": "Insula is characteristically involved in HSV encephalitis."},
-   {"target": "orbital-and-straight-gyri", "type": "subtype", "distribution": "regional", "evidence": "established", "explanation": "Inferior frontal involvement in HSV encephalitis."},
-   {"target": "thalamus", "type": "subtype", "distribution": "focal", "evidence": "variable", "explanation": "Some arboviral encephalitides involve the thalamus and basal ganglia."}
-  ],
-  "references": ["ninds-encephalitis", "mp-encephalitis"]
- },
- {
-  "id": "brain-abscess", "name": "Brain abscess", "category": "infectious", "classification": "Focal infection of brain tissue",
-  "synonyms": ["cerebral abscess"],
-  "overview": "A brain abscess is a collection of pus and infected material within the brain, usually caused by bacteria or fungi.",
-  "pathophysiology": "Organisms reach the brain by spread from nearby infection (sinuses, ears, teeth), through the bloodstream, or after trauma or surgery. Focal cerebritis evolves into a capsule-enclosed abscess that acts as a mass lesion.",
-  "causes": "Bacteria (streptococci, anaerobes, staphylococci), fungi and parasites, especially in immunocompromised people.",
-  "riskFactors": ["Sinus, ear or dental infections", "Congenital heart disease with right-to-left shunt", "Weakened immune system", "Penetrating head injury or neurosurgery"],
-  "regionsSummary": "Location depends on source: frontal lobe (sinus/dental), temporal lobe and cerebellum (ear infections); haematogenous abscesses are often at the grey–white junction and may be multiple.",
-  "symptoms": ["Headache", "Fever (not always present)", "Focal neurological deficits", "Seizures", "Confusion, drowsiness", "Nausea and vomiting"],
-  "progression": "Develops over days to weeks; rupture into the ventricles is dangerous.",
-  "diagnosis": ["MRI with contrast (diffusion-weighted imaging helps distinguish abscess from tumour)", "Blood cultures", "Aspiration or surgical sampling"],
-  "imaging": "Ring-enhancing lesion with surrounding oedema and restricted diffusion in the centre.",
-  "treatments": ["Prolonged intravenous antimicrobials", "Surgical aspiration or excision", "Treatment of the source infection"],
-  "rehabilitation": "As needed for deficits.",
-  "complications": ["Raised intracranial pressure", "Ventricular rupture", "Epilepsy", "Recurrence"],
-  "prognosis": "Improved with modern imaging and treatment; depends on size, location and patient factors.",
-  "prevention": "Prompt treatment of sinus, ear and dental infections.",
-  "emergingResearch": "Molecular pathogen identification.",
-  "faq": [{"q": "Is the highlighted lobe entirely infected?", "a": "No. An abscess is a focal lesion; the highlight indicates typical locations only."}],
-  "associations": [
-   {"target": "frontal-lobe", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Common site from frontal sinus or dental spread."},
-   {"target": "temporal-lobe", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Common site from middle ear or mastoid infection."},
-   {"target": "cerebellum", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Can arise from ear infections."}
-  ],
-  "references": ["mp-ency-brain-abscess"]
- },
- {
-  "id": "glioblastoma", "name": "Glioblastoma", "category": "neoplastic", "classification": "Malignant primary brain tumour (CNS WHO grade 4 glioma)",
-  "synonyms": ["GBM", "glioblastoma, IDH-wildtype", "glioblastoma multiforme (older term)"],
-  "overview": "Glioblastoma is the most common malignant primary brain tumour in adults. It grows rapidly and infiltrates surrounding brain tissue.",
-  "pathophysiology": "Arises from glial lineage cells. Defined in current classification as an IDH-wildtype diffuse astrocytic glioma with specific histological or molecular features. Tumour cells infiltrate along white matter tracts, including across the corpus callosum ('butterfly' pattern).",
-  "causes": "Mostly unknown. Prior high-dose ionising radiation to the head and rare inherited syndromes increase risk.",
-  "riskFactors": ["Increasing age", "Prior cranial radiation", "Rare genetic syndromes (e.g. Li-Fraumeni)"],
-  "regionsSummary": "Usually supratentorial cerebral hemispheres (frontal and temporal lobes most often), infiltrating white matter; may cross the corpus callosum.",
-  "symptoms": ["Progressive headache", "Seizures", "Focal deficits such as weakness or speech difficulty", "Personality or cognitive change", "Signs of raised intracranial pressure"],
-  "progression": "Rapid growth over weeks to months; recurrence after treatment is common.",
-  "diagnosis": ["MRI with contrast", "Biopsy or surgical resection with histological and molecular analysis"],
-  "imaging": "Heterogeneous ring-enhancing mass with central necrosis and surrounding oedema/infiltration.",
-  "treatments": ["Maximal safe surgical resection", "Radiotherapy with concurrent and adjuvant temozolomide chemotherapy", "Tumour-treating fields in some settings", "Clinical trials"],
-  "rehabilitation": "Physical, occupational and speech therapy; palliative and supportive care.",
-  "complications": ["Seizures", "Cerebral oedema", "Venous thromboembolism", "Treatment side effects"],
-  "prognosis": "Generally poor despite treatment; varies with age, performance status, extent of resection and molecular features (e.g. MGMT promoter methylation).",
-  "prevention": "No known prevention.",
-  "emergingResearch": "Immunotherapies, targeted therapies and vaccines are under investigation.",
-  "faq": [{"q": "Does the highlighted lobe mean the whole lobe is tumour?", "a": "No. Tumour location varies by patient; the model shows common sites schematically."}],
-  "associations": [
-   {"target": "frontal-lobe", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "One of the most common locations."},
-   {"target": "temporal-lobe", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "One of the most common locations."},
-   {"target": "cerebral-white-matter", "type": "secondary", "distribution": "regional", "evidence": "established", "explanation": "Infiltrates along white matter tracts."},
-   {"target": "corpus-callosum", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Can spread across the corpus callosum to the other hemisphere."}
-  ],
-  "references": ["acs-brain-tumor-types", "ninds-tumors", "mp-brain-tumors"]
- },
- {
-  "id": "meningioma", "name": "Meningioma", "category": "neoplastic", "classification": "Primary tumour of the meninges (most often benign, CNS WHO grade 1)",
-  "synonyms": [],
-  "overview": "A meningioma is a tumour arising from the meninges, the membranes surrounding the brain and spinal cord. Most grow slowly and are benign, but they can cause symptoms by compressing adjacent brain or nerves.",
-  "pathophysiology": "Arises from arachnoid cap cells. Effects are mainly due to compression of adjacent structures (mass effect) rather than invasion of brain tissue.",
-  "causes": "Mostly unknown; prior cranial radiation and neurofibromatosis type 2 increase risk; hormonal factors may play a role.",
-  "riskFactors": ["Female sex", "Increasing age", "Prior cranial radiation", "Neurofibromatosis type 2"],
-  "regionsSummary": "Outside the brain along dural surfaces: convexity, parasagittal/falx, sphenoid wing, olfactory groove, skull base. Symptoms reflect the compressed region (e.g. frontal lobe, optic apparatus).",
-  "symptoms": ["Often none (incidental finding)", "Headache", "Seizures", "Focal weakness or numbness", "Vision changes", "Personality change (frontal tumours)"],
-  "progression": "Usually slow; higher-grade meningiomas grow faster and recur more often.",
-  "diagnosis": ["MRI with contrast", "CT for bone involvement", "Histology after surgery for grading"],
-  "imaging": "Extra-axial, well-circumscribed, homogeneously enhancing mass often with a dural tail.",
-  "treatments": ["Observation for small asymptomatic tumours", "Surgical resection", "Radiotherapy or radiosurgery"],
-  "rehabilitation": "As needed after surgery.",
-  "complications": ["Seizures", "Neurological deficits from compression or surgery", "Recurrence"],
-  "prognosis": "Generally favourable for grade 1 tumours; depends on grade and resectability.",
-  "prevention": "No known prevention.",
-  "emergingResearch": "Molecular classification to better predict recurrence.",
-  "faq": [{"q": "Is a meningioma a brain tumour?", "a": "It is classified among brain tumours but arises from the coverings of the brain, not brain tissue itself."}],
-  "associations": [
-   {"target": "frontal-lobe", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Convexity, parasagittal and olfactory groove meningiomas can compress the frontal lobe."},
-   {"target": "optic-chiasm", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Skull-base (e.g. tuberculum sellae) meningiomas can compress the optic apparatus."},
-   {"target": "parietal-lobe", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Parasagittal and convexity tumours can compress parietal cortex."}
-  ],
-  "references": ["acs-brain-tumor-types", "ninds-tumors"]
- },
- {
-  "id": "astrocytoma", "name": "Astrocytoma", "category": "neoplastic", "classification": "Primary glial tumour (grade varies)",
-  "synonyms": ["astrocytoma, IDH-mutant (adult diffuse type)", "pilocytic astrocytoma (circumscribed type)"],
-  "overview": "Astrocytomas are tumours arising from astrocyte-lineage glial cells. They range from slow-growing circumscribed tumours (such as pilocytic astrocytoma, common in children) to diffusely infiltrating tumours graded 2–4.",
-  "pathophysiology": "Adult diffuse astrocytomas are defined by IDH mutation and graded by histological and molecular features. Pilocytic astrocytomas are typically circumscribed and associated with MAPK pathway alterations.",
-  "causes": "Mostly unknown; neurofibromatosis type 1 increases risk of some types.",
-  "riskFactors": ["Neurofibromatosis type 1", "Prior cranial radiation"],
-  "regionsSummary": "Adult diffuse astrocytomas: cerebral hemispheres. Pilocytic astrocytomas: cerebellum, optic pathway, hypothalamus and brainstem, especially in children.",
-  "symptoms": ["Seizures", "Headache", "Focal deficits", "Ataxia (cerebellar tumours)", "Vision changes (optic pathway tumours)"],
-  "progression": "Ranges from very slow to rapid depending on type and grade.",
-  "diagnosis": ["MRI", "Biopsy/resection with molecular diagnosis"],
-  "imaging": "Varies by type: diffuse astrocytomas often non-enhancing T2/FLAIR-bright infiltrative lesions; pilocytic astrocytomas often cyst with an enhancing nodule.",
-  "treatments": ["Surgery", "Radiotherapy and chemotherapy depending on grade", "Targeted therapies for specific molecular alterations (e.g. IDH inhibitors in selected cases)"],
-  "rehabilitation": "As needed.",
-  "complications": ["Seizures", "Progression to higher grade (diffuse types)", "Treatment effects"],
-  "prognosis": "Varies widely by type, grade and molecular features.",
-  "prevention": "No known prevention.",
-  "emergingResearch": "IDH-targeted therapies.",
-  "faq": [{"q": "Why are children's and adults' astrocytomas shown in different places?", "a": "Different tumour types predominate in different age groups and locations."}],
-  "associations": [
-   {"target": "cerebral-hemisphere", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Adult diffuse astrocytomas typically arise in the cerebral hemispheres."},
-   {"target": "cerebellum", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Pilocytic astrocytoma commonly arises in the cerebellum in children."},
-   {"target": "visual-pathway", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Optic pathway gliomas (often pilocytic) occur, particularly with NF1."},
-   {"target": "brainstem", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Brainstem gliomas occur, especially in children."}
-  ],
-  "references": ["acs-brain-tumor-types", "ninds-tumors"]
- },
- {
-  "id": "brain-metastases", "name": "Brain metastases", "category": "neoplastic", "classification": "Secondary (metastatic) brain tumours",
-  "synonyms": ["secondary brain tumours", "metastatic brain cancer"],
-  "overview": "Brain metastases are tumours that spread to the brain from cancer elsewhere in the body. They are more common than primary brain tumours in adults.",
-  "pathophysiology": "Cancer cells reach the brain through the bloodstream and tend to lodge at the grey–white matter junction and in arterial border zones; distribution roughly follows blood flow, so most are supratentorial.",
-  "causes": "Common primary cancers include lung, breast, melanoma, kidney and colorectal cancer.",
-  "riskFactors": ["Advanced systemic cancer", "Specific primary tumour types and molecular subtypes"],
-  "regionsSummary": "Grey–white matter junction of the cerebral hemispheres (most), cerebellum (minority); often multiple.",
-  "symptoms": ["Headache", "Seizures", "Focal weakness or numbness", "Cognitive or personality change", "Balance problems (cerebellar lesions)"],
-  "progression": "Depends on the primary cancer and treatment response.",
-  "diagnosis": ["Contrast-enhanced MRI", "Systemic staging", "Biopsy if diagnosis is uncertain"],
-  "imaging": "One or more well-circumscribed enhancing lesions at the grey–white junction with surrounding oedema.",
-  "treatments": ["Stereotactic radiosurgery", "Surgical resection for selected lesions", "Whole-brain radiotherapy in some cases", "Systemic targeted or immunotherapies with CNS activity", "Corticosteroids for oedema"],
-  "rehabilitation": "Supportive and rehabilitative care.",
-  "complications": ["Seizures", "Oedema", "Haemorrhage into tumour", "Radiation necrosis"],
-  "prognosis": "Varies widely with primary cancer type, number of lesions and systemic disease control.",
-  "prevention": "Screening MRI in high-risk cancers allows earlier treatment.",
-  "emergingResearch": "CNS-penetrant targeted therapies.",
-  "faq": [{"q": "Is metastatic brain cancer the same as the original cancer?", "a": "Yes — the tumour cells are from the primary cancer, which guides treatment."}],
-  "associations": [
-   {"target": "cerebral-hemisphere", "type": "primary", "distribution": "scattered", "evidence": "established", "explanation": "Most metastases occur in the cerebral hemispheres, often at the grey–white junction."},
-   {"target": "cerebellum", "type": "secondary", "distribution": "focal", "evidence": "established", "explanation": "A minority occur in the cerebellum."}
-  ],
-  "references": ["acs-brain-tumor-types", "ninds-tumors", "mp-brain-tumors"]
- },
- {
-  "id": "traumatic-brain-injury", "name": "Traumatic brain injury", "category": "traumatic", "classification": "Acquired brain injury (spectrum from mild to severe)",
-  "synonyms": ["TBI", "head injury"],
-  "overview": "Traumatic brain injury is a disruption of normal brain function caused by an external force such as a blow, jolt or penetrating injury to the head.",
-  "pathophysiology": "Primary injury (contusion, haemorrhage, axonal shearing) occurs at impact; secondary injury evolves over hours to days through swelling, ischaemia, excitotoxicity and inflammation. Contusions are typical where the brain meets bony ridges.",
-  "causes": "Falls, road traffic collisions, assaults, sports, blast injuries.",
-  "riskFactors": ["Young adulthood and older age (falls)", "Contact sports", "Alcohol use", "Military service"],
-  "regionsSummary": "Contusions characteristically affect the orbitofrontal surface and anterior/inferior temporal lobes; diffuse axonal injury affects corpus callosum, grey–white junctions and brainstem.",
-  "symptoms": ["Loss or alteration of consciousness", "Headache", "Confusion and memory problems", "Dizziness", "Nausea", "Behaviour and mood changes", "Focal deficits in moderate–severe injury"],
-  "progression": "Some symptoms improve over weeks to months; moderate–severe injury may cause lasting impairment.",
-  "diagnosis": ["Clinical assessment (e.g. Glasgow Coma Scale)", "CT for acute injury", "MRI for diffuse axonal injury and subtle lesions"],
-  "imaging": "CT shows haemorrhage, contusions and swelling; MRI is more sensitive for axonal injury.",
-  "treatments": ["Emergency stabilisation and prevention of secondary injury", "Neurosurgery for haematomas or raised pressure", "Intensive care management"],
-  "rehabilitation": "Multidisciplinary rehabilitation: physical, cognitive, speech, vocational and psychological.",
-  "complications": ["Post-traumatic epilepsy", "Hydrocephalus", "Cognitive impairment", "Depression", "Increased dementia risk (association)"],
-  "prognosis": "Wide range from full recovery to severe disability.",
-  "prevention": "Seat belts, helmets, fall prevention, safe sport practices.",
-  "emergingResearch": "Blood biomarkers (e.g. GFAP) to guide imaging decisions.",
-  "faq": [{"q": "Why are the frontal and temporal poles commonly injured?", "a": "They sit against rough bony surfaces of the skull base; acceleration–deceleration pushes the brain against them."}],
-  "associations": [
-   {"target": "orbital-and-straight-gyri", "type": "primary", "distribution": "focal", "evidence": "established", "explanation": "Orbitofrontal contusions are typical."},
-   {"target": "temporal-lobe", "type": "primary", "distribution": "focal", "evidence": "established", "explanation": "Anterior and inferior temporal contusions are typical."},
-   {"target": "corpus-callosum", "type": "secondary", "distribution": "focal", "evidence": "established", "explanation": "Diffuse axonal injury frequently involves the corpus callosum."},
-   {"target": "brainstem", "type": "secondary", "distribution": "focal", "evidence": "established", "explanation": "Severe diffuse axonal injury may involve the dorsolateral brainstem."}
-  ],
-  "references": ["ninds-tbi", "mp-tbi"]
- },
- {
-  "id": "concussion", "name": "Concussion", "category": "traumatic", "classification": "Mild traumatic brain injury (functional disturbance)",
-  "synonyms": ["mild TBI", "mTBI"],
-  "overview": "A concussion is a mild traumatic brain injury that temporarily disturbs brain function after a blow or jolt to the head or body.",
-  "pathophysiology": "Rapid acceleration and deceleration cause a transient neurometabolic disturbance (ionic shifts, altered blood flow and energy mismatch) usually without visible structural damage on standard imaging.",
-  "causes": "Sports, falls, collisions, assaults.",
-  "riskFactors": ["Contact and collision sports", "Previous concussion", "Younger age (longer recovery in some)"],
-  "regionsSummary": "A diffuse functional disturbance; no single structure is characteristically damaged on routine imaging.",
-  "symptoms": ["Headache", "Confusion or feeling 'foggy'", "Dizziness and balance problems", "Nausea", "Sensitivity to light or noise", "Memory problems around the event", "Sleep and mood changes"],
-  "progression": "Most people recover within days to weeks; some have persisting symptoms.",
-  "diagnosis": ["Clinical evaluation and symptom checklists", "Imaging only if red flags suggest more serious injury"],
-  "imaging": "Standard CT and MRI are typically normal.",
-  "treatments": ["Brief relative rest followed by gradual return to activity", "Graduated return-to-learn and return-to-sport protocols", "Symptom management"],
-  "rehabilitation": "Vestibular therapy, graded aerobic exercise and cognitive strategies for persisting symptoms.",
-  "complications": ["Persisting post-concussion symptoms", "Second impact syndrome (rare, dangerous)"],
-  "prognosis": "Generally good.",
-  "prevention": "Rule enforcement and technique in sport, helmets where appropriate, fall prevention.",
-  "emergingResearch": "Biomarkers and advanced imaging to predict recovery.",
-  "faq": [{"q": "Why is no region highlighted?", "a": "Concussion is a diffuse functional disturbance; highlighting one region would misrepresent it."}],
-  "associations": [
-   {"target": "cerebrum", "type": "secondary", "distribution": "network", "evidence": "variable", "explanation": "Diffuse transient functional disturbance; not a focal structural lesion."}
-  ],
-  "references": ["mp-concussion", "ninds-tbi"]
- },
- {
-  "id": "diffuse-axonal-injury", "name": "Diffuse axonal injury", "category": "traumatic", "classification": "Pattern of traumatic brain injury",
-  "synonyms": ["DAI", "traumatic axonal injury"],
-  "overview": "Diffuse axonal injury is widespread damage to axons caused by rotational acceleration–deceleration forces, a major cause of coma and disability after severe TBI.",
-  "pathophysiology": "Shearing forces stretch axons, disrupting transport and leading to axonal swelling and disconnection. Lesions concentrate where tissues of different density meet.",
-  "causes": "High-velocity injuries such as road traffic collisions.",
-  "riskFactors": ["High-energy rotational trauma"],
-  "regionsSummary": "Grey–white matter junctions, corpus callosum (especially splenium) and dorsolateral rostral brainstem — the classic grading sequence.",
-  "symptoms": ["Immediate loss of consciousness", "Prolonged coma in severe cases", "Cognitive, behavioural and motor deficits after recovery"],
-  "progression": "Recovery can be slow and incomplete.",
-  "diagnosis": ["Clinical presentation", "MRI (susceptibility-weighted and diffusion imaging)"],
-  "imaging": "CT may underestimate injury; MRI shows small haemorrhagic or non-haemorrhagic lesions in typical locations.",
-  "treatments": ["Supportive intensive care", "Prevention of secondary brain injury"],
-  "rehabilitation": "Long-term multidisciplinary rehabilitation.",
-  "complications": ["Persistent disorders of consciousness", "Cognitive impairment", "Spasticity"],
-  "prognosis": "Depends on severity and extent; brainstem involvement is associated with worse outcome.",
-  "prevention": "Road safety measures, helmets.",
-  "emergingResearch": "Diffusion tensor imaging biomarkers.",
-  "faq": [{"q": "Why can't the model show individual damaged axons?", "a": "Axons are microscopic; the model shows where lesions typically cluster."}],
-  "associations": [
-   {"target": "cerebral-white-matter", "type": "primary", "distribution": "scattered", "evidence": "established", "explanation": "Lesions at grey–white matter junctions (grade 1)."},
-   {"target": "corpus-callosum", "type": "primary", "distribution": "focal", "evidence": "established", "explanation": "Callosal lesions (grade 2)."},
-   {"target": "midbrain", "type": "primary", "distribution": "focal", "evidence": "established", "explanation": "Dorsolateral rostral brainstem lesions (grade 3)."}
-  ],
-  "references": ["ninds-tbi", "mp-tbi"]
- },
- {
-  "id": "hydrocephalus", "name": "Hydrocephalus", "category": "other", "classification": "Disorder of CSF dynamics (structural/physiological condition)",
-  "synonyms": ["normal pressure hydrocephalus (adult subtype)"],
-  "overview": "Hydrocephalus is an abnormal build-up of cerebrospinal fluid in the ventricles, which can raise pressure and damage brain tissue.",
-  "pathophysiology": "Imbalance between CSF production and absorption, or obstruction of CSF flow. Non-communicating (obstructive) hydrocephalus is caused by blockage within the ventricular system (e.g. aqueduct); communicating hydrocephalus results from impaired absorption.",
-  "causes": "Congenital (aqueductal stenosis, neural tube defects), haemorrhage, meningitis, tumours, head injury; normal pressure hydrocephalus in older adults.",
-  "riskFactors": ["Premature birth with intraventricular haemorrhage", "CNS infections", "Brain tumours", "Subarachnoid haemorrhage"],
-  "regionsSummary": "Ventricular system (lateral, third and fourth ventricles, cerebral aqueduct) with compression of surrounding white matter.",
-  "symptoms": ["Infants: enlarging head, bulging fontanelle, vomiting", "Children/adults: headache, vomiting, blurred vision, drowsiness", "Normal pressure hydrocephalus: gait disturbance, urinary incontinence, cognitive decline"],
-  "progression": "Acute hydrocephalus can be life-threatening; chronic forms progress gradually.",
-  "diagnosis": ["Clinical assessment", "Ultrasound (infants), CT or MRI", "Lumbar drain trial or tap test for normal pressure hydrocephalus"],
-  "imaging": "Enlarged ventricles; the pattern helps locate an obstruction.",
-  "treatments": ["Ventricular shunt (e.g. ventriculoperitoneal)", "Endoscopic third ventriculostomy for selected obstructive cases", "Treatment of underlying cause"],
-  "rehabilitation": "Physical and cognitive therapy; developmental support in children.",
-  "complications": ["Shunt malfunction or infection", "Vision loss", "Developmental delay"],
-  "prognosis": "Varies with cause and promptness of treatment.",
-  "prevention": "Prevention of preterm birth complications and CNS infections reduces some cases.",
-  "emergingResearch": "Smart shunt valves and better selection for surgery.",
-  "faq": [{"q": "Is the whole ventricle diseased?", "a": "The ventricles are enlarged by excess fluid; the highlight shows the system involved, not tissue disease."}],
-  "associations": [
-   {"target": "lateral-ventricle", "type": "primary", "distribution": "regional", "evidence": "established", "explanation": "Lateral ventricles enlarge."},
-   {"target": "third-ventricle", "type": "primary", "distribution": "regional", "evidence": "established", "explanation": "Third ventricle enlarges in many forms."},
-   {"target": "cerebral-aqueduct", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Aqueductal stenosis causes obstructive hydrocephalus."},
-   {"target": "fourth-ventricle", "type": "subtype", "distribution": "regional", "evidence": "established", "explanation": "Enlarged in communicating hydrocephalus or outlet obstruction."},
-   {"target": "cerebral-white-matter", "type": "secondary", "distribution": "regional", "evidence": "established", "explanation": "Periventricular white matter is compressed and may show fluid signal."}
-  ],
-  "references": ["ninds-hydrocephalus", "mp-hydrocephalus", "openstax-13-3"]
- },
- {
-  "id": "migraine", "name": "Migraine", "category": "other", "classification": "Primary headache disorder (neurological disease of brain networks)",
-  "synonyms": ["migraine with aura", "migraine without aura"],
-  "overview": "Migraine is a common neurological disease causing recurrent attacks of moderate to severe headache, often with nausea and sensitivity to light and sound; some people have aura.",
-  "pathophysiology": "Involves activation of the trigeminovascular system and release of neuropeptides such as CGRP, with altered processing in brainstem, hypothalamic and thalamocortical networks. Aura is linked to cortical spreading depolarisation, often in occipital cortex. There is no structural damage.",
-  "causes": "Genetic predisposition with triggers such as hormonal changes, sleep disruption, stress or skipped meals.",
-  "riskFactors": ["Family history", "Female sex", "Hormonal fluctuations"],
-  "regionsSummary": "Network disorder: brainstem and hypothalamic modulatory centres, thalamus, and cortex (occipital cortex for visual aura). No region is structurally damaged.",
-  "symptoms": ["Throbbing, often one-sided headache", "Nausea or vomiting", "Sensitivity to light and sound", "Visual or sensory aura in some people", "Premonitory and postdrome symptoms"],
-  "progression": "Episodic; may become chronic in some people.",
-  "diagnosis": ["Clinical diagnosis based on criteria", "Imaging only if atypical features or red flags"],
-  "imaging": "Usually normal.",
-  "treatments": ["Acute: analgesics, triptans, gepants, ditans", "Preventive: lifestyle measures, beta-blockers, certain anti-seizure medications, antidepressants, CGRP-pathway monoclonal antibodies, botulinum toxin for chronic migraine"],
-  "rehabilitation": "Headache diaries, trigger management, behavioural therapies.",
-  "complications": ["Medication-overuse headache", "Chronic migraine", "Rarely, migrainous infarction"],
-  "prognosis": "Often improves with treatment and with age in some people.",
-  "prevention": "Regular sleep, meals and exercise; preventive medication when indicated.",
-  "emergingResearch": "Further targets beyond CGRP (e.g. PACAP).",
-  "faq": [{"q": "Does migraine damage the brain?", "a": "Migraine is a network disorder and generally does not damage brain structures; seek medical advice for new or changed headaches."}],
-  "associations": [
-   {"target": "occipital-lobe", "type": "subtype", "distribution": "network", "evidence": "established", "explanation": "Cortical spreading depolarisation in occipital cortex is linked to visual aura (functional, not structural)."},
-   {"target": "brainstem", "type": "secondary", "distribution": "network", "evidence": "established", "explanation": "Brainstem nuclei modulate trigeminovascular pain signalling."},
-   {"target": "hypothalamus", "type": "secondary", "distribution": "network", "evidence": "emerging", "explanation": "Hypothalamic activation is implicated in the premonitory phase."},
-   {"target": "thalamus", "type": "secondary", "distribution": "network", "evidence": "established", "explanation": "Relays and modulates head pain signals to cortex."}
-  ],
-  "references": ["ninds-migraine", "mp-migraine", "ninds-headache"]
- },
- {
-  "id": "chiari-malformation", "name": "Chiari malformation", "category": "other", "classification": "Structural malformation of the posterior fossa / craniocervical junction",
-  "synonyms": ["Chiari I malformation", "Arnold–Chiari malformation (type II)"],
-  "overview": "A Chiari malformation is a structural condition in which part of the cerebellum (the tonsils) extends below the foramen magnum into the spinal canal.",
-  "pathophysiology": "Often attributed to a small or crowded posterior fossa. Herniated cerebellar tissue can obstruct CSF flow at the foramen magnum and compress the brainstem and upper spinal cord; syringomyelia may develop.",
-  "causes": "Usually congenital; occasionally acquired (e.g. CSF leaks).",
-  "riskFactors": ["Associated conditions: myelomeningocele (type II), connective tissue disorders"],
-  "regionsSummary": "Cerebellum (tonsils), medulla oblongata, fourth ventricle outflow and upper cervical spinal cord.",
-  "symptoms": ["Headache at the back of the head worsened by coughing or straining", "Neck pain", "Dizziness and balance problems", "Swallowing difficulties", "Numbness or weakness", "Often asymptomatic"],
-  "progression": "Many remain stable; some progress, especially with syrinx.",
-  "diagnosis": ["MRI of brain and cervical spine", "Assessment for syringomyelia"],
-  "imaging": "Cerebellar tonsils extend below the foramen magnum; CSF flow studies may show obstruction.",
-  "treatments": ["Observation for asymptomatic cases", "Posterior fossa decompression surgery for symptomatic cases"],
-  "rehabilitation": "Physiotherapy as needed.",
-  "complications": ["Syringomyelia", "Hydrocephalus", "Brainstem compression"],
-  "prognosis": "Often good after surgery for appropriately selected patients.",
-  "prevention": "Not preventable.",
-  "emergingResearch": "Refining surgical selection criteria.",
-  "faq": [{"q": "Is Chiari malformation a disease?", "a": "It is a structural abnormality rather than a disease process; symptoms arise from crowding and CSF flow obstruction."}],
-  "associations": [
-   {"target": "cerebellum", "type": "primary", "distribution": "focal", "evidence": "established", "explanation": "Cerebellar tonsils herniate below the foramen magnum (tonsils not separately segmented)."},
-   {"target": "medulla-oblongata", "type": "secondary", "distribution": "focal", "evidence": "established", "explanation": "The medulla may be compressed."},
-   {"target": "fourth-ventricle", "type": "secondary", "distribution": "focal", "evidence": "established", "explanation": "CSF outflow at the foramen magnum can be obstructed."}
-  ],
-  "references": ["ninds-chiari", "mp-chiari", "mp-brain-malformations"]
- },
- {
-  "id": "cerebral-palsy", "name": "Cerebral palsy", "category": "other", "classification": "Group of permanent developmental disorders of movement and posture",
-  "synonyms": ["CP"],
-  "overview": "Cerebral palsy is a group of disorders affecting movement, muscle tone and posture caused by non-progressive injury or abnormal development of the developing brain.",
-  "pathophysiology": "Brain injury before, during or shortly after birth affects motor pathways. Patterns include periventricular white matter injury (common in preterm infants), deep grey matter injury, cortical-subcortical injury and malformations. The brain lesion does not progress, though its effects change with growth.",
-  "causes": "Preterm birth, low birth weight, infections during pregnancy, perinatal stroke, hypoxic-ischaemic injury, genetic factors and malformations.",
-  "riskFactors": ["Preterm birth", "Low birth weight", "Multiple births", "Maternal infections", "Neonatal jaundice (kernicterus)"],
-  "regionsSummary": "Periventricular white matter and internal capsule (spastic diplegia), basal ganglia and thalamus (dyskinetic CP), cerebellum (ataxic CP), or unilateral cortical/subcortical injury (hemiplegia).",
-  "symptoms": ["Spasticity or stiff muscles", "Involuntary movements (dyskinetic)", "Poor coordination (ataxic)", "Delayed motor milestones", "Associated epilepsy, learning, vision or hearing difficulties in some"],
-  "progression": "Non-progressive brain injury; musculoskeletal effects can change over time.",
-  "diagnosis": ["Clinical evaluation of motor development", "MRI to identify brain injury pattern", "Standardised motor assessments"],
-  "imaging": "MRI often shows periventricular leukomalacia, deep grey matter injury, infarction or malformation.",
-  "treatments": ["Physiotherapy and occupational therapy", "Antispasticity treatments (e.g. botulinum toxin, baclofen)", "Orthopaedic surgery", "Selective dorsal rhizotomy in selected cases"],
-  "rehabilitation": "Lifelong multidisciplinary support.",
-  "complications": ["Contractures", "Hip dislocation", "Pain", "Epilepsy"],
-  "prognosis": "Highly variable; many people live full adult lives with support.",
-  "prevention": "Antenatal magnesium sulphate for preterm birth and therapeutic hypothermia for neonatal HIE reduce risk in eligible cases.",
-  "emergingResearch": "Early intervention and neuroprotection strategies.",
-  "faq": [{"q": "Does cerebral palsy get worse?", "a": "The brain injury does not progress, although muscles and joints can be affected over time."}],
-  "associations": [
-   {"target": "cerebral-white-matter", "type": "subtype", "distribution": "regional", "evidence": "established", "explanation": "Periventricular white matter injury is typical in preterm-born children with spastic CP."},
-   {"target": "internal-capsule", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Corticospinal fibres near the ventricles and in the internal capsule are injured."},
-   {"target": "basal-nuclei", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Deep grey matter injury causes dyskinetic CP."},
-   {"target": "thalamus", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Thalamic injury accompanies basal ganglia injury in some."},
-   {"target": "cerebellum", "type": "subtype", "distribution": "focal", "evidence": "variable", "explanation": "Associated with ataxic CP."}
-  ],
-  "references": ["ninds-cp", "mp-cp"]
- },
- {
-  "id": "hypoxic-ischemic-brain-injury", "name": "Hypoxic-ischemic brain injury", "category": "other", "classification": "Acquired brain injury from oxygen or blood-flow deprivation",
-  "synonyms": ["hypoxic-ischemic encephalopathy (HIE)", "anoxic brain injury"],
-  "overview": "Hypoxic-ischaemic brain injury results from inadequate oxygen delivery or blood flow to the whole brain, for example after cardiac arrest or around birth.",
-  "pathophysiology": "Energy failure leads to excitotoxicity and cell death. Selectively vulnerable regions include hippocampal neurons, cerebral cortex, basal ganglia, thalamus and cerebellar Purkinje cells; watershed zones between arterial territories are at risk in hypotension.",
-  "causes": "Cardiac arrest, drowning, suffocation, severe hypotension, perinatal asphyxia.",
-  "riskFactors": ["Cardiac arrest", "Complications of labour and delivery"],
-  "regionsSummary": "Hippocampus, cortex, basal ganglia, thalamus and cerebellum; pattern depends on severity and duration, and differs between neonates and adults.",
-  "symptoms": ["Coma or reduced consciousness", "Seizures and myoclonus", "Memory impairment", "Movement disorders", "Cognitive deficits after recovery"],
-  "progression": "Injury evolves over hours to days; recovery varies.",
-  "diagnosis": ["Clinical examination", "MRI (diffusion imaging)", "EEG", "Neurophysiological and biomarker tests for prognosis"],
-  "imaging": "Diffusion restriction in cortex, basal ganglia, thalami or hippocampi depending on pattern.",
-  "treatments": ["Restoration of circulation and oxygenation", "Temperature control after cardiac arrest", "Therapeutic hypothermia for eligible neonates with HIE", "Seizure management"],
-  "rehabilitation": "Cognitive and physical rehabilitation.",
-  "complications": ["Persistent disorders of consciousness", "Epilepsy", "Memory and cognitive impairment"],
-  "prognosis": "Depends strongly on duration and severity; prognosis should be assessed by specialists using multiple modalities.",
-  "prevention": "Rapid CPR and defibrillation; good obstetric care.",
-  "emergingResearch": "Neuroprotective adjuncts to hypothermia.",
-  "faq": [{"q": "Why is the hippocampus so vulnerable?", "a": "Certain hippocampal neurons (CA1) are especially sensitive to energy failure and excitotoxicity."}],
-  "associations": [
-   {"target": "hippocampus", "type": "primary", "distribution": "diffuse", "evidence": "established", "explanation": "CA1 hippocampal neurons are among the most vulnerable to hypoxia-ischaemia."},
-   {"target": "basal-nuclei", "type": "primary", "distribution": "diffuse", "evidence": "established", "explanation": "Deep grey matter is vulnerable, especially in severe or acute insults."},
-   {"target": "thalamus", "type": "primary", "distribution": "diffuse", "evidence": "established", "explanation": "Thalamic injury is common in severe injury."},
-   {"target": "cerebral-hemisphere", "type": "secondary", "distribution": "regional", "evidence": "established", "explanation": "Cortical laminar necrosis and watershed injury occur."},
-   {"target": "cerebellum", "type": "secondary", "distribution": "diffuse", "evidence": "established", "explanation": "Purkinje cells are vulnerable."}
-  ],
-  "references": ["ninds-hie", "mp-ency-cerebral-hypoxia"]
- },
- {
-  "id": "cerebellar-ataxia", "name": "Cerebellar ataxia", "category": "other", "classification": "Clinical syndrome (many causes)",
-  "synonyms": ["ataxia", "cerebellar degeneration (one cause)"],
-  "overview": "Cerebellar ataxia is a syndrome of impaired coordination, balance and speech caused by dysfunction of the cerebellum or its connections. It has many causes.",
-  "pathophysiology": "Damage to cerebellar cortex, deep nuclei or their pathways disrupts timing and calibration of movement. Midline (vermis) involvement mainly affects gait and trunk; hemispheric involvement affects ipsilateral limbs.",
-  "causes": "Stroke, tumours, multiple sclerosis, alcohol, medications, vitamin deficiencies, autoimmune and paraneoplastic disorders, and inherited ataxias (e.g. spinocerebellar ataxias, Friedreich ataxia).",
-  "riskFactors": ["Chronic heavy alcohol use", "Family history of inherited ataxia"],
-  "regionsSummary": "Cerebellum and its connections through the pons and medulla (cerebellar peduncles) and the thalamus.",
-  "symptoms": ["Unsteady, wide-based gait", "Clumsy limb movements and intention tremor", "Slurred speech (dysarthria)", "Abnormal eye movements (nystagmus)"],
-  "progression": "Depends on cause: acute (stroke), subacute (autoimmune) or slowly progressive (degenerative).",
-  "diagnosis": ["Neurological examination", "MRI", "Blood tests (vitamins, thyroid, antibodies)", "Genetic testing when inherited ataxia is suspected"],
-  "imaging": "May show cerebellar atrophy or a focal lesion, or be normal early.",
-  "treatments": ["Treatment of the underlying cause where possible", "Omaveloxolone for Friedreich ataxia (approved in some countries)", "Symptomatic therapies"],
-  "rehabilitation": "Physiotherapy (balance and coordination training), speech therapy, mobility aids.",
-  "complications": ["Falls", "Swallowing difficulty"],
-  "prognosis": "Depends on cause.",
-  "prevention": "Limiting alcohol; addressing nutritional deficiencies.",
-  "emergingResearch": "Gene-targeted therapies for inherited ataxias.",
-  "faq": [{"q": "Why does a cerebellar lesion affect the same side of the body?", "a": "Cerebellar pathways cross twice, so each cerebellar hemisphere coordinates the same side of the body."}],
-  "associations": [
-   {"target": "cerebellum", "type": "primary", "distribution": "diffuse", "evidence": "established", "explanation": "Cerebellar dysfunction causes ataxia; pattern (midline vs hemispheric) shapes symptoms. Vermis and hemispheres are not separately segmented here."},
-   {"target": "pons", "type": "secondary", "distribution": "network", "evidence": "established", "explanation": "Pontocerebellar connections."},
-   {"target": "medulla-oblongata", "type": "secondary", "distribution": "network", "evidence": "established", "explanation": "Spinal and vestibular inputs via the inferior cerebellar peduncle."},
-   {"target": "thalamus", "type": "secondary", "distribution": "network", "evidence": "established", "explanation": "Cerebellar output to motor cortex via thalamus."}
-  ],
-  "references": ["ninds-ataxia", "ninds-cerebellar-degeneration", "mp-cerebellar"]
- }
+  {
+    "id": "multiple-sclerosis",
+    "name": "Multiple sclerosis",
+    "category": "demyelinating",
+    "classification": "Chronic immune-mediated demyelinating disease of the CNS",
+    "synonyms": ["MS"],
+    "overview": "Multiple sclerosis is a chronic disease in which the immune system damages myelin and axons in the brain, optic nerves and spinal cord, causing episodes or progression of neurological symptoms.",
+    "pathophysiology": "Immune cells enter the CNS and cause focal inflammatory demyelinating lesions (plaques) with variable axonal loss. Lesions are microscopic to centimetre-sized and scattered in time and space; they do not affect whole anatomical structures. Progressive forms involve diffuse neurodegeneration.",
+    "causes": "Unknown; combination of genetic susceptibility and environmental factors.",
+    "riskFactors": [
+      "Female sex",
+      "Epstein–Barr virus infection (strong association)",
+      "Low vitamin D / higher latitude",
+      "Smoking",
+      "Adolescent obesity",
+      "Genetic factors (e.g. HLA-DRB1*15:01)"
+    ],
+    "regionsSummary": "Scattered white-matter lesions, typically periventricular, juxtacortical, infratentorial (brainstem, cerebellum) and in the optic nerves and spinal cord; the corpus callosum is often involved. Cortical lesions also occur.",
+    "symptoms": [
+      "Vision loss with painful eye movement (optic neuritis)",
+      "Numbness or tingling",
+      "Weakness",
+      "Balance problems and vertigo",
+      "Double vision",
+      "Fatigue",
+      "Bladder dysfunction",
+      "Cognitive changes"
+    ],
+    "progression": "Most commonly relapsing-remitting at onset; some people later develop secondary progression; a minority have primary progressive MS.",
+    "diagnosis": [
+      "Clinical history and examination",
+      "MRI demonstrating dissemination in space and time (established criteria)",
+      "CSF oligoclonal bands",
+      "Exclusion of alternative diagnoses"
+    ],
+    "imaging": "Ovoid T2/FLAIR lesions perpendicular to the ventricles, juxtacortical and infratentorial lesions; gadolinium-enhancing lesions indicate active inflammation.",
+    "treatments": [
+      "Disease-modifying therapies (injectable, oral and infusion) to reduce relapses and new lesions",
+      "Corticosteroids for significant relapses",
+      "Symptomatic treatments (spasticity, bladder, fatigue)"
+    ],
+    "rehabilitation": "Physiotherapy, occupational therapy, cognitive rehabilitation, fatigue management.",
+    "complications": ["Disability progression", "Depression", "Infections related to immunotherapy"],
+    "prognosis": "Highly variable; disease-modifying therapies have changed long-term outlook.",
+    "prevention": "No proven prevention; not smoking is advised.",
+    "emergingResearch": "Remyelination therapies, BTK inhibitors, and EBV-targeted approaches are under investigation.",
+    "faq": [
+      {
+        "q": "Can demyelination be seen on the 3D model?",
+        "a": "No. Demyelination is microscopic; the model highlights typical lesion locations schematically, and the separate axon animation explains the process."
+      }
+    ],
+    "associations": [
+      {
+        "target": "cerebral-white-matter",
+        "type": "primary",
+        "distribution": "scattered",
+        "evidence": "established",
+        "explanation": "Focal lesions are scattered through hemispheric white matter, especially periventricular and juxtacortical regions — not the entire white matter."
+      },
+      {
+        "target": "corpus-callosum",
+        "type": "primary",
+        "distribution": "scattered",
+        "evidence": "established",
+        "explanation": "Callosal lesions are characteristic."
+      },
+      {
+        "target": "optic-nerve",
+        "type": "primary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Optic neuritis is a common presentation."
+      },
+      {
+        "target": "lateral-ventricle",
+        "type": "secondary",
+        "distribution": "scattered",
+        "evidence": "established",
+        "explanation": "Marks the periventricular location of typical lesions (the ventricle itself is not diseased)."
+      },
+      {
+        "target": "brainstem",
+        "type": "secondary",
+        "distribution": "scattered",
+        "evidence": "established",
+        "explanation": "Infratentorial lesions cause double vision, vertigo and other brainstem symptoms."
+      },
+      {
+        "target": "cerebellum",
+        "type": "secondary",
+        "distribution": "scattered",
+        "evidence": "established",
+        "explanation": "Cerebellar and peduncular lesions cause ataxia and tremor."
+      }
+    ],
+    "references": ["ninds-ms", "mp-ms"]
+  },
+  {
+    "id": "acute-disseminated-encephalomyelitis",
+    "name": "Acute disseminated encephalomyelitis",
+    "category": "demyelinating",
+    "classification": "Acute immune-mediated demyelinating syndrome",
+    "synonyms": ["ADEM", "post-infectious encephalomyelitis"],
+    "overview": "ADEM is a brief but intense attack of inflammation in the brain and spinal cord that damages myelin, typically following an infection and most common in children.",
+    "pathophysiology": "An immune response — often after infection — targets CNS myelin, producing widespread, often large and poorly marginated white matter and deep grey matter lesions. Antibodies to MOG are found in a subset.",
+    "causes": "Often follows viral or bacterial infection; rarely after vaccination; frequently no trigger is identified.",
+    "riskFactors": ["Childhood", "Recent infection"],
+    "regionsSummary": "Multifocal white matter of the cerebral hemispheres, deep grey matter (thalamus, basal ganglia), brainstem, cerebellum and spinal cord.",
+    "symptoms": [
+      "Rapid onset of encephalopathy (confusion, drowsiness)",
+      "Fever, headache, vomiting",
+      "Weakness, visual loss, ataxia",
+      "Seizures in some cases"
+    ],
+    "progression": "Usually monophasic; some people have recurrences or are later diagnosed with MS or MOG antibody-associated disease.",
+    "diagnosis": [
+      "Clinical features including encephalopathy",
+      "MRI showing multifocal demyelination",
+      "CSF analysis",
+      "Testing for MOG and aquaporin-4 antibodies",
+      "Exclusion of infection and other causes"
+    ],
+    "imaging": "Large, bilateral, asymmetric T2/FLAIR lesions in white and deep grey matter, typically of similar age.",
+    "treatments": [
+      "High-dose intravenous corticosteroids",
+      "Intravenous immunoglobulin or plasma exchange if steroids fail",
+      "Supportive care"
+    ],
+    "rehabilitation": "Physical, occupational and cognitive rehabilitation as needed.",
+    "complications": ["Residual neurological or cognitive deficits", "Recurrence"],
+    "prognosis": "Many people, especially children, recover substantially; outcomes vary.",
+    "prevention": "No specific prevention.",
+    "emergingResearch": "Defining MOG antibody-associated disease as a distinct entity.",
+    "faq": [
+      {
+        "q": "How is ADEM different from MS?",
+        "a": "ADEM is usually a single episode with encephalopathy and widespread lesions of similar age; MS involves recurrent attacks over time."
+      }
+    ],
+    "associations": [
+      {
+        "target": "cerebral-white-matter",
+        "type": "primary",
+        "distribution": "scattered",
+        "evidence": "established",
+        "explanation": "Multifocal white matter lesions — not the whole white matter."
+      },
+      {
+        "target": "thalamus",
+        "type": "secondary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Deep grey matter lesions are common."
+      },
+      {
+        "target": "basal-nuclei",
+        "type": "secondary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Basal ganglia may be involved."
+      },
+      {
+        "target": "brainstem",
+        "type": "secondary",
+        "distribution": "scattered",
+        "evidence": "established",
+        "explanation": "Brainstem lesions occur."
+      },
+      {
+        "target": "cerebellum",
+        "type": "secondary",
+        "distribution": "scattered",
+        "evidence": "established",
+        "explanation": "Cerebellar involvement causes ataxia."
+      }
+    ],
+    "references": ["statpearls-adem", "tenembaum-adem-2013"]
+  },
+  {
+    "id": "autoimmune-encephalitis",
+    "name": "Autoimmune encephalitis",
+    "category": "demyelinating",
+    "classification": "Group of immune-mediated inflammatory brain disorders",
+    "synonyms": ["AE", "limbic encephalitis (one pattern)", "anti-NMDA receptor encephalitis (one subtype)"],
+    "overview": "Autoimmune encephalitis is a group of conditions in which the immune system attacks brain cells, causing inflammation and symptoms such as memory loss, behaviour change and seizures.",
+    "pathophysiology": "Antibodies target neuronal surface proteins (e.g. NMDA receptor, LGI1) or intracellular antigens (often paraneoplastic, T-cell mediated). Limbic structures are frequently affected.",
+    "causes": "Can be triggered by tumours (paraneoplastic), infections (e.g. after herpes simplex encephalitis) or occur without a known trigger.",
+    "riskFactors": [
+      "Certain tumours (e.g. ovarian teratoma for anti-NMDAR)",
+      "Prior herpes simplex encephalitis",
+      "Personal or family history of autoimmunity"
+    ],
+    "regionsSummary": "Limbic encephalitis: medial temporal lobes (hippocampus, amygdala). Anti-NMDAR encephalitis often has normal or non-specific MRI despite widespread network dysfunction.",
+    "symptoms": [
+      "Subacute memory loss",
+      "Psychiatric symptoms and behaviour change",
+      "Seizures",
+      "Movement disorders",
+      "Reduced consciousness",
+      "Autonomic instability"
+    ],
+    "progression": "Develops over days to weeks; may relapse.",
+    "diagnosis": [
+      "Clinical criteria",
+      "MRI",
+      "EEG",
+      "CSF analysis",
+      "Neural antibody testing in serum and CSF",
+      "Tumour screening"
+    ],
+    "imaging": "May show T2/FLAIR hyperintensity in the medial temporal lobes; frequently normal in some subtypes.",
+    "treatments": [
+      "Immunotherapy (corticosteroids, IVIG, plasma exchange; second-line agents)",
+      "Tumour removal if present",
+      "Seizure and supportive management"
+    ],
+    "rehabilitation": "Cognitive, psychological and physical rehabilitation; recovery can take months.",
+    "complications": ["Status epilepticus", "Persistent memory deficits", "Relapse"],
+    "prognosis": "Many people recover with treatment; outcome varies by subtype and time to treatment.",
+    "prevention": "None specific.",
+    "emergingResearch": "Discovery of new antibodies and targeted immunotherapies.",
+    "faq": [
+      {
+        "q": "Is autoimmune encephalitis an infection?",
+        "a": "No. It is caused by the immune system, although infection can sometimes trigger it."
+      }
+    ],
+    "associations": [
+      {
+        "target": "hippocampus",
+        "type": "primary",
+        "distribution": "diffuse",
+        "evidence": "established",
+        "explanation": "Limbic encephalitis commonly involves the hippocampi, causing memory loss and seizures."
+      },
+      {
+        "target": "amygdala",
+        "type": "primary",
+        "distribution": "diffuse",
+        "evidence": "established",
+        "explanation": "Amygdala inflammation is common in limbic encephalitis."
+      },
+      {
+        "target": "temporal-lobe",
+        "type": "secondary",
+        "distribution": "regional",
+        "evidence": "variable",
+        "explanation": "Medial temporal involvement; extent varies by antibody."
+      }
+    ],
+    "references": ["cc-autoimmune-encephalitis", "ninds-encephalitis"]
+  },
+  {
+    "id": "meningitis",
+    "name": "Meningitis",
+    "category": "infectious",
+    "classification": "Infection/inflammation of the meninges (medical emergency when bacterial)",
+    "synonyms": [],
+    "overview": "Meningitis is inflammation of the membranes (meninges) covering the brain and spinal cord, usually due to infection. Bacterial meningitis is a medical emergency.",
+    "pathophysiology": "Pathogens reach the subarachnoid space, triggering inflammation in the meninges and CSF. Complications arise from raised intracranial pressure, vasculitis, and impaired CSF absorption.",
+    "causes": "Viruses (most common, often milder), bacteria (e.g. Streptococcus pneumoniae, Neisseria meningitidis), fungi, and non-infectious causes.",
+    "riskFactors": [
+      "Lack of vaccination",
+      "Extremes of age",
+      "Weakened immune system",
+      "Crowded living settings",
+      "Cochlear implants or CSF leaks"
+    ],
+    "regionsSummary": "Meninges and subarachnoid space surrounding the whole brain (not modelled). Secondary effects can include hydrocephalus and cortical or cranial nerve involvement.",
+    "symptoms": [
+      "Fever",
+      "Severe headache",
+      "Stiff neck",
+      "Sensitivity to light",
+      "Confusion",
+      "Nausea and vomiting",
+      "Rash (some bacterial causes)",
+      "In infants: irritability, poor feeding, bulging fontanelle"
+    ],
+    "progression": "Bacterial meningitis can progress within hours; viral meningitis is usually self-limiting.",
+    "diagnosis": [
+      "Urgent clinical assessment",
+      "Lumbar puncture with CSF analysis",
+      "Blood cultures",
+      "Brain imaging before lumbar puncture in selected patients"
+    ],
+    "imaging": "Often normal; may show meningeal enhancement or complications.",
+    "treatments": [
+      "Immediate intravenous antibiotics for suspected bacterial meningitis",
+      "Corticosteroids in certain bacterial cases",
+      "Antivirals for specific viral causes",
+      "Supportive care"
+    ],
+    "rehabilitation": "Hearing assessment and rehabilitation; cognitive and physical therapy after severe illness.",
+    "complications": ["Hearing loss", "Seizures", "Hydrocephalus", "Stroke", "Sepsis", "Death"],
+    "prognosis": "Varies greatly with cause and speed of treatment.",
+    "prevention": "Vaccination (e.g. pneumococcal, meningococcal, Hib); prophylactic antibiotics for close contacts of some bacterial cases.",
+    "emergingResearch": "Rapid molecular diagnostics.",
+    "faq": [
+      {
+        "q": "Why are no brain structures highlighted as primary?",
+        "a": "Meningitis affects the membranes around the brain, which are not modelled; secondary effects are shown."
+      }
+    ],
+    "associations": [
+      {
+        "target": "lateral-ventricle",
+        "type": "secondary",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Hydrocephalus can complicate meningitis."
+      },
+      {
+        "target": "cerebral-hemisphere",
+        "type": "secondary",
+        "distribution": "regional",
+        "evidence": "variable",
+        "explanation": "The meninges overlying the hemispheres are inflamed; cortex beneath can be secondarily affected."
+      }
+    ],
+    "references": ["ninds-meningitis", "mp-meningitis"]
+  },
+  {
+    "id": "encephalitis",
+    "name": "Encephalitis",
+    "category": "infectious",
+    "classification": "Inflammation of brain tissue (infectious or immune)",
+    "synonyms": [],
+    "overview": "Encephalitis is inflammation of the brain itself, most often caused by viral infection or an autoimmune process. This entry focuses on infectious encephalitis.",
+    "pathophysiology": "Viruses infect brain tissue directly, causing inflammation, neuronal injury and swelling. Herpes simplex virus has a predilection for the medial temporal and inferior frontal lobes and insula.",
+    "causes": "Herpes simplex virus, varicella zoster, enteroviruses, arthropod-borne viruses (e.g. West Nile), and others; autoimmune causes are covered separately.",
+    "riskFactors": [
+      "Weakened immunity",
+      "Mosquito or tick exposure in endemic areas",
+      "Extremes of age",
+      "Lack of vaccination for preventable causes"
+    ],
+    "regionsSummary": "Herpes simplex encephalitis: medial temporal lobes, orbitofrontal cortex, insula (often asymmetric). Other viruses show different patterns (e.g. thalamus, basal ganglia, brainstem).",
+    "symptoms": [
+      "Fever and headache",
+      "Confusion and altered behaviour",
+      "Seizures",
+      "Focal deficits (e.g. speech problems)",
+      "Reduced consciousness"
+    ],
+    "progression": "Develops over hours to days; may be life-threatening.",
+    "diagnosis": ["Lumbar puncture with PCR for viruses", "MRI", "EEG", "Blood tests"],
+    "imaging": "HSV encephalitis typically shows T2/FLAIR signal change in the medial temporal lobes and insula.",
+    "treatments": [
+      "Empirical intravenous aciclovir when HSV is suspected",
+      "Supportive and intensive care",
+      "Seizure management"
+    ],
+    "rehabilitation": "Cognitive, memory and physical rehabilitation.",
+    "complications": [
+      "Memory impairment",
+      "Epilepsy",
+      "Behavioural change",
+      "Secondary autoimmune encephalitis after HSV"
+    ],
+    "prognosis": "Depends on the cause and speed of treatment.",
+    "prevention": "Vaccination for preventable causes; avoiding mosquito and tick bites.",
+    "emergingResearch": "Metagenomic sequencing to identify causative organisms.",
+    "faq": [
+      {
+        "q": "Why are temporal structures highlighted?",
+        "a": "They are typical targets of herpes simplex encephalitis, the most common identified sporadic cause in many countries. Other viruses affect other regions."
+      }
+    ],
+    "associations": [
+      {
+        "target": "hippocampus",
+        "type": "subtype",
+        "distribution": "diffuse",
+        "evidence": "established",
+        "explanation": "HSV encephalitis commonly affects medial temporal structures."
+      },
+      {
+        "target": "amygdala",
+        "type": "subtype",
+        "distribution": "diffuse",
+        "evidence": "established",
+        "explanation": "Involved in HSV encephalitis."
+      },
+      {
+        "target": "insula",
+        "type": "subtype",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Insula is characteristically involved in HSV encephalitis."
+      },
+      {
+        "target": "orbital-and-straight-gyri",
+        "type": "subtype",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Inferior frontal involvement in HSV encephalitis."
+      },
+      {
+        "target": "thalamus",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "variable",
+        "explanation": "Some arboviral encephalitides involve the thalamus and basal ganglia."
+      }
+    ],
+    "references": ["ninds-encephalitis", "mp-encephalitis"]
+  },
+  {
+    "id": "brain-abscess",
+    "name": "Brain abscess",
+    "category": "infectious",
+    "classification": "Focal infection of brain tissue",
+    "synonyms": ["cerebral abscess"],
+    "overview": "A brain abscess is a collection of pus and infected material within the brain, usually caused by bacteria or fungi.",
+    "pathophysiology": "Organisms reach the brain by spread from nearby infection (sinuses, ears, teeth), through the bloodstream, or after trauma or surgery. Focal cerebritis evolves into a capsule-enclosed abscess that acts as a mass lesion.",
+    "causes": "Bacteria (streptococci, anaerobes, staphylococci), fungi and parasites, especially in immunocompromised people.",
+    "riskFactors": [
+      "Sinus, ear or dental infections",
+      "Congenital heart disease with right-to-left shunt",
+      "Weakened immune system",
+      "Penetrating head injury or neurosurgery"
+    ],
+    "regionsSummary": "Location depends on source: frontal lobe (sinus/dental), temporal lobe and cerebellum (ear infections); haematogenous abscesses are often at the grey–white junction and may be multiple.",
+    "symptoms": [
+      "Headache",
+      "Fever (not always present)",
+      "Focal neurological deficits",
+      "Seizures",
+      "Confusion, drowsiness",
+      "Nausea and vomiting"
+    ],
+    "progression": "Develops over days to weeks; rupture into the ventricles is dangerous.",
+    "diagnosis": [
+      "MRI with contrast (diffusion-weighted imaging helps distinguish abscess from tumour)",
+      "Blood cultures",
+      "Aspiration or surgical sampling"
+    ],
+    "imaging": "Ring-enhancing lesion with surrounding oedema and restricted diffusion in the centre.",
+    "treatments": [
+      "Prolonged intravenous antimicrobials",
+      "Surgical aspiration or excision",
+      "Treatment of the source infection"
+    ],
+    "rehabilitation": "As needed for deficits.",
+    "complications": ["Raised intracranial pressure", "Ventricular rupture", "Epilepsy", "Recurrence"],
+    "prognosis": "Improved with modern imaging and treatment; depends on size, location and patient factors.",
+    "prevention": "Prompt treatment of sinus, ear and dental infections.",
+    "emergingResearch": "Molecular pathogen identification.",
+    "faq": [
+      {
+        "q": "Is the highlighted lobe entirely infected?",
+        "a": "No. An abscess is a focal lesion; the highlight indicates typical locations only."
+      }
+    ],
+    "associations": [
+      {
+        "target": "frontal-lobe",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Common site from frontal sinus or dental spread."
+      },
+      {
+        "target": "temporal-lobe",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Common site from middle ear or mastoid infection."
+      },
+      {
+        "target": "cerebellum",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Can arise from ear infections."
+      }
+    ],
+    "references": ["mp-ency-brain-abscess"]
+  },
+  {
+    "id": "glioblastoma",
+    "name": "Glioblastoma",
+    "category": "neoplastic",
+    "classification": "Malignant primary brain tumour (CNS WHO grade 4 glioma)",
+    "synonyms": ["GBM", "glioblastoma, IDH-wildtype", "glioblastoma multiforme (older term)"],
+    "overview": "Glioblastoma is the most common malignant primary brain tumour in adults. It grows rapidly and infiltrates surrounding brain tissue.",
+    "pathophysiology": "Arises from glial lineage cells. Defined in current classification as an IDH-wildtype diffuse astrocytic glioma with specific histological or molecular features. Tumour cells infiltrate along white matter tracts, including across the corpus callosum ('butterfly' pattern).",
+    "causes": "Mostly unknown. Prior high-dose ionising radiation to the head and rare inherited syndromes increase risk.",
+    "riskFactors": ["Increasing age", "Prior cranial radiation", "Rare genetic syndromes (e.g. Li-Fraumeni)"],
+    "regionsSummary": "Usually supratentorial cerebral hemispheres (frontal and temporal lobes most often), infiltrating white matter; may cross the corpus callosum.",
+    "symptoms": [
+      "Progressive headache",
+      "Seizures",
+      "Focal deficits such as weakness or speech difficulty",
+      "Personality or cognitive change",
+      "Signs of raised intracranial pressure"
+    ],
+    "progression": "Rapid growth over weeks to months; recurrence after treatment is common.",
+    "diagnosis": ["MRI with contrast", "Biopsy or surgical resection with histological and molecular analysis"],
+    "imaging": "Heterogeneous ring-enhancing mass with central necrosis and surrounding oedema/infiltration.",
+    "treatments": [
+      "Maximal safe surgical resection",
+      "Radiotherapy with concurrent and adjuvant temozolomide chemotherapy",
+      "Tumour-treating fields in some settings",
+      "Clinical trials"
+    ],
+    "rehabilitation": "Physical, occupational and speech therapy; palliative and supportive care.",
+    "complications": ["Seizures", "Cerebral oedema", "Venous thromboembolism", "Treatment side effects"],
+    "prognosis": "Generally poor despite treatment; varies with age, performance status, extent of resection and molecular features (e.g. MGMT promoter methylation).",
+    "prevention": "No known prevention.",
+    "emergingResearch": "Immunotherapies, targeted therapies and vaccines are under investigation.",
+    "faq": [
+      {
+        "q": "Does the highlighted lobe mean the whole lobe is tumour?",
+        "a": "No. Tumour location varies by patient; the model shows common sites schematically."
+      }
+    ],
+    "associations": [
+      {
+        "target": "frontal-lobe",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "One of the most common locations."
+      },
+      {
+        "target": "temporal-lobe",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "One of the most common locations."
+      },
+      {
+        "target": "cerebral-white-matter",
+        "type": "secondary",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Infiltrates along white matter tracts."
+      },
+      {
+        "target": "corpus-callosum",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Can spread across the corpus callosum to the other hemisphere."
+      }
+    ],
+    "references": ["acs-brain-tumor-types", "ninds-tumors", "mp-brain-tumors"]
+  },
+  {
+    "id": "meningioma",
+    "name": "Meningioma",
+    "category": "neoplastic",
+    "classification": "Primary tumour of the meninges (most often benign, CNS WHO grade 1)",
+    "synonyms": [],
+    "overview": "A meningioma is a tumour arising from the meninges, the membranes surrounding the brain and spinal cord. Most grow slowly and are benign, but they can cause symptoms by compressing adjacent brain or nerves.",
+    "pathophysiology": "Arises from arachnoid cap cells. Effects are mainly due to compression of adjacent structures (mass effect) rather than invasion of brain tissue.",
+    "causes": "Mostly unknown; prior cranial radiation and neurofibromatosis type 2 increase risk; hormonal factors may play a role.",
+    "riskFactors": ["Female sex", "Increasing age", "Prior cranial radiation", "Neurofibromatosis type 2"],
+    "regionsSummary": "Outside the brain along dural surfaces: convexity, parasagittal/falx, sphenoid wing, olfactory groove, skull base. Symptoms reflect the compressed region (e.g. frontal lobe, optic apparatus).",
+    "symptoms": [
+      "Often none (incidental finding)",
+      "Headache",
+      "Seizures",
+      "Focal weakness or numbness",
+      "Vision changes",
+      "Personality change (frontal tumours)"
+    ],
+    "progression": "Usually slow; higher-grade meningiomas grow faster and recur more often.",
+    "diagnosis": ["MRI with contrast", "CT for bone involvement", "Histology after surgery for grading"],
+    "imaging": "Extra-axial, well-circumscribed, homogeneously enhancing mass often with a dural tail.",
+    "treatments": ["Observation for small asymptomatic tumours", "Surgical resection", "Radiotherapy or radiosurgery"],
+    "rehabilitation": "As needed after surgery.",
+    "complications": ["Seizures", "Neurological deficits from compression or surgery", "Recurrence"],
+    "prognosis": "Generally favourable for grade 1 tumours; depends on grade and resectability.",
+    "prevention": "No known prevention.",
+    "emergingResearch": "Molecular classification to better predict recurrence.",
+    "faq": [
+      {
+        "q": "Is a meningioma a brain tumour?",
+        "a": "It is classified among brain tumours but arises from the coverings of the brain, not brain tissue itself."
+      }
+    ],
+    "associations": [
+      {
+        "target": "frontal-lobe",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Convexity, parasagittal and olfactory groove meningiomas can compress the frontal lobe."
+      },
+      {
+        "target": "optic-chiasm",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Skull-base (e.g. tuberculum sellae) meningiomas can compress the optic apparatus."
+      },
+      {
+        "target": "parietal-lobe",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Parasagittal and convexity tumours can compress parietal cortex."
+      }
+    ],
+    "references": ["acs-brain-tumor-types", "ninds-tumors"]
+  },
+  {
+    "id": "astrocytoma",
+    "name": "Astrocytoma",
+    "category": "neoplastic",
+    "classification": "Primary glial tumour (grade varies)",
+    "synonyms": ["astrocytoma, IDH-mutant (adult diffuse type)", "pilocytic astrocytoma (circumscribed type)"],
+    "overview": "Astrocytomas are tumours arising from astrocyte-lineage glial cells. They range from slow-growing circumscribed tumours (such as pilocytic astrocytoma, common in children) to diffusely infiltrating tumours graded 2–4.",
+    "pathophysiology": "Adult diffuse astrocytomas are defined by IDH mutation and graded by histological and molecular features. Pilocytic astrocytomas are typically circumscribed and associated with MAPK pathway alterations.",
+    "causes": "Mostly unknown; neurofibromatosis type 1 increases risk of some types.",
+    "riskFactors": ["Neurofibromatosis type 1", "Prior cranial radiation"],
+    "regionsSummary": "Adult diffuse astrocytomas: cerebral hemispheres. Pilocytic astrocytomas: cerebellum, optic pathway, hypothalamus and brainstem, especially in children.",
+    "symptoms": [
+      "Seizures",
+      "Headache",
+      "Focal deficits",
+      "Ataxia (cerebellar tumours)",
+      "Vision changes (optic pathway tumours)"
+    ],
+    "progression": "Ranges from very slow to rapid depending on type and grade.",
+    "diagnosis": ["MRI", "Biopsy/resection with molecular diagnosis"],
+    "imaging": "Varies by type: diffuse astrocytomas often non-enhancing T2/FLAIR-bright infiltrative lesions; pilocytic astrocytomas often cyst with an enhancing nodule.",
+    "treatments": [
+      "Surgery",
+      "Radiotherapy and chemotherapy depending on grade",
+      "Targeted therapies for specific molecular alterations (e.g. IDH inhibitors in selected cases)"
+    ],
+    "rehabilitation": "As needed.",
+    "complications": ["Seizures", "Progression to higher grade (diffuse types)", "Treatment effects"],
+    "prognosis": "Varies widely by type, grade and molecular features.",
+    "prevention": "No known prevention.",
+    "emergingResearch": "IDH-targeted therapies.",
+    "faq": [
+      {
+        "q": "Why are children's and adults' astrocytomas shown in different places?",
+        "a": "Different tumour types predominate in different age groups and locations."
+      }
+    ],
+    "associations": [
+      {
+        "target": "cerebral-hemisphere",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Adult diffuse astrocytomas typically arise in the cerebral hemispheres."
+      },
+      {
+        "target": "cerebellum",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Pilocytic astrocytoma commonly arises in the cerebellum in children."
+      },
+      {
+        "target": "visual-pathway",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Optic pathway gliomas (often pilocytic) occur, particularly with NF1."
+      },
+      {
+        "target": "brainstem",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Brainstem gliomas occur, especially in children."
+      }
+    ],
+    "references": ["acs-brain-tumor-types", "ninds-tumors"]
+  },
+  {
+    "id": "brain-metastases",
+    "name": "Brain metastases",
+    "category": "neoplastic",
+    "classification": "Secondary (metastatic) brain tumours",
+    "synonyms": ["secondary brain tumours", "metastatic brain cancer"],
+    "overview": "Brain metastases are tumours that spread to the brain from cancer elsewhere in the body. They are more common than primary brain tumours in adults.",
+    "pathophysiology": "Cancer cells reach the brain through the bloodstream and tend to lodge at the grey–white matter junction and in arterial border zones; distribution roughly follows blood flow, so most are supratentorial.",
+    "causes": "Common primary cancers include lung, breast, melanoma, kidney and colorectal cancer.",
+    "riskFactors": ["Advanced systemic cancer", "Specific primary tumour types and molecular subtypes"],
+    "regionsSummary": "Grey–white matter junction of the cerebral hemispheres (most), cerebellum (minority); often multiple.",
+    "symptoms": [
+      "Headache",
+      "Seizures",
+      "Focal weakness or numbness",
+      "Cognitive or personality change",
+      "Balance problems (cerebellar lesions)"
+    ],
+    "progression": "Depends on the primary cancer and treatment response.",
+    "diagnosis": ["Contrast-enhanced MRI", "Systemic staging", "Biopsy if diagnosis is uncertain"],
+    "imaging": "One or more well-circumscribed enhancing lesions at the grey–white junction with surrounding oedema.",
+    "treatments": [
+      "Stereotactic radiosurgery",
+      "Surgical resection for selected lesions",
+      "Whole-brain radiotherapy in some cases",
+      "Systemic targeted or immunotherapies with CNS activity",
+      "Corticosteroids for oedema"
+    ],
+    "rehabilitation": "Supportive and rehabilitative care.",
+    "complications": ["Seizures", "Oedema", "Haemorrhage into tumour", "Radiation necrosis"],
+    "prognosis": "Varies widely with primary cancer type, number of lesions and systemic disease control.",
+    "prevention": "Screening MRI in high-risk cancers allows earlier treatment.",
+    "emergingResearch": "CNS-penetrant targeted therapies.",
+    "faq": [
+      {
+        "q": "Is metastatic brain cancer the same as the original cancer?",
+        "a": "Yes — the tumour cells are from the primary cancer, which guides treatment."
+      }
+    ],
+    "associations": [
+      {
+        "target": "cerebral-hemisphere",
+        "type": "primary",
+        "distribution": "scattered",
+        "evidence": "established",
+        "explanation": "Most metastases occur in the cerebral hemispheres, often at the grey–white junction."
+      },
+      {
+        "target": "cerebellum",
+        "type": "secondary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "A minority occur in the cerebellum."
+      }
+    ],
+    "references": ["acs-brain-tumor-types", "ninds-tumors", "mp-brain-tumors"]
+  },
+  {
+    "id": "traumatic-brain-injury",
+    "name": "Traumatic brain injury",
+    "category": "traumatic",
+    "classification": "Acquired brain injury (spectrum from mild to severe)",
+    "synonyms": ["TBI", "head injury"],
+    "overview": "Traumatic brain injury is a disruption of normal brain function caused by an external force such as a blow, jolt or penetrating injury to the head.",
+    "pathophysiology": "Primary injury (contusion, haemorrhage, axonal shearing) occurs at impact; secondary injury evolves over hours to days through swelling, ischaemia, excitotoxicity and inflammation. Contusions are typical where the brain meets bony ridges.",
+    "causes": "Falls, road traffic collisions, assaults, sports, blast injuries.",
+    "riskFactors": ["Young adulthood and older age (falls)", "Contact sports", "Alcohol use", "Military service"],
+    "regionsSummary": "Contusions characteristically affect the orbitofrontal surface and anterior/inferior temporal lobes; diffuse axonal injury affects corpus callosum, grey–white junctions and brainstem.",
+    "symptoms": [
+      "Loss or alteration of consciousness",
+      "Headache",
+      "Confusion and memory problems",
+      "Dizziness",
+      "Nausea",
+      "Behaviour and mood changes",
+      "Focal deficits in moderate–severe injury"
+    ],
+    "progression": "Some symptoms improve over weeks to months; moderate–severe injury may cause lasting impairment.",
+    "diagnosis": [
+      "Clinical assessment (e.g. Glasgow Coma Scale)",
+      "CT for acute injury",
+      "MRI for diffuse axonal injury and subtle lesions"
+    ],
+    "imaging": "CT shows haemorrhage, contusions and swelling; MRI is more sensitive for axonal injury.",
+    "treatments": [
+      "Emergency stabilisation and prevention of secondary injury",
+      "Neurosurgery for haematomas or raised pressure",
+      "Intensive care management"
+    ],
+    "rehabilitation": "Multidisciplinary rehabilitation: physical, cognitive, speech, vocational and psychological.",
+    "complications": [
+      "Post-traumatic epilepsy",
+      "Hydrocephalus",
+      "Cognitive impairment",
+      "Depression",
+      "Increased dementia risk (association)"
+    ],
+    "prognosis": "Wide range from full recovery to severe disability.",
+    "prevention": "Seat belts, helmets, fall prevention, safe sport practices.",
+    "emergingResearch": "Blood biomarkers (e.g. GFAP) to guide imaging decisions.",
+    "faq": [
+      {
+        "q": "Why are the frontal and temporal poles commonly injured?",
+        "a": "They sit against rough bony surfaces of the skull base; acceleration–deceleration pushes the brain against them."
+      }
+    ],
+    "associations": [
+      {
+        "target": "orbital-and-straight-gyri",
+        "type": "primary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Orbitofrontal contusions are typical."
+      },
+      {
+        "target": "temporal-lobe",
+        "type": "primary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Anterior and inferior temporal contusions are typical."
+      },
+      {
+        "target": "corpus-callosum",
+        "type": "secondary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Diffuse axonal injury frequently involves the corpus callosum."
+      },
+      {
+        "target": "brainstem",
+        "type": "secondary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Severe diffuse axonal injury may involve the dorsolateral brainstem."
+      }
+    ],
+    "references": ["ninds-tbi", "mp-tbi"]
+  },
+  {
+    "id": "concussion",
+    "name": "Concussion",
+    "category": "traumatic",
+    "classification": "Mild traumatic brain injury (functional disturbance)",
+    "synonyms": ["mild TBI", "mTBI"],
+    "overview": "A concussion is a mild traumatic brain injury that temporarily disturbs brain function after a blow or jolt to the head or body.",
+    "pathophysiology": "Rapid acceleration and deceleration cause a transient neurometabolic disturbance (ionic shifts, altered blood flow and energy mismatch) usually without visible structural damage on standard imaging.",
+    "causes": "Sports, falls, collisions, assaults.",
+    "riskFactors": ["Contact and collision sports", "Previous concussion", "Younger age (longer recovery in some)"],
+    "regionsSummary": "A diffuse functional disturbance; no single structure is characteristically damaged on routine imaging.",
+    "symptoms": [
+      "Headache",
+      "Confusion or feeling 'foggy'",
+      "Dizziness and balance problems",
+      "Nausea",
+      "Sensitivity to light or noise",
+      "Memory problems around the event",
+      "Sleep and mood changes"
+    ],
+    "progression": "Most people recover within days to weeks; some have persisting symptoms.",
+    "diagnosis": [
+      "Clinical evaluation and symptom checklists",
+      "Imaging only if red flags suggest more serious injury"
+    ],
+    "imaging": "Standard CT and MRI are typically normal.",
+    "treatments": [
+      "Brief relative rest followed by gradual return to activity",
+      "Graduated return-to-learn and return-to-sport protocols",
+      "Symptom management"
+    ],
+    "rehabilitation": "Vestibular therapy, graded aerobic exercise and cognitive strategies for persisting symptoms.",
+    "complications": ["Persisting post-concussion symptoms", "Second impact syndrome (rare, dangerous)"],
+    "prognosis": "Generally good.",
+    "prevention": "Rule enforcement and technique in sport, helmets where appropriate, fall prevention.",
+    "emergingResearch": "Biomarkers and advanced imaging to predict recovery.",
+    "faq": [
+      {
+        "q": "Why is no region highlighted?",
+        "a": "Concussion is a diffuse functional disturbance; highlighting one region would misrepresent it."
+      }
+    ],
+    "associations": [
+      {
+        "target": "cerebrum",
+        "type": "secondary",
+        "distribution": "network",
+        "evidence": "variable",
+        "explanation": "Diffuse transient functional disturbance; not a focal structural lesion."
+      }
+    ],
+    "references": ["mp-concussion", "ninds-tbi"]
+  },
+  {
+    "id": "diffuse-axonal-injury",
+    "name": "Diffuse axonal injury",
+    "category": "traumatic",
+    "classification": "Pattern of traumatic brain injury",
+    "synonyms": ["DAI", "traumatic axonal injury"],
+    "overview": "Diffuse axonal injury is widespread damage to axons caused by rotational acceleration–deceleration forces, a major cause of coma and disability after severe TBI.",
+    "pathophysiology": "Shearing forces stretch axons, disrupting transport and leading to axonal swelling and disconnection. Lesions concentrate where tissues of different density meet.",
+    "causes": "High-velocity injuries such as road traffic collisions.",
+    "riskFactors": ["High-energy rotational trauma"],
+    "regionsSummary": "Grey–white matter junctions, corpus callosum (especially splenium) and dorsolateral rostral brainstem — the classic grading sequence.",
+    "symptoms": [
+      "Immediate loss of consciousness",
+      "Prolonged coma in severe cases",
+      "Cognitive, behavioural and motor deficits after recovery"
+    ],
+    "progression": "Recovery can be slow and incomplete.",
+    "diagnosis": ["Clinical presentation", "MRI (susceptibility-weighted and diffusion imaging)"],
+    "imaging": "CT may underestimate injury; MRI shows small haemorrhagic or non-haemorrhagic lesions in typical locations.",
+    "treatments": ["Supportive intensive care", "Prevention of secondary brain injury"],
+    "rehabilitation": "Long-term multidisciplinary rehabilitation.",
+    "complications": ["Persistent disorders of consciousness", "Cognitive impairment", "Spasticity"],
+    "prognosis": "Depends on severity and extent; brainstem involvement is associated with worse outcome.",
+    "prevention": "Road safety measures, helmets.",
+    "emergingResearch": "Diffusion tensor imaging biomarkers.",
+    "faq": [
+      {
+        "q": "Why can't the model show individual damaged axons?",
+        "a": "Axons are microscopic; the model shows where lesions typically cluster."
+      }
+    ],
+    "associations": [
+      {
+        "target": "cerebral-white-matter",
+        "type": "primary",
+        "distribution": "scattered",
+        "evidence": "established",
+        "explanation": "Lesions at grey–white matter junctions (grade 1)."
+      },
+      {
+        "target": "corpus-callosum",
+        "type": "primary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Callosal lesions (grade 2)."
+      },
+      {
+        "target": "midbrain",
+        "type": "primary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Dorsolateral rostral brainstem lesions (grade 3)."
+      }
+    ],
+    "references": ["ninds-tbi", "mp-tbi"]
+  },
+  {
+    "id": "hydrocephalus",
+    "name": "Hydrocephalus",
+    "category": "other",
+    "classification": "Disorder of CSF dynamics (structural/physiological condition)",
+    "synonyms": ["normal pressure hydrocephalus (adult subtype)"],
+    "overview": "Hydrocephalus is an abnormal build-up of cerebrospinal fluid in the ventricles, which can raise pressure and damage brain tissue.",
+    "pathophysiology": "Imbalance between CSF production and absorption, or obstruction of CSF flow. Non-communicating (obstructive) hydrocephalus is caused by blockage within the ventricular system (e.g. aqueduct); communicating hydrocephalus results from impaired absorption.",
+    "causes": "Congenital (aqueductal stenosis, neural tube defects), haemorrhage, meningitis, tumours, head injury; normal pressure hydrocephalus in older adults.",
+    "riskFactors": [
+      "Premature birth with intraventricular haemorrhage",
+      "CNS infections",
+      "Brain tumours",
+      "Subarachnoid haemorrhage"
+    ],
+    "regionsSummary": "Ventricular system (lateral, third and fourth ventricles, cerebral aqueduct) with compression of surrounding white matter.",
+    "symptoms": [
+      "Infants: enlarging head, bulging fontanelle, vomiting",
+      "Children/adults: headache, vomiting, blurred vision, drowsiness",
+      "Normal pressure hydrocephalus: gait disturbance, urinary incontinence, cognitive decline"
+    ],
+    "progression": "Acute hydrocephalus can be life-threatening; chronic forms progress gradually.",
+    "diagnosis": [
+      "Clinical assessment",
+      "Ultrasound (infants), CT or MRI",
+      "Lumbar drain trial or tap test for normal pressure hydrocephalus"
+    ],
+    "imaging": "Enlarged ventricles; the pattern helps locate an obstruction.",
+    "treatments": [
+      "Ventricular shunt (e.g. ventriculoperitoneal)",
+      "Endoscopic third ventriculostomy for selected obstructive cases",
+      "Treatment of underlying cause"
+    ],
+    "rehabilitation": "Physical and cognitive therapy; developmental support in children.",
+    "complications": ["Shunt malfunction or infection", "Vision loss", "Developmental delay"],
+    "prognosis": "Varies with cause and promptness of treatment.",
+    "prevention": "Prevention of preterm birth complications and CNS infections reduces some cases.",
+    "emergingResearch": "Smart shunt valves and better selection for surgery.",
+    "faq": [
+      {
+        "q": "Is the whole ventricle diseased?",
+        "a": "The ventricles are enlarged by excess fluid; the highlight shows the system involved, not tissue disease."
+      }
+    ],
+    "associations": [
+      {
+        "target": "lateral-ventricle",
+        "type": "primary",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Lateral ventricles enlarge."
+      },
+      {
+        "target": "third-ventricle",
+        "type": "primary",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Third ventricle enlarges in many forms."
+      },
+      {
+        "target": "cerebral-aqueduct",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Aqueductal stenosis causes obstructive hydrocephalus."
+      },
+      {
+        "target": "fourth-ventricle",
+        "type": "subtype",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Enlarged in communicating hydrocephalus or outlet obstruction."
+      },
+      {
+        "target": "cerebral-white-matter",
+        "type": "secondary",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Periventricular white matter is compressed and may show fluid signal."
+      }
+    ],
+    "references": ["ninds-hydrocephalus", "mp-hydrocephalus", "openstax-13-3"]
+  },
+  {
+    "id": "migraine",
+    "name": "Migraine",
+    "category": "other",
+    "classification": "Primary headache disorder (neurological disease of brain networks)",
+    "synonyms": ["migraine with aura", "migraine without aura"],
+    "overview": "Migraine is a common neurological disease causing recurrent attacks of moderate to severe headache, often with nausea and sensitivity to light and sound; some people have aura.",
+    "pathophysiology": "Involves activation of the trigeminovascular system and release of neuropeptides such as CGRP, with altered processing in brainstem, hypothalamic and thalamocortical networks. Aura is linked to cortical spreading depolarisation, often in occipital cortex. There is no structural damage.",
+    "causes": "Genetic predisposition with triggers such as hormonal changes, sleep disruption, stress or skipped meals.",
+    "riskFactors": ["Family history", "Female sex", "Hormonal fluctuations"],
+    "regionsSummary": "Network disorder: brainstem and hypothalamic modulatory centres, thalamus, and cortex (occipital cortex for visual aura). No region is structurally damaged.",
+    "symptoms": [
+      "Throbbing, often one-sided headache",
+      "Nausea or vomiting",
+      "Sensitivity to light and sound",
+      "Visual or sensory aura in some people",
+      "Premonitory and postdrome symptoms"
+    ],
+    "progression": "Episodic; may become chronic in some people.",
+    "diagnosis": ["Clinical diagnosis based on criteria", "Imaging only if atypical features or red flags"],
+    "imaging": "Usually normal.",
+    "treatments": [
+      "Acute: analgesics, triptans, gepants, ditans",
+      "Preventive: lifestyle measures, beta-blockers, certain anti-seizure medications, antidepressants, CGRP-pathway monoclonal antibodies, botulinum toxin for chronic migraine"
+    ],
+    "rehabilitation": "Headache diaries, trigger management, behavioural therapies.",
+    "complications": ["Medication-overuse headache", "Chronic migraine", "Rarely, migrainous infarction"],
+    "prognosis": "Often improves with treatment and with age in some people.",
+    "prevention": "Regular sleep, meals and exercise; preventive medication when indicated.",
+    "emergingResearch": "Further targets beyond CGRP (e.g. PACAP).",
+    "faq": [
+      {
+        "q": "Does migraine damage the brain?",
+        "a": "Migraine is a network disorder and generally does not damage brain structures; seek medical advice for new or changed headaches."
+      }
+    ],
+    "associations": [
+      {
+        "target": "occipital-lobe",
+        "type": "subtype",
+        "distribution": "network",
+        "evidence": "established",
+        "explanation": "Cortical spreading depolarisation in occipital cortex is linked to visual aura (functional, not structural)."
+      },
+      {
+        "target": "brainstem",
+        "type": "secondary",
+        "distribution": "network",
+        "evidence": "established",
+        "explanation": "Brainstem nuclei modulate trigeminovascular pain signalling."
+      },
+      {
+        "target": "hypothalamus",
+        "type": "secondary",
+        "distribution": "network",
+        "evidence": "emerging",
+        "explanation": "Hypothalamic activation is implicated in the premonitory phase."
+      },
+      {
+        "target": "thalamus",
+        "type": "secondary",
+        "distribution": "network",
+        "evidence": "established",
+        "explanation": "Relays and modulates head pain signals to cortex."
+      }
+    ],
+    "references": ["ninds-migraine", "mp-migraine", "ninds-headache"]
+  },
+  {
+    "id": "chiari-malformation",
+    "name": "Chiari malformation",
+    "category": "other",
+    "classification": "Structural malformation of the posterior fossa / craniocervical junction",
+    "synonyms": ["Chiari I malformation", "Arnold–Chiari malformation (type II)"],
+    "overview": "A Chiari malformation is a structural condition in which part of the cerebellum (the tonsils) extends below the foramen magnum into the spinal canal.",
+    "pathophysiology": "Often attributed to a small or crowded posterior fossa. Herniated cerebellar tissue can obstruct CSF flow at the foramen magnum and compress the brainstem and upper spinal cord; syringomyelia may develop.",
+    "causes": "Usually congenital; occasionally acquired (e.g. CSF leaks).",
+    "riskFactors": ["Associated conditions: myelomeningocele (type II), connective tissue disorders"],
+    "regionsSummary": "Cerebellum (tonsils), medulla oblongata, fourth ventricle outflow and upper cervical spinal cord.",
+    "symptoms": [
+      "Headache at the back of the head worsened by coughing or straining",
+      "Neck pain",
+      "Dizziness and balance problems",
+      "Swallowing difficulties",
+      "Numbness or weakness",
+      "Often asymptomatic"
+    ],
+    "progression": "Many remain stable; some progress, especially with syrinx.",
+    "diagnosis": ["MRI of brain and cervical spine", "Assessment for syringomyelia"],
+    "imaging": "Cerebellar tonsils extend below the foramen magnum; CSF flow studies may show obstruction.",
+    "treatments": ["Observation for asymptomatic cases", "Posterior fossa decompression surgery for symptomatic cases"],
+    "rehabilitation": "Physiotherapy as needed.",
+    "complications": ["Syringomyelia", "Hydrocephalus", "Brainstem compression"],
+    "prognosis": "Often good after surgery for appropriately selected patients.",
+    "prevention": "Not preventable.",
+    "emergingResearch": "Refining surgical selection criteria.",
+    "faq": [
+      {
+        "q": "Is Chiari malformation a disease?",
+        "a": "It is a structural abnormality rather than a disease process; symptoms arise from crowding and CSF flow obstruction."
+      }
+    ],
+    "associations": [
+      {
+        "target": "cerebellum",
+        "type": "primary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Cerebellar tonsils herniate below the foramen magnum (tonsils not separately segmented)."
+      },
+      {
+        "target": "medulla-oblongata",
+        "type": "secondary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "The medulla may be compressed."
+      },
+      {
+        "target": "fourth-ventricle",
+        "type": "secondary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "CSF outflow at the foramen magnum can be obstructed."
+      }
+    ],
+    "references": ["ninds-chiari", "mp-chiari", "mp-brain-malformations"]
+  },
+  {
+    "id": "cerebral-palsy",
+    "name": "Cerebral palsy",
+    "category": "other",
+    "classification": "Group of permanent developmental disorders of movement and posture",
+    "synonyms": ["CP"],
+    "overview": "Cerebral palsy is a group of disorders affecting movement, muscle tone and posture caused by non-progressive injury or abnormal development of the developing brain.",
+    "pathophysiology": "Brain injury before, during or shortly after birth affects motor pathways. Patterns include periventricular white matter injury (common in preterm infants), deep grey matter injury, cortical-subcortical injury and malformations. The brain lesion does not progress, though its effects change with growth.",
+    "causes": "Preterm birth, low birth weight, infections during pregnancy, perinatal stroke, hypoxic-ischaemic injury, genetic factors and malformations.",
+    "riskFactors": [
+      "Preterm birth",
+      "Low birth weight",
+      "Multiple births",
+      "Maternal infections",
+      "Neonatal jaundice (kernicterus)"
+    ],
+    "regionsSummary": "Periventricular white matter and internal capsule (spastic diplegia), basal ganglia and thalamus (dyskinetic CP), cerebellum (ataxic CP), or unilateral cortical/subcortical injury (hemiplegia).",
+    "symptoms": [
+      "Spasticity or stiff muscles",
+      "Involuntary movements (dyskinetic)",
+      "Poor coordination (ataxic)",
+      "Delayed motor milestones",
+      "Associated epilepsy, learning, vision or hearing difficulties in some"
+    ],
+    "progression": "Non-progressive brain injury; musculoskeletal effects can change over time.",
+    "diagnosis": [
+      "Clinical evaluation of motor development",
+      "MRI to identify brain injury pattern",
+      "Standardised motor assessments"
+    ],
+    "imaging": "MRI often shows periventricular leukomalacia, deep grey matter injury, infarction or malformation.",
+    "treatments": [
+      "Physiotherapy and occupational therapy",
+      "Antispasticity treatments (e.g. botulinum toxin, baclofen)",
+      "Orthopaedic surgery",
+      "Selective dorsal rhizotomy in selected cases"
+    ],
+    "rehabilitation": "Lifelong multidisciplinary support.",
+    "complications": ["Contractures", "Hip dislocation", "Pain", "Epilepsy"],
+    "prognosis": "Highly variable; many people live full adult lives with support.",
+    "prevention": "Antenatal magnesium sulphate for preterm birth and therapeutic hypothermia for neonatal HIE reduce risk in eligible cases.",
+    "emergingResearch": "Early intervention and neuroprotection strategies.",
+    "faq": [
+      {
+        "q": "Does cerebral palsy get worse?",
+        "a": "The brain injury does not progress, although muscles and joints can be affected over time."
+      }
+    ],
+    "associations": [
+      {
+        "target": "cerebral-white-matter",
+        "type": "subtype",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Periventricular white matter injury is typical in preterm-born children with spastic CP."
+      },
+      {
+        "target": "internal-capsule",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Corticospinal fibres near the ventricles and in the internal capsule are injured."
+      },
+      {
+        "target": "basal-nuclei",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Deep grey matter injury causes dyskinetic CP."
+      },
+      {
+        "target": "thalamus",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Thalamic injury accompanies basal ganglia injury in some."
+      },
+      {
+        "target": "cerebellum",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "variable",
+        "explanation": "Associated with ataxic CP."
+      }
+    ],
+    "references": ["ninds-cp", "mp-cp"]
+  },
+  {
+    "id": "hypoxic-ischemic-brain-injury",
+    "name": "Hypoxic-ischemic brain injury",
+    "category": "other",
+    "classification": "Acquired brain injury from oxygen or blood-flow deprivation",
+    "synonyms": ["hypoxic-ischemic encephalopathy (HIE)", "anoxic brain injury"],
+    "overview": "Hypoxic-ischaemic brain injury results from inadequate oxygen delivery or blood flow to the whole brain, for example after cardiac arrest or around birth.",
+    "pathophysiology": "Energy failure leads to excitotoxicity and cell death. Selectively vulnerable regions include hippocampal neurons, cerebral cortex, basal ganglia, thalamus and cerebellar Purkinje cells; watershed zones between arterial territories are at risk in hypotension.",
+    "causes": "Cardiac arrest, drowning, suffocation, severe hypotension, perinatal asphyxia.",
+    "riskFactors": ["Cardiac arrest", "Complications of labour and delivery"],
+    "regionsSummary": "Hippocampus, cortex, basal ganglia, thalamus and cerebellum; pattern depends on severity and duration, and differs between neonates and adults.",
+    "symptoms": [
+      "Coma or reduced consciousness",
+      "Seizures and myoclonus",
+      "Memory impairment",
+      "Movement disorders",
+      "Cognitive deficits after recovery"
+    ],
+    "progression": "Injury evolves over hours to days; recovery varies.",
+    "diagnosis": [
+      "Clinical examination",
+      "MRI (diffusion imaging)",
+      "EEG",
+      "Neurophysiological and biomarker tests for prognosis"
+    ],
+    "imaging": "Diffusion restriction in cortex, basal ganglia, thalami or hippocampi depending on pattern.",
+    "treatments": [
+      "Restoration of circulation and oxygenation",
+      "Temperature control after cardiac arrest",
+      "Therapeutic hypothermia for eligible neonates with HIE",
+      "Seizure management"
+    ],
+    "rehabilitation": "Cognitive and physical rehabilitation.",
+    "complications": ["Persistent disorders of consciousness", "Epilepsy", "Memory and cognitive impairment"],
+    "prognosis": "Depends strongly on duration and severity; prognosis should be assessed by specialists using multiple modalities.",
+    "prevention": "Rapid CPR and defibrillation; good obstetric care.",
+    "emergingResearch": "Neuroprotective adjuncts to hypothermia.",
+    "faq": [
+      {
+        "q": "Why is the hippocampus so vulnerable?",
+        "a": "Certain hippocampal neurons (CA1) are especially sensitive to energy failure and excitotoxicity."
+      }
+    ],
+    "associations": [
+      {
+        "target": "hippocampus",
+        "type": "primary",
+        "distribution": "diffuse",
+        "evidence": "established",
+        "explanation": "CA1 hippocampal neurons are among the most vulnerable to hypoxia-ischaemia."
+      },
+      {
+        "target": "basal-nuclei",
+        "type": "primary",
+        "distribution": "diffuse",
+        "evidence": "established",
+        "explanation": "Deep grey matter is vulnerable, especially in severe or acute insults."
+      },
+      {
+        "target": "thalamus",
+        "type": "primary",
+        "distribution": "diffuse",
+        "evidence": "established",
+        "explanation": "Thalamic injury is common in severe injury."
+      },
+      {
+        "target": "cerebral-hemisphere",
+        "type": "secondary",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Cortical laminar necrosis and watershed injury occur."
+      },
+      {
+        "target": "cerebellum",
+        "type": "secondary",
+        "distribution": "diffuse",
+        "evidence": "established",
+        "explanation": "Purkinje cells are vulnerable."
+      }
+    ],
+    "references": ["ninds-hie", "mp-ency-cerebral-hypoxia"]
+  },
+  {
+    "id": "cerebellar-ataxia",
+    "name": "Cerebellar ataxia",
+    "category": "other",
+    "classification": "Clinical syndrome (many causes)",
+    "synonyms": ["ataxia", "cerebellar degeneration (one cause)"],
+    "overview": "Cerebellar ataxia is a syndrome of impaired coordination, balance and speech caused by dysfunction of the cerebellum or its connections. It has many causes.",
+    "pathophysiology": "Damage to cerebellar cortex, deep nuclei or their pathways disrupts timing and calibration of movement. Midline (vermis) involvement mainly affects gait and trunk; hemispheric involvement affects ipsilateral limbs.",
+    "causes": "Stroke, tumours, multiple sclerosis, alcohol, medications, vitamin deficiencies, autoimmune and paraneoplastic disorders, and inherited ataxias (e.g. spinocerebellar ataxias, Friedreich ataxia).",
+    "riskFactors": ["Chronic heavy alcohol use", "Family history of inherited ataxia"],
+    "regionsSummary": "Cerebellum and its connections through the pons and medulla (cerebellar peduncles) and the thalamus.",
+    "symptoms": [
+      "Unsteady, wide-based gait",
+      "Clumsy limb movements and intention tremor",
+      "Slurred speech (dysarthria)",
+      "Abnormal eye movements (nystagmus)"
+    ],
+    "progression": "Depends on cause: acute (stroke), subacute (autoimmune) or slowly progressive (degenerative).",
+    "diagnosis": [
+      "Neurological examination",
+      "MRI",
+      "Blood tests (vitamins, thyroid, antibodies)",
+      "Genetic testing when inherited ataxia is suspected"
+    ],
+    "imaging": "May show cerebellar atrophy or a focal lesion, or be normal early.",
+    "treatments": [
+      "Treatment of the underlying cause where possible",
+      "Omaveloxolone for Friedreich ataxia (approved in some countries)",
+      "Symptomatic therapies"
+    ],
+    "rehabilitation": "Physiotherapy (balance and coordination training), speech therapy, mobility aids.",
+    "complications": ["Falls", "Swallowing difficulty"],
+    "prognosis": "Depends on cause.",
+    "prevention": "Limiting alcohol; addressing nutritional deficiencies.",
+    "emergingResearch": "Gene-targeted therapies for inherited ataxias.",
+    "faq": [
+      {
+        "q": "Why does a cerebellar lesion affect the same side of the body?",
+        "a": "Cerebellar pathways cross twice, so each cerebellar hemisphere coordinates the same side of the body."
+      }
+    ],
+    "associations": [
+      {
+        "target": "cerebellum",
+        "type": "primary",
+        "distribution": "diffuse",
+        "evidence": "established",
+        "explanation": "Cerebellar dysfunction causes ataxia; pattern (midline vs hemispheric) shapes symptoms. Vermis and hemispheres are not separately segmented here."
+      },
+      {
+        "target": "pons",
+        "type": "secondary",
+        "distribution": "network",
+        "evidence": "established",
+        "explanation": "Pontocerebellar connections."
+      },
+      {
+        "target": "medulla-oblongata",
+        "type": "secondary",
+        "distribution": "network",
+        "evidence": "established",
+        "explanation": "Spinal and vestibular inputs via the inferior cerebellar peduncle."
+      },
+      {
+        "target": "thalamus",
+        "type": "secondary",
+        "distribution": "network",
+        "evidence": "established",
+        "explanation": "Cerebellar output to motor cortex via thalamus."
+      }
+    ],
+    "references": ["ninds-ataxia", "ninds-cerebellar-degeneration", "mp-cerebellar"]
+  }
 ]

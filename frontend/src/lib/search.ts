@@ -2,9 +2,24 @@ import { ANATOMY, DISEASES, MODULES, STRUCTURES } from './anatomy'
 
 const norm = (s: string) => s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/['’]/g, '')
 
-export interface StructureHit { id: string; name: string; score: number; match: string }
-export interface DiseaseHit { id: string; name: string; score: number; match: string }
-export interface ModuleHit { id: string; name: string; score: number; match: string }
+export interface StructureHit {
+  id: string
+  name: string
+  score: number
+  match: string
+}
+export interface DiseaseHit {
+  id: string
+  name: string
+  score: number
+  match: string
+}
+export interface ModuleHit {
+  id: string
+  name: string
+  score: number
+  match: string
+}
 
 function scoreText(q: string, text: string, weight: number): number {
   const t = norm(text)
@@ -77,7 +92,11 @@ export function searchModules(query: string): ModuleHit[] {
   return MODULES.map((m) => ({
     id: m.id,
     name: m.title,
-    score: Math.max(scoreText(q, m.title, 40), scoreText(q, m.summary, 15), ...m.steps.map((s) => scoreText(q, s.text, 6))),
+    score: Math.max(
+      scoreText(q, m.title, 40),
+      scoreText(q, m.summary, 15),
+      ...m.steps.map((s) => scoreText(q, s.text, 6)),
+    ),
     match: m.summary,
   }))
     .filter((h) => h.score > 0)

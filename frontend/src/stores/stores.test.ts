@@ -19,7 +19,12 @@ describe('manual transform store', () => {
 
   it('returns to exactly the original transform (no drift)', () => {
     transforms.translate(['cerebellum'], new Vector3(0.123456, -0.3, 0.77))
-    transforms.rotate(['cerebellum'], new Quaternion().setFromAxisAngle(new Vector3(0, 1, 0), 1.2), new Vector3(), new Map([['cerebellum', new Vector3(0, 0, -0.5)]]))
+    transforms.rotate(
+      ['cerebellum'],
+      new Quaternion().setFromAxisAngle(new Vector3(0, 1, 0), 1.2),
+      new Vector3(),
+      new Map([['cerebellum', new Vector3(0, 0, -0.5)]]),
+    )
     transforms.returnToOriginal(['cerebellum'])
     for (let i = 0; i < 400 && transforms.isReturning('cerebellum'); i++) transforms.stepReturn(1 / 60, false)
     const t = transforms.get('cerebellum')
@@ -39,7 +44,12 @@ describe('manual transform store', () => {
   it('group rotation moves members around the pivot', () => {
     const ids = ['left-caudate-nucleus']
     const pos = new Map([['left-caudate-nucleus', new Vector3(1, 0, 0)]])
-    transforms.rotate(ids, new Quaternion().setFromAxisAngle(new Vector3(0, 1, 0), Math.PI / 2), new Vector3(0, 0, 0), pos)
+    transforms.rotate(
+      ids,
+      new Quaternion().setFromAxisAngle(new Vector3(0, 1, 0), Math.PI / 2),
+      new Vector3(0, 0, 0),
+      pos,
+    )
     const o = transforms.get('left-caudate-nucleus').offset
     expect(o.x).toBeCloseTo(-1)
     expect(o.z).toBeCloseTo(-1)

@@ -18,5 +18,10 @@ export default defineConfig({
   },
   webServer: process.env.E2E_NO_SERVER
     ? undefined
-    : { command: `npx vite preview --port ${PORT} --strictPort`, port: PORT, reuseExistingServer: true, timeout: 60_000 },
+    : {
+        command: `npx vite preview --port ${PORT} --strictPort`,
+        port: PORT,
+        reuseExistingServer: true,
+        timeout: 60_000,
+      },
 })

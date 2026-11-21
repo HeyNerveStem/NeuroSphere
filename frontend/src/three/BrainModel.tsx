@@ -5,7 +5,16 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js'
 import type { ThreeEvent } from '@react-three/fiber'
 import {
-  BufferAttribute, BufferGeometry, Color, DoubleSide, FrontSide, Matrix4, Mesh, MeshStandardMaterial, Plane, Vector3,
+  BufferAttribute,
+  BufferGeometry,
+  Color,
+  DoubleSide,
+  FrontSide,
+  Matrix4,
+  Mesh,
+  MeshStandardMaterial,
+  Plane,
+  Vector3,
 } from 'three'
 import { acceleratedRaycast, computeBoundsTree, disposeBoundsTree } from 'three-mesh-bvh'
 import { ancestors, byId, manifestById, MESH_IDS, meshesOf, selectionTarget } from '@/lib/anatomy'
@@ -106,7 +115,10 @@ const StructureMesh = memo(function StructureMesh({ id, geometry, clipPlane }: M
   const ref = useRef<Mesh>(null)
   const def = byId.get(id)!
   const parentIds = useMemo(() => ancestors(id).map((a) => a.id), [id])
-  const outline = useMemo(() => Math.min(0.01, Math.max(0.0025, (geometry.boundingSphere?.radius ?? 0.2) * 0.035)), [geometry])
+  const outline = useMemo(
+    () => Math.min(0.01, Math.max(0.0025, (geometry.boundingSphere?.radius ?? 0.2) * 0.035)),
+    [geometry],
+  )
   const material = useMemo(
     () => new MeshStandardMaterial({ roughness: 0.62, metalness: 0.02, color: realisticColor(def) }),
     [def],
@@ -143,7 +155,8 @@ const StructureMesh = memo(function StructureMesh({ id, geometry, clipPlane }: M
     const base = colorMode === 'regions' ? regionColor(def, parentIds) : realisticColor(def)
     material.color.set(base)
     let opacity = opacityOverride ?? 1
-    const xrayed = xray && !isolatedSelf && (def.groups.some((g) => XRAY_GROUPS.has(g)) || id === 'cerebral-white-matter')
+    const xrayed =
+      xray && !isolatedSelf && (def.groups.some((g) => XRAY_GROUPS.has(g)) || id === 'cerebral-white-matter')
     if (xrayed && !selected) opacity = Math.min(opacity, hl ? 0.4 : 0.09)
     if (dim && !hl && !selected) {
       opacity = Math.min(opacity, 0.12)
@@ -151,7 +164,13 @@ const StructureMesh = memo(function StructureMesh({ id, geometry, clipPlane }: M
     }
     if (hl) material.color.lerp(HIGHLIGHT_COLORS[hl], hl === 'tour' ? 0.55 : 0.7)
     material.emissive.copy(
-      selected ? HIGHLIGHT_COLORS.selected : hovered ? HIGHLIGHT_COLORS.hover : hl ? HIGHLIGHT_COLORS[hl] : tmpColor.set(0),
+      selected
+        ? HIGHLIGHT_COLORS.selected
+        : hovered
+          ? HIGHLIGHT_COLORS.hover
+          : hl
+            ? HIGHLIGHT_COLORS[hl]
+            : tmpColor.set(0),
     )
     material.emissiveIntensity = selected ? 0.38 : hovered ? 0.22 : hl ? 0.28 : 0
     material.opacity = opacity
@@ -163,7 +182,22 @@ const StructureMesh = memo(function StructureMesh({ id, geometry, clipPlane }: M
     mesh.renderOrder = opacity < 0.999 ? 2 : def.layer === 0 ? 1 : 0
     // click-through for nearly invisible structures so internal anatomy stays selectable
     mesh.raycast = hidden || opacity < 0.3 ? noRaycast : acceleratedRaycast
-  }, [material, def, parentIds, selected, hovered, opacityOverride, xray, hl, dim, colorMode, clipPlane, hidden, isolatedSelf, id])
+  }, [
+    material,
+    def,
+    parentIds,
+    selected,
+    hovered,
+    opacityOverride,
+    xray,
+    hl,
+    dim,
+    colorMode,
+    clipPlane,
+    hidden,
+    isolatedSelf,
+    id,
+  ])
 
   return (
     <mesh ref={ref} geometry={geometry} material={material} visible={!hidden} name={id}>
@@ -185,7 +219,11 @@ export function BrainModel({ onReady }: { onReady?: () => void }) {
 
   useEffect(() => {
     onReady?.()
-    return () => geometries.forEach((g) => { g.disposeBoundsTree(); g.dispose() })
+    return () =>
+      geometries.forEach((g) => {
+        g.disposeBoundsTree()
+        g.dispose()
+      })
   }, [geometries, onReady])
 
   const onPointerMove = (e: ThreeEvent<PointerEvent>) => {

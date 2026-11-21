@@ -1,4 +1,5 @@
 """Pydantic schemas mirroring frontend/src/types/index.ts."""
+
 from __future__ import annotations
 
 from typing import Generic, Literal, TypeVar
@@ -11,7 +12,9 @@ Hemisphere = Literal["left", "right", "bilateral", "midline"]
 AssociationType = Literal["primary", "secondary", "subtype"]
 Distribution = Literal["diffuse", "regional", "focal", "scattered", "network"]
 Evidence = Literal["established", "variable", "emerging"]
-Category = Literal["neurodegenerative", "cerebrovascular", "seizure", "demyelinating", "infectious", "neoplastic", "traumatic", "other"]
+Category = Literal[
+    "neurodegenerative", "cerebrovascular", "seizure", "demyelinating", "infectious", "neoplastic", "traumatic", "other"
+]
 
 
 class Page(BaseModel, Generic[T]):

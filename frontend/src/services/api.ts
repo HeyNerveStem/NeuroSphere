@@ -38,12 +38,21 @@ export function useApiStatus(): Status {
   return s
 }
 
-export interface DiseaseSummary { id: string; name: string; category: string; classification: string; overview: string }
+export interface DiseaseSummary {
+  id: string
+  name: string
+  category: string
+  classification: string
+  overview: string
+}
 
 /** Disease catalog: API when available, bundled content otherwise. */
 export function useDiseaseCatalog(): { items: DiseaseSummary[]; source: 'api' | 'bundled' } {
   const status = useApiStatus()
-  const [state, setState] = useState<{ items: DiseaseSummary[]; source: 'api' | 'bundled' }>({ items: DISEASES, source: 'bundled' })
+  const [state, setState] = useState<{ items: DiseaseSummary[]; source: 'api' | 'bundled' }>({
+    items: DISEASES,
+    source: 'bundled',
+  })
   useEffect(() => {
     if (status !== 'online') return
     let cancelled = false

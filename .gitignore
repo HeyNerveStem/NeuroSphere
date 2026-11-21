@@ -233,3 +233,5 @@ playwright-report/
 # Source STLs (~97 MB) are re-downloaded by scripts/model-optimization/fetch_bodyparts3d.sh
 assets/source-models/bodyparts3d/*.stl
 assets/processed-models/*.raw.glb
+# pipeline output; the shipped copy lives in frontend/public/models/brain.glb
+assets/processed-models/*.glb

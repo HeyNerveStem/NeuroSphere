@@ -72,12 +72,24 @@ export function useKeyboardShortcuts() {
         case 'R':
           if (sel) transforms.returnToOriginal(meshesOf(sel))
           break
-        case '1': v.requestCamera({ kind: 'preset', preset: 'anterior' }); break
-        case '2': v.requestCamera({ kind: 'preset', preset: 'posterior' }); break
-        case '3': v.requestCamera({ kind: 'preset', preset: 'left-lateral' }); break
-        case '4': v.requestCamera({ kind: 'preset', preset: 'right-lateral' }); break
-        case '5': v.requestCamera({ kind: 'preset', preset: 'superior' }); break
-        case '6': v.requestCamera({ kind: 'preset', preset: 'inferior' }); break
+        case '1':
+          v.requestCamera({ kind: 'preset', preset: 'anterior' })
+          break
+        case '2':
+          v.requestCamera({ kind: 'preset', preset: 'posterior' })
+          break
+        case '3':
+          v.requestCamera({ kind: 'preset', preset: 'left-lateral' })
+          break
+        case '4':
+          v.requestCamera({ kind: 'preset', preset: 'right-lateral' })
+          break
+        case '5':
+          v.requestCamera({ kind: 'preset', preset: 'superior' })
+          break
+        case '6':
+          v.requestCamera({ kind: 'preset', preset: 'inferior' })
+          break
         case 'ArrowLeft':
           a.step(-1)
           break

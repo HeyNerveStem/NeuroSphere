@@ -1,6 +1,16 @@
 import { describe, expect, it } from 'vitest'
 import {
-  ANATOMY, DISEASES, MANIFEST, MESH_IDS, MODULES, REFERENCES, STRUCTURES, diseasesForStructure, meshesOf, resolveTarget,
+  ANATOMY,
+  DISEASES,
+  MANIFEST,
+  MESH_IDS,
+  MODULES,
+  REFERENCES,
+  STRUCTURES,
+  diseasesForStructure,
+  isBuried,
+  meshesOf,
+  resolveTarget,
   selectionTarget,
 } from './anatomy'
 import { diseaseHighlight } from './diseaseViz'
@@ -16,7 +26,8 @@ describe('anatomical model integrity', () => {
     for (const s of STRUCTURES) expect(ANATOMY[s.contentId], s.id).toBeTruthy()
   })
   it('bounding boxes and positions are finite', () => {
-    for (const m of MANIFEST.meshes) [...m.originalPosition, ...m.boundsLocal.flat()].forEach((v) => expect(Number.isFinite(v)).toBe(true))
+    for (const m of MANIFEST.meshes)
+      [...m.originalPosition, ...m.boundsLocal.flat()].forEach((v) => expect(Number.isFinite(v)).toBe(true))
   })
 })
 
@@ -35,6 +46,29 @@ describe('selection resolution', () => {
   })
 })
 
+describe('surface vs buried structures', () => {
+  it('classifies anatomy correctly', () => {
+    for (const id of [
+      'cerebellum',
+      'pons',
+      'medulla-oblongata',
+      'left-frontal-lobe',
+      'optic-chiasm',
+      'pituitary-gland',
+    ])
+      expect(isBuried(id), id).toBe(false)
+    for (const id of [
+      'left-hippocampus',
+      'left-amygdala',
+      'left-thalamus',
+      'left-basal-nuclei',
+      'corpus-callosum',
+      'left-insular-cortex',
+    ])
+      expect(isBuried(id), id).toBe(true)
+  })
+})
+
 describe('medical content integrity', () => {
   it('all disease associations resolve to real meshes and all references exist', () => {
     for (const d of DISEASES) {
@@ -46,7 +80,9 @@ describe('medical content integrity', () => {
   })
   it('hippocampus lists the expected related conditions', () => {
     const ids = diseasesForStructure('left-hippocampus').map((x) => x.disease.id)
-    expect(ids).toEqual(expect.arrayContaining(['alzheimers-disease', 'temporal-lobe-epilepsy', 'hypoxic-ischemic-brain-injury']))
+    expect(ids).toEqual(
+      expect.arrayContaining(['alzheimers-disease', 'temporal-lobe-epilepsy', 'hypoxic-ischemic-brain-injury']),
+    )
     expect(ids).not.toContain('brain-metastases')
     expect(ids).not.toContain('meningitis')
   })
@@ -60,7 +96,9 @@ describe('medical content integrity', () => {
     expect(diseaseHighlight(ad)['left-hippocampus']).toBe('primary')
   })
   it('every tour highlight resolves', () => {
-    for (const m of MODULES) for (const s of m.steps) for (const t of s.highlight) expect(resolveTarget(t).length, `${m.id}:${t}`).toBeGreaterThan(0)
+    for (const m of MODULES)
+      for (const s of m.steps)
+        for (const t of s.highlight) expect(resolveTarget(t).length, `${m.id}:${t}`).toBeGreaterThan(0)
   })
 })
 
@@ -74,7 +112,9 @@ describe('search', () => {
   })
   it('finds diseases and symptom topics', () => {
     expect(searchDiseases("parkinson's disease")[0].id).toBe('parkinsons-disease')
-    expect(searchDiseases('stroke').map((h) => h.id)).toEqual(expect.arrayContaining(['ischemic-stroke', 'hemorrhagic-stroke']))
+    expect(searchDiseases('stroke').map((h) => h.id)).toEqual(
+      expect.arrayContaining(['ischemic-stroke', 'hemorrhagic-stroke']),
+    )
     expect(unifiedSearch('tremor').topics.length).toBeGreaterThan(0)
   })
 })

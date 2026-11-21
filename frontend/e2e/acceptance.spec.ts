@@ -7,7 +7,9 @@ import { expect, test, type Page } from '@playwright/test'
 
 async function openLab(page: Page, path = '/anatomy') {
   await page.goto(path)
-  await page.waitForFunction(() => (window as unknown as { __ready?: boolean }).__ready === true, null, { timeout: 90_000 })
+  await page.waitForFunction(() => (window as unknown as { __ready?: boolean }).__ready === true, null, {
+    timeout: 90_000,
+  })
   await page.waitForTimeout(500)
 }
 
@@ -44,7 +46,12 @@ async function clickAt(page: Page, x: number, y: number) {
 async function waitCameraSettled(page: Page) {
   let last = ''
   for (let i = 0; i < 40; i++) {
-    const cur = await page.evaluate(() => (window as any).__neuro.sceneInfo.camera.position.toArray().map((v: number) => v.toFixed(3)).join(','))
+    const cur = await page.evaluate(() =>
+      (window as any).__neuro.sceneInfo.camera.position
+        .toArray()
+        .map((v: number) => v.toFixed(3))
+        .join(','),
+    )
     if (cur === last) return
     last = cur
     await page.waitForTimeout(150)
@@ -74,7 +81,9 @@ test('2 — clicking the left frontal lobe selects it and shows matching informa
   await waitCameraSettled(page)
   const p = await screenPointOf(page, 'left-superior-frontal-gyrus')
   await clickAt(page, p.x, p.y)
-  await expect.poll(() => state<string>(page, 'window.__neuro.useViewer.getState().selectedId')).toBe('left-frontal-lobe')
+  await expect
+    .poll(() => state<string>(page, 'window.__neuro.useViewer.getState().selectedId'))
+    .toBe('left-frontal-lobe')
   await expect(page.getByTestId('info-title')).toHaveText('Left frontal lobe')
   await expect(page.getByTestId('info-panel')).toContainText('central sulcus')
 })
@@ -110,7 +119,9 @@ test('3 & 4 — cerebellum can be dragged away independently and returned exactl
   // Test 4: Return to Original Position
   await page.getByTestId('return-original').click()
   await expect
-    .poll(() => state<number[]>(page, "window.__neuro.transforms.get('cerebellum').offset.toArray()"), { timeout: 15_000 })
+    .poll(() => state<number[]>(page, "window.__neuro.transforms.get('cerebellum').offset.toArray()"), {
+      timeout: 15_000,
+    })
     .toEqual([0, 0, 0])
   const back = await state<number[]>(page, "window.__neuro.meshRegistry.get('cerebellum').position.toArray()")
   back.forEach((v, i) => expect(v).toBeCloseTo(cbBefore[i], 9))
@@ -119,7 +130,9 @@ test('3 & 4 — cerebellum can be dragged away independently and returned exactl
 test('5, 6 & 7 — disassemble all, deterministic scrubbing, pause and smooth reverse', async ({ page }) => {
   await openLab(page)
   await page.getByTestId('disassemble').click()
-  await expect.poll(() => state<number>(page, 'window.__neuro.useAnimation.getState().progress'), { timeout: 90_000 }).toBe(1)
+  await expect
+    .poll(() => state<number>(page, 'window.__neuro.useAnimation.getState().progress'), { timeout: 90_000 })
+    .toBe(1)
   const spread = await page.evaluate(() => {
     const n = (window as any).__neuro
     let moved = 0
@@ -170,13 +183,15 @@ test('8 — hippocampus information', async ({ page }) => {
   await expect(panel).toContainText(/medial temporal/i)
   await expect(panel).toContainText('Formation of new episodic memories')
   await expect(panel).toContainText('Spatial navigation')
-  for (const d of ["Alzheimer's disease", 'Temporal lobe epilepsy', 'Hypoxic-ischemic brain injury']) await expect(panel).toContainText(d)
+  for (const d of ["Alzheimer's disease", 'Temporal lobe epilepsy', 'Hypoxic-ischemic brain injury'])
+    await expect(panel).toContainText(d)
 })
 
 test('9 & 10 — Alzheimer page and affected-region highlighting', async ({ page }) => {
   await page.goto('/diseases/alzheimers-disease')
   await expect(page.getByTestId('disease-title')).toHaveText("Alzheimer's disease")
-  for (const h of ['Pathophysiology', 'Diagnostic evaluation', 'Treatment approaches', 'Medical references']) await expect(page.getByRole('heading', { name: h })).toBeVisible()
+  for (const h of ['Pathophysiology', 'Diagnostic evaluation', 'Treatment approaches', 'Medical references'])
+    await expect(page.getByRole('heading', { name: h })).toBeVisible()
   await expect(page.getByTestId('association-list')).toContainText('Hippocampus')
   await page.waitForFunction(() => (window as any).__ready === true, null, { timeout: 90_000 })
   await page.getByTestId('highlight-affected').click()
@@ -190,10 +205,11 @@ test('9 & 10 — Alzheimer page and affected-region highlighting', async ({ page
 test('11 — search for cerebellum focuses it', async ({ page }) => {
   await openLab(page)
   await waitCameraSettled(page)
-  const dist = () => page.evaluate(() => {
-    const n = (window as any).__neuro
-    return n.sceneInfo.camera.position.distanceTo(n.meshRegistry.get('cerebellum').position)
-  })
+  const dist = () =>
+    page.evaluate(() => {
+      const n = (window as any).__neuro
+      return n.sceneInfo.camera.position.distanceTo(n.meshRegistry.get('cerebellum').position)
+    })
   const before = await dist()
   await page.getByTestId('global-search').fill('cerebellum')
   await expect(page.getByTestId('global-search-results')).toContainText('Cerebellum')
@@ -217,7 +233,9 @@ test('12 — reset all restores transforms, visibility and animation', async ({ 
   await page.keyboard.press('h') // hide via keyboard
   await page.getByTestId('timeline').fill('0.7')
   await page.getByTestId('reset-all').click()
-  await expect.poll(() => state<number>(page, "window.__neuro.transforms.get('pons').offset.length()"), { timeout: 15_000 }).toBe(0)
+  await expect
+    .poll(() => state<number>(page, "window.__neuro.transforms.get('pons').offset.length()"), { timeout: 15_000 })
+    .toBe(0)
   expect(await state<number>(page, 'window.__neuro.useAnimation.getState().progress')).toBe(0)
   expect(await state<object>(page, 'window.__neuro.useViewer.getState().hidden')).toEqual({})
 })
@@ -238,9 +256,14 @@ test('13 — mobile viewport is usable', async ({ browser }) => {
 test('14 — medical content integrity on the page', async ({ page }) => {
   await page.goto('/diseases/parkinsons-disease')
   await expect(page.getByRole('heading', { name: 'Medical references' })).toBeVisible()
-  const links = await page.locator('section:has(h2:text-is("Medical references")) a').evaluateAll((as) => as.map((a) => (a as HTMLAnchorElement).href))
+  const links = await page
+    .locator('section:has(h2:text-is("Medical references")) a')
+    .evaluateAll((as) => as.map((a) => (a as HTMLAnchorElement).href))
   expect(links.length).toBeGreaterThan(0)
-  for (const l of links) expect(l).toMatch(/^https:\/\/(www\.)?(ninds\.nih\.gov|medlineplus\.gov|ncbi\.nlm\.nih\.gov|pmc\.ncbi\.nlm\.nih\.gov|openstax\.org|doi\.org|cancer\.org|my\.clevelandclinic\.org)\//)
+  for (const l of links)
+    expect(l).toMatch(
+      /^https:\/\/(www\.)?(ninds\.nih\.gov|medlineplus\.gov|ncbi\.nlm\.nih\.gov|pmc\.ncbi\.nlm\.nih\.gov|openstax\.org|doi\.org|cancer\.org|my\.clevelandclinic\.org)\//,
+    )
   await expect(page.getByText(/Last medical review/)).toBeVisible()
   await expect(page.getByText(/not separately segmented/).first()).toBeVisible()
 })

@@ -1,4 +1,5 @@
 """REST endpoints (OpenAPI docs at /api/docs)."""
+
 from __future__ import annotations
 
 from typing import Annotated, Literal
@@ -26,8 +27,15 @@ def _not_found(kind: str, id: str):
 
 
 def _structure_summary(s: orm.Structure) -> S.StructureSummary:
-    return S.StructureSummary(id=s.id, name=s.name, parentId=s.parent_id, kind=s.kind, hemisphere=s.hemisphere,
-                              anatomicalGroup=s.groups, contentId=s.content_id)
+    return S.StructureSummary(
+        id=s.id,
+        name=s.name,
+        parentId=s.parent_id,
+        kind=s.kind,
+        hemisphere=s.hemisphere,
+        anatomicalGroup=s.groups,
+        contentId=s.content_id,
+    )
 
 
 def _relationships_for(db: Session, s: orm.Structure) -> list[orm.StructureDiseaseRelationship]:
@@ -52,7 +60,9 @@ def health(db: DB):
         "relationships": db.scalar(select(func.count()).select_from(orm.StructureDiseaseRelationship)) or 0,
         "modules": db.scalar(select(func.count()).select_from(orm.LearningModule)) or 0,
     }
-    return S.Health(status="ok", version=__version__, database=db.bind.dialect.name, contentHash=content_hash(), counts=counts)
+    return S.Health(
+        status="ok", version=__version__, database=db.bind.dialect.name, contentHash=content_hash(), counts=counts
+    )
 
 
 # ---------------------------------------------------------------- anatomy
@@ -79,7 +89,12 @@ def list_structures(
     items = db.scalars(stmt.order_by(orm.Structure.name)).all()
     if group:
         items = [s for s in items if group in s.groups]
-    return S.Page(total=len(items), limit=limit, offset=offset, items=[_structure_summary(s) for s in items[offset:offset + limit]])
+    return S.Page(
+        total=len(items),
+        limit=limit,
+        offset=offset,
+        items=[_structure_summary(s) for s in items[offset : offset + limit]],
+    )
 
 
 @router.get("/anatomy/structures/{structure_id}", response_model=S.StructureDetail, tags=["anatomy"])
@@ -89,11 +104,22 @@ def get_structure(structure_id: str, db: DB):
     refs = [db.get(orm.Reference, k) for k in (content.data["references"] if content else [])]
     rels = _relationships_for(db, s)
     return S.StructureDetail(
-        **_structure_summary(s).model_dump(), synonyms=s.synonyms, fmaId=s.fma_id, layer=s.layer, note=s.note,
-        modelMeshIds=mesh_ids_of(db, s.id), originalPosition=s.original_position, labelAnchor=s.label_anchor,
-        explodeDirection=s.explode_direction, explodeWeight=s.explode_weight,
+        **_structure_summary(s).model_dump(),
+        synonyms=s.synonyms,
+        fmaId=s.fma_id,
+        layer=s.layer,
+        note=s.note,
+        modelMeshIds=mesh_ids_of(db, s.id),
+        originalPosition=s.original_position,
+        labelAnchor=s.label_anchor,
+        explodeDirection=s.explode_direction,
+        explodeWeight=s.explode_weight,
         content=S.AnatomyEntry(**content.data) if content else None,
-        references=[S.ReferenceOut(key=r.key, title=r.title, organization=r.organization, url=r.url, type=r.type) for r in refs if r],
+        references=[
+            S.ReferenceOut(key=r.key, title=r.title, organization=r.organization, url=r.url, type=r.type)
+            for r in refs
+            if r
+        ],
         relatedDiseaseIds=sorted({r.disease_id for r in rels}),
     )
 
@@ -115,23 +141,39 @@ def anatomy_groups(db: DB):
 
 # ---------------------------------------------------------------- diseases
 def _rel_out(r: orm.StructureDiseaseRelationship) -> S.RelationshipOut:
-    return S.RelationshipOut(structureId=r.target_id, diseaseId=r.disease_id, associationType=r.association_type,
-                             distribution=r.distribution, explanation=r.explanation, evidenceLevel=r.evidence_level,
-                             references=r.references, resolvedMeshIds=r.resolved_mesh_ids)
+    return S.RelationshipOut(
+        structureId=r.target_id,
+        diseaseId=r.disease_id,
+        associationType=r.association_type,
+        distribution=r.distribution,
+        explanation=r.explanation,
+        evidenceLevel=r.evidence_level,
+        references=r.references,
+        resolvedMeshIds=r.resolved_mesh_ids,
+    )
 
 
 @router.get("/diseases", response_model=S.Page[S.DiseaseSummary], tags=["diseases"])
-def list_diseases(db: DB, limit: Limit = 50, offset: Offset = 0, category: S.Category | None = None, q: str | None = None):
+def list_diseases(
+    db: DB, limit: Limit = 50, offset: Offset = 0, category: S.Category | None = None, q: str | None = None
+):
     stmt = select(orm.Disease)
     if category:
         stmt = stmt.where(orm.Disease.category == category)
     if q:
         stmt = stmt.where(or_(orm.Disease.name.ilike(f"%{q}%"), orm.Disease.overview.ilike(f"%{q}%")))
     items = db.scalars(stmt.order_by(orm.Disease.category, orm.Disease.name)).all()
-    return S.Page(total=len(items), limit=limit, offset=offset, items=[
-        S.DiseaseSummary(id=d.id, name=d.name, category=d.category, classification=d.classification, overview=d.overview)
-        for d in items[offset:offset + limit]
-    ])
+    return S.Page(
+        total=len(items),
+        limit=limit,
+        offset=offset,
+        items=[
+            S.DiseaseSummary(
+                id=d.id, name=d.name, category=d.category, classification=d.classification, overview=d.overview
+            )
+            for d in items[offset : offset + limit]
+        ],
+    )
 
 
 @router.get("/diseases/{disease_id}", response_model=S.DiseaseDetail, tags=["diseases"])
@@ -148,7 +190,9 @@ def disease_structures(disease_id: str, db: DB):
 
 # ---------------------------------------------------------------- search
 @router.get("/search", response_model=S.SearchResults, tags=["search"])
-def search(db: DB, q: Annotated[str, Query(min_length=1, max_length=120)], limit: Annotated[int, Query(ge=1, le=50)] = 10):
+def search(
+    db: DB, q: Annotated[str, Query(min_length=1, max_length=120)], limit: Annotated[int, Query(ge=1, le=50)] = 10
+):
     return S.SearchResults(query=q, **run_search(db, q, limit))
 
 
@@ -158,8 +202,17 @@ def list_modules(db: DB, level: Literal["beginner", "intermediate", "advanced"] 
     stmt = select(orm.LearningModule).order_by(orm.LearningModule.position)
     if level:
         stmt = stmt.where(orm.LearningModule.level == level)
-    return [S.ModuleSummary(id=m.id, title=m.title, level=m.level, minutes=m.data["minutes"], summary=m.data["summary"],
-                            steps=len(m.data["steps"])) for m in db.scalars(stmt)]
+    return [
+        S.ModuleSummary(
+            id=m.id,
+            title=m.title,
+            level=m.level,
+            minutes=m.data["minutes"],
+            summary=m.data["summary"],
+            steps=len(m.data["steps"]),
+        )
+        for m in db.scalars(stmt)
+    ]
 
 
 @router.get("/learning/modules/{module_id}", tags=["learning"])

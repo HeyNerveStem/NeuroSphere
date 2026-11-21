@@ -34,7 +34,14 @@ function Lesion() {
     <group position={lesion.position}>
       <mesh renderOrder={5}>
         <sphereGeometry args={[lesion.radius, 40, 28]} />
-        <meshStandardMaterial color="#e11d48" emissive="#be123c" emissiveIntensity={0.5} roughness={0.5} transparent opacity={0.85} />
+        <meshStandardMaterial
+          color="#e11d48"
+          emissive="#be123c"
+          emissiveIntensity={0.5}
+          roughness={0.5}
+          transparent
+          opacity={0.85}
+        />
       </mesh>
       <mesh renderOrder={6}>
         <sphereGeometry args={[lesion.radius * 1.45, 32, 20]} />
@@ -88,7 +95,15 @@ export function LoadingProgress() {
   )
 }
 
-export function BrainScene({ interactive = true, autoRotate = false, onReady }: { interactive?: boolean; autoRotate?: boolean; onReady?: () => void }) {
+export function BrainScene({
+  interactive = true,
+  autoRotate = false,
+  onReady,
+}: {
+  interactive?: boolean
+  autoRotate?: boolean
+  onReady?: () => void
+}) {
   const quality = useViewer((s) => s.quality)
   const dpr = useMemo(() => DPR[quality] ?? DPR.high, [quality])
   const missed = useCallback(() => {
@@ -100,7 +115,13 @@ export function BrainScene({ interactive = true, autoRotate = false, onReady }: 
   useEffect(() => {
     sceneInfo.ready = false
     // expose read-only handles for automated browser tests
-    ;(window as unknown as Record<string, unknown>).__neuro = { meshRegistry, useViewer, useAnimation, transforms, sceneInfo }
+    ;(window as unknown as Record<string, unknown>).__neuro = {
+      meshRegistry,
+      useViewer,
+      useAnimation,
+      transforms,
+      sceneInfo,
+    }
   }, [])
 
   return (
@@ -120,8 +141,20 @@ export function BrainScene({ interactive = true, autoRotate = false, onReady }: 
       <directionalLight position={[0, -4, 1]} intensity={0.3} />
       <Environment resolution={128} frames={1}>
         <Lightformer intensity={1.2} position={[0, 4, 3]} scale={[8, 3, 1]} />
-        <Lightformer intensity={0.6} color="#9ec5ff" position={[-5, 0, -2]} rotation-y={Math.PI / 2} scale={[6, 4, 1]} />
-        <Lightformer intensity={0.5} color="#ffd6c8" position={[5, -1, 2]} rotation-y={-Math.PI / 2} scale={[6, 4, 1]} />
+        <Lightformer
+          intensity={0.6}
+          color="#9ec5ff"
+          position={[-5, 0, -2]}
+          rotation-y={Math.PI / 2}
+          scale={[6, 4, 1]}
+        />
+        <Lightformer
+          intensity={0.5}
+          color="#ffd6c8"
+          position={[5, -1, 2]}
+          rotation-y={-Math.PI / 2}
+          scale={[6, 4, 1]}
+        />
       </Environment>
       <Suspense fallback={null}>
         <BrainModel />

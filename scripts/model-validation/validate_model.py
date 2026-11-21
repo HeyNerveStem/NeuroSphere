@@ -11,6 +11,7 @@ Checks (spec section 23):
   - label anchors lie inside (or on) their own mesh bounds
 Exit code 1 on any failure.
 """
+
 from __future__ import annotations
 
 import hashlib
@@ -26,7 +27,7 @@ def glb_node_names(path: Path) -> list[str]:
     data = path.read_bytes()
     assert data[:4] == b"glTF", "not a GLB"
     (json_len,) = struct.unpack_from("<I", data, 12)
-    gltf = json.loads(data[20:20 + json_len])
+    gltf = json.loads(data[20 : 20 + json_len])
     return [n.get("name") for n in gltf.get("nodes", []) if "mesh" in n]
 
 
@@ -34,9 +35,12 @@ def main() -> int:
     errors: list[str] = []
     catalog = json.loads((ROOT / "content/structures.json").read_text())
     manifest = json.loads((ROOT / "assets/model-manifest.json").read_text())
-    glb = ROOT / "assets/processed-models/brain.glb"
-    if not glb.exists():
-        glb = ROOT / "assets/processed-models/brain.raw.glb"
+    candidates = [
+        ROOT / "assets/processed-models/brain.glb",  # fresh pipeline output, if present
+        ROOT / "frontend/public/models/brain.glb",  # committed, shipped model
+        ROOT / "assets/processed-models/brain.raw.glb",
+    ]
+    glb = next(p for p in candidates if p.exists())
     names = glb_node_names(glb)
 
     expected = {s["id"]: s for s in catalog["structures"] if s["kind"] == "mesh"}
@@ -56,39 +60,48 @@ def main() -> int:
     for sid, s in expected.items():
         m = by_id.get(sid)
         if not m:
-            errors.append(f"{sid}: not in manifest"); continue
+            errors.append(f"{sid}: not in manifest")
+            continue
         if m["fmaId"] != s["fma"]:
             errors.append(f"{sid}: FMA mismatch {m['fmaId']} != {s['fma']}")
         vals = m["originalPosition"] + sum(m["boundsLocal"], []) + m["explodeDirection"] + m["labelAnchorLocal"]
         if not all(abs(v) < 1e3 and v == v for v in vals):
             errors.append(f"{sid}: non-finite transform/bounds")
         bmin, bmax = m["boundsLocal"]
-        if any(hi - lo <= 0 for lo, hi in zip(bmin, bmax)):
+        if any(hi - lo <= 0 for lo, hi in zip(bmin, bmax, strict=True)):
             errors.append(f"{sid}: degenerate bounds")
         n = sum(v * v for v in m["explodeDirection"]) ** 0.5
         if abs(n - 1) > 1e-3:
             errors.append(f"{sid}: explode direction not unit ({n:.4f})")
         a = m["labelAnchorLocal"]
-        if not all(lo - 1e-4 <= x <= hi + 1e-4 for x, lo, hi in zip(a, bmin, bmax)):
+        if not all(lo - 1e-4 <= x <= hi + 1e-4 for x, lo, hi in zip(a, bmin, bmax, strict=True)):
             errors.append(f"{sid}: label anchor outside its mesh bounds")
 
     P = {k: v["originalPosition"] for k, v in by_id.items()}
+
     def check(cond, msg):
         if not cond:
             errors.append("orientation: " + msg)
+
     for s in expected.values():
         if s["hemisphere"] == "left":
             check(P[s["id"]][0] > 0, f"{s['id']} should have +X (patient left)")
         if s["hemisphere"] == "right":
             check(P[s["id"]][0] < 0, f"{s['id']} should have -X (patient right)")
-    check(P["left-superior-frontal-gyrus"][2] > P["left-occipital-lobe"][2], "frontal must be anterior (+Z) to occipital")
+    check(
+        P["left-superior-frontal-gyrus"][2] > P["left-occipital-lobe"][2], "frontal must be anterior (+Z) to occipital"
+    )
     check(P["cerebellum"][2] < P["corpus-callosum"][2], "cerebellum must be posterior to corpus callosum")
     check(P["cerebellum"][1] < P["corpus-callosum"][1], "cerebellum must be inferior to corpus callosum")
-    check(P["medulla-oblongata"][1] < P["pons"][1] < P["midbrain-other"][1], "medulla < pons < midbrain (superior axis)")
+    check(
+        P["medulla-oblongata"][1] < P["pons"][1] < P["midbrain-other"][1], "medulla < pons < midbrain (superior axis)"
+    )
     check(P["pituitary-gland"][1] < P["hypothalamus-other"][1], "pituitary must be inferior to hypothalamus")
 
     # determinism fingerprint of exploded targets
-    fp = hashlib.sha1(json.dumps([(m["meshName"], m["explodeDirection"], m["explodeWeight"]) for m in manifest["meshes"]]).encode()).hexdigest()
+    fp = hashlib.sha1(
+        json.dumps([(m["meshName"], m["explodeDirection"], m["explodeWeight"]) for m in manifest["meshes"]]).encode()
+    ).hexdigest()
 
     if errors:
         print("MODEL VALIDATION FAILED")

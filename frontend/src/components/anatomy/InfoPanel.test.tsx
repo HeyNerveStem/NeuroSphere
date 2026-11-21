@@ -21,7 +21,10 @@ describe('InfoPanel', () => {
     expect(screen.getByTestId('info-title')).toHaveTextContent('Left hippocampus')
     expect(screen.getByText(/Formation of new episodic memories/)).toBeInTheDocument()
     expect(screen.getByText(/Spatial navigation/)).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: "Alzheimer's disease" })).toHaveAttribute('href', '/diseases/alzheimers-disease')
+    expect(screen.getByRole('link', { name: "Alzheimer's disease" })).toHaveAttribute(
+      'href',
+      '/diseases/alzheimers-disease',
+    )
     expect(screen.getByText(/differ in mechanism/)).toBeInTheDocument()
   })
 

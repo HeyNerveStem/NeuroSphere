@@ -17,7 +17,9 @@ function NotFound() {
   return (
     <div className="p-8">
       <h1 className="text-xl font-semibold">Page not found</h1>
-      <Link to="/" className="text-[var(--accent)]">Go home</Link>
+      <Link to="/" className="text-[var(--accent)]">
+        Go home
+      </Link>
     </div>
   )
 }

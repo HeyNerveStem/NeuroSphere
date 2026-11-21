@@ -3,7 +3,7 @@ import { useFrame, useThree } from '@react-three/fiber'
 import { useEffect, useRef } from 'react'
 import { Box3, Sphere, Vector3 } from 'three'
 import type CameraControlsImpl from 'camera-controls'
-import { brainRadius, byId, meshesOf } from '@/lib/anatomy'
+import { brainRadius, isBuried, meshesOf } from '@/lib/anatomy'
 import { useAnimation } from '@/stores/animationStore'
 import { useViewer, type CameraRequest } from '@/stores/viewerStore'
 import type { CameraPreset } from '@/types'
@@ -16,17 +16,18 @@ const EPS = 0.001
  * Lateral views show the frontal pole toward the viewer's left (left lateral) or right (right lateral).
  * Axial/superior views place anterior at the top of the screen.
  */
-export const PRESETS: Record<CameraPreset, { pos: [number, number, number]; clip?: 'sagittal' | 'coronal' | 'axial' }> = {
-  anterior: { pos: [0, 0.15 * D, D] },
-  posterior: { pos: [0, 0.15 * D, -D] },
-  superior: { pos: [0, D, -EPS] },
-  inferior: { pos: [0, -D, -EPS] },
-  'left-lateral': { pos: [D, 0.1 * D, 0] },
-  'right-lateral': { pos: [-D, 0.1 * D, 0] },
-  sagittal: { pos: [-D, 0.05 * D, 0], clip: 'sagittal' },
-  coronal: { pos: [0, 0.05 * D, D], clip: 'coronal' },
-  axial: { pos: [0, D, -EPS], clip: 'axial' },
-}
+export const PRESETS: Record<CameraPreset, { pos: [number, number, number]; clip?: 'sagittal' | 'coronal' | 'axial' }> =
+  {
+    anterior: { pos: [0, 0.15 * D, D] },
+    posterior: { pos: [0, 0.15 * D, -D] },
+    superior: { pos: [0, D, -EPS] },
+    inferior: { pos: [0, -D, -EPS] },
+    'left-lateral': { pos: [D, 0.1 * D, 0] },
+    'right-lateral': { pos: [-D, 0.1 * D, 0] },
+    sagittal: { pos: [-D, 0.05 * D, 0], clip: 'sagittal' },
+    coronal: { pos: [0, 0.05 * D, D], clip: 'coronal' },
+    axial: { pos: [0, D, -EPS], clip: 'axial' },
+  }
 
 const AXES = [
   { v: new Vector3(1, 0, 0), pos: 'L', neg: 'R' },
@@ -72,12 +73,10 @@ export function CameraController({ autoRotate = false }: { autoRotate?: boolean 
     // focus: fit the live bounding sphere of the structure's meshes (wait until meshes exist)
     const ids = meshesOf(request.id)
     const v = useViewer.getState()
-    // buried structures (no cortical surface) are revealed with x-ray when nothing else exposes them
-    const buried = ids.length > 0 && ids.every((id) => {
-      const s = byId.get(id)
-      return !!s && (s.layer ?? 0) >= 2 && id !== 'cerebellum' && !s.groups.includes('cortex')
-    })
-    if (buried && !v.xray && v.clip.mode === 'none' && useAnimation.getState().progress < 0.25 && !v.isolated) v.setXray(true)
+    // buried structures are revealed with x-ray when nothing else exposes them
+    const buried = isBuried(request.id)
+    if (buried && !v.xray && v.clip.mode === 'none' && useAnimation.getState().progress < 0.25 && !v.isolated)
+      v.setXray(true)
     const box = new Box3()
     for (const id of ids) {
       const m = meshRegistry.get(id)
@@ -107,8 +106,10 @@ export function CameraController({ autoRotate = false }: { autoRotate?: boolean 
   useFrame((_, dt) => {
     // process camera requests here so none are lost before the controls mount
     const pending = useViewer.getState().cameraRequest
-    if (pending && pending.nonce !== handled.current && ref.current && handle(ref.current, pending)) handled.current = pending.nonce
-    if (autoRotate && !userActive.current && ref.current && !useViewer.getState().reducedMotion) ref.current.rotate(dt * 0.25, 0, false)
+    if (pending && pending.nonce !== handled.current && ref.current && handle(ref.current, pending))
+      handled.current = pending.nonce
+    if (autoRotate && !userActive.current && ref.current && !useViewer.getState().reducedMotion)
+      ref.current.rotate(dt * 0.25, 0, false)
     const svg = overlay.orientation
     if (!svg) return
     const q = camera.quaternion.clone().invert()

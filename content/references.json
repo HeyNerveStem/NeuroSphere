@@ -1,411 +1,411 @@
 {
- "_meta": {
-  "note": "Every URL below was confirmed to exist on the publisher's own index page or search listing on the verification date. Add a reference only after confirming it the same way; never construct a URL from a pattern.",
-  "verifiedOn": "2026-11-17",
-  "additions": "statpearls-adem, tenembaum-adem-2013, cc-autoimmune-encephalitis, acs-brain-tumor-types, mp-ency-sah confirmed via web search listing on 2026-11-20."
- },
- "references": {
-  "openstax-13-2": {
-   "title": "Anatomy and Physiology 2e, section 13.2: The Central Nervous System",
-   "organization": "OpenStax (Rice University)",
-   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system",
-   "type": "Open textbook"
-  },
-  "openstax-13-3": {
-   "title": "Anatomy and Physiology 2e, section 13.3: Circulation and the Central Nervous System",
-   "organization": "OpenStax (Rice University)",
-   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system",
-   "type": "Open textbook"
-  },
-  "ninds-know-your-brain": {
-   "title": "Brain Basics: Know Your Brain",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-know-your-brain",
-   "type": "Government health information"
-  },
-  "bodyparts3d": {
-   "title": "BodyParts3D: 3D structure database for anatomical concepts (Mitsuhashi et al., Nucleic Acids Research, 2009)",
-   "organization": "Database Center for Life Science, Japan",
-   "url": "https://doi.org/10.1093/nar/gkn613",
-   "type": "Peer-reviewed article (3D model source)"
-  },
-  "ninds-alzheimers": {
-   "title": "Alzheimer's Disease",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/alzheimers-disease",
-   "type": "Government health information"
-  },
-  "ninds-parkinsons": {
-   "title": "Parkinson's Disease",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/parkinsons-disease",
-   "type": "Government health information"
-  },
-  "ninds-huntingtons": {
-   "title": "Huntington's Disease",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/huntingtons-disease",
-   "type": "Government health information"
-  },
-  "ninds-als": {
-   "title": "Amyotrophic Lateral Sclerosis (ALS)",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/amyotrophic-lateral-sclerosis-als",
-   "type": "Government health information"
-  },
-  "ninds-ftd": {
-   "title": "Frontotemporal Dementia and Other Frontotemporal Disorders",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/frontotemporal-dementia-and-other-frontotemporal-disorders",
-   "type": "Government health information"
-  },
-  "ninds-lbd": {
-   "title": "Lewy Body Dementia",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/lewy-body-dementia",
-   "type": "Government health information"
-  },
-  "ninds-dementia": {
-   "title": "Dementia",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/dementia",
-   "type": "Government health information"
-  },
-  "ninds-stroke": {
-   "title": "Stroke",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/stroke",
-   "type": "Government health information"
-  },
-  "ninds-aneurysm": {
-   "title": "Cerebral Aneurysms",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/cerebral-aneurysms",
-   "type": "Government health information"
-  },
-  "ninds-avm": {
-   "title": "Arteriovenous Malformations (AVMs)",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/arteriovenous-malformations-avms",
-   "type": "Government health information"
-  },
-  "ninds-epilepsy": {
-   "title": "Epilepsy and Seizures",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/epilepsy-and-seizures",
-   "type": "Government health information"
-  },
-  "ninds-ms": {
-   "title": "Multiple Sclerosis (MS)",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
-   "type": "Government health information"
-  },
-  "ninds-encephalitis": {
-   "title": "Encephalitis",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/encephalitis",
-   "type": "Government health information"
-  },
-  "ninds-meningitis": {
-   "title": "Meningitis",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/meningitis",
-   "type": "Government health information"
-  },
-  "ninds-tumors": {
-   "title": "Brain and Spinal Cord Tumors",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/brain-and-spinal-cord-tumors",
-   "type": "Government health information"
-  },
-  "ninds-tbi": {
-   "title": "Traumatic Brain Injury (TBI)",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/traumatic-brain-injury-tbi",
-   "type": "Government health information"
-  },
-  "ninds-hydrocephalus": {
-   "title": "Hydrocephalus",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/hydrocephalus",
-   "type": "Government health information"
-  },
-  "ninds-migraine": {
-   "title": "Migraine",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/migraine",
-   "type": "Government health information"
-  },
-  "ninds-headache": {
-   "title": "Headache",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/headache",
-   "type": "Government health information"
-  },
-  "ninds-chiari": {
-   "title": "Chiari Malformation",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/chiari-malformation",
-   "type": "Government health information"
-  },
-  "ninds-cp": {
-   "title": "Cerebral Palsy",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/cerebral-palsy",
-   "type": "Government health information"
-  },
-  "ninds-ataxia": {
-   "title": "Ataxia",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/ataxia",
-   "type": "Government health information"
-  },
-  "ninds-cerebellar-degeneration": {
-   "title": "Cerebellar Degeneration",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/cerebellar-degeneration",
-   "type": "Government health information"
-  },
-  "ninds-hie": {
-   "title": "Hypoxic Ischemic Encephalopathy",
-   "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
-   "url": "https://www.ninds.nih.gov/health-information/disorders/hypoxic-ischemic-encephalopathy",
-   "type": "Government health information"
-  },
-  "mp-alzheimers": {
-   "title": "Alzheimer's Disease",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/alzheimersdisease.html",
-   "type": "Government health information"
-  },
-  "mp-parkinsons": {
-   "title": "Parkinson's Disease",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/parkinsonsdisease.html",
-   "type": "Government health information"
-  },
-  "mp-huntingtons": {
-   "title": "Huntington's Disease",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/huntingtonsdisease.html",
-   "type": "Government health information"
-  },
-  "mp-als": {
-   "title": "Amyotrophic Lateral Sclerosis",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/amyotrophiclateralsclerosis.html",
-   "type": "Government health information"
-  },
-  "mp-dementia": {
-   "title": "Dementia",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/dementia.html",
-   "type": "Government health information"
-  },
-  "mp-lbd": {
-   "title": "Lewy Body Dementia",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/lewybodydementia.html",
-   "type": "Government health information"
-  },
-  "mp-stroke": {
-   "title": "Stroke",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/stroke.html",
-   "type": "Government health information"
-  },
-  "mp-ischemic-stroke": {
-   "title": "Ischemic Stroke",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/ischemicstroke.html",
-   "type": "Government health information"
-  },
-  "mp-hemorrhagic-stroke": {
-   "title": "Hemorrhagic Stroke",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/hemorrhagicstroke.html",
-   "type": "Government health information"
-  },
-  "mp-aneurysm": {
-   "title": "Brain Aneurysm",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/brainaneurysm.html",
-   "type": "Government health information"
-  },
-  "mp-avm": {
-   "title": "Arteriovenous Malformations",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/arteriovenousmalformations.html",
-   "type": "Government health information"
-  },
-  "mp-epilepsy": {
-   "title": "Epilepsy",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/epilepsy.html",
-   "type": "Government health information"
-  },
-  "mp-seizures": {
-   "title": "Seizures",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/seizures.html",
-   "type": "Government health information"
-  },
-  "mp-ms": {
-   "title": "Multiple Sclerosis",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/multiplesclerosis.html",
-   "type": "Government health information"
-  },
-  "mp-meningitis": {
-   "title": "Meningitis",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/meningitis.html",
-   "type": "Government health information"
-  },
-  "mp-encephalitis": {
-   "title": "Encephalitis",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/encephalitis.html",
-   "type": "Government health information"
-  },
-  "mp-brain-tumors": {
-   "title": "Brain Tumors",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/braintumors.html",
-   "type": "Government health information"
-  },
-  "mp-tbi": {
-   "title": "Traumatic Brain Injury",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/traumaticbraininjury.html",
-   "type": "Government health information"
-  },
-  "mp-concussion": {
-   "title": "Concussion",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/concussion.html",
-   "type": "Government health information"
-  },
-  "mp-hydrocephalus": {
-   "title": "Hydrocephalus",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/hydrocephalus.html",
-   "type": "Government health information"
-  },
-  "mp-migraine": {
-   "title": "Migraine",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/migraine.html",
-   "type": "Government health information"
-  },
-  "mp-chiari": {
-   "title": "Chiari Malformation",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/chiarimalformation.html",
-   "type": "Government health information"
-  },
-  "mp-cp": {
-   "title": "Cerebral Palsy",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/cerebralpalsy.html",
-   "type": "Government health information"
-  },
-  "mp-cerebellar": {
-   "title": "Cerebellar Disorders",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/cerebellardisorders.html",
-   "type": "Government health information"
-  },
-  "mp-brain-diseases": {
-   "title": "Brain Diseases",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/braindiseases.html",
-   "type": "Government health information"
-  },
-  "mp-movement": {
-   "title": "Movement Disorders",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/movementdisorders.html",
-   "type": "Government health information"
-  },
-  "mp-memory": {
-   "title": "Memory",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/memory.html",
-   "type": "Government health information"
-  },
-  "mp-pituitary": {
-   "title": "Pituitary Disorders",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/pituitarydisorders.html",
-   "type": "Government health information"
-  },
-  "mp-degenerative": {
-   "title": "Degenerative Nerve Diseases",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/degenerativenervediseases.html",
-   "type": "Government health information"
-  },
-  "mp-brain-malformations": {
-   "title": "Brain Malformations",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/brainmalformations.html",
-   "type": "Government health information"
-  },
-  "mp-coma": {
-   "title": "Coma",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/coma.html",
-   "type": "Government health information"
-  },
-  "mp-ency-brain-abscess": {
-   "title": "Brain abscess (Medical Encyclopedia)",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/ency/article/000783.htm",
-   "type": "Medical encyclopedia"
-  },
-  "mp-ency-cerebral-hypoxia": {
-   "title": "Cerebral hypoxia (Medical Encyclopedia)",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/ency/article/001435.htm",
-   "type": "Medical encyclopedia"
-  },
-  "mp-ency-icp": {
-   "title": "Increased intracranial pressure (Medical Encyclopedia)",
-   "organization": "MedlinePlus, U.S. National Library of Medicine",
-   "url": "https://medlineplus.gov/ency/article/000793.htm",
-   "type": "Medical encyclopedia"
-  },
-  "statpearls-adem": {
-   "title": "Acute Disseminated Encephalomyelitis (StatPearls)",
-   "organization": "NCBI Bookshelf, National Library of Medicine",
-   "url": "https://www.ncbi.nlm.nih.gov/books/NBK430934/",
-   "type": "Peer-reviewed clinical reference"
-  },
-  "tenembaum-adem-2013": {
-   "title": "Tenembaum SN. Acute disseminated encephalomyelitis. Handb Clin Neurol. 2013;112:1253-1262",
-   "organization": "PubMed Central",
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7152359",
-   "type": "Peer-reviewed review"
-  },
-  "cc-autoimmune-encephalitis": {
-   "title": "Autoimmune Encephalitis",
-   "organization": "Cleveland Clinic",
-   "url": "https://my.clevelandclinic.org/health/diseases/autoimmune-encephalitis",
-   "type": "Academic medical center health information"
-  },
-  "acs-brain-tumor-types": {
-   "title": "Types of Brain and Spinal Cord Tumors in Adults",
-   "organization": "American Cancer Society",
-   "url": "https://www.cancer.org/cancer/types/brain-spinal-cord-tumors-adults/types-of-brain-tumors.html",
-   "type": "Professional society patient information"
-  },
-  "mp-ency-sah": {
-   "title": "Subarachnoid hemorrhage (Medical Encyclopedia)",
-   "organization": "MedlinePlus, National Library of Medicine",
-   "url": "https://medlineplus.gov/ency/article/000701.htm",
-   "type": "Government health information"
+  "_meta": {
+    "note": "Every URL below was confirmed to exist on the publisher's own index page or search listing on the verification date. Add a reference only after confirming it the same way; never construct a URL from a pattern.",
+    "verifiedOn": "2026-11-17",
+    "additions": "statpearls-adem, tenembaum-adem-2013, cc-autoimmune-encephalitis, acs-brain-tumor-types, mp-ency-sah confirmed via web search listing on 2026-11-20."
+  },
+  "references": {
+    "openstax-13-2": {
+      "title": "Anatomy and Physiology 2e, section 13.2: The Central Nervous System",
+      "organization": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system",
+      "type": "Open textbook"
+    },
+    "openstax-13-3": {
+      "title": "Anatomy and Physiology 2e, section 13.3: Circulation and the Central Nervous System",
+      "organization": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system",
+      "type": "Open textbook"
+    },
+    "ninds-know-your-brain": {
+      "title": "Brain Basics: Know Your Brain",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-know-your-brain",
+      "type": "Government health information"
+    },
+    "bodyparts3d": {
+      "title": "BodyParts3D: 3D structure database for anatomical concepts (Mitsuhashi et al., Nucleic Acids Research, 2009)",
+      "organization": "Database Center for Life Science, Japan",
+      "url": "https://doi.org/10.1093/nar/gkn613",
+      "type": "Peer-reviewed article (3D model source)"
+    },
+    "ninds-alzheimers": {
+      "title": "Alzheimer's Disease",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/alzheimers-disease",
+      "type": "Government health information"
+    },
+    "ninds-parkinsons": {
+      "title": "Parkinson's Disease",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/parkinsons-disease",
+      "type": "Government health information"
+    },
+    "ninds-huntingtons": {
+      "title": "Huntington's Disease",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/huntingtons-disease",
+      "type": "Government health information"
+    },
+    "ninds-als": {
+      "title": "Amyotrophic Lateral Sclerosis (ALS)",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/amyotrophic-lateral-sclerosis-als",
+      "type": "Government health information"
+    },
+    "ninds-ftd": {
+      "title": "Frontotemporal Dementia and Other Frontotemporal Disorders",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/frontotemporal-dementia-and-other-frontotemporal-disorders",
+      "type": "Government health information"
+    },
+    "ninds-lbd": {
+      "title": "Lewy Body Dementia",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/lewy-body-dementia",
+      "type": "Government health information"
+    },
+    "ninds-dementia": {
+      "title": "Dementia",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/dementia",
+      "type": "Government health information"
+    },
+    "ninds-stroke": {
+      "title": "Stroke",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/stroke",
+      "type": "Government health information"
+    },
+    "ninds-aneurysm": {
+      "title": "Cerebral Aneurysms",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/cerebral-aneurysms",
+      "type": "Government health information"
+    },
+    "ninds-avm": {
+      "title": "Arteriovenous Malformations (AVMs)",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/arteriovenous-malformations-avms",
+      "type": "Government health information"
+    },
+    "ninds-epilepsy": {
+      "title": "Epilepsy and Seizures",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/epilepsy-and-seizures",
+      "type": "Government health information"
+    },
+    "ninds-ms": {
+      "title": "Multiple Sclerosis (MS)",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+      "type": "Government health information"
+    },
+    "ninds-encephalitis": {
+      "title": "Encephalitis",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/encephalitis",
+      "type": "Government health information"
+    },
+    "ninds-meningitis": {
+      "title": "Meningitis",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/meningitis",
+      "type": "Government health information"
+    },
+    "ninds-tumors": {
+      "title": "Brain and Spinal Cord Tumors",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/brain-and-spinal-cord-tumors",
+      "type": "Government health information"
+    },
+    "ninds-tbi": {
+      "title": "Traumatic Brain Injury (TBI)",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/traumatic-brain-injury-tbi",
+      "type": "Government health information"
+    },
+    "ninds-hydrocephalus": {
+      "title": "Hydrocephalus",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/hydrocephalus",
+      "type": "Government health information"
+    },
+    "ninds-migraine": {
+      "title": "Migraine",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/migraine",
+      "type": "Government health information"
+    },
+    "ninds-headache": {
+      "title": "Headache",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/headache",
+      "type": "Government health information"
+    },
+    "ninds-chiari": {
+      "title": "Chiari Malformation",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/chiari-malformation",
+      "type": "Government health information"
+    },
+    "ninds-cp": {
+      "title": "Cerebral Palsy",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/cerebral-palsy",
+      "type": "Government health information"
+    },
+    "ninds-ataxia": {
+      "title": "Ataxia",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/ataxia",
+      "type": "Government health information"
+    },
+    "ninds-cerebellar-degeneration": {
+      "title": "Cerebellar Degeneration",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/cerebellar-degeneration",
+      "type": "Government health information"
+    },
+    "ninds-hie": {
+      "title": "Hypoxic Ischemic Encephalopathy",
+      "organization": "National Institute of Neurological Disorders and Stroke (NIH)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/hypoxic-ischemic-encephalopathy",
+      "type": "Government health information"
+    },
+    "mp-alzheimers": {
+      "title": "Alzheimer's Disease",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/alzheimersdisease.html",
+      "type": "Government health information"
+    },
+    "mp-parkinsons": {
+      "title": "Parkinson's Disease",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/parkinsonsdisease.html",
+      "type": "Government health information"
+    },
+    "mp-huntingtons": {
+      "title": "Huntington's Disease",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/huntingtonsdisease.html",
+      "type": "Government health information"
+    },
+    "mp-als": {
+      "title": "Amyotrophic Lateral Sclerosis",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/amyotrophiclateralsclerosis.html",
+      "type": "Government health information"
+    },
+    "mp-dementia": {
+      "title": "Dementia",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/dementia.html",
+      "type": "Government health information"
+    },
+    "mp-lbd": {
+      "title": "Lewy Body Dementia",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/lewybodydementia.html",
+      "type": "Government health information"
+    },
+    "mp-stroke": {
+      "title": "Stroke",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/stroke.html",
+      "type": "Government health information"
+    },
+    "mp-ischemic-stroke": {
+      "title": "Ischemic Stroke",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/ischemicstroke.html",
+      "type": "Government health information"
+    },
+    "mp-hemorrhagic-stroke": {
+      "title": "Hemorrhagic Stroke",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/hemorrhagicstroke.html",
+      "type": "Government health information"
+    },
+    "mp-aneurysm": {
+      "title": "Brain Aneurysm",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/brainaneurysm.html",
+      "type": "Government health information"
+    },
+    "mp-avm": {
+      "title": "Arteriovenous Malformations",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/arteriovenousmalformations.html",
+      "type": "Government health information"
+    },
+    "mp-epilepsy": {
+      "title": "Epilepsy",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/epilepsy.html",
+      "type": "Government health information"
+    },
+    "mp-seizures": {
+      "title": "Seizures",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/seizures.html",
+      "type": "Government health information"
+    },
+    "mp-ms": {
+      "title": "Multiple Sclerosis",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/multiplesclerosis.html",
+      "type": "Government health information"
+    },
+    "mp-meningitis": {
+      "title": "Meningitis",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/meningitis.html",
+      "type": "Government health information"
+    },
+    "mp-encephalitis": {
+      "title": "Encephalitis",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/encephalitis.html",
+      "type": "Government health information"
+    },
+    "mp-brain-tumors": {
+      "title": "Brain Tumors",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/braintumors.html",
+      "type": "Government health information"
+    },
+    "mp-tbi": {
+      "title": "Traumatic Brain Injury",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/traumaticbraininjury.html",
+      "type": "Government health information"
+    },
+    "mp-concussion": {
+      "title": "Concussion",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/concussion.html",
+      "type": "Government health information"
+    },
+    "mp-hydrocephalus": {
+      "title": "Hydrocephalus",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/hydrocephalus.html",
+      "type": "Government health information"
+    },
+    "mp-migraine": {
+      "title": "Migraine",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/migraine.html",
+      "type": "Government health information"
+    },
+    "mp-chiari": {
+      "title": "Chiari Malformation",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/chiarimalformation.html",
+      "type": "Government health information"
+    },
+    "mp-cp": {
+      "title": "Cerebral Palsy",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/cerebralpalsy.html",
+      "type": "Government health information"
+    },
+    "mp-cerebellar": {
+      "title": "Cerebellar Disorders",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/cerebellardisorders.html",
+      "type": "Government health information"
+    },
+    "mp-brain-diseases": {
+      "title": "Brain Diseases",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/braindiseases.html",
+      "type": "Government health information"
+    },
+    "mp-movement": {
+      "title": "Movement Disorders",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/movementdisorders.html",
+      "type": "Government health information"
+    },
+    "mp-memory": {
+      "title": "Memory",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/memory.html",
+      "type": "Government health information"
+    },
+    "mp-pituitary": {
+      "title": "Pituitary Disorders",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/pituitarydisorders.html",
+      "type": "Government health information"
+    },
+    "mp-degenerative": {
+      "title": "Degenerative Nerve Diseases",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/degenerativenervediseases.html",
+      "type": "Government health information"
+    },
+    "mp-brain-malformations": {
+      "title": "Brain Malformations",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/brainmalformations.html",
+      "type": "Government health information"
+    },
+    "mp-coma": {
+      "title": "Coma",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/coma.html",
+      "type": "Government health information"
+    },
+    "mp-ency-brain-abscess": {
+      "title": "Brain abscess (Medical Encyclopedia)",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/ency/article/000783.htm",
+      "type": "Medical encyclopedia"
+    },
+    "mp-ency-cerebral-hypoxia": {
+      "title": "Cerebral hypoxia (Medical Encyclopedia)",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/ency/article/001435.htm",
+      "type": "Medical encyclopedia"
+    },
+    "mp-ency-icp": {
+      "title": "Increased intracranial pressure (Medical Encyclopedia)",
+      "organization": "MedlinePlus, U.S. National Library of Medicine",
+      "url": "https://medlineplus.gov/ency/article/000793.htm",
+      "type": "Medical encyclopedia"
+    },
+    "statpearls-adem": {
+      "title": "Acute Disseminated Encephalomyelitis (StatPearls)",
+      "organization": "NCBI Bookshelf, National Library of Medicine",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK430934/",
+      "type": "Peer-reviewed clinical reference"
+    },
+    "tenembaum-adem-2013": {
+      "title": "Tenembaum SN. Acute disseminated encephalomyelitis. Handb Clin Neurol. 2013;112:1253-1262",
+      "organization": "PubMed Central",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7152359",
+      "type": "Peer-reviewed review"
+    },
+    "cc-autoimmune-encephalitis": {
+      "title": "Autoimmune Encephalitis",
+      "organization": "Cleveland Clinic",
+      "url": "https://my.clevelandclinic.org/health/diseases/autoimmune-encephalitis",
+      "type": "Academic medical center health information"
+    },
+    "acs-brain-tumor-types": {
+      "title": "Types of Brain and Spinal Cord Tumors in Adults",
+      "organization": "American Cancer Society",
+      "url": "https://www.cancer.org/cancer/types/brain-spinal-cord-tumors-adults/types-of-brain-tumors.html",
+      "type": "Professional society patient information"
+    },
+    "mp-ency-sah": {
+      "title": "Subarachnoid hemorrhage (Medical Encyclopedia)",
+      "organization": "MedlinePlus, National Library of Medicine",
+      "url": "https://medlineplus.gov/ency/article/000701.htm",
+      "type": "Government health information"
+    }
   }
- }
 }

@@ -19,7 +19,8 @@ function lesionFor(step: AnimationStep) {
 export function applyStep(step: AnimationStep, title: string) {
   const v = useViewer.getState()
   const hl: Record<string, HighlightStyle> = {}
-  for (const h of step.highlight ?? []) for (const m of resolveTarget(h.target)) if (!hl[m] || h.style === 'primary') hl[m] = h.style
+  for (const h of step.highlight ?? [])
+    for (const m of resolveTarget(h.target)) if (!hl[m] || h.style === 'primary') hl[m] = h.style
   v.setHighlight(hl, title, Object.keys(hl).length > 0)
   v.setPulse(!!step.pulse)
   v.setXray(!!step.xray)
@@ -52,17 +53,23 @@ export function DiseaseAnimationPlayer({ anim }: { anim: DiseaseAnimation }) {
   useEffect(() => {
     window.clearTimeout(timer.current)
     if (!playing || !step) return
-    timer.current = window.setTimeout(() => {
-      if (i < anim.steps.length - 1) setI(i + 1)
-      else setPlaying(false)
-    }, step.durationMs / (useViewer.getState().reducedMotion ? 0.5 : 1))
+    timer.current = window.setTimeout(
+      () => {
+        if (i < anim.steps.length - 1) setI(i + 1)
+        else setPlaying(false)
+      },
+      step.durationMs / (useViewer.getState().reducedMotion ? 0.5 : 1),
+    )
     return () => window.clearTimeout(timer.current)
   }, [playing, i, step, anim.steps.length])
 
-  useEffect(() => () => {
-    window.clearTimeout(timer.current)
-    if (anim.kind !== 'axon') clearDiseaseVisuals()
-  }, [anim.kind])
+  useEffect(
+    () => () => {
+      window.clearTimeout(timer.current)
+      if (anim.kind !== 'axon') clearDiseaseVisuals()
+    },
+    [anim.kind],
+  )
 
   const stop = () => {
     setPlaying(false)
@@ -81,10 +88,32 @@ export function DiseaseAnimationPlayer({ anim }: { anim: DiseaseAnimation }) {
       </div>
       {anim.kind === 'axon' && <AxonAnimation demyelinated={step?.demyelinated ?? 0} running={playing || i >= 0} />}
       <p className="mt-2 min-h-[2.6rem] text-[13px] leading-snug" aria-live="polite">
-        {step ? <><strong>Step {i + 1}/{anim.steps.length}.</strong> {step.caption}</> : <span className="text-[var(--text-2)]">Press play to start the {anim.steps.length}-step sequence{anim.kind === 'sequence' ? ' in the 3D viewer' : ''}.</span>}
+        {step ? (
+          <>
+            <strong>
+              Step {i + 1}/{anim.steps.length}.
+            </strong>{' '}
+            {step.caption}
+          </>
+        ) : (
+          <span className="text-[var(--text-2)]">
+            Press play to start the {anim.steps.length}-step sequence
+            {anim.kind === 'sequence' ? ' in the 3D viewer' : ''}.
+          </span>
+        )}
       </p>
       <div className="mt-2 flex items-center gap-1.5">
-        <button className="btn btn-icon" aria-label="Previous step" disabled={i <= 0} onClick={() => { setPlaying(false); setI(Math.max(0, i - 1)) }}><ChevronLeft size={14} /></button>
+        <button
+          className="btn btn-icon"
+          aria-label="Previous step"
+          disabled={i <= 0}
+          onClick={() => {
+            setPlaying(false)
+            setI(Math.max(0, i - 1))
+          }}
+        >
+          <ChevronLeft size={14} />
+        </button>
         <button
           className="btn btn-primary"
           onClick={() => {
@@ -95,12 +124,37 @@ export function DiseaseAnimationPlayer({ anim }: { anim: DiseaseAnimation }) {
             }
           }}
         >
-          {playing ? <><Pause size={14} /> Pause</> : <><Play size={14} /> Play</>}
+          {playing ? (
+            <>
+              <Pause size={14} /> Pause
+            </>
+          ) : (
+            <>
+              <Play size={14} /> Play
+            </>
+          )}
         </button>
-        <button className="btn btn-icon" aria-label="Next step" disabled={i >= anim.steps.length - 1} onClick={() => { setPlaying(false); setI(i + 1) }}><ChevronRight size={14} /></button>
-        <button className="btn btn-icon" aria-label="Stop and clear" onClick={stop}><Square size={13} /></button>
+        <button
+          className="btn btn-icon"
+          aria-label="Next step"
+          disabled={i >= anim.steps.length - 1}
+          onClick={() => {
+            setPlaying(false)
+            setI(i + 1)
+          }}
+        >
+          <ChevronRight size={14} />
+        </button>
+        <button className="btn btn-icon" aria-label="Stop and clear" onClick={stop}>
+          <Square size={13} />
+        </button>
         <div className="ml-2 flex flex-1 gap-1" aria-hidden>
-          {anim.steps.map((_, k) => <span key={k} className={`h-1.5 flex-1 rounded-full ${k <= i ? 'bg-[var(--accent)]' : 'bg-[var(--border)]'}`} />)}
+          {anim.steps.map((_, k) => (
+            <span
+              key={k}
+              className={`h-1.5 flex-1 rounded-full ${k <= i ? 'bg-[var(--accent)]' : 'bg-[var(--border)]'}`}
+            />
+          ))}
         </div>
       </div>
       {anim.note && <p className="mt-2 text-[11.5px] text-[var(--text-2)]">{anim.note}</p>}

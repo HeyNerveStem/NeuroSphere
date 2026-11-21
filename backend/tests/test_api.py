@@ -51,7 +51,11 @@ def test_structure_detail_hippocampus(client):
 def test_group_structure_resolves_meshes(client):
     j = client.get("/api/anatomy/structures/left-frontal-lobe").json()
     assert j["kind"] == "group"
-    assert set(j["modelMeshIds"]) == {"left-superior-frontal-gyrus", "left-middle-frontal-gyrus", "left-precentral-gyrus"}
+    assert set(j["modelMeshIds"]) == {
+        "left-superior-frontal-gyrus",
+        "left-middle-frontal-gyrus",
+        "left-precentral-gyrus",
+    }
 
 
 def test_structure_diseases(client):
@@ -115,7 +119,17 @@ def test_errors_and_validation(client):
 
 def test_openapi(client):
     spec = client.get("/api/openapi.json").json()
-    for path in ["/api/anatomy/structures", "/api/anatomy/structures/{structure_id}", "/api/anatomy/structures/{structure_id}/diseases",
-                 "/api/anatomy/groups", "/api/diseases", "/api/diseases/{disease_id}", "/api/diseases/{disease_id}/structures",
-                 "/api/search", "/api/learning/modules", "/api/learning/modules/{module_id}", "/api/health"]:
+    for path in [
+        "/api/anatomy/structures",
+        "/api/anatomy/structures/{structure_id}",
+        "/api/anatomy/structures/{structure_id}/diseases",
+        "/api/anatomy/groups",
+        "/api/diseases",
+        "/api/diseases/{disease_id}",
+        "/api/diseases/{disease_id}/structures",
+        "/api/search",
+        "/api/learning/modules",
+        "/api/learning/modules/{module_id}",
+        "/api/health",
+    ]:
         assert path in spec["paths"], path

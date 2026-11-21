@@ -16,6 +16,7 @@ Pipeline (deterministic, no random numbers anywhere):
 Usage:  python3 scripts/model-optimization/build_brain_glb.py [--budget 320000]
 Then:   npx @gltf-transform/cli meshopt <out>.glb <final>.glb   (see build_model.sh)
 """
+
 from __future__ import annotations
 
 import argparse
@@ -132,7 +133,7 @@ def main():
 
     allv = np.vstack([v for _, v, _, _ in loaded.values()])
     center = (allv.min(0) + allv.max(0)) / 2
-    total = sum(len(f) for *_, f, _ in [(a, b, c, d) for a, b, c, d in loaded.values()])
+    total = sum(len(faces) for _, _, faces, _ in loaded.values())
     ratio = min(1.0, args.budget / total)
     print(f"source triangles: {total:,}  -> budget {args.budget:,} (ratio {ratio:.3f})")
 
@@ -166,38 +167,50 @@ def main():
         T = np.eye(4)
         T[:3, 3] = centroid
         scene.add_geometry(local, node_name=sid, geom_name=sid, transform=T)
-        manifest_meshes.append(dict(
-            meshName=sid, structureId=sid, fmaId=s["fma"], sourceFile=f"source-models/bodyparts3d/{path.name}",
-            sourceSha1=hashlib.sha1(path.read_bytes()).hexdigest(),
-            trianglesSource=int(n0), trianglesShipped=int(len(local.faces)),
-            originalPosition=[round(float(x), 5) for x in centroid],
-            originalQuaternion=[0, 0, 0, 1],
-            boundsLocal=[[round(float(x), 5) for x in bmin], [round(float(x), 5) for x in bmax]],
-            labelAnchorLocal=[round(float(x), 5) for x in anchor_local],
-            explodeDirection=[round(float(x), 5) for x in direction],
-            explodeWeight=round(float(weight), 4),
-            layer=s["layer"],
-            watertight=bool(tm.is_watertight),
-        ))
+        manifest_meshes.append(
+            dict(
+                meshName=sid,
+                structureId=sid,
+                fmaId=s["fma"],
+                sourceFile=f"source-models/bodyparts3d/{path.name}",
+                sourceSha1=hashlib.sha1(path.read_bytes()).hexdigest(),
+                trianglesSource=int(n0),
+                trianglesShipped=int(len(local.faces)),
+                originalPosition=[round(float(x), 5) for x in centroid],
+                originalQuaternion=[0, 0, 0, 1],
+                boundsLocal=[[round(float(x), 5) for x in bmin], [round(float(x), 5) for x in bmax]],
+                labelAnchorLocal=[round(float(x), 5) for x in anchor_local],
+                explodeDirection=[round(float(x), 5) for x in direction],
+                explodeWeight=round(float(weight), 4),
+                layer=s["layer"],
+                watertight=bool(tm.is_watertight),
+            )
+        )
         print(f"  {sid:45s} {n0:7d} -> {len(local.faces):6d}")
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     raw = OUT_DIR / "brain.raw.glb"
     scene.export(raw)
-    allc = np.vstack([np.array(m["originalPosition"]) for m in manifest_meshes])
     manifest = dict(
         model="brain.glb",
-        source=dict(name="BodyParts3D 3.0 (20110915)", mirror="https://github.com/Kevin-Mattheus-Moerman/BodyParts3D",
-                    license="CC BY-SA 2.1 JP", attribution="BodyParts3D, (c) The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan",
-                    citation="Mitsuhashi N, et al. BodyParts3D: 3D structure database for anatomical concepts. Nucleic Acids Res. 2009;37:D782-5. doi:10.1093/nar/gkn613"),
+        source=dict(
+            name="BodyParts3D 3.0 (20110915)",
+            mirror="https://github.com/Kevin-Mattheus-Moerman/BodyParts3D",
+            license="CC BY-SA 2.1 JP",
+            attribution="BodyParts3D, (c) The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan",
+            citation="Mitsuhashi N, et al. BodyParts3D: 3D structure database for anatomical concepts. Nucleic Acids Res. 2009;37:D782-5. doi:10.1093/nar/gkn613",
+        ),
         coordinateSystem=dict(x="patient left", y="superior", z="anterior", unitsPerMm=0.01),
         sourceCentreMm=[round(float(x) / 0.01, 3) for x in (center)],
-        brainBounds=[[round(float(x), 4) for x in allv.min(0) - center], [round(float(x), 4) for x in allv.max(0) - center]],
+        brainBounds=[
+            [round(float(x), 4) for x in allv.min(0) - center],
+            [round(float(x), 4) for x in allv.max(0) - center],
+        ],
         trianglesTotal=int(sum(m["trianglesShipped"] for m in manifest_meshes)),
         meshes=manifest_meshes,
     )
-    (ROOT / "assets" / "model-manifest.json").write_text(json.dumps(manifest, indent=1))
-    print(f"wrote {raw} ({raw.stat().st_size/1e6:.1f} MB), {manifest['trianglesTotal']:,} triangles")
+    (ROOT / "assets" / "model-manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
+    print(f"wrote {raw} ({raw.stat().st_size / 1e6:.1f} MB), {manifest['trianglesTotal']:,} triangles")
 
 
 if __name__ == "__main__":

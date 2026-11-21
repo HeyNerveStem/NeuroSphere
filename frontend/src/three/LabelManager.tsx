@@ -13,7 +13,12 @@ import { useAnimation } from '@/stores/animationStore'
 import { useViewer } from '@/stores/viewerStore'
 import { meshRegistry, overlay } from './registry'
 
-export interface LabelEntry { id: string; text: string; meshes: string[]; priority: number }
+export interface LabelEntry {
+  id: string
+  text: string
+  meshes: string[]
+  priority: number
+}
 
 const MAJOR_GROUPS = STRUCTURES.filter((s) => s.kind === 'group' && s.majorSelect).map((s) => s.id)
 
@@ -30,9 +35,9 @@ export function computeLabelEntries(mode: string, selectedId: string | null, lev
     MESH_IDS.forEach((id) => push(id, byId.get(id)!.labelPriority ?? 2))
   } else if (mode === 'major') {
     MAJOR_GROUPS.forEach((id) => push(id, 1))
-    MESH_IDS.filter((id) => (byId.get(id)!.labelPriority ?? 2) === 1 && !byId.get(id)!.parentId?.endsWith('-lobe')).forEach((id) =>
-      push(id, 1.5),
-    )
+    MESH_IDS.filter(
+      (id) => (byId.get(id)!.labelPriority ?? 2) === 1 && !byId.get(id)!.parentId?.endsWith('-lobe'),
+    ).forEach((id) => push(id, 1.5))
   }
   if (selectedId && mode !== 'none') {
     const existing = entries.find((e) => e.id === selectedId)

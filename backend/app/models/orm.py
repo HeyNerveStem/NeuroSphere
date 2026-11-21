@@ -1,4 +1,5 @@
 """Relational model: structures, diseases, structure–disease relationships, references, learning modules."""
+
 from __future__ import annotations
 
 from sqlalchemy import JSON, ForeignKey, Integer, String, Text, UniqueConstraint
@@ -42,7 +43,9 @@ class Disease(Base):
     overview: Mapped[str] = mapped_column(Text)
     last_reviewed: Mapped[str] = mapped_column(String(10))
     data: Mapped[dict] = mapped_column(JSON)  # full validated page content
-    relationships: Mapped[list[StructureDiseaseRelationship]] = relationship(back_populates="disease", cascade="all, delete-orphan")
+    relationships: Mapped[list[StructureDiseaseRelationship]] = relationship(
+        back_populates="disease", cascade="all, delete-orphan"
+    )
 
 
 class StructureDiseaseRelationship(Base):

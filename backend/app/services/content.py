@@ -1,4 +1,5 @@
 """Loads the shared, validated JSON content and seeds the relational database."""
+
 from __future__ import annotations
 
 import hashlib
@@ -82,30 +83,56 @@ def seed(db: Session, force: bool = False) -> bool:
 
     for s in sorted(structures, key=lambda s: (d(s["id"]), order[s["id"]])):
         m = meshes.get(s["id"])
-        db.add(orm.Structure(
-            id=s["id"], name=s["name"], parent_id=s["parentId"], kind=s["kind"], hemisphere=s["hemisphere"],
-            content_id=s["contentId"], fma_id=s.get("fma"), layer=s.get("layer"), groups=s["groups"],
-            synonyms=s["synonyms"], note=s.get("note"),
-            original_position=m["originalPosition"] if m else None,
-            label_anchor=m["labelAnchorLocal"] if m else None,
-            explode_direction=m["explodeDirection"] if m else None,
-            explode_weight=m["explodeWeight"] if m else None,
-        ))
+        db.add(
+            orm.Structure(
+                id=s["id"],
+                name=s["name"],
+                parent_id=s["parentId"],
+                kind=s["kind"],
+                hemisphere=s["hemisphere"],
+                content_id=s["contentId"],
+                fma_id=s.get("fma"),
+                layer=s.get("layer"),
+                groups=s["groups"],
+                synonyms=s["synonyms"],
+                note=s.get("note"),
+                original_position=m["originalPosition"] if m else None,
+                label_anchor=m["labelAnchorLocal"] if m else None,
+                explode_direction=m["explodeDirection"] if m else None,
+                explode_weight=m["explodeWeight"] if m else None,
+            )
+        )
         db.flush()
     for cid, entry in data["anatomy"]["entries"].items():
         db.add(orm.AnatomyContent(content_id=cid, data=entry))
     for key, r in data["references"]["references"].items():
         db.add(orm.Reference(key=key, **{k: r[k] for k in ("title", "organization", "url", "type")}))
     for dz in data["diseases"]["diseases"]:
-        db.add(orm.Disease(id=dz["id"], name=dz["name"], category=dz["category"], classification=dz["classification"],
-                           overview=dz["overview"], last_reviewed=dz["lastReviewed"], data=dz))
+        db.add(
+            orm.Disease(
+                id=dz["id"],
+                name=dz["name"],
+                category=dz["category"],
+                classification=dz["classification"],
+                overview=dz["overview"],
+                last_reviewed=dz["lastReviewed"],
+                data=dz,
+            )
+        )
     db.flush()
     for r in data["relationships"]["relationships"]:
-        db.add(orm.StructureDiseaseRelationship(
-            target_id=r["structureId"], disease_id=r["diseaseId"], association_type=r["associationType"],
-            distribution=r["distribution"], explanation=r["explanation"], evidence_level=r["evidenceLevel"],
-            references=r["references"], resolved_mesh_ids=r["resolvedMeshIds"],
-        ))
+        db.add(
+            orm.StructureDiseaseRelationship(
+                target_id=r["structureId"],
+                disease_id=r["diseaseId"],
+                association_type=r["associationType"],
+                distribution=r["distribution"],
+                explanation=r["explanation"],
+                evidence_level=r["evidenceLevel"],
+                references=r["references"],
+                resolved_mesh_ids=r["resolvedMeshIds"],
+            )
+        )
     for i, m in enumerate(data["learning"]["modules"]):
         db.add(orm.LearningModule(id=m["id"], title=m["title"], level=m["level"], position=i, data=m))
     if current:

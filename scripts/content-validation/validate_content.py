@@ -13,6 +13,7 @@ Build and validate the shared medical content.
         against invented figures: flags '%' and 'per 100' patterns)
 Exit code 1 on failure.
 """
+
 from __future__ import annotations
 
 import json
@@ -23,10 +24,39 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 C = ROOT / "content"
 
-REQUIRED = ["id", "name", "category", "classification", "overview", "pathophysiology", "causes", "riskFactors",
-            "regionsSummary", "symptoms", "progression", "diagnosis", "imaging", "treatments", "rehabilitation",
-            "complications", "prognosis", "prevention", "faq", "associations", "references"]
-CATEGORIES = {"neurodegenerative", "cerebrovascular", "seizure", "demyelinating", "infectious", "neoplastic", "traumatic", "other"}
+REQUIRED = [
+    "id",
+    "name",
+    "category",
+    "classification",
+    "overview",
+    "pathophysiology",
+    "causes",
+    "riskFactors",
+    "regionsSummary",
+    "symptoms",
+    "progression",
+    "diagnosis",
+    "imaging",
+    "treatments",
+    "rehabilitation",
+    "complications",
+    "prognosis",
+    "prevention",
+    "faq",
+    "associations",
+    "references",
+]
+CATEGORIES = {
+    "neurodegenerative",
+    "cerebrovascular",
+    "seizure",
+    "demyelinating",
+    "infectious",
+    "neoplastic",
+    "traumatic",
+    "other",
+}
 ASSOC_TYPES = {"primary", "secondary", "subtype"}
 EVIDENCE = {"established", "variable", "emerging"}
 DISTRIB = {"diffuse", "regional", "focal", "scattered", "network"}
@@ -96,21 +126,33 @@ def main() -> int:
         blob = json.dumps({k: v for k, v in d.items() if k not in ("references",)})
         for m in stat.finditer(blob):
             # allowed: genetic inheritance probability statement
-            if "50% chance" in blob[max(0, m.start() - 5):m.end() + 10]:
+            if "50% chance" in blob[max(0, m.start() - 5) : m.end() + 10]:
                 continue
-            errs.append(f"disease {d['id']}: numeric statistic '{m.group(0)}' — verify against a cited source or remove")
+            errs.append(
+                f"disease {d['id']}: numeric statistic '{m.group(0)}' — verify against a cited source or remove"
+            )
         for a in d.get("associations", []):
             hits = resolve(a["target"])
             if not hits:
                 errs.append(f"disease {d['id']}: association target '{a['target']}' resolves to no mesh")
             if a["type"] not in ASSOC_TYPES or a["evidence"] not in EVIDENCE or a["distribution"] not in DISTRIB:
                 errs.append(f"disease {d['id']}: bad association enum in {a}")
-            relationships.append(dict(structureId=a["target"], diseaseId=d["id"], associationType=a["type"],
-                                      distribution=a["distribution"], explanation=a["explanation"],
-                                      evidenceLevel=a["evidence"], references=d["references"][:2],
-                                      resolvedMeshIds=sorted(hits)))
+            relationships.append(
+                dict(
+                    structureId=a["target"],
+                    diseaseId=d["id"],
+                    associationType=a["type"],
+                    distribution=a["distribution"],
+                    explanation=a["explanation"],
+                    evidenceLevel=a["evidence"],
+                    references=d["references"][:2],
+                    resolvedMeshIds=sorted(hits),
+                )
+            )
         d.setdefault("lastReviewed", "2026-11-20")
-        d.setdefault("reviewStatus", "Draft — educational summary from cited sources; pending clinical reviewer sign-off.")
+        d.setdefault(
+            "reviewStatus", "Draft — educational summary from cited sources; pending clinical reviewer sign-off."
+        )
 
     # learning & animations
     learning = json.loads((C / "learning.json").read_text())["modules"]
@@ -140,15 +182,19 @@ def main() -> int:
         for e in errs:
             print("  -", e)
         return 1
-    (C / "diseases.json").write_text(json.dumps(dict(_meta=dict(lastReviewed="2026-11-20"), diseases=diseases), indent=1))
-    (C / "relationships.json").write_text(json.dumps(dict(relationships=relationships), indent=1))
+    (C / "diseases.json").write_text(
+        json.dumps(dict(_meta=dict(lastReviewed="2026-11-20"), diseases=diseases), indent=2) + "\n"
+    )
+    (C / "relationships.json").write_text(json.dumps(dict(relationships=relationships), indent=2) + "\n")
     used = set()
     for d in diseases:
         used |= set(d["references"])
     for e in anatomy.values():
         used |= set(e.get("references", []))
-    print(f"content OK: {len(anatomy)} anatomy entries, {len(diseases)} diseases, {len(relationships)} relationships, "
-          f"{len(learning)} tours, {len(anims)} animations, {len(used)}/{len(refs)} references used")
+    print(
+        f"content OK: {len(anatomy)} anatomy entries, {len(diseases)} diseases, {len(relationships)} relationships, "
+        f"{len(learning)} tours, {len(anims)} animations, {len(used)}/{len(refs)} references used"
+    )
     return 0
 
 

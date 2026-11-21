@@ -14,17 +14,27 @@ export function HighlightLegend() {
   const styles = new Set(Object.values(highlight))
   if (!styles.size) return null
   return (
-    <div className="glass absolute left-3 top-3 max-w-[min(22rem,70vw)] rounded-xl p-3 text-xs" role="region" aria-label="Highlight legend">
+    <div
+      className="glass absolute left-3 top-3 max-w-[min(22rem,70vw)] rounded-xl p-3 text-xs"
+      role="region"
+      aria-label="Highlight legend"
+    >
       <div className="flex items-start justify-between gap-2">
         {caption && <p className="font-semibold leading-snug">{caption}</p>}
-        <button className="btn btn-icon -mr-1 -mt-1" aria-label="Clear highlight" onClick={() => useViewer.getState().clearHighlight()}>
+        <button
+          className="btn btn-icon -mr-1 -mt-1"
+          aria-label="Clear highlight"
+          onClick={() => useViewer.getState().clearHighlight()}
+        >
           <X size={14} />
         </button>
       </div>
       <ul className="mt-1.5 space-y-1">
         {ITEMS.filter((i) => styles.has(i.key)).map((i) => (
           <li key={i.key} className="flex items-center gap-2">
-            <span aria-hidden style={{ color: i.color }} className="text-sm leading-none">{i.pattern}</span>
+            <span aria-hidden style={{ color: i.color }} className="text-sm leading-none">
+              {i.pattern}
+            </span>
             <span>{i.label}</span>
           </li>
         ))}

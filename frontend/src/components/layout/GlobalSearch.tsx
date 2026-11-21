@@ -44,7 +44,8 @@ export function GlobalSearch({ autoFocus = false, onDone }: { autoFocus?: boolea
           onKeyDown={(e) => {
             if (e.key === 'Escape') done()
             if (e.key === 'Enter') {
-              if (res.structures[0] && (!res.diseases[0] || res.structures[0].score >= res.diseases[0].score)) goStructure(res.structures[0].id)
+              if (res.structures[0] && (!res.diseases[0] || res.structures[0].score >= res.diseases[0].score))
+                goStructure(res.structures[0].id)
               else if (res.diseases[0]) {
                 nav(`/diseases/${res.diseases[0].id}`)
                 done()
@@ -57,7 +58,10 @@ export function GlobalSearch({ autoFocus = false, onDone }: { autoFocus?: boolea
         />
       </label>
       {open && q.trim() && (
-        <div className="glass scrollbar-thin absolute left-0 right-0 top-full z-50 mt-1 max-h-[70vh] overflow-y-auto rounded-xl p-2 shadow-2xl" data-testid="global-search-results">
+        <div
+          className="glass scrollbar-thin absolute left-0 right-0 top-full z-50 mt-1 max-h-[70vh] overflow-y-auto rounded-xl p-2 shadow-2xl"
+          data-testid="global-search-results"
+        >
           {total === 0 && <p className="p-3 text-sm text-[var(--text-2)]">No results for “{q}”.</p>}
           {res.structures.length > 0 && (
             <Group icon={<Brain size={13} />} title="Anatomy">
@@ -69,7 +73,15 @@ export function GlobalSearch({ autoFocus = false, onDone }: { autoFocus?: boolea
           {res.diseases.length > 0 && (
             <Group icon={<Stethoscope size={13} />} title="Diseases & conditions">
               {res.diseases.map((r) => (
-                <Item key={r.id} title={r.name} sub={r.match} onClick={() => { nav(`/diseases/${r.id}`); done() }} />
+                <Item
+                  key={r.id}
+                  title={r.name}
+                  sub={r.match}
+                  onClick={() => {
+                    nav(`/diseases/${r.id}`)
+                    done()
+                  }}
+                />
               ))}
             </Group>
           )}
@@ -80,7 +92,10 @@ export function GlobalSearch({ autoFocus = false, onDone }: { autoFocus?: boolea
                   key={t.topic}
                   title={t.topic}
                   sub={`Seen in: ${t.diseaseIds.map((id) => diseaseById.get(id)?.name).join(', ')}`}
-                  onClick={() => { nav(`/diseases?symptom=${encodeURIComponent(t.topic)}`); done() }}
+                  onClick={() => {
+                    nav(`/diseases?symptom=${encodeURIComponent(t.topic)}`)
+                    done()
+                  }}
                 />
               ))}
             </Group>
@@ -88,7 +103,15 @@ export function GlobalSearch({ autoFocus = false, onDone }: { autoFocus?: boolea
           {res.modules.length > 0 && (
             <Group icon={<GraduationCap size={13} />} title="Learning modules">
               {res.modules.map((r) => (
-                <Item key={r.id} title={r.name} sub={r.match} onClick={() => { nav(`/learn/${r.id}`); done() }} />
+                <Item
+                  key={r.id}
+                  title={r.name}
+                  sub={r.match}
+                  onClick={() => {
+                    nav(`/learn/${r.id}`)
+                    done()
+                  }}
+                />
               ))}
             </Group>
           )}
@@ -101,7 +124,9 @@ export function GlobalSearch({ autoFocus = false, onDone }: { autoFocus?: boolea
 function Group({ icon, title, children }: { icon: React.ReactNode; title: string; children: React.ReactNode }) {
   return (
     <div className="mb-1.5">
-      <p className="flex items-center gap-1.5 px-2 py-1 text-[10.5px] font-semibold uppercase tracking-wider text-[var(--text-2)]">{icon} {title}</p>
+      <p className="flex items-center gap-1.5 px-2 py-1 text-[10.5px] font-semibold uppercase tracking-wider text-[var(--text-2)]">
+        {icon} {title}
+      </p>
       <ul>{children}</ul>
     </div>
   )
@@ -109,7 +134,10 @@ function Group({ icon, title, children }: { icon: React.ReactNode; title: string
 function Item({ title, sub, onClick }: { title: string; sub: string; onClick: () => void }) {
   return (
     <li>
-      <button className="w-full rounded-md px-2 py-1.5 text-left hover:bg-[color-mix(in_srgb,var(--accent)_12%,transparent)]" onClick={onClick}>
+      <button
+        className="w-full rounded-md px-2 py-1.5 text-left hover:bg-[color-mix(in_srgb,var(--accent)_12%,transparent)]"
+        onClick={onClick}
+      >
         <div className="text-[13px] font-medium">{title}</div>
         <div className="truncate text-[11px] text-[var(--text-2)]">{sub}</div>
       </button>

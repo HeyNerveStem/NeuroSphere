@@ -1,2800 +1,2800 @@
 {
- "relationships": [
-  {
-   "structureId": "hippocampus",
-   "diseaseId": "alzheimers-disease",
-   "associationType": "primary",
-   "distribution": "diffuse",
-   "explanation": "Neurofibrillary tangles and neuronal loss affect the hippocampus early, matching early difficulty forming new memories.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-alzheimers",
-    "mp-alzheimers"
-   ],
-   "resolvedMeshIds": [
-    "left-hippocampus",
-    "right-hippocampus"
-   ]
-  },
-  {
-   "structureId": "parahippocampal-gyrus",
-   "diseaseId": "alzheimers-disease",
-   "associationType": "primary",
-   "distribution": "regional",
-   "explanation": "Entorhinal cortex (anterior parahippocampal gyrus) is one of the earliest sites of tau pathology.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-alzheimers",
-    "mp-alzheimers"
-   ],
-   "resolvedMeshIds": [
-    "left-parahippocampal-gyrus",
-    "right-parahippocampal-gyrus"
-   ]
-  },
-  {
-   "structureId": "temporal-lobe",
-   "diseaseId": "alzheimers-disease",
-   "associationType": "secondary",
-   "distribution": "regional",
-   "explanation": "Pathology spreads to lateral temporal association cortex as disease advances.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-alzheimers",
-    "mp-alzheimers"
-   ],
-   "resolvedMeshIds": [
-    "left-fusiform-gyrus",
-    "left-inferior-temporal-gyrus",
-    "left-middle-temporal-gyrus",
-    "left-parahippocampal-gyrus",
-    "left-superior-temporal-gyrus-anterior",
-    "left-superior-temporal-gyrus-posterior",
-    "right-fusiform-gyrus",
-    "right-inferior-temporal-gyrus",
-    "right-middle-temporal-gyrus",
-    "right-parahippocampal-gyrus",
-    "right-superior-temporal-gyrus-anterior",
-    "right-superior-temporal-gyrus-posterior"
-   ]
-  },
-  {
-   "structureId": "superior-parietal-lobule-precuneus",
-   "diseaseId": "alzheimers-disease",
-   "associationType": "secondary",
-   "distribution": "regional",
-   "explanation": "Precuneus and parietal association cortex show reduced metabolism and atrophy; involvement is prominent in posterior variants.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-alzheimers",
-    "mp-alzheimers"
-   ],
-   "resolvedMeshIds": [
-    "left-superior-parietal-lobule-precuneus",
-    "right-superior-parietal-lobule-precuneus"
-   ]
-  },
-  {
-   "structureId": "cingulate-gyrus",
-   "diseaseId": "alzheimers-disease",
-   "associationType": "secondary",
-   "distribution": "regional",
-   "explanation": "Posterior cingulate hypometabolism is a frequent imaging feature.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-alzheimers",
-    "mp-alzheimers"
-   ],
-   "resolvedMeshIds": [
-    "left-cingulate-gyrus",
-    "right-cingulate-gyrus"
-   ]
-  },
-  {
-   "structureId": "frontal-lobe",
-   "diseaseId": "alzheimers-disease",
-   "associationType": "subtype",
-   "distribution": "regional",
-   "explanation": "Frontal association cortex is involved later, and earlier in some atypical presentations.",
-   "evidenceLevel": "variable",
-   "references": [
-    "ninds-alzheimers",
-    "mp-alzheimers"
-   ],
-   "resolvedMeshIds": [
-    "left-middle-frontal-gyrus",
-    "left-precentral-gyrus",
-    "left-superior-frontal-gyrus",
-    "right-middle-frontal-gyrus",
-    "right-precentral-gyrus",
-    "right-superior-frontal-gyrus"
-   ]
-  },
-  {
-   "structureId": "cerebral-peduncles",
-   "diseaseId": "parkinsons-disease",
-   "associationType": "primary",
-   "distribution": "focal",
-   "explanation": "Contains the substantia nigra pars compacta, where dopaminergic neuron loss defines the disease. Schematic: the nigra itself is not segmented; the whole peduncle is NOT uniformly affected.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-parkinsons",
-    "mp-parkinsons"
-   ],
-   "resolvedMeshIds": [
-    "cerebral-peduncles"
-   ]
-  },
-  {
-   "structureId": "putamen",
-   "diseaseId": "parkinsons-disease",
-   "associationType": "primary",
-   "distribution": "diffuse",
-   "explanation": "Loss of nigrostriatal dopamine is most marked in the putamen, producing the motor signs.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-parkinsons",
-    "mp-parkinsons"
-   ],
-   "resolvedMeshIds": [
-    "left-putamen",
-    "right-putamen"
-   ]
-  },
-  {
-   "structureId": "caudate-nucleus",
-   "diseaseId": "parkinsons-disease",
-   "associationType": "secondary",
-   "distribution": "diffuse",
-   "explanation": "Dopamine depletion also affects the caudate, generally less than the putamen.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-parkinsons",
-    "mp-parkinsons"
-   ],
-   "resolvedMeshIds": [
-    "left-caudate-nucleus",
-    "right-caudate-nucleus"
-   ]
-  },
-  {
-   "structureId": "globus-pallidus",
-   "diseaseId": "parkinsons-disease",
-   "associationType": "secondary",
-   "distribution": "network",
-   "explanation": "Altered pallidal output is part of basal ganglia circuit dysfunction; it is a DBS target.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-parkinsons",
-    "mp-parkinsons"
-   ],
-   "resolvedMeshIds": [
-    "left-globus-pallidus",
-    "right-globus-pallidus"
-   ]
-  },
-  {
-   "structureId": "thalamus",
-   "diseaseId": "parkinsons-disease",
-   "associationType": "secondary",
-   "distribution": "network",
-   "explanation": "Abnormal basal ganglia output alters thalamocortical motor signalling.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-parkinsons",
-    "mp-parkinsons"
-   ],
-   "resolvedMeshIds": [
-    "left-thalamus",
-    "right-thalamus"
-   ]
-  },
-  {
-   "structureId": "medulla-oblongata",
-   "diseaseId": "parkinsons-disease",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Lewy pathology often involves lower brainstem nuclei (e.g. dorsal motor nucleus of vagus), linked to non-motor symptoms.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-parkinsons",
-    "mp-parkinsons"
-   ],
-   "resolvedMeshIds": [
-    "medulla-oblongata"
-   ]
-  },
-  {
-   "structureId": "caudate-nucleus",
-   "diseaseId": "huntingtons-disease",
-   "associationType": "primary",
-   "distribution": "diffuse",
-   "explanation": "Earliest and most severe neuronal loss in the striatum, especially the caudate.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-huntingtons",
-    "mp-huntingtons"
-   ],
-   "resolvedMeshIds": [
-    "left-caudate-nucleus",
-    "right-caudate-nucleus"
-   ]
-  },
-  {
-   "structureId": "putamen",
-   "diseaseId": "huntingtons-disease",
-   "associationType": "primary",
-   "distribution": "diffuse",
-   "explanation": "Putaminal medium spiny neurons also degenerate.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-huntingtons",
-    "mp-huntingtons"
-   ],
-   "resolvedMeshIds": [
-    "left-putamen",
-    "right-putamen"
-   ]
-  },
-  {
-   "structureId": "globus-pallidus",
-   "diseaseId": "huntingtons-disease",
-   "associationType": "secondary",
-   "distribution": "network",
-   "explanation": "Downstream basal ganglia output is disrupted.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-huntingtons",
-    "mp-huntingtons"
-   ],
-   "resolvedMeshIds": [
-    "left-globus-pallidus",
-    "right-globus-pallidus"
-   ]
-  },
-  {
-   "structureId": "lateral-ventricle",
-   "diseaseId": "huntingtons-disease",
-   "associationType": "secondary",
-   "distribution": "regional",
-   "explanation": "Frontal horns enlarge secondary to caudate atrophy (imaging sign, not primary pathology).",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-huntingtons",
-    "mp-huntingtons"
-   ],
-   "resolvedMeshIds": [
-    "left-lateral-ventricle",
-    "right-lateral-ventricle"
-   ]
-  },
-  {
-   "structureId": "frontal-lobe",
-   "diseaseId": "huntingtons-disease",
-   "associationType": "secondary",
-   "distribution": "regional",
-   "explanation": "Cortical atrophy develops as disease advances, contributing to cognitive and behavioural symptoms.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-huntingtons",
-    "mp-huntingtons"
-   ],
-   "resolvedMeshIds": [
-    "left-middle-frontal-gyrus",
-    "left-precentral-gyrus",
-    "left-superior-frontal-gyrus",
-    "right-middle-frontal-gyrus",
-    "right-precentral-gyrus",
-    "right-superior-frontal-gyrus"
-   ]
-  },
-  {
-   "structureId": "precentral-gyrus",
-   "diseaseId": "amyotrophic-lateral-sclerosis",
-   "associationType": "primary",
-   "distribution": "diffuse",
-   "explanation": "Upper motor neurons in primary motor cortex degenerate.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-als",
-    "mp-als"
-   ],
-   "resolvedMeshIds": [
-    "left-precentral-gyrus",
-    "right-precentral-gyrus"
-   ]
-  },
-  {
-   "structureId": "cerebral-peduncles",
-   "diseaseId": "amyotrophic-lateral-sclerosis",
-   "associationType": "secondary",
-   "distribution": "focal",
-   "explanation": "Descending corticospinal fibres degenerate along their course.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-als",
-    "mp-als"
-   ],
-   "resolvedMeshIds": [
-    "cerebral-peduncles"
-   ]
-  },
-  {
-   "structureId": "internal-capsule",
-   "diseaseId": "amyotrophic-lateral-sclerosis",
-   "associationType": "secondary",
-   "distribution": "focal",
-   "explanation": "Corticospinal tract involvement (mainly posterior limb, which is not modelled; anterior limb shown for orientation only).",
-   "evidenceLevel": "variable",
-   "references": [
-    "ninds-als",
-    "mp-als"
-   ],
-   "resolvedMeshIds": [
-    "left-internal-capsule-anterior-limb",
-    "right-internal-capsule-anterior-limb"
-   ]
-  },
-  {
-   "structureId": "medulla-oblongata",
-   "diseaseId": "amyotrophic-lateral-sclerosis",
-   "associationType": "primary",
-   "distribution": "focal",
-   "explanation": "Brainstem motor nuclei (e.g. hypoglossal) are affected, causing bulbar symptoms.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-als",
-    "mp-als"
-   ],
-   "resolvedMeshIds": [
-    "medulla-oblongata"
-   ]
-  },
-  {
-   "structureId": "pons",
-   "diseaseId": "amyotrophic-lateral-sclerosis",
-   "associationType": "secondary",
-   "distribution": "focal",
-   "explanation": "Motor nuclei and descending tracts in the pons are involved.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-als",
-    "mp-als"
-   ],
-   "resolvedMeshIds": [
-    "pons"
-   ]
-  },
-  {
-   "structureId": "frontal-lobe",
-   "diseaseId": "amyotrophic-lateral-sclerosis",
-   "associationType": "subtype",
-   "distribution": "regional",
-   "explanation": "Frontal involvement in people with ALS\u2013FTD overlap.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-als",
-    "mp-als"
-   ],
-   "resolvedMeshIds": [
-    "left-middle-frontal-gyrus",
-    "left-precentral-gyrus",
-    "left-superior-frontal-gyrus",
-    "right-middle-frontal-gyrus",
-    "right-precentral-gyrus",
-    "right-superior-frontal-gyrus"
-   ]
-  },
-  {
-   "structureId": "frontal-lobe",
-   "diseaseId": "frontotemporal-dementia",
-   "associationType": "primary",
-   "distribution": "regional",
-   "explanation": "Frontal atrophy underlies behavioural and executive changes.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-ftd",
-    "mp-dementia"
-   ],
-   "resolvedMeshIds": [
-    "left-middle-frontal-gyrus",
-    "left-precentral-gyrus",
-    "left-superior-frontal-gyrus",
-    "right-middle-frontal-gyrus",
-    "right-precentral-gyrus",
-    "right-superior-frontal-gyrus"
-   ]
-  },
-  {
-   "structureId": "orbital-and-straight-gyri",
-   "diseaseId": "frontotemporal-dementia",
-   "associationType": "primary",
-   "distribution": "regional",
-   "explanation": "Orbitofrontal cortex is commonly affected in the behavioural variant.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-ftd",
-    "mp-dementia"
-   ],
-   "resolvedMeshIds": [
-    "orbital-and-straight-gyri"
-   ]
-  },
-  {
-   "structureId": "temporal-lobe",
-   "diseaseId": "frontotemporal-dementia",
-   "associationType": "subtype",
-   "distribution": "regional",
-   "explanation": "Anterior temporal atrophy is characteristic of the semantic variant.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-ftd",
-    "mp-dementia"
-   ],
-   "resolvedMeshIds": [
-    "left-fusiform-gyrus",
-    "left-inferior-temporal-gyrus",
-    "left-middle-temporal-gyrus",
-    "left-parahippocampal-gyrus",
-    "left-superior-temporal-gyrus-anterior",
-    "left-superior-temporal-gyrus-posterior",
-    "right-fusiform-gyrus",
-    "right-inferior-temporal-gyrus",
-    "right-middle-temporal-gyrus",
-    "right-parahippocampal-gyrus",
-    "right-superior-temporal-gyrus-anterior",
-    "right-superior-temporal-gyrus-posterior"
-   ]
-  },
-  {
-   "structureId": "insula",
-   "diseaseId": "frontotemporal-dementia",
-   "associationType": "secondary",
-   "distribution": "regional",
-   "explanation": "Insular involvement is common, especially in behavioural and non-fluent variants.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-ftd",
-    "mp-dementia"
-   ],
-   "resolvedMeshIds": [
-    "left-accessory-short-gyrus",
-    "left-insula",
-    "right-accessory-short-gyrus",
-    "right-insula"
-   ]
-  },
-  {
-   "structureId": "cingulate-gyrus",
-   "diseaseId": "frontotemporal-dementia",
-   "associationType": "secondary",
-   "distribution": "regional",
-   "explanation": "Anterior cingulate involvement relates to apathy.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-ftd",
-    "mp-dementia"
-   ],
-   "resolvedMeshIds": [
-    "left-cingulate-gyrus",
-    "right-cingulate-gyrus"
-   ]
-  },
-  {
-   "structureId": "cerebral-peduncles",
-   "diseaseId": "dementia-with-lewy-bodies",
-   "associationType": "primary",
-   "distribution": "focal",
-   "explanation": "Substantia nigra (within this element; schematic) shows Lewy pathology and neuron loss, causing parkinsonism.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-lbd",
-    "mp-lbd"
-   ],
-   "resolvedMeshIds": [
-    "cerebral-peduncles"
-   ]
-  },
-  {
-   "structureId": "amygdala",
-   "diseaseId": "dementia-with-lewy-bodies",
-   "associationType": "secondary",
-   "distribution": "diffuse",
-   "explanation": "Limbic Lewy pathology is common.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-lbd",
-    "mp-lbd"
-   ],
-   "resolvedMeshIds": [
-    "left-amygdala",
-    "right-amygdala"
-   ]
-  },
-  {
-   "structureId": "cingulate-gyrus",
-   "diseaseId": "dementia-with-lewy-bodies",
-   "associationType": "secondary",
-   "distribution": "regional",
-   "explanation": "Cingulate cortex is a typical site of cortical Lewy bodies.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-lbd",
-    "mp-lbd"
-   ],
-   "resolvedMeshIds": [
-    "left-cingulate-gyrus",
-    "right-cingulate-gyrus"
-   ]
-  },
-  {
-   "structureId": "occipital-lobe",
-   "diseaseId": "dementia-with-lewy-bodies",
-   "associationType": "secondary",
-   "distribution": "regional",
-   "explanation": "Occipital hypometabolism on imaging, linked to visual symptoms; pathology is not uniform.",
-   "evidenceLevel": "variable",
-   "references": [
-    "ninds-lbd",
-    "mp-lbd"
-   ],
-   "resolvedMeshIds": [
-    "left-occipital-lobe",
-    "right-occipital-lobe"
-   ]
-  },
-  {
-   "structureId": "putamen",
-   "diseaseId": "dementia-with-lewy-bodies",
-   "associationType": "secondary",
-   "distribution": "diffuse",
-   "explanation": "Reduced striatal dopamine transporter uptake reflects nigrostriatal degeneration.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-lbd",
-    "mp-lbd"
-   ],
-   "resolvedMeshIds": [
-    "left-putamen",
-    "right-putamen"
-   ]
-  },
-  {
-   "structureId": "frontal-lobe",
-   "diseaseId": "ischemic-stroke",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Lateral frontal cortex lies in the MCA territory; medial frontal in the ACA territory.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-stroke",
-    "mp-ischemic-stroke"
-   ],
-   "resolvedMeshIds": [
-    "left-middle-frontal-gyrus",
-    "left-precentral-gyrus",
-    "left-superior-frontal-gyrus",
-    "right-middle-frontal-gyrus",
-    "right-precentral-gyrus",
-    "right-superior-frontal-gyrus"
-   ]
-  },
-  {
-   "structureId": "parietal-lobe",
-   "diseaseId": "ischemic-stroke",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Lateral parietal cortex is commonly involved in MCA strokes.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-stroke",
-    "mp-ischemic-stroke"
-   ],
-   "resolvedMeshIds": [
-    "left-angular-gyrus",
-    "left-postcentral-gyrus",
-    "left-superior-parietal-lobule-precuneus",
-    "left-supramarginal-gyrus",
-    "right-angular-gyrus",
-    "right-postcentral-gyrus",
-    "right-superior-parietal-lobule-precuneus",
-    "right-supramarginal-gyrus"
-   ]
-  },
-  {
-   "structureId": "temporal-lobe",
-   "diseaseId": "ischemic-stroke",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Lateral temporal cortex lies in the MCA territory.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-stroke",
-    "mp-ischemic-stroke"
-   ],
-   "resolvedMeshIds": [
-    "left-fusiform-gyrus",
-    "left-inferior-temporal-gyrus",
-    "left-middle-temporal-gyrus",
-    "left-parahippocampal-gyrus",
-    "left-superior-temporal-gyrus-anterior",
-    "left-superior-temporal-gyrus-posterior",
-    "right-fusiform-gyrus",
-    "right-inferior-temporal-gyrus",
-    "right-middle-temporal-gyrus",
-    "right-parahippocampal-gyrus",
-    "right-superior-temporal-gyrus-anterior",
-    "right-superior-temporal-gyrus-posterior"
-   ]
-  },
-  {
-   "structureId": "insula",
-   "diseaseId": "ischemic-stroke",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Insula is frequently involved in proximal MCA occlusion.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-stroke",
-    "mp-ischemic-stroke"
-   ],
-   "resolvedMeshIds": [
-    "left-accessory-short-gyrus",
-    "left-insula",
-    "right-accessory-short-gyrus",
-    "right-insula"
-   ]
-  },
-  {
-   "structureId": "basal-nuclei",
-   "diseaseId": "ischemic-stroke",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Deep lenticulostriate branches supply the basal nuclei; lacunar infarcts are common here.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-stroke",
-    "mp-ischemic-stroke"
-   ],
-   "resolvedMeshIds": [
-    "left-caudate-nucleus",
-    "left-globus-pallidus",
-    "left-putamen",
-    "right-caudate-nucleus",
-    "right-globus-pallidus",
-    "right-putamen"
-   ]
-  },
-  {
-   "structureId": "internal-capsule",
-   "diseaseId": "ischemic-stroke",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Small capsular infarcts can cause marked weakness.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-stroke",
-    "mp-ischemic-stroke"
-   ],
-   "resolvedMeshIds": [
-    "left-internal-capsule-anterior-limb",
-    "right-internal-capsule-anterior-limb"
-   ]
-  },
-  {
-   "structureId": "occipital-lobe",
-   "diseaseId": "ischemic-stroke",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Posterior cerebral artery strokes cause contralateral visual field loss.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-stroke",
-    "mp-ischemic-stroke"
-   ],
-   "resolvedMeshIds": [
-    "left-occipital-lobe",
-    "right-occipital-lobe"
-   ]
-  },
-  {
-   "structureId": "thalamus",
-   "diseaseId": "ischemic-stroke",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Thalamic infarcts arise from posterior circulation branches.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-stroke",
-    "mp-ischemic-stroke"
-   ],
-   "resolvedMeshIds": [
-    "left-thalamus",
-    "right-thalamus"
-   ]
-  },
-  {
-   "structureId": "brainstem",
-   "diseaseId": "ischemic-stroke",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Vertebrobasilar strokes affect the brainstem.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-stroke",
-    "mp-ischemic-stroke"
-   ],
-   "resolvedMeshIds": [
-    "cerebral-aqueduct",
-    "cerebral-peduncles",
-    "fourth-ventricle",
-    "left-inferior-colliculus",
-    "left-superior-colliculus",
-    "medulla-oblongata",
-    "midbrain-other",
-    "pons",
-    "right-inferior-colliculus",
-    "right-superior-colliculus"
-   ]
-  },
-  {
-   "structureId": "cerebellum",
-   "diseaseId": "ischemic-stroke",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Cerebellar infarcts cause ataxia and can cause dangerous swelling.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-stroke",
-    "mp-ischemic-stroke"
-   ],
-   "resolvedMeshIds": [
-    "cerebellum"
-   ]
-  },
-  {
-   "structureId": "putamen",
-   "diseaseId": "hemorrhagic-stroke",
-   "associationType": "primary",
-   "distribution": "focal",
-   "explanation": "Most common site of hypertensive haemorrhage.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-stroke",
-    "mp-hemorrhagic-stroke"
-   ],
-   "resolvedMeshIds": [
-    "left-putamen",
-    "right-putamen"
-   ]
-  },
-  {
-   "structureId": "thalamus",
-   "diseaseId": "hemorrhagic-stroke",
-   "associationType": "primary",
-   "distribution": "focal",
-   "explanation": "Common site of hypertensive haemorrhage.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-stroke",
-    "mp-hemorrhagic-stroke"
-   ],
-   "resolvedMeshIds": [
-    "left-thalamus",
-    "right-thalamus"
-   ]
-  },
-  {
-   "structureId": "pons",
-   "diseaseId": "hemorrhagic-stroke",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Pontine haemorrhage can be devastating.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-stroke",
-    "mp-hemorrhagic-stroke"
-   ],
-   "resolvedMeshIds": [
-    "pons"
-   ]
-  },
-  {
-   "structureId": "cerebellum",
-   "diseaseId": "hemorrhagic-stroke",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Cerebellar haemorrhage may require urgent surgery.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-stroke",
-    "mp-hemorrhagic-stroke"
-   ],
-   "resolvedMeshIds": [
-    "cerebellum"
-   ]
-  },
-  {
-   "structureId": "cerebral-white-matter",
-   "diseaseId": "hemorrhagic-stroke",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Lobar (subcortical) haemorrhages occur with amyloid angiopathy.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-stroke",
-    "mp-hemorrhagic-stroke"
-   ],
-   "resolvedMeshIds": [
-    "cerebral-white-matter"
-   ]
-  },
-  {
-   "structureId": "lateral-ventricle",
-   "diseaseId": "hemorrhagic-stroke",
-   "associationType": "secondary",
-   "distribution": "focal",
-   "explanation": "Blood may extend into the ventricles and cause hydrocephalus.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-stroke",
-    "mp-hemorrhagic-stroke"
-   ],
-   "resolvedMeshIds": [
-    "left-lateral-ventricle",
-    "right-lateral-ventricle"
-   ]
-  },
-  {
-   "structureId": "third-ventricle",
-   "diseaseId": "subarachnoid-hemorrhage",
-   "associationType": "secondary",
-   "distribution": "regional",
-   "explanation": "Hydrocephalus after SAH enlarges the ventricular system.",
-   "evidenceLevel": "established",
-   "references": [
-    "mp-ency-sah",
-    "ninds-aneurysm"
-   ],
-   "resolvedMeshIds": [
-    "third-ventricle"
-   ]
-  },
-  {
-   "structureId": "lateral-ventricle",
-   "diseaseId": "subarachnoid-hemorrhage",
-   "associationType": "secondary",
-   "distribution": "regional",
-   "explanation": "Ventricular enlargement from impaired CSF absorption or flow.",
-   "evidenceLevel": "established",
-   "references": [
-    "mp-ency-sah",
-    "ninds-aneurysm"
-   ],
-   "resolvedMeshIds": [
-    "left-lateral-ventricle",
-    "right-lateral-ventricle"
-   ]
-  },
-  {
-   "structureId": "frontal-lobe",
-   "diseaseId": "subarachnoid-hemorrhage",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Delayed ischaemia or haematoma can affect territories near the ruptured aneurysm, e.g. anterior communicating artery aneurysms near the medial frontal lobes.",
-   "evidenceLevel": "variable",
-   "references": [
-    "mp-ency-sah",
-    "ninds-aneurysm"
-   ],
-   "resolvedMeshIds": [
-    "left-middle-frontal-gyrus",
-    "left-precentral-gyrus",
-    "left-superior-frontal-gyrus",
-    "right-middle-frontal-gyrus",
-    "right-precentral-gyrus",
-    "right-superior-frontal-gyrus"
-   ]
-  },
-  {
-   "structureId": "optic-chiasm",
-   "diseaseId": "cerebral-aneurysm",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Large aneurysms near the circle of Willis can compress the chiasm, causing visual field loss.",
-   "evidenceLevel": "variable",
-   "references": [
-    "ninds-aneurysm",
-    "mp-aneurysm"
-   ],
-   "resolvedMeshIds": [
-    "optic-chiasm"
-   ]
-  },
-  {
-   "structureId": "midbrain",
-   "diseaseId": "cerebral-aneurysm",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Posterior communicating artery aneurysms can compress the oculomotor nerve as it leaves the midbrain (nerve not modelled).",
-   "evidenceLevel": "variable",
-   "references": [
-    "ninds-aneurysm",
-    "mp-aneurysm"
-   ],
-   "resolvedMeshIds": [
-    "cerebral-aqueduct",
-    "cerebral-peduncles",
-    "left-inferior-colliculus",
-    "left-superior-colliculus",
-    "midbrain-other",
-    "right-inferior-colliculus",
-    "right-superior-colliculus"
-   ]
-  },
-  {
-   "structureId": "cerebral-hemisphere",
-   "diseaseId": "cerebral-arteriovenous-malformation",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Most brain AVMs are located in the cerebral hemispheres; exact site varies by patient.",
-   "evidenceLevel": "variable",
-   "references": [
-    "ninds-avm",
-    "mp-avm"
-   ],
-   "resolvedMeshIds": [
-    "left-accessory-short-gyrus",
-    "left-amygdala",
-    "left-angular-gyrus",
-    "left-caudate-nucleus",
-    "left-choroid-plexus",
-    "left-cingulate-gyrus",
-    "left-fornix",
-    "left-fusiform-gyrus",
-    "left-globus-pallidus",
-    "left-hippocampus",
-    "left-inferior-temporal-gyrus",
-    "left-insula",
-    "left-internal-capsule-anterior-limb",
-    "left-lateral-ventricle",
-    "left-middle-frontal-gyrus",
-    "left-middle-temporal-gyrus",
-    "left-occipital-lobe",
-    "left-parahippocampal-gyrus",
-    "left-postcentral-gyrus",
-    "left-precentral-gyrus",
-    "left-putamen",
-    "left-superior-frontal-gyrus",
-    "left-superior-parietal-lobule-precuneus",
-    "left-superior-temporal-gyrus-anterior",
-    "left-superior-temporal-gyrus-posterior",
-    "left-supramarginal-gyrus",
-    "right-accessory-short-gyrus",
-    "right-amygdala",
-    "right-angular-gyrus",
-    "right-caudate-nucleus",
-    "right-choroid-plexus",
-    "right-cingulate-gyrus",
-    "right-fornix",
-    "right-fusiform-gyrus",
-    "right-globus-pallidus",
-    "right-hippocampus",
-    "right-inferior-temporal-gyrus",
-    "right-insula",
-    "right-internal-capsule-anterior-limb",
-    "right-lateral-ventricle",
-    "right-middle-frontal-gyrus",
-    "right-middle-temporal-gyrus",
-    "right-occipital-lobe",
-    "right-parahippocampal-gyrus",
-    "right-postcentral-gyrus",
-    "right-precentral-gyrus",
-    "right-putamen",
-    "right-superior-frontal-gyrus",
-    "right-superior-parietal-lobule-precuneus",
-    "right-superior-temporal-gyrus-anterior",
-    "right-superior-temporal-gyrus-posterior",
-    "right-supramarginal-gyrus"
-   ]
-  },
-  {
-   "structureId": "temporal-lobe",
-   "diseaseId": "epilepsy",
-   "associationType": "primary",
-   "distribution": "network",
-   "explanation": "The most common origin of focal seizures in adults.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-epilepsy",
-    "mp-epilepsy"
-   ],
-   "resolvedMeshIds": [
-    "left-fusiform-gyrus",
-    "left-inferior-temporal-gyrus",
-    "left-middle-temporal-gyrus",
-    "left-parahippocampal-gyrus",
-    "left-superior-temporal-gyrus-anterior",
-    "left-superior-temporal-gyrus-posterior",
-    "right-fusiform-gyrus",
-    "right-inferior-temporal-gyrus",
-    "right-middle-temporal-gyrus",
-    "right-parahippocampal-gyrus",
-    "right-superior-temporal-gyrus-anterior",
-    "right-superior-temporal-gyrus-posterior"
-   ]
-  },
-  {
-   "structureId": "frontal-lobe",
-   "diseaseId": "epilepsy",
-   "associationType": "secondary",
-   "distribution": "network",
-   "explanation": "Second most common origin of focal seizures.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-epilepsy",
-    "mp-epilepsy"
-   ],
-   "resolvedMeshIds": [
-    "left-middle-frontal-gyrus",
-    "left-precentral-gyrus",
-    "left-superior-frontal-gyrus",
-    "right-middle-frontal-gyrus",
-    "right-precentral-gyrus",
-    "right-superior-frontal-gyrus"
-   ]
-  },
-  {
-   "structureId": "thalamus",
-   "diseaseId": "epilepsy",
-   "associationType": "subtype",
-   "distribution": "network",
-   "explanation": "Thalamocortical networks are central to generalised seizures such as absence seizures.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-epilepsy",
-    "mp-epilepsy"
-   ],
-   "resolvedMeshIds": [
-    "left-thalamus",
-    "right-thalamus"
-   ]
-  },
-  {
-   "structureId": "hippocampus",
-   "diseaseId": "epilepsy",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Hippocampal sclerosis is a common cause of drug-resistant temporal lobe epilepsy.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-epilepsy",
-    "mp-epilepsy"
-   ],
-   "resolvedMeshIds": [
-    "left-hippocampus",
-    "right-hippocampus"
-   ]
-  },
-  {
-   "structureId": "hippocampus",
-   "diseaseId": "temporal-lobe-epilepsy",
-   "associationType": "primary",
-   "distribution": "focal",
-   "explanation": "Hippocampal sclerosis is the most common pathology in medial TLE.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-epilepsy",
-    "mp-epilepsy"
-   ],
-   "resolvedMeshIds": [
-    "left-hippocampus",
-    "right-hippocampus"
-   ]
-  },
-  {
-   "structureId": "amygdala",
-   "diseaseId": "temporal-lobe-epilepsy",
-   "associationType": "primary",
-   "distribution": "focal",
-   "explanation": "Seizures often involve the amygdala, producing emotional auras.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-epilepsy",
-    "mp-epilepsy"
-   ],
-   "resolvedMeshIds": [
-    "left-amygdala",
-    "right-amygdala"
-   ]
-  },
-  {
-   "structureId": "parahippocampal-gyrus",
-   "diseaseId": "temporal-lobe-epilepsy",
-   "associationType": "secondary",
-   "distribution": "network",
-   "explanation": "Part of the medial temporal seizure network.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-epilepsy",
-    "mp-epilepsy"
-   ],
-   "resolvedMeshIds": [
-    "left-parahippocampal-gyrus",
-    "right-parahippocampal-gyrus"
-   ]
-  },
-  {
-   "structureId": "temporal-lobe",
-   "diseaseId": "temporal-lobe-epilepsy",
-   "associationType": "subtype",
-   "distribution": "network",
-   "explanation": "Lateral temporal neocortex in lateral TLE.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-epilepsy",
-    "mp-epilepsy"
-   ],
-   "resolvedMeshIds": [
-    "left-fusiform-gyrus",
-    "left-inferior-temporal-gyrus",
-    "left-middle-temporal-gyrus",
-    "left-parahippocampal-gyrus",
-    "left-superior-temporal-gyrus-anterior",
-    "left-superior-temporal-gyrus-posterior",
-    "right-fusiform-gyrus",
-    "right-inferior-temporal-gyrus",
-    "right-middle-temporal-gyrus",
-    "right-parahippocampal-gyrus",
-    "right-superior-temporal-gyrus-anterior",
-    "right-superior-temporal-gyrus-posterior"
-   ]
-  },
-  {
-   "structureId": "temporal-lobe",
-   "diseaseId": "focal-epilepsy",
-   "associationType": "primary",
-   "distribution": "network",
-   "explanation": "Most common lobe of seizure onset.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-epilepsy",
-    "mp-epilepsy"
-   ],
-   "resolvedMeshIds": [
-    "left-fusiform-gyrus",
-    "left-inferior-temporal-gyrus",
-    "left-middle-temporal-gyrus",
-    "left-parahippocampal-gyrus",
-    "left-superior-temporal-gyrus-anterior",
-    "left-superior-temporal-gyrus-posterior",
-    "right-fusiform-gyrus",
-    "right-inferior-temporal-gyrus",
-    "right-middle-temporal-gyrus",
-    "right-parahippocampal-gyrus",
-    "right-superior-temporal-gyrus-anterior",
-    "right-superior-temporal-gyrus-posterior"
-   ]
-  },
-  {
-   "structureId": "frontal-lobe",
-   "diseaseId": "focal-epilepsy",
-   "associationType": "primary",
-   "distribution": "network",
-   "explanation": "Frontal lobe seizures are often brief and may occur in sleep.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-epilepsy",
-    "mp-epilepsy"
-   ],
-   "resolvedMeshIds": [
-    "left-middle-frontal-gyrus",
-    "left-precentral-gyrus",
-    "left-superior-frontal-gyrus",
-    "right-middle-frontal-gyrus",
-    "right-precentral-gyrus",
-    "right-superior-frontal-gyrus"
-   ]
-  },
-  {
-   "structureId": "parietal-lobe",
-   "diseaseId": "focal-epilepsy",
-   "associationType": "subtype",
-   "distribution": "network",
-   "explanation": "Parietal seizures can cause sensory symptoms.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-epilepsy",
-    "mp-epilepsy"
-   ],
-   "resolvedMeshIds": [
-    "left-angular-gyrus",
-    "left-postcentral-gyrus",
-    "left-superior-parietal-lobule-precuneus",
-    "left-supramarginal-gyrus",
-    "right-angular-gyrus",
-    "right-postcentral-gyrus",
-    "right-superior-parietal-lobule-precuneus",
-    "right-supramarginal-gyrus"
-   ]
-  },
-  {
-   "structureId": "occipital-lobe",
-   "diseaseId": "focal-epilepsy",
-   "associationType": "subtype",
-   "distribution": "network",
-   "explanation": "Occipital seizures can cause visual phenomena.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-epilepsy",
-    "mp-epilepsy"
-   ],
-   "resolvedMeshIds": [
-    "left-occipital-lobe",
-    "right-occipital-lobe"
-   ]
-  },
-  {
-   "structureId": "thalamus",
-   "diseaseId": "generalized-epilepsy",
-   "associationType": "primary",
-   "distribution": "network",
-   "explanation": "Thalamocortical circuits generate generalised spike-and-wave discharges.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-epilepsy",
-    "mp-epilepsy"
-   ],
-   "resolvedMeshIds": [
-    "left-thalamus",
-    "right-thalamus"
-   ]
-  },
-  {
-   "structureId": "cerebral-hemisphere",
-   "diseaseId": "generalized-epilepsy",
-   "associationType": "primary",
-   "distribution": "network",
-   "explanation": "Bilateral cortical networks are engaged from seizure onset; this is functional, not structural, involvement.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-epilepsy",
-    "mp-epilepsy"
-   ],
-   "resolvedMeshIds": [
-    "left-accessory-short-gyrus",
-    "left-amygdala",
-    "left-angular-gyrus",
-    "left-caudate-nucleus",
-    "left-choroid-plexus",
-    "left-cingulate-gyrus",
-    "left-fornix",
-    "left-fusiform-gyrus",
-    "left-globus-pallidus",
-    "left-hippocampus",
-    "left-inferior-temporal-gyrus",
-    "left-insula",
-    "left-internal-capsule-anterior-limb",
-    "left-lateral-ventricle",
-    "left-middle-frontal-gyrus",
-    "left-middle-temporal-gyrus",
-    "left-occipital-lobe",
-    "left-parahippocampal-gyrus",
-    "left-postcentral-gyrus",
-    "left-precentral-gyrus",
-    "left-putamen",
-    "left-superior-frontal-gyrus",
-    "left-superior-parietal-lobule-precuneus",
-    "left-superior-temporal-gyrus-anterior",
-    "left-superior-temporal-gyrus-posterior",
-    "left-supramarginal-gyrus",
-    "right-accessory-short-gyrus",
-    "right-amygdala",
-    "right-angular-gyrus",
-    "right-caudate-nucleus",
-    "right-choroid-plexus",
-    "right-cingulate-gyrus",
-    "right-fornix",
-    "right-fusiform-gyrus",
-    "right-globus-pallidus",
-    "right-hippocampus",
-    "right-inferior-temporal-gyrus",
-    "right-insula",
-    "right-internal-capsule-anterior-limb",
-    "right-lateral-ventricle",
-    "right-middle-frontal-gyrus",
-    "right-middle-temporal-gyrus",
-    "right-occipital-lobe",
-    "right-parahippocampal-gyrus",
-    "right-postcentral-gyrus",
-    "right-precentral-gyrus",
-    "right-putamen",
-    "right-superior-frontal-gyrus",
-    "right-superior-parietal-lobule-precuneus",
-    "right-superior-temporal-gyrus-anterior",
-    "right-superior-temporal-gyrus-posterior",
-    "right-supramarginal-gyrus"
-   ]
-  },
-  {
-   "structureId": "cerebral-white-matter",
-   "diseaseId": "multiple-sclerosis",
-   "associationType": "primary",
-   "distribution": "scattered",
-   "explanation": "Focal lesions are scattered through hemispheric white matter, especially periventricular and juxtacortical regions \u2014 not the entire white matter.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-ms",
-    "mp-ms"
-   ],
-   "resolvedMeshIds": [
-    "cerebral-white-matter"
-   ]
-  },
-  {
-   "structureId": "corpus-callosum",
-   "diseaseId": "multiple-sclerosis",
-   "associationType": "primary",
-   "distribution": "scattered",
-   "explanation": "Callosal lesions are characteristic.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-ms",
-    "mp-ms"
-   ],
-   "resolvedMeshIds": [
-    "corpus-callosum"
-   ]
-  },
-  {
-   "structureId": "optic-nerve",
-   "diseaseId": "multiple-sclerosis",
-   "associationType": "primary",
-   "distribution": "focal",
-   "explanation": "Optic neuritis is a common presentation.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-ms",
-    "mp-ms"
-   ],
-   "resolvedMeshIds": [
-    "left-optic-nerve",
-    "right-optic-nerve"
-   ]
-  },
-  {
-   "structureId": "lateral-ventricle",
-   "diseaseId": "multiple-sclerosis",
-   "associationType": "secondary",
-   "distribution": "scattered",
-   "explanation": "Marks the periventricular location of typical lesions (the ventricle itself is not diseased).",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-ms",
-    "mp-ms"
-   ],
-   "resolvedMeshIds": [
-    "left-lateral-ventricle",
-    "right-lateral-ventricle"
-   ]
-  },
-  {
-   "structureId": "brainstem",
-   "diseaseId": "multiple-sclerosis",
-   "associationType": "secondary",
-   "distribution": "scattered",
-   "explanation": "Infratentorial lesions cause double vision, vertigo and other brainstem symptoms.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-ms",
-    "mp-ms"
-   ],
-   "resolvedMeshIds": [
-    "cerebral-aqueduct",
-    "cerebral-peduncles",
-    "fourth-ventricle",
-    "left-inferior-colliculus",
-    "left-superior-colliculus",
-    "medulla-oblongata",
-    "midbrain-other",
-    "pons",
-    "right-inferior-colliculus",
-    "right-superior-colliculus"
-   ]
-  },
-  {
-   "structureId": "cerebellum",
-   "diseaseId": "multiple-sclerosis",
-   "associationType": "secondary",
-   "distribution": "scattered",
-   "explanation": "Cerebellar and peduncular lesions cause ataxia and tremor.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-ms",
-    "mp-ms"
-   ],
-   "resolvedMeshIds": [
-    "cerebellum"
-   ]
-  },
-  {
-   "structureId": "cerebral-white-matter",
-   "diseaseId": "acute-disseminated-encephalomyelitis",
-   "associationType": "primary",
-   "distribution": "scattered",
-   "explanation": "Multifocal white matter lesions \u2014 not the whole white matter.",
-   "evidenceLevel": "established",
-   "references": [
-    "statpearls-adem",
-    "tenembaum-adem-2013"
-   ],
-   "resolvedMeshIds": [
-    "cerebral-white-matter"
-   ]
-  },
-  {
-   "structureId": "thalamus",
-   "diseaseId": "acute-disseminated-encephalomyelitis",
-   "associationType": "secondary",
-   "distribution": "focal",
-   "explanation": "Deep grey matter lesions are common.",
-   "evidenceLevel": "established",
-   "references": [
-    "statpearls-adem",
-    "tenembaum-adem-2013"
-   ],
-   "resolvedMeshIds": [
-    "left-thalamus",
-    "right-thalamus"
-   ]
-  },
-  {
-   "structureId": "basal-nuclei",
-   "diseaseId": "acute-disseminated-encephalomyelitis",
-   "associationType": "secondary",
-   "distribution": "focal",
-   "explanation": "Basal ganglia may be involved.",
-   "evidenceLevel": "established",
-   "references": [
-    "statpearls-adem",
-    "tenembaum-adem-2013"
-   ],
-   "resolvedMeshIds": [
-    "left-caudate-nucleus",
-    "left-globus-pallidus",
-    "left-putamen",
-    "right-caudate-nucleus",
-    "right-globus-pallidus",
-    "right-putamen"
-   ]
-  },
-  {
-   "structureId": "brainstem",
-   "diseaseId": "acute-disseminated-encephalomyelitis",
-   "associationType": "secondary",
-   "distribution": "scattered",
-   "explanation": "Brainstem lesions occur.",
-   "evidenceLevel": "established",
-   "references": [
-    "statpearls-adem",
-    "tenembaum-adem-2013"
-   ],
-   "resolvedMeshIds": [
-    "cerebral-aqueduct",
-    "cerebral-peduncles",
-    "fourth-ventricle",
-    "left-inferior-colliculus",
-    "left-superior-colliculus",
-    "medulla-oblongata",
-    "midbrain-other",
-    "pons",
-    "right-inferior-colliculus",
-    "right-superior-colliculus"
-   ]
-  },
-  {
-   "structureId": "cerebellum",
-   "diseaseId": "acute-disseminated-encephalomyelitis",
-   "associationType": "secondary",
-   "distribution": "scattered",
-   "explanation": "Cerebellar involvement causes ataxia.",
-   "evidenceLevel": "established",
-   "references": [
-    "statpearls-adem",
-    "tenembaum-adem-2013"
-   ],
-   "resolvedMeshIds": [
-    "cerebellum"
-   ]
-  },
-  {
-   "structureId": "hippocampus",
-   "diseaseId": "autoimmune-encephalitis",
-   "associationType": "primary",
-   "distribution": "diffuse",
-   "explanation": "Limbic encephalitis commonly involves the hippocampi, causing memory loss and seizures.",
-   "evidenceLevel": "established",
-   "references": [
-    "cc-autoimmune-encephalitis",
-    "ninds-encephalitis"
-   ],
-   "resolvedMeshIds": [
-    "left-hippocampus",
-    "right-hippocampus"
-   ]
-  },
-  {
-   "structureId": "amygdala",
-   "diseaseId": "autoimmune-encephalitis",
-   "associationType": "primary",
-   "distribution": "diffuse",
-   "explanation": "Amygdala inflammation is common in limbic encephalitis.",
-   "evidenceLevel": "established",
-   "references": [
-    "cc-autoimmune-encephalitis",
-    "ninds-encephalitis"
-   ],
-   "resolvedMeshIds": [
-    "left-amygdala",
-    "right-amygdala"
-   ]
-  },
-  {
-   "structureId": "temporal-lobe",
-   "diseaseId": "autoimmune-encephalitis",
-   "associationType": "secondary",
-   "distribution": "regional",
-   "explanation": "Medial temporal involvement; extent varies by antibody.",
-   "evidenceLevel": "variable",
-   "references": [
-    "cc-autoimmune-encephalitis",
-    "ninds-encephalitis"
-   ],
-   "resolvedMeshIds": [
-    "left-fusiform-gyrus",
-    "left-inferior-temporal-gyrus",
-    "left-middle-temporal-gyrus",
-    "left-parahippocampal-gyrus",
-    "left-superior-temporal-gyrus-anterior",
-    "left-superior-temporal-gyrus-posterior",
-    "right-fusiform-gyrus",
-    "right-inferior-temporal-gyrus",
-    "right-middle-temporal-gyrus",
-    "right-parahippocampal-gyrus",
-    "right-superior-temporal-gyrus-anterior",
-    "right-superior-temporal-gyrus-posterior"
-   ]
-  },
-  {
-   "structureId": "lateral-ventricle",
-   "diseaseId": "meningitis",
-   "associationType": "secondary",
-   "distribution": "regional",
-   "explanation": "Hydrocephalus can complicate meningitis.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-meningitis",
-    "mp-meningitis"
-   ],
-   "resolvedMeshIds": [
-    "left-lateral-ventricle",
-    "right-lateral-ventricle"
-   ]
-  },
-  {
-   "structureId": "cerebral-hemisphere",
-   "diseaseId": "meningitis",
-   "associationType": "secondary",
-   "distribution": "regional",
-   "explanation": "The meninges overlying the hemispheres are inflamed; cortex beneath can be secondarily affected.",
-   "evidenceLevel": "variable",
-   "references": [
-    "ninds-meningitis",
-    "mp-meningitis"
-   ],
-   "resolvedMeshIds": [
-    "left-accessory-short-gyrus",
-    "left-amygdala",
-    "left-angular-gyrus",
-    "left-caudate-nucleus",
-    "left-choroid-plexus",
-    "left-cingulate-gyrus",
-    "left-fornix",
-    "left-fusiform-gyrus",
-    "left-globus-pallidus",
-    "left-hippocampus",
-    "left-inferior-temporal-gyrus",
-    "left-insula",
-    "left-internal-capsule-anterior-limb",
-    "left-lateral-ventricle",
-    "left-middle-frontal-gyrus",
-    "left-middle-temporal-gyrus",
-    "left-occipital-lobe",
-    "left-parahippocampal-gyrus",
-    "left-postcentral-gyrus",
-    "left-precentral-gyrus",
-    "left-putamen",
-    "left-superior-frontal-gyrus",
-    "left-superior-parietal-lobule-precuneus",
-    "left-superior-temporal-gyrus-anterior",
-    "left-superior-temporal-gyrus-posterior",
-    "left-supramarginal-gyrus",
-    "right-accessory-short-gyrus",
-    "right-amygdala",
-    "right-angular-gyrus",
-    "right-caudate-nucleus",
-    "right-choroid-plexus",
-    "right-cingulate-gyrus",
-    "right-fornix",
-    "right-fusiform-gyrus",
-    "right-globus-pallidus",
-    "right-hippocampus",
-    "right-inferior-temporal-gyrus",
-    "right-insula",
-    "right-internal-capsule-anterior-limb",
-    "right-lateral-ventricle",
-    "right-middle-frontal-gyrus",
-    "right-middle-temporal-gyrus",
-    "right-occipital-lobe",
-    "right-parahippocampal-gyrus",
-    "right-postcentral-gyrus",
-    "right-precentral-gyrus",
-    "right-putamen",
-    "right-superior-frontal-gyrus",
-    "right-superior-parietal-lobule-precuneus",
-    "right-superior-temporal-gyrus-anterior",
-    "right-superior-temporal-gyrus-posterior",
-    "right-supramarginal-gyrus"
-   ]
-  },
-  {
-   "structureId": "hippocampus",
-   "diseaseId": "encephalitis",
-   "associationType": "subtype",
-   "distribution": "diffuse",
-   "explanation": "HSV encephalitis commonly affects medial temporal structures.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-encephalitis",
-    "mp-encephalitis"
-   ],
-   "resolvedMeshIds": [
-    "left-hippocampus",
-    "right-hippocampus"
-   ]
-  },
-  {
-   "structureId": "amygdala",
-   "diseaseId": "encephalitis",
-   "associationType": "subtype",
-   "distribution": "diffuse",
-   "explanation": "Involved in HSV encephalitis.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-encephalitis",
-    "mp-encephalitis"
-   ],
-   "resolvedMeshIds": [
-    "left-amygdala",
-    "right-amygdala"
-   ]
-  },
-  {
-   "structureId": "insula",
-   "diseaseId": "encephalitis",
-   "associationType": "subtype",
-   "distribution": "regional",
-   "explanation": "Insula is characteristically involved in HSV encephalitis.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-encephalitis",
-    "mp-encephalitis"
-   ],
-   "resolvedMeshIds": [
-    "left-accessory-short-gyrus",
-    "left-insula",
-    "right-accessory-short-gyrus",
-    "right-insula"
-   ]
-  },
-  {
-   "structureId": "orbital-and-straight-gyri",
-   "diseaseId": "encephalitis",
-   "associationType": "subtype",
-   "distribution": "regional",
-   "explanation": "Inferior frontal involvement in HSV encephalitis.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-encephalitis",
-    "mp-encephalitis"
-   ],
-   "resolvedMeshIds": [
-    "orbital-and-straight-gyri"
-   ]
-  },
-  {
-   "structureId": "thalamus",
-   "diseaseId": "encephalitis",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Some arboviral encephalitides involve the thalamus and basal ganglia.",
-   "evidenceLevel": "variable",
-   "references": [
-    "ninds-encephalitis",
-    "mp-encephalitis"
-   ],
-   "resolvedMeshIds": [
-    "left-thalamus",
-    "right-thalamus"
-   ]
-  },
-  {
-   "structureId": "frontal-lobe",
-   "diseaseId": "brain-abscess",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Common site from frontal sinus or dental spread.",
-   "evidenceLevel": "established",
-   "references": [
-    "mp-ency-brain-abscess"
-   ],
-   "resolvedMeshIds": [
-    "left-middle-frontal-gyrus",
-    "left-precentral-gyrus",
-    "left-superior-frontal-gyrus",
-    "right-middle-frontal-gyrus",
-    "right-precentral-gyrus",
-    "right-superior-frontal-gyrus"
-   ]
-  },
-  {
-   "structureId": "temporal-lobe",
-   "diseaseId": "brain-abscess",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Common site from middle ear or mastoid infection.",
-   "evidenceLevel": "established",
-   "references": [
-    "mp-ency-brain-abscess"
-   ],
-   "resolvedMeshIds": [
-    "left-fusiform-gyrus",
-    "left-inferior-temporal-gyrus",
-    "left-middle-temporal-gyrus",
-    "left-parahippocampal-gyrus",
-    "left-superior-temporal-gyrus-anterior",
-    "left-superior-temporal-gyrus-posterior",
-    "right-fusiform-gyrus",
-    "right-inferior-temporal-gyrus",
-    "right-middle-temporal-gyrus",
-    "right-parahippocampal-gyrus",
-    "right-superior-temporal-gyrus-anterior",
-    "right-superior-temporal-gyrus-posterior"
-   ]
-  },
-  {
-   "structureId": "cerebellum",
-   "diseaseId": "brain-abscess",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Can arise from ear infections.",
-   "evidenceLevel": "established",
-   "references": [
-    "mp-ency-brain-abscess"
-   ],
-   "resolvedMeshIds": [
-    "cerebellum"
-   ]
-  },
-  {
-   "structureId": "frontal-lobe",
-   "diseaseId": "glioblastoma",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "One of the most common locations.",
-   "evidenceLevel": "established",
-   "references": [
-    "acs-brain-tumor-types",
-    "ninds-tumors"
-   ],
-   "resolvedMeshIds": [
-    "left-middle-frontal-gyrus",
-    "left-precentral-gyrus",
-    "left-superior-frontal-gyrus",
-    "right-middle-frontal-gyrus",
-    "right-precentral-gyrus",
-    "right-superior-frontal-gyrus"
-   ]
-  },
-  {
-   "structureId": "temporal-lobe",
-   "diseaseId": "glioblastoma",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "One of the most common locations.",
-   "evidenceLevel": "established",
-   "references": [
-    "acs-brain-tumor-types",
-    "ninds-tumors"
-   ],
-   "resolvedMeshIds": [
-    "left-fusiform-gyrus",
-    "left-inferior-temporal-gyrus",
-    "left-middle-temporal-gyrus",
-    "left-parahippocampal-gyrus",
-    "left-superior-temporal-gyrus-anterior",
-    "left-superior-temporal-gyrus-posterior",
-    "right-fusiform-gyrus",
-    "right-inferior-temporal-gyrus",
-    "right-middle-temporal-gyrus",
-    "right-parahippocampal-gyrus",
-    "right-superior-temporal-gyrus-anterior",
-    "right-superior-temporal-gyrus-posterior"
-   ]
-  },
-  {
-   "structureId": "cerebral-white-matter",
-   "diseaseId": "glioblastoma",
-   "associationType": "secondary",
-   "distribution": "regional",
-   "explanation": "Infiltrates along white matter tracts.",
-   "evidenceLevel": "established",
-   "references": [
-    "acs-brain-tumor-types",
-    "ninds-tumors"
-   ],
-   "resolvedMeshIds": [
-    "cerebral-white-matter"
-   ]
-  },
-  {
-   "structureId": "corpus-callosum",
-   "diseaseId": "glioblastoma",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Can spread across the corpus callosum to the other hemisphere.",
-   "evidenceLevel": "established",
-   "references": [
-    "acs-brain-tumor-types",
-    "ninds-tumors"
-   ],
-   "resolvedMeshIds": [
-    "corpus-callosum"
-   ]
-  },
-  {
-   "structureId": "frontal-lobe",
-   "diseaseId": "meningioma",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Convexity, parasagittal and olfactory groove meningiomas can compress the frontal lobe.",
-   "evidenceLevel": "established",
-   "references": [
-    "acs-brain-tumor-types",
-    "ninds-tumors"
-   ],
-   "resolvedMeshIds": [
-    "left-middle-frontal-gyrus",
-    "left-precentral-gyrus",
-    "left-superior-frontal-gyrus",
-    "right-middle-frontal-gyrus",
-    "right-precentral-gyrus",
-    "right-superior-frontal-gyrus"
-   ]
-  },
-  {
-   "structureId": "optic-chiasm",
-   "diseaseId": "meningioma",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Skull-base (e.g. tuberculum sellae) meningiomas can compress the optic apparatus.",
-   "evidenceLevel": "established",
-   "references": [
-    "acs-brain-tumor-types",
-    "ninds-tumors"
-   ],
-   "resolvedMeshIds": [
-    "optic-chiasm"
-   ]
-  },
-  {
-   "structureId": "parietal-lobe",
-   "diseaseId": "meningioma",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Parasagittal and convexity tumours can compress parietal cortex.",
-   "evidenceLevel": "established",
-   "references": [
-    "acs-brain-tumor-types",
-    "ninds-tumors"
-   ],
-   "resolvedMeshIds": [
-    "left-angular-gyrus",
-    "left-postcentral-gyrus",
-    "left-superior-parietal-lobule-precuneus",
-    "left-supramarginal-gyrus",
-    "right-angular-gyrus",
-    "right-postcentral-gyrus",
-    "right-superior-parietal-lobule-precuneus",
-    "right-supramarginal-gyrus"
-   ]
-  },
-  {
-   "structureId": "cerebral-hemisphere",
-   "diseaseId": "astrocytoma",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Adult diffuse astrocytomas typically arise in the cerebral hemispheres.",
-   "evidenceLevel": "established",
-   "references": [
-    "acs-brain-tumor-types",
-    "ninds-tumors"
-   ],
-   "resolvedMeshIds": [
-    "left-accessory-short-gyrus",
-    "left-amygdala",
-    "left-angular-gyrus",
-    "left-caudate-nucleus",
-    "left-choroid-plexus",
-    "left-cingulate-gyrus",
-    "left-fornix",
-    "left-fusiform-gyrus",
-    "left-globus-pallidus",
-    "left-hippocampus",
-    "left-inferior-temporal-gyrus",
-    "left-insula",
-    "left-internal-capsule-anterior-limb",
-    "left-lateral-ventricle",
-    "left-middle-frontal-gyrus",
-    "left-middle-temporal-gyrus",
-    "left-occipital-lobe",
-    "left-parahippocampal-gyrus",
-    "left-postcentral-gyrus",
-    "left-precentral-gyrus",
-    "left-putamen",
-    "left-superior-frontal-gyrus",
-    "left-superior-parietal-lobule-precuneus",
-    "left-superior-temporal-gyrus-anterior",
-    "left-superior-temporal-gyrus-posterior",
-    "left-supramarginal-gyrus",
-    "right-accessory-short-gyrus",
-    "right-amygdala",
-    "right-angular-gyrus",
-    "right-caudate-nucleus",
-    "right-choroid-plexus",
-    "right-cingulate-gyrus",
-    "right-fornix",
-    "right-fusiform-gyrus",
-    "right-globus-pallidus",
-    "right-hippocampus",
-    "right-inferior-temporal-gyrus",
-    "right-insula",
-    "right-internal-capsule-anterior-limb",
-    "right-lateral-ventricle",
-    "right-middle-frontal-gyrus",
-    "right-middle-temporal-gyrus",
-    "right-occipital-lobe",
-    "right-parahippocampal-gyrus",
-    "right-postcentral-gyrus",
-    "right-precentral-gyrus",
-    "right-putamen",
-    "right-superior-frontal-gyrus",
-    "right-superior-parietal-lobule-precuneus",
-    "right-superior-temporal-gyrus-anterior",
-    "right-superior-temporal-gyrus-posterior",
-    "right-supramarginal-gyrus"
-   ]
-  },
-  {
-   "structureId": "cerebellum",
-   "diseaseId": "astrocytoma",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Pilocytic astrocytoma commonly arises in the cerebellum in children.",
-   "evidenceLevel": "established",
-   "references": [
-    "acs-brain-tumor-types",
-    "ninds-tumors"
-   ],
-   "resolvedMeshIds": [
-    "cerebellum"
-   ]
-  },
-  {
-   "structureId": "visual-pathway",
-   "diseaseId": "astrocytoma",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Optic pathway gliomas (often pilocytic) occur, particularly with NF1.",
-   "evidenceLevel": "established",
-   "references": [
-    "acs-brain-tumor-types",
-    "ninds-tumors"
-   ],
-   "resolvedMeshIds": [
-    "left-optic-nerve",
-    "left-optic-tract",
-    "optic-chiasm",
-    "right-optic-nerve",
-    "right-optic-tract"
-   ]
-  },
-  {
-   "structureId": "brainstem",
-   "diseaseId": "astrocytoma",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Brainstem gliomas occur, especially in children.",
-   "evidenceLevel": "established",
-   "references": [
-    "acs-brain-tumor-types",
-    "ninds-tumors"
-   ],
-   "resolvedMeshIds": [
-    "cerebral-aqueduct",
-    "cerebral-peduncles",
-    "fourth-ventricle",
-    "left-inferior-colliculus",
-    "left-superior-colliculus",
-    "medulla-oblongata",
-    "midbrain-other",
-    "pons",
-    "right-inferior-colliculus",
-    "right-superior-colliculus"
-   ]
-  },
-  {
-   "structureId": "cerebral-hemisphere",
-   "diseaseId": "brain-metastases",
-   "associationType": "primary",
-   "distribution": "scattered",
-   "explanation": "Most metastases occur in the cerebral hemispheres, often at the grey\u2013white junction.",
-   "evidenceLevel": "established",
-   "references": [
-    "acs-brain-tumor-types",
-    "ninds-tumors"
-   ],
-   "resolvedMeshIds": [
-    "left-accessory-short-gyrus",
-    "left-amygdala",
-    "left-angular-gyrus",
-    "left-caudate-nucleus",
-    "left-choroid-plexus",
-    "left-cingulate-gyrus",
-    "left-fornix",
-    "left-fusiform-gyrus",
-    "left-globus-pallidus",
-    "left-hippocampus",
-    "left-inferior-temporal-gyrus",
-    "left-insula",
-    "left-internal-capsule-anterior-limb",
-    "left-lateral-ventricle",
-    "left-middle-frontal-gyrus",
-    "left-middle-temporal-gyrus",
-    "left-occipital-lobe",
-    "left-parahippocampal-gyrus",
-    "left-postcentral-gyrus",
-    "left-precentral-gyrus",
-    "left-putamen",
-    "left-superior-frontal-gyrus",
-    "left-superior-parietal-lobule-precuneus",
-    "left-superior-temporal-gyrus-anterior",
-    "left-superior-temporal-gyrus-posterior",
-    "left-supramarginal-gyrus",
-    "right-accessory-short-gyrus",
-    "right-amygdala",
-    "right-angular-gyrus",
-    "right-caudate-nucleus",
-    "right-choroid-plexus",
-    "right-cingulate-gyrus",
-    "right-fornix",
-    "right-fusiform-gyrus",
-    "right-globus-pallidus",
-    "right-hippocampus",
-    "right-inferior-temporal-gyrus",
-    "right-insula",
-    "right-internal-capsule-anterior-limb",
-    "right-lateral-ventricle",
-    "right-middle-frontal-gyrus",
-    "right-middle-temporal-gyrus",
-    "right-occipital-lobe",
-    "right-parahippocampal-gyrus",
-    "right-postcentral-gyrus",
-    "right-precentral-gyrus",
-    "right-putamen",
-    "right-superior-frontal-gyrus",
-    "right-superior-parietal-lobule-precuneus",
-    "right-superior-temporal-gyrus-anterior",
-    "right-superior-temporal-gyrus-posterior",
-    "right-supramarginal-gyrus"
-   ]
-  },
-  {
-   "structureId": "cerebellum",
-   "diseaseId": "brain-metastases",
-   "associationType": "secondary",
-   "distribution": "focal",
-   "explanation": "A minority occur in the cerebellum.",
-   "evidenceLevel": "established",
-   "references": [
-    "acs-brain-tumor-types",
-    "ninds-tumors"
-   ],
-   "resolvedMeshIds": [
-    "cerebellum"
-   ]
-  },
-  {
-   "structureId": "orbital-and-straight-gyri",
-   "diseaseId": "traumatic-brain-injury",
-   "associationType": "primary",
-   "distribution": "focal",
-   "explanation": "Orbitofrontal contusions are typical.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-tbi",
-    "mp-tbi"
-   ],
-   "resolvedMeshIds": [
-    "orbital-and-straight-gyri"
-   ]
-  },
-  {
-   "structureId": "temporal-lobe",
-   "diseaseId": "traumatic-brain-injury",
-   "associationType": "primary",
-   "distribution": "focal",
-   "explanation": "Anterior and inferior temporal contusions are typical.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-tbi",
-    "mp-tbi"
-   ],
-   "resolvedMeshIds": [
-    "left-fusiform-gyrus",
-    "left-inferior-temporal-gyrus",
-    "left-middle-temporal-gyrus",
-    "left-parahippocampal-gyrus",
-    "left-superior-temporal-gyrus-anterior",
-    "left-superior-temporal-gyrus-posterior",
-    "right-fusiform-gyrus",
-    "right-inferior-temporal-gyrus",
-    "right-middle-temporal-gyrus",
-    "right-parahippocampal-gyrus",
-    "right-superior-temporal-gyrus-anterior",
-    "right-superior-temporal-gyrus-posterior"
-   ]
-  },
-  {
-   "structureId": "corpus-callosum",
-   "diseaseId": "traumatic-brain-injury",
-   "associationType": "secondary",
-   "distribution": "focal",
-   "explanation": "Diffuse axonal injury frequently involves the corpus callosum.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-tbi",
-    "mp-tbi"
-   ],
-   "resolvedMeshIds": [
-    "corpus-callosum"
-   ]
-  },
-  {
-   "structureId": "brainstem",
-   "diseaseId": "traumatic-brain-injury",
-   "associationType": "secondary",
-   "distribution": "focal",
-   "explanation": "Severe diffuse axonal injury may involve the dorsolateral brainstem.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-tbi",
-    "mp-tbi"
-   ],
-   "resolvedMeshIds": [
-    "cerebral-aqueduct",
-    "cerebral-peduncles",
-    "fourth-ventricle",
-    "left-inferior-colliculus",
-    "left-superior-colliculus",
-    "medulla-oblongata",
-    "midbrain-other",
-    "pons",
-    "right-inferior-colliculus",
-    "right-superior-colliculus"
-   ]
-  },
-  {
-   "structureId": "cerebrum",
-   "diseaseId": "concussion",
-   "associationType": "secondary",
-   "distribution": "network",
-   "explanation": "Diffuse transient functional disturbance; not a focal structural lesion.",
-   "evidenceLevel": "variable",
-   "references": [
-    "mp-concussion",
-    "ninds-tbi"
-   ],
-   "resolvedMeshIds": [
-    "cerebral-white-matter",
-    "commissure-of-fornix",
-    "corpus-callosum",
-    "left-accessory-short-gyrus",
-    "left-amygdala",
-    "left-angular-gyrus",
-    "left-caudate-nucleus",
-    "left-choroid-plexus",
-    "left-cingulate-gyrus",
-    "left-fornix",
-    "left-fusiform-gyrus",
-    "left-globus-pallidus",
-    "left-hippocampus",
-    "left-inferior-temporal-gyrus",
-    "left-insula",
-    "left-internal-capsule-anterior-limb",
-    "left-lateral-ventricle",
-    "left-middle-frontal-gyrus",
-    "left-middle-temporal-gyrus",
-    "left-occipital-lobe",
-    "left-parahippocampal-gyrus",
-    "left-postcentral-gyrus",
-    "left-precentral-gyrus",
-    "left-putamen",
-    "left-superior-frontal-gyrus",
-    "left-superior-parietal-lobule-precuneus",
-    "left-superior-temporal-gyrus-anterior",
-    "left-superior-temporal-gyrus-posterior",
-    "left-supramarginal-gyrus",
-    "orbital-and-straight-gyri",
-    "right-accessory-short-gyrus",
-    "right-amygdala",
-    "right-angular-gyrus",
-    "right-caudate-nucleus",
-    "right-choroid-plexus",
-    "right-cingulate-gyrus",
-    "right-fornix",
-    "right-fusiform-gyrus",
-    "right-globus-pallidus",
-    "right-hippocampus",
-    "right-inferior-temporal-gyrus",
-    "right-insula",
-    "right-internal-capsule-anterior-limb",
-    "right-lateral-ventricle",
-    "right-middle-frontal-gyrus",
-    "right-middle-temporal-gyrus",
-    "right-occipital-lobe",
-    "right-parahippocampal-gyrus",
-    "right-postcentral-gyrus",
-    "right-precentral-gyrus",
-    "right-putamen",
-    "right-superior-frontal-gyrus",
-    "right-superior-parietal-lobule-precuneus",
-    "right-superior-temporal-gyrus-anterior",
-    "right-superior-temporal-gyrus-posterior",
-    "right-supramarginal-gyrus",
-    "septum-pellucidum"
-   ]
-  },
-  {
-   "structureId": "cerebral-white-matter",
-   "diseaseId": "diffuse-axonal-injury",
-   "associationType": "primary",
-   "distribution": "scattered",
-   "explanation": "Lesions at grey\u2013white matter junctions (grade 1).",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-tbi",
-    "mp-tbi"
-   ],
-   "resolvedMeshIds": [
-    "cerebral-white-matter"
-   ]
-  },
-  {
-   "structureId": "corpus-callosum",
-   "diseaseId": "diffuse-axonal-injury",
-   "associationType": "primary",
-   "distribution": "focal",
-   "explanation": "Callosal lesions (grade 2).",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-tbi",
-    "mp-tbi"
-   ],
-   "resolvedMeshIds": [
-    "corpus-callosum"
-   ]
-  },
-  {
-   "structureId": "midbrain",
-   "diseaseId": "diffuse-axonal-injury",
-   "associationType": "primary",
-   "distribution": "focal",
-   "explanation": "Dorsolateral rostral brainstem lesions (grade 3).",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-tbi",
-    "mp-tbi"
-   ],
-   "resolvedMeshIds": [
-    "cerebral-aqueduct",
-    "cerebral-peduncles",
-    "left-inferior-colliculus",
-    "left-superior-colliculus",
-    "midbrain-other",
-    "right-inferior-colliculus",
-    "right-superior-colliculus"
-   ]
-  },
-  {
-   "structureId": "lateral-ventricle",
-   "diseaseId": "hydrocephalus",
-   "associationType": "primary",
-   "distribution": "regional",
-   "explanation": "Lateral ventricles enlarge.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-hydrocephalus",
-    "mp-hydrocephalus"
-   ],
-   "resolvedMeshIds": [
-    "left-lateral-ventricle",
-    "right-lateral-ventricle"
-   ]
-  },
-  {
-   "structureId": "third-ventricle",
-   "diseaseId": "hydrocephalus",
-   "associationType": "primary",
-   "distribution": "regional",
-   "explanation": "Third ventricle enlarges in many forms.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-hydrocephalus",
-    "mp-hydrocephalus"
-   ],
-   "resolvedMeshIds": [
-    "third-ventricle"
-   ]
-  },
-  {
-   "structureId": "cerebral-aqueduct",
-   "diseaseId": "hydrocephalus",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Aqueductal stenosis causes obstructive hydrocephalus.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-hydrocephalus",
-    "mp-hydrocephalus"
-   ],
-   "resolvedMeshIds": [
-    "cerebral-aqueduct"
-   ]
-  },
-  {
-   "structureId": "fourth-ventricle",
-   "diseaseId": "hydrocephalus",
-   "associationType": "subtype",
-   "distribution": "regional",
-   "explanation": "Enlarged in communicating hydrocephalus or outlet obstruction.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-hydrocephalus",
-    "mp-hydrocephalus"
-   ],
-   "resolvedMeshIds": [
-    "fourth-ventricle"
-   ]
-  },
-  {
-   "structureId": "cerebral-white-matter",
-   "diseaseId": "hydrocephalus",
-   "associationType": "secondary",
-   "distribution": "regional",
-   "explanation": "Periventricular white matter is compressed and may show fluid signal.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-hydrocephalus",
-    "mp-hydrocephalus"
-   ],
-   "resolvedMeshIds": [
-    "cerebral-white-matter"
-   ]
-  },
-  {
-   "structureId": "occipital-lobe",
-   "diseaseId": "migraine",
-   "associationType": "subtype",
-   "distribution": "network",
-   "explanation": "Cortical spreading depolarisation in occipital cortex is linked to visual aura (functional, not structural).",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-migraine",
-    "mp-migraine"
-   ],
-   "resolvedMeshIds": [
-    "left-occipital-lobe",
-    "right-occipital-lobe"
-   ]
-  },
-  {
-   "structureId": "brainstem",
-   "diseaseId": "migraine",
-   "associationType": "secondary",
-   "distribution": "network",
-   "explanation": "Brainstem nuclei modulate trigeminovascular pain signalling.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-migraine",
-    "mp-migraine"
-   ],
-   "resolvedMeshIds": [
-    "cerebral-aqueduct",
-    "cerebral-peduncles",
-    "fourth-ventricle",
-    "left-inferior-colliculus",
-    "left-superior-colliculus",
-    "medulla-oblongata",
-    "midbrain-other",
-    "pons",
-    "right-inferior-colliculus",
-    "right-superior-colliculus"
-   ]
-  },
-  {
-   "structureId": "hypothalamus",
-   "diseaseId": "migraine",
-   "associationType": "secondary",
-   "distribution": "network",
-   "explanation": "Hypothalamic activation is implicated in the premonitory phase.",
-   "evidenceLevel": "emerging",
-   "references": [
-    "ninds-migraine",
-    "mp-migraine"
-   ],
-   "resolvedMeshIds": [
-    "hypothalamus-other",
-    "mammillary-body",
-    "tuber-cinereum"
-   ]
-  },
-  {
-   "structureId": "thalamus",
-   "diseaseId": "migraine",
-   "associationType": "secondary",
-   "distribution": "network",
-   "explanation": "Relays and modulates head pain signals to cortex.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-migraine",
-    "mp-migraine"
-   ],
-   "resolvedMeshIds": [
-    "left-thalamus",
-    "right-thalamus"
-   ]
-  },
-  {
-   "structureId": "cerebellum",
-   "diseaseId": "chiari-malformation",
-   "associationType": "primary",
-   "distribution": "focal",
-   "explanation": "Cerebellar tonsils herniate below the foramen magnum (tonsils not separately segmented).",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-chiari",
-    "mp-chiari"
-   ],
-   "resolvedMeshIds": [
-    "cerebellum"
-   ]
-  },
-  {
-   "structureId": "medulla-oblongata",
-   "diseaseId": "chiari-malformation",
-   "associationType": "secondary",
-   "distribution": "focal",
-   "explanation": "The medulla may be compressed.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-chiari",
-    "mp-chiari"
-   ],
-   "resolvedMeshIds": [
-    "medulla-oblongata"
-   ]
-  },
-  {
-   "structureId": "fourth-ventricle",
-   "diseaseId": "chiari-malformation",
-   "associationType": "secondary",
-   "distribution": "focal",
-   "explanation": "CSF outflow at the foramen magnum can be obstructed.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-chiari",
-    "mp-chiari"
-   ],
-   "resolvedMeshIds": [
-    "fourth-ventricle"
-   ]
-  },
-  {
-   "structureId": "cerebral-white-matter",
-   "diseaseId": "cerebral-palsy",
-   "associationType": "subtype",
-   "distribution": "regional",
-   "explanation": "Periventricular white matter injury is typical in preterm-born children with spastic CP.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-cp",
-    "mp-cp"
-   ],
-   "resolvedMeshIds": [
-    "cerebral-white-matter"
-   ]
-  },
-  {
-   "structureId": "internal-capsule",
-   "diseaseId": "cerebral-palsy",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Corticospinal fibres near the ventricles and in the internal capsule are injured.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-cp",
-    "mp-cp"
-   ],
-   "resolvedMeshIds": [
-    "left-internal-capsule-anterior-limb",
-    "right-internal-capsule-anterior-limb"
-   ]
-  },
-  {
-   "structureId": "basal-nuclei",
-   "diseaseId": "cerebral-palsy",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Deep grey matter injury causes dyskinetic CP.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-cp",
-    "mp-cp"
-   ],
-   "resolvedMeshIds": [
-    "left-caudate-nucleus",
-    "left-globus-pallidus",
-    "left-putamen",
-    "right-caudate-nucleus",
-    "right-globus-pallidus",
-    "right-putamen"
-   ]
-  },
-  {
-   "structureId": "thalamus",
-   "diseaseId": "cerebral-palsy",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Thalamic injury accompanies basal ganglia injury in some.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-cp",
-    "mp-cp"
-   ],
-   "resolvedMeshIds": [
-    "left-thalamus",
-    "right-thalamus"
-   ]
-  },
-  {
-   "structureId": "cerebellum",
-   "diseaseId": "cerebral-palsy",
-   "associationType": "subtype",
-   "distribution": "focal",
-   "explanation": "Associated with ataxic CP.",
-   "evidenceLevel": "variable",
-   "references": [
-    "ninds-cp",
-    "mp-cp"
-   ],
-   "resolvedMeshIds": [
-    "cerebellum"
-   ]
-  },
-  {
-   "structureId": "hippocampus",
-   "diseaseId": "hypoxic-ischemic-brain-injury",
-   "associationType": "primary",
-   "distribution": "diffuse",
-   "explanation": "CA1 hippocampal neurons are among the most vulnerable to hypoxia-ischaemia.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-hie",
-    "mp-ency-cerebral-hypoxia"
-   ],
-   "resolvedMeshIds": [
-    "left-hippocampus",
-    "right-hippocampus"
-   ]
-  },
-  {
-   "structureId": "basal-nuclei",
-   "diseaseId": "hypoxic-ischemic-brain-injury",
-   "associationType": "primary",
-   "distribution": "diffuse",
-   "explanation": "Deep grey matter is vulnerable, especially in severe or acute insults.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-hie",
-    "mp-ency-cerebral-hypoxia"
-   ],
-   "resolvedMeshIds": [
-    "left-caudate-nucleus",
-    "left-globus-pallidus",
-    "left-putamen",
-    "right-caudate-nucleus",
-    "right-globus-pallidus",
-    "right-putamen"
-   ]
-  },
-  {
-   "structureId": "thalamus",
-   "diseaseId": "hypoxic-ischemic-brain-injury",
-   "associationType": "primary",
-   "distribution": "diffuse",
-   "explanation": "Thalamic injury is common in severe injury.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-hie",
-    "mp-ency-cerebral-hypoxia"
-   ],
-   "resolvedMeshIds": [
-    "left-thalamus",
-    "right-thalamus"
-   ]
-  },
-  {
-   "structureId": "cerebral-hemisphere",
-   "diseaseId": "hypoxic-ischemic-brain-injury",
-   "associationType": "secondary",
-   "distribution": "regional",
-   "explanation": "Cortical laminar necrosis and watershed injury occur.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-hie",
-    "mp-ency-cerebral-hypoxia"
-   ],
-   "resolvedMeshIds": [
-    "left-accessory-short-gyrus",
-    "left-amygdala",
-    "left-angular-gyrus",
-    "left-caudate-nucleus",
-    "left-choroid-plexus",
-    "left-cingulate-gyrus",
-    "left-fornix",
-    "left-fusiform-gyrus",
-    "left-globus-pallidus",
-    "left-hippocampus",
-    "left-inferior-temporal-gyrus",
-    "left-insula",
-    "left-internal-capsule-anterior-limb",
-    "left-lateral-ventricle",
-    "left-middle-frontal-gyrus",
-    "left-middle-temporal-gyrus",
-    "left-occipital-lobe",
-    "left-parahippocampal-gyrus",
-    "left-postcentral-gyrus",
-    "left-precentral-gyrus",
-    "left-putamen",
-    "left-superior-frontal-gyrus",
-    "left-superior-parietal-lobule-precuneus",
-    "left-superior-temporal-gyrus-anterior",
-    "left-superior-temporal-gyrus-posterior",
-    "left-supramarginal-gyrus",
-    "right-accessory-short-gyrus",
-    "right-amygdala",
-    "right-angular-gyrus",
-    "right-caudate-nucleus",
-    "right-choroid-plexus",
-    "right-cingulate-gyrus",
-    "right-fornix",
-    "right-fusiform-gyrus",
-    "right-globus-pallidus",
-    "right-hippocampus",
-    "right-inferior-temporal-gyrus",
-    "right-insula",
-    "right-internal-capsule-anterior-limb",
-    "right-lateral-ventricle",
-    "right-middle-frontal-gyrus",
-    "right-middle-temporal-gyrus",
-    "right-occipital-lobe",
-    "right-parahippocampal-gyrus",
-    "right-postcentral-gyrus",
-    "right-precentral-gyrus",
-    "right-putamen",
-    "right-superior-frontal-gyrus",
-    "right-superior-parietal-lobule-precuneus",
-    "right-superior-temporal-gyrus-anterior",
-    "right-superior-temporal-gyrus-posterior",
-    "right-supramarginal-gyrus"
-   ]
-  },
-  {
-   "structureId": "cerebellum",
-   "diseaseId": "hypoxic-ischemic-brain-injury",
-   "associationType": "secondary",
-   "distribution": "diffuse",
-   "explanation": "Purkinje cells are vulnerable.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-hie",
-    "mp-ency-cerebral-hypoxia"
-   ],
-   "resolvedMeshIds": [
-    "cerebellum"
-   ]
-  },
-  {
-   "structureId": "cerebellum",
-   "diseaseId": "cerebellar-ataxia",
-   "associationType": "primary",
-   "distribution": "diffuse",
-   "explanation": "Cerebellar dysfunction causes ataxia; pattern (midline vs hemispheric) shapes symptoms. Vermis and hemispheres are not separately segmented here.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-ataxia",
-    "ninds-cerebellar-degeneration"
-   ],
-   "resolvedMeshIds": [
-    "cerebellum"
-   ]
-  },
-  {
-   "structureId": "pons",
-   "diseaseId": "cerebellar-ataxia",
-   "associationType": "secondary",
-   "distribution": "network",
-   "explanation": "Pontocerebellar connections.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-ataxia",
-    "ninds-cerebellar-degeneration"
-   ],
-   "resolvedMeshIds": [
-    "pons"
-   ]
-  },
-  {
-   "structureId": "medulla-oblongata",
-   "diseaseId": "cerebellar-ataxia",
-   "associationType": "secondary",
-   "distribution": "network",
-   "explanation": "Spinal and vestibular inputs via the inferior cerebellar peduncle.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-ataxia",
-    "ninds-cerebellar-degeneration"
-   ],
-   "resolvedMeshIds": [
-    "medulla-oblongata"
-   ]
-  },
-  {
-   "structureId": "thalamus",
-   "diseaseId": "cerebellar-ataxia",
-   "associationType": "secondary",
-   "distribution": "network",
-   "explanation": "Cerebellar output to motor cortex via thalamus.",
-   "evidenceLevel": "established",
-   "references": [
-    "ninds-ataxia",
-    "ninds-cerebellar-degeneration"
-   ],
-   "resolvedMeshIds": [
-    "left-thalamus",
-    "right-thalamus"
-   ]
-  }
- ]
+  "relationships": [
+    {
+      "structureId": "hippocampus",
+      "diseaseId": "alzheimers-disease",
+      "associationType": "primary",
+      "distribution": "diffuse",
+      "explanation": "Neurofibrillary tangles and neuronal loss affect the hippocampus early, matching early difficulty forming new memories.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-alzheimers",
+        "mp-alzheimers"
+      ],
+      "resolvedMeshIds": [
+        "left-hippocampus",
+        "right-hippocampus"
+      ]
+    },
+    {
+      "structureId": "parahippocampal-gyrus",
+      "diseaseId": "alzheimers-disease",
+      "associationType": "primary",
+      "distribution": "regional",
+      "explanation": "Entorhinal cortex (anterior parahippocampal gyrus) is one of the earliest sites of tau pathology.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-alzheimers",
+        "mp-alzheimers"
+      ],
+      "resolvedMeshIds": [
+        "left-parahippocampal-gyrus",
+        "right-parahippocampal-gyrus"
+      ]
+    },
+    {
+      "structureId": "temporal-lobe",
+      "diseaseId": "alzheimers-disease",
+      "associationType": "secondary",
+      "distribution": "regional",
+      "explanation": "Pathology spreads to lateral temporal association cortex as disease advances.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-alzheimers",
+        "mp-alzheimers"
+      ],
+      "resolvedMeshIds": [
+        "left-fusiform-gyrus",
+        "left-inferior-temporal-gyrus",
+        "left-middle-temporal-gyrus",
+        "left-parahippocampal-gyrus",
+        "left-superior-temporal-gyrus-anterior",
+        "left-superior-temporal-gyrus-posterior",
+        "right-fusiform-gyrus",
+        "right-inferior-temporal-gyrus",
+        "right-middle-temporal-gyrus",
+        "right-parahippocampal-gyrus",
+        "right-superior-temporal-gyrus-anterior",
+        "right-superior-temporal-gyrus-posterior"
+      ]
+    },
+    {
+      "structureId": "superior-parietal-lobule-precuneus",
+      "diseaseId": "alzheimers-disease",
+      "associationType": "secondary",
+      "distribution": "regional",
+      "explanation": "Precuneus and parietal association cortex show reduced metabolism and atrophy; involvement is prominent in posterior variants.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-alzheimers",
+        "mp-alzheimers"
+      ],
+      "resolvedMeshIds": [
+        "left-superior-parietal-lobule-precuneus",
+        "right-superior-parietal-lobule-precuneus"
+      ]
+    },
+    {
+      "structureId": "cingulate-gyrus",
+      "diseaseId": "alzheimers-disease",
+      "associationType": "secondary",
+      "distribution": "regional",
+      "explanation": "Posterior cingulate hypometabolism is a frequent imaging feature.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-alzheimers",
+        "mp-alzheimers"
+      ],
+      "resolvedMeshIds": [
+        "left-cingulate-gyrus",
+        "right-cingulate-gyrus"
+      ]
+    },
+    {
+      "structureId": "frontal-lobe",
+      "diseaseId": "alzheimers-disease",
+      "associationType": "subtype",
+      "distribution": "regional",
+      "explanation": "Frontal association cortex is involved later, and earlier in some atypical presentations.",
+      "evidenceLevel": "variable",
+      "references": [
+        "ninds-alzheimers",
+        "mp-alzheimers"
+      ],
+      "resolvedMeshIds": [
+        "left-middle-frontal-gyrus",
+        "left-precentral-gyrus",
+        "left-superior-frontal-gyrus",
+        "right-middle-frontal-gyrus",
+        "right-precentral-gyrus",
+        "right-superior-frontal-gyrus"
+      ]
+    },
+    {
+      "structureId": "cerebral-peduncles",
+      "diseaseId": "parkinsons-disease",
+      "associationType": "primary",
+      "distribution": "focal",
+      "explanation": "Contains the substantia nigra pars compacta, where dopaminergic neuron loss defines the disease. Schematic: the nigra itself is not segmented; the whole peduncle is NOT uniformly affected.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-parkinsons",
+        "mp-parkinsons"
+      ],
+      "resolvedMeshIds": [
+        "cerebral-peduncles"
+      ]
+    },
+    {
+      "structureId": "putamen",
+      "diseaseId": "parkinsons-disease",
+      "associationType": "primary",
+      "distribution": "diffuse",
+      "explanation": "Loss of nigrostriatal dopamine is most marked in the putamen, producing the motor signs.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-parkinsons",
+        "mp-parkinsons"
+      ],
+      "resolvedMeshIds": [
+        "left-putamen",
+        "right-putamen"
+      ]
+    },
+    {
+      "structureId": "caudate-nucleus",
+      "diseaseId": "parkinsons-disease",
+      "associationType": "secondary",
+      "distribution": "diffuse",
+      "explanation": "Dopamine depletion also affects the caudate, generally less than the putamen.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-parkinsons",
+        "mp-parkinsons"
+      ],
+      "resolvedMeshIds": [
+        "left-caudate-nucleus",
+        "right-caudate-nucleus"
+      ]
+    },
+    {
+      "structureId": "globus-pallidus",
+      "diseaseId": "parkinsons-disease",
+      "associationType": "secondary",
+      "distribution": "network",
+      "explanation": "Altered pallidal output is part of basal ganglia circuit dysfunction; it is a DBS target.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-parkinsons",
+        "mp-parkinsons"
+      ],
+      "resolvedMeshIds": [
+        "left-globus-pallidus",
+        "right-globus-pallidus"
+      ]
+    },
+    {
+      "structureId": "thalamus",
+      "diseaseId": "parkinsons-disease",
+      "associationType": "secondary",
+      "distribution": "network",
+      "explanation": "Abnormal basal ganglia output alters thalamocortical motor signalling.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-parkinsons",
+        "mp-parkinsons"
+      ],
+      "resolvedMeshIds": [
+        "left-thalamus",
+        "right-thalamus"
+      ]
+    },
+    {
+      "structureId": "medulla-oblongata",
+      "diseaseId": "parkinsons-disease",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Lewy pathology often involves lower brainstem nuclei (e.g. dorsal motor nucleus of vagus), linked to non-motor symptoms.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-parkinsons",
+        "mp-parkinsons"
+      ],
+      "resolvedMeshIds": [
+        "medulla-oblongata"
+      ]
+    },
+    {
+      "structureId": "caudate-nucleus",
+      "diseaseId": "huntingtons-disease",
+      "associationType": "primary",
+      "distribution": "diffuse",
+      "explanation": "Earliest and most severe neuronal loss in the striatum, especially the caudate.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-huntingtons",
+        "mp-huntingtons"
+      ],
+      "resolvedMeshIds": [
+        "left-caudate-nucleus",
+        "right-caudate-nucleus"
+      ]
+    },
+    {
+      "structureId": "putamen",
+      "diseaseId": "huntingtons-disease",
+      "associationType": "primary",
+      "distribution": "diffuse",
+      "explanation": "Putaminal medium spiny neurons also degenerate.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-huntingtons",
+        "mp-huntingtons"
+      ],
+      "resolvedMeshIds": [
+        "left-putamen",
+        "right-putamen"
+      ]
+    },
+    {
+      "structureId": "globus-pallidus",
+      "diseaseId": "huntingtons-disease",
+      "associationType": "secondary",
+      "distribution": "network",
+      "explanation": "Downstream basal ganglia output is disrupted.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-huntingtons",
+        "mp-huntingtons"
+      ],
+      "resolvedMeshIds": [
+        "left-globus-pallidus",
+        "right-globus-pallidus"
+      ]
+    },
+    {
+      "structureId": "lateral-ventricle",
+      "diseaseId": "huntingtons-disease",
+      "associationType": "secondary",
+      "distribution": "regional",
+      "explanation": "Frontal horns enlarge secondary to caudate atrophy (imaging sign, not primary pathology).",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-huntingtons",
+        "mp-huntingtons"
+      ],
+      "resolvedMeshIds": [
+        "left-lateral-ventricle",
+        "right-lateral-ventricle"
+      ]
+    },
+    {
+      "structureId": "frontal-lobe",
+      "diseaseId": "huntingtons-disease",
+      "associationType": "secondary",
+      "distribution": "regional",
+      "explanation": "Cortical atrophy develops as disease advances, contributing to cognitive and behavioural symptoms.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-huntingtons",
+        "mp-huntingtons"
+      ],
+      "resolvedMeshIds": [
+        "left-middle-frontal-gyrus",
+        "left-precentral-gyrus",
+        "left-superior-frontal-gyrus",
+        "right-middle-frontal-gyrus",
+        "right-precentral-gyrus",
+        "right-superior-frontal-gyrus"
+      ]
+    },
+    {
+      "structureId": "precentral-gyrus",
+      "diseaseId": "amyotrophic-lateral-sclerosis",
+      "associationType": "primary",
+      "distribution": "diffuse",
+      "explanation": "Upper motor neurons in primary motor cortex degenerate.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-als",
+        "mp-als"
+      ],
+      "resolvedMeshIds": [
+        "left-precentral-gyrus",
+        "right-precentral-gyrus"
+      ]
+    },
+    {
+      "structureId": "cerebral-peduncles",
+      "diseaseId": "amyotrophic-lateral-sclerosis",
+      "associationType": "secondary",
+      "distribution": "focal",
+      "explanation": "Descending corticospinal fibres degenerate along their course.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-als",
+        "mp-als"
+      ],
+      "resolvedMeshIds": [
+        "cerebral-peduncles"
+      ]
+    },
+    {
+      "structureId": "internal-capsule",
+      "diseaseId": "amyotrophic-lateral-sclerosis",
+      "associationType": "secondary",
+      "distribution": "focal",
+      "explanation": "Corticospinal tract involvement (mainly posterior limb, which is not modelled; anterior limb shown for orientation only).",
+      "evidenceLevel": "variable",
+      "references": [
+        "ninds-als",
+        "mp-als"
+      ],
+      "resolvedMeshIds": [
+        "left-internal-capsule-anterior-limb",
+        "right-internal-capsule-anterior-limb"
+      ]
+    },
+    {
+      "structureId": "medulla-oblongata",
+      "diseaseId": "amyotrophic-lateral-sclerosis",
+      "associationType": "primary",
+      "distribution": "focal",
+      "explanation": "Brainstem motor nuclei (e.g. hypoglossal) are affected, causing bulbar symptoms.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-als",
+        "mp-als"
+      ],
+      "resolvedMeshIds": [
+        "medulla-oblongata"
+      ]
+    },
+    {
+      "structureId": "pons",
+      "diseaseId": "amyotrophic-lateral-sclerosis",
+      "associationType": "secondary",
+      "distribution": "focal",
+      "explanation": "Motor nuclei and descending tracts in the pons are involved.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-als",
+        "mp-als"
+      ],
+      "resolvedMeshIds": [
+        "pons"
+      ]
+    },
+    {
+      "structureId": "frontal-lobe",
+      "diseaseId": "amyotrophic-lateral-sclerosis",
+      "associationType": "subtype",
+      "distribution": "regional",
+      "explanation": "Frontal involvement in people with ALS\u2013FTD overlap.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-als",
+        "mp-als"
+      ],
+      "resolvedMeshIds": [
+        "left-middle-frontal-gyrus",
+        "left-precentral-gyrus",
+        "left-superior-frontal-gyrus",
+        "right-middle-frontal-gyrus",
+        "right-precentral-gyrus",
+        "right-superior-frontal-gyrus"
+      ]
+    },
+    {
+      "structureId": "frontal-lobe",
+      "diseaseId": "frontotemporal-dementia",
+      "associationType": "primary",
+      "distribution": "regional",
+      "explanation": "Frontal atrophy underlies behavioural and executive changes.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-ftd",
+        "mp-dementia"
+      ],
+      "resolvedMeshIds": [
+        "left-middle-frontal-gyrus",
+        "left-precentral-gyrus",
+        "left-superior-frontal-gyrus",
+        "right-middle-frontal-gyrus",
+        "right-precentral-gyrus",
+        "right-superior-frontal-gyrus"
+      ]
+    },
+    {
+      "structureId": "orbital-and-straight-gyri",
+      "diseaseId": "frontotemporal-dementia",
+      "associationType": "primary",
+      "distribution": "regional",
+      "explanation": "Orbitofrontal cortex is commonly affected in the behavioural variant.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-ftd",
+        "mp-dementia"
+      ],
+      "resolvedMeshIds": [
+        "orbital-and-straight-gyri"
+      ]
+    },
+    {
+      "structureId": "temporal-lobe",
+      "diseaseId": "frontotemporal-dementia",
+      "associationType": "subtype",
+      "distribution": "regional",
+      "explanation": "Anterior temporal atrophy is characteristic of the semantic variant.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-ftd",
+        "mp-dementia"
+      ],
+      "resolvedMeshIds": [
+        "left-fusiform-gyrus",
+        "left-inferior-temporal-gyrus",
+        "left-middle-temporal-gyrus",
+        "left-parahippocampal-gyrus",
+        "left-superior-temporal-gyrus-anterior",
+        "left-superior-temporal-gyrus-posterior",
+        "right-fusiform-gyrus",
+        "right-inferior-temporal-gyrus",
+        "right-middle-temporal-gyrus",
+        "right-parahippocampal-gyrus",
+        "right-superior-temporal-gyrus-anterior",
+        "right-superior-temporal-gyrus-posterior"
+      ]
+    },
+    {
+      "structureId": "insula",
+      "diseaseId": "frontotemporal-dementia",
+      "associationType": "secondary",
+      "distribution": "regional",
+      "explanation": "Insular involvement is common, especially in behavioural and non-fluent variants.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-ftd",
+        "mp-dementia"
+      ],
+      "resolvedMeshIds": [
+        "left-accessory-short-gyrus",
+        "left-insula",
+        "right-accessory-short-gyrus",
+        "right-insula"
+      ]
+    },
+    {
+      "structureId": "cingulate-gyrus",
+      "diseaseId": "frontotemporal-dementia",
+      "associationType": "secondary",
+      "distribution": "regional",
+      "explanation": "Anterior cingulate involvement relates to apathy.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-ftd",
+        "mp-dementia"
+      ],
+      "resolvedMeshIds": [
+        "left-cingulate-gyrus",
+        "right-cingulate-gyrus"
+      ]
+    },
+    {
+      "structureId": "cerebral-peduncles",
+      "diseaseId": "dementia-with-lewy-bodies",
+      "associationType": "primary",
+      "distribution": "focal",
+      "explanation": "Substantia nigra (within this element; schematic) shows Lewy pathology and neuron loss, causing parkinsonism.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-lbd",
+        "mp-lbd"
+      ],
+      "resolvedMeshIds": [
+        "cerebral-peduncles"
+      ]
+    },
+    {
+      "structureId": "amygdala",
+      "diseaseId": "dementia-with-lewy-bodies",
+      "associationType": "secondary",
+      "distribution": "diffuse",
+      "explanation": "Limbic Lewy pathology is common.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-lbd",
+        "mp-lbd"
+      ],
+      "resolvedMeshIds": [
+        "left-amygdala",
+        "right-amygdala"
+      ]
+    },
+    {
+      "structureId": "cingulate-gyrus",
+      "diseaseId": "dementia-with-lewy-bodies",
+      "associationType": "secondary",
+      "distribution": "regional",
+      "explanation": "Cingulate cortex is a typical site of cortical Lewy bodies.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-lbd",
+        "mp-lbd"
+      ],
+      "resolvedMeshIds": [
+        "left-cingulate-gyrus",
+        "right-cingulate-gyrus"
+      ]
+    },
+    {
+      "structureId": "occipital-lobe",
+      "diseaseId": "dementia-with-lewy-bodies",
+      "associationType": "secondary",
+      "distribution": "regional",
+      "explanation": "Occipital hypometabolism on imaging, linked to visual symptoms; pathology is not uniform.",
+      "evidenceLevel": "variable",
+      "references": [
+        "ninds-lbd",
+        "mp-lbd"
+      ],
+      "resolvedMeshIds": [
+        "left-occipital-lobe",
+        "right-occipital-lobe"
+      ]
+    },
+    {
+      "structureId": "putamen",
+      "diseaseId": "dementia-with-lewy-bodies",
+      "associationType": "secondary",
+      "distribution": "diffuse",
+      "explanation": "Reduced striatal dopamine transporter uptake reflects nigrostriatal degeneration.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-lbd",
+        "mp-lbd"
+      ],
+      "resolvedMeshIds": [
+        "left-putamen",
+        "right-putamen"
+      ]
+    },
+    {
+      "structureId": "frontal-lobe",
+      "diseaseId": "ischemic-stroke",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Lateral frontal cortex lies in the MCA territory; medial frontal in the ACA territory.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-stroke",
+        "mp-ischemic-stroke"
+      ],
+      "resolvedMeshIds": [
+        "left-middle-frontal-gyrus",
+        "left-precentral-gyrus",
+        "left-superior-frontal-gyrus",
+        "right-middle-frontal-gyrus",
+        "right-precentral-gyrus",
+        "right-superior-frontal-gyrus"
+      ]
+    },
+    {
+      "structureId": "parietal-lobe",
+      "diseaseId": "ischemic-stroke",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Lateral parietal cortex is commonly involved in MCA strokes.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-stroke",
+        "mp-ischemic-stroke"
+      ],
+      "resolvedMeshIds": [
+        "left-angular-gyrus",
+        "left-postcentral-gyrus",
+        "left-superior-parietal-lobule-precuneus",
+        "left-supramarginal-gyrus",
+        "right-angular-gyrus",
+        "right-postcentral-gyrus",
+        "right-superior-parietal-lobule-precuneus",
+        "right-supramarginal-gyrus"
+      ]
+    },
+    {
+      "structureId": "temporal-lobe",
+      "diseaseId": "ischemic-stroke",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Lateral temporal cortex lies in the MCA territory.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-stroke",
+        "mp-ischemic-stroke"
+      ],
+      "resolvedMeshIds": [
+        "left-fusiform-gyrus",
+        "left-inferior-temporal-gyrus",
+        "left-middle-temporal-gyrus",
+        "left-parahippocampal-gyrus",
+        "left-superior-temporal-gyrus-anterior",
+        "left-superior-temporal-gyrus-posterior",
+        "right-fusiform-gyrus",
+        "right-inferior-temporal-gyrus",
+        "right-middle-temporal-gyrus",
+        "right-parahippocampal-gyrus",
+        "right-superior-temporal-gyrus-anterior",
+        "right-superior-temporal-gyrus-posterior"
+      ]
+    },
+    {
+      "structureId": "insula",
+      "diseaseId": "ischemic-stroke",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Insula is frequently involved in proximal MCA occlusion.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-stroke",
+        "mp-ischemic-stroke"
+      ],
+      "resolvedMeshIds": [
+        "left-accessory-short-gyrus",
+        "left-insula",
+        "right-accessory-short-gyrus",
+        "right-insula"
+      ]
+    },
+    {
+      "structureId": "basal-nuclei",
+      "diseaseId": "ischemic-stroke",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Deep lenticulostriate branches supply the basal nuclei; lacunar infarcts are common here.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-stroke",
+        "mp-ischemic-stroke"
+      ],
+      "resolvedMeshIds": [
+        "left-caudate-nucleus",
+        "left-globus-pallidus",
+        "left-putamen",
+        "right-caudate-nucleus",
+        "right-globus-pallidus",
+        "right-putamen"
+      ]
+    },
+    {
+      "structureId": "internal-capsule",
+      "diseaseId": "ischemic-stroke",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Small capsular infarcts can cause marked weakness.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-stroke",
+        "mp-ischemic-stroke"
+      ],
+      "resolvedMeshIds": [
+        "left-internal-capsule-anterior-limb",
+        "right-internal-capsule-anterior-limb"
+      ]
+    },
+    {
+      "structureId": "occipital-lobe",
+      "diseaseId": "ischemic-stroke",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Posterior cerebral artery strokes cause contralateral visual field loss.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-stroke",
+        "mp-ischemic-stroke"
+      ],
+      "resolvedMeshIds": [
+        "left-occipital-lobe",
+        "right-occipital-lobe"
+      ]
+    },
+    {
+      "structureId": "thalamus",
+      "diseaseId": "ischemic-stroke",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Thalamic infarcts arise from posterior circulation branches.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-stroke",
+        "mp-ischemic-stroke"
+      ],
+      "resolvedMeshIds": [
+        "left-thalamus",
+        "right-thalamus"
+      ]
+    },
+    {
+      "structureId": "brainstem",
+      "diseaseId": "ischemic-stroke",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Vertebrobasilar strokes affect the brainstem.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-stroke",
+        "mp-ischemic-stroke"
+      ],
+      "resolvedMeshIds": [
+        "cerebral-aqueduct",
+        "cerebral-peduncles",
+        "fourth-ventricle",
+        "left-inferior-colliculus",
+        "left-superior-colliculus",
+        "medulla-oblongata",
+        "midbrain-other",
+        "pons",
+        "right-inferior-colliculus",
+        "right-superior-colliculus"
+      ]
+    },
+    {
+      "structureId": "cerebellum",
+      "diseaseId": "ischemic-stroke",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Cerebellar infarcts cause ataxia and can cause dangerous swelling.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-stroke",
+        "mp-ischemic-stroke"
+      ],
+      "resolvedMeshIds": [
+        "cerebellum"
+      ]
+    },
+    {
+      "structureId": "putamen",
+      "diseaseId": "hemorrhagic-stroke",
+      "associationType": "primary",
+      "distribution": "focal",
+      "explanation": "Most common site of hypertensive haemorrhage.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-stroke",
+        "mp-hemorrhagic-stroke"
+      ],
+      "resolvedMeshIds": [
+        "left-putamen",
+        "right-putamen"
+      ]
+    },
+    {
+      "structureId": "thalamus",
+      "diseaseId": "hemorrhagic-stroke",
+      "associationType": "primary",
+      "distribution": "focal",
+      "explanation": "Common site of hypertensive haemorrhage.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-stroke",
+        "mp-hemorrhagic-stroke"
+      ],
+      "resolvedMeshIds": [
+        "left-thalamus",
+        "right-thalamus"
+      ]
+    },
+    {
+      "structureId": "pons",
+      "diseaseId": "hemorrhagic-stroke",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Pontine haemorrhage can be devastating.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-stroke",
+        "mp-hemorrhagic-stroke"
+      ],
+      "resolvedMeshIds": [
+        "pons"
+      ]
+    },
+    {
+      "structureId": "cerebellum",
+      "diseaseId": "hemorrhagic-stroke",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Cerebellar haemorrhage may require urgent surgery.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-stroke",
+        "mp-hemorrhagic-stroke"
+      ],
+      "resolvedMeshIds": [
+        "cerebellum"
+      ]
+    },
+    {
+      "structureId": "cerebral-white-matter",
+      "diseaseId": "hemorrhagic-stroke",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Lobar (subcortical) haemorrhages occur with amyloid angiopathy.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-stroke",
+        "mp-hemorrhagic-stroke"
+      ],
+      "resolvedMeshIds": [
+        "cerebral-white-matter"
+      ]
+    },
+    {
+      "structureId": "lateral-ventricle",
+      "diseaseId": "hemorrhagic-stroke",
+      "associationType": "secondary",
+      "distribution": "focal",
+      "explanation": "Blood may extend into the ventricles and cause hydrocephalus.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-stroke",
+        "mp-hemorrhagic-stroke"
+      ],
+      "resolvedMeshIds": [
+        "left-lateral-ventricle",
+        "right-lateral-ventricle"
+      ]
+    },
+    {
+      "structureId": "third-ventricle",
+      "diseaseId": "subarachnoid-hemorrhage",
+      "associationType": "secondary",
+      "distribution": "regional",
+      "explanation": "Hydrocephalus after SAH enlarges the ventricular system.",
+      "evidenceLevel": "established",
+      "references": [
+        "mp-ency-sah",
+        "ninds-aneurysm"
+      ],
+      "resolvedMeshIds": [
+        "third-ventricle"
+      ]
+    },
+    {
+      "structureId": "lateral-ventricle",
+      "diseaseId": "subarachnoid-hemorrhage",
+      "associationType": "secondary",
+      "distribution": "regional",
+      "explanation": "Ventricular enlargement from impaired CSF absorption or flow.",
+      "evidenceLevel": "established",
+      "references": [
+        "mp-ency-sah",
+        "ninds-aneurysm"
+      ],
+      "resolvedMeshIds": [
+        "left-lateral-ventricle",
+        "right-lateral-ventricle"
+      ]
+    },
+    {
+      "structureId": "frontal-lobe",
+      "diseaseId": "subarachnoid-hemorrhage",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Delayed ischaemia or haematoma can affect territories near the ruptured aneurysm, e.g. anterior communicating artery aneurysms near the medial frontal lobes.",
+      "evidenceLevel": "variable",
+      "references": [
+        "mp-ency-sah",
+        "ninds-aneurysm"
+      ],
+      "resolvedMeshIds": [
+        "left-middle-frontal-gyrus",
+        "left-precentral-gyrus",
+        "left-superior-frontal-gyrus",
+        "right-middle-frontal-gyrus",
+        "right-precentral-gyrus",
+        "right-superior-frontal-gyrus"
+      ]
+    },
+    {
+      "structureId": "optic-chiasm",
+      "diseaseId": "cerebral-aneurysm",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Large aneurysms near the circle of Willis can compress the chiasm, causing visual field loss.",
+      "evidenceLevel": "variable",
+      "references": [
+        "ninds-aneurysm",
+        "mp-aneurysm"
+      ],
+      "resolvedMeshIds": [
+        "optic-chiasm"
+      ]
+    },
+    {
+      "structureId": "midbrain",
+      "diseaseId": "cerebral-aneurysm",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Posterior communicating artery aneurysms can compress the oculomotor nerve as it leaves the midbrain (nerve not modelled).",
+      "evidenceLevel": "variable",
+      "references": [
+        "ninds-aneurysm",
+        "mp-aneurysm"
+      ],
+      "resolvedMeshIds": [
+        "cerebral-aqueduct",
+        "cerebral-peduncles",
+        "left-inferior-colliculus",
+        "left-superior-colliculus",
+        "midbrain-other",
+        "right-inferior-colliculus",
+        "right-superior-colliculus"
+      ]
+    },
+    {
+      "structureId": "cerebral-hemisphere",
+      "diseaseId": "cerebral-arteriovenous-malformation",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Most brain AVMs are located in the cerebral hemispheres; exact site varies by patient.",
+      "evidenceLevel": "variable",
+      "references": [
+        "ninds-avm",
+        "mp-avm"
+      ],
+      "resolvedMeshIds": [
+        "left-accessory-short-gyrus",
+        "left-amygdala",
+        "left-angular-gyrus",
+        "left-caudate-nucleus",
+        "left-choroid-plexus",
+        "left-cingulate-gyrus",
+        "left-fornix",
+        "left-fusiform-gyrus",
+        "left-globus-pallidus",
+        "left-hippocampus",
+        "left-inferior-temporal-gyrus",
+        "left-insula",
+        "left-internal-capsule-anterior-limb",
+        "left-lateral-ventricle",
+        "left-middle-frontal-gyrus",
+        "left-middle-temporal-gyrus",
+        "left-occipital-lobe",
+        "left-parahippocampal-gyrus",
+        "left-postcentral-gyrus",
+        "left-precentral-gyrus",
+        "left-putamen",
+        "left-superior-frontal-gyrus",
+        "left-superior-parietal-lobule-precuneus",
+        "left-superior-temporal-gyrus-anterior",
+        "left-superior-temporal-gyrus-posterior",
+        "left-supramarginal-gyrus",
+        "right-accessory-short-gyrus",
+        "right-amygdala",
+        "right-angular-gyrus",
+        "right-caudate-nucleus",
+        "right-choroid-plexus",
+        "right-cingulate-gyrus",
+        "right-fornix",
+        "right-fusiform-gyrus",
+        "right-globus-pallidus",
+        "right-hippocampus",
+        "right-inferior-temporal-gyrus",
+        "right-insula",
+        "right-internal-capsule-anterior-limb",
+        "right-lateral-ventricle",
+        "right-middle-frontal-gyrus",
+        "right-middle-temporal-gyrus",
+        "right-occipital-lobe",
+        "right-parahippocampal-gyrus",
+        "right-postcentral-gyrus",
+        "right-precentral-gyrus",
+        "right-putamen",
+        "right-superior-frontal-gyrus",
+        "right-superior-parietal-lobule-precuneus",
+        "right-superior-temporal-gyrus-anterior",
+        "right-superior-temporal-gyrus-posterior",
+        "right-supramarginal-gyrus"
+      ]
+    },
+    {
+      "structureId": "temporal-lobe",
+      "diseaseId": "epilepsy",
+      "associationType": "primary",
+      "distribution": "network",
+      "explanation": "The most common origin of focal seizures in adults.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-epilepsy",
+        "mp-epilepsy"
+      ],
+      "resolvedMeshIds": [
+        "left-fusiform-gyrus",
+        "left-inferior-temporal-gyrus",
+        "left-middle-temporal-gyrus",
+        "left-parahippocampal-gyrus",
+        "left-superior-temporal-gyrus-anterior",
+        "left-superior-temporal-gyrus-posterior",
+        "right-fusiform-gyrus",
+        "right-inferior-temporal-gyrus",
+        "right-middle-temporal-gyrus",
+        "right-parahippocampal-gyrus",
+        "right-superior-temporal-gyrus-anterior",
+        "right-superior-temporal-gyrus-posterior"
+      ]
+    },
+    {
+      "structureId": "frontal-lobe",
+      "diseaseId": "epilepsy",
+      "associationType": "secondary",
+      "distribution": "network",
+      "explanation": "Second most common origin of focal seizures.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-epilepsy",
+        "mp-epilepsy"
+      ],
+      "resolvedMeshIds": [
+        "left-middle-frontal-gyrus",
+        "left-precentral-gyrus",
+        "left-superior-frontal-gyrus",
+        "right-middle-frontal-gyrus",
+        "right-precentral-gyrus",
+        "right-superior-frontal-gyrus"
+      ]
+    },
+    {
+      "structureId": "thalamus",
+      "diseaseId": "epilepsy",
+      "associationType": "subtype",
+      "distribution": "network",
+      "explanation": "Thalamocortical networks are central to generalised seizures such as absence seizures.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-epilepsy",
+        "mp-epilepsy"
+      ],
+      "resolvedMeshIds": [
+        "left-thalamus",
+        "right-thalamus"
+      ]
+    },
+    {
+      "structureId": "hippocampus",
+      "diseaseId": "epilepsy",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Hippocampal sclerosis is a common cause of drug-resistant temporal lobe epilepsy.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-epilepsy",
+        "mp-epilepsy"
+      ],
+      "resolvedMeshIds": [
+        "left-hippocampus",
+        "right-hippocampus"
+      ]
+    },
+    {
+      "structureId": "hippocampus",
+      "diseaseId": "temporal-lobe-epilepsy",
+      "associationType": "primary",
+      "distribution": "focal",
+      "explanation": "Hippocampal sclerosis is the most common pathology in medial TLE.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-epilepsy",
+        "mp-epilepsy"
+      ],
+      "resolvedMeshIds": [
+        "left-hippocampus",
+        "right-hippocampus"
+      ]
+    },
+    {
+      "structureId": "amygdala",
+      "diseaseId": "temporal-lobe-epilepsy",
+      "associationType": "primary",
+      "distribution": "focal",
+      "explanation": "Seizures often involve the amygdala, producing emotional auras.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-epilepsy",
+        "mp-epilepsy"
+      ],
+      "resolvedMeshIds": [
+        "left-amygdala",
+        "right-amygdala"
+      ]
+    },
+    {
+      "structureId": "parahippocampal-gyrus",
+      "diseaseId": "temporal-lobe-epilepsy",
+      "associationType": "secondary",
+      "distribution": "network",
+      "explanation": "Part of the medial temporal seizure network.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-epilepsy",
+        "mp-epilepsy"
+      ],
+      "resolvedMeshIds": [
+        "left-parahippocampal-gyrus",
+        "right-parahippocampal-gyrus"
+      ]
+    },
+    {
+      "structureId": "temporal-lobe",
+      "diseaseId": "temporal-lobe-epilepsy",
+      "associationType": "subtype",
+      "distribution": "network",
+      "explanation": "Lateral temporal neocortex in lateral TLE.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-epilepsy",
+        "mp-epilepsy"
+      ],
+      "resolvedMeshIds": [
+        "left-fusiform-gyrus",
+        "left-inferior-temporal-gyrus",
+        "left-middle-temporal-gyrus",
+        "left-parahippocampal-gyrus",
+        "left-superior-temporal-gyrus-anterior",
+        "left-superior-temporal-gyrus-posterior",
+        "right-fusiform-gyrus",
+        "right-inferior-temporal-gyrus",
+        "right-middle-temporal-gyrus",
+        "right-parahippocampal-gyrus",
+        "right-superior-temporal-gyrus-anterior",
+        "right-superior-temporal-gyrus-posterior"
+      ]
+    },
+    {
+      "structureId": "temporal-lobe",
+      "diseaseId": "focal-epilepsy",
+      "associationType": "primary",
+      "distribution": "network",
+      "explanation": "Most common lobe of seizure onset.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-epilepsy",
+        "mp-epilepsy"
+      ],
+      "resolvedMeshIds": [
+        "left-fusiform-gyrus",
+        "left-inferior-temporal-gyrus",
+        "left-middle-temporal-gyrus",
+        "left-parahippocampal-gyrus",
+        "left-superior-temporal-gyrus-anterior",
+        "left-superior-temporal-gyrus-posterior",
+        "right-fusiform-gyrus",
+        "right-inferior-temporal-gyrus",
+        "right-middle-temporal-gyrus",
+        "right-parahippocampal-gyrus",
+        "right-superior-temporal-gyrus-anterior",
+        "right-superior-temporal-gyrus-posterior"
+      ]
+    },
+    {
+      "structureId": "frontal-lobe",
+      "diseaseId": "focal-epilepsy",
+      "associationType": "primary",
+      "distribution": "network",
+      "explanation": "Frontal lobe seizures are often brief and may occur in sleep.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-epilepsy",
+        "mp-epilepsy"
+      ],
+      "resolvedMeshIds": [
+        "left-middle-frontal-gyrus",
+        "left-precentral-gyrus",
+        "left-superior-frontal-gyrus",
+        "right-middle-frontal-gyrus",
+        "right-precentral-gyrus",
+        "right-superior-frontal-gyrus"
+      ]
+    },
+    {
+      "structureId": "parietal-lobe",
+      "diseaseId": "focal-epilepsy",
+      "associationType": "subtype",
+      "distribution": "network",
+      "explanation": "Parietal seizures can cause sensory symptoms.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-epilepsy",
+        "mp-epilepsy"
+      ],
+      "resolvedMeshIds": [
+        "left-angular-gyrus",
+        "left-postcentral-gyrus",
+        "left-superior-parietal-lobule-precuneus",
+        "left-supramarginal-gyrus",
+        "right-angular-gyrus",
+        "right-postcentral-gyrus",
+        "right-superior-parietal-lobule-precuneus",
+        "right-supramarginal-gyrus"
+      ]
+    },
+    {
+      "structureId": "occipital-lobe",
+      "diseaseId": "focal-epilepsy",
+      "associationType": "subtype",
+      "distribution": "network",
+      "explanation": "Occipital seizures can cause visual phenomena.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-epilepsy",
+        "mp-epilepsy"
+      ],
+      "resolvedMeshIds": [
+        "left-occipital-lobe",
+        "right-occipital-lobe"
+      ]
+    },
+    {
+      "structureId": "thalamus",
+      "diseaseId": "generalized-epilepsy",
+      "associationType": "primary",
+      "distribution": "network",
+      "explanation": "Thalamocortical circuits generate generalised spike-and-wave discharges.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-epilepsy",
+        "mp-epilepsy"
+      ],
+      "resolvedMeshIds": [
+        "left-thalamus",
+        "right-thalamus"
+      ]
+    },
+    {
+      "structureId": "cerebral-hemisphere",
+      "diseaseId": "generalized-epilepsy",
+      "associationType": "primary",
+      "distribution": "network",
+      "explanation": "Bilateral cortical networks are engaged from seizure onset; this is functional, not structural, involvement.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-epilepsy",
+        "mp-epilepsy"
+      ],
+      "resolvedMeshIds": [
+        "left-accessory-short-gyrus",
+        "left-amygdala",
+        "left-angular-gyrus",
+        "left-caudate-nucleus",
+        "left-choroid-plexus",
+        "left-cingulate-gyrus",
+        "left-fornix",
+        "left-fusiform-gyrus",
+        "left-globus-pallidus",
+        "left-hippocampus",
+        "left-inferior-temporal-gyrus",
+        "left-insula",
+        "left-internal-capsule-anterior-limb",
+        "left-lateral-ventricle",
+        "left-middle-frontal-gyrus",
+        "left-middle-temporal-gyrus",
+        "left-occipital-lobe",
+        "left-parahippocampal-gyrus",
+        "left-postcentral-gyrus",
+        "left-precentral-gyrus",
+        "left-putamen",
+        "left-superior-frontal-gyrus",
+        "left-superior-parietal-lobule-precuneus",
+        "left-superior-temporal-gyrus-anterior",
+        "left-superior-temporal-gyrus-posterior",
+        "left-supramarginal-gyrus",
+        "right-accessory-short-gyrus",
+        "right-amygdala",
+        "right-angular-gyrus",
+        "right-caudate-nucleus",
+        "right-choroid-plexus",
+        "right-cingulate-gyrus",
+        "right-fornix",
+        "right-fusiform-gyrus",
+        "right-globus-pallidus",
+        "right-hippocampus",
+        "right-inferior-temporal-gyrus",
+        "right-insula",
+        "right-internal-capsule-anterior-limb",
+        "right-lateral-ventricle",
+        "right-middle-frontal-gyrus",
+        "right-middle-temporal-gyrus",
+        "right-occipital-lobe",
+        "right-parahippocampal-gyrus",
+        "right-postcentral-gyrus",
+        "right-precentral-gyrus",
+        "right-putamen",
+        "right-superior-frontal-gyrus",
+        "right-superior-parietal-lobule-precuneus",
+        "right-superior-temporal-gyrus-anterior",
+        "right-superior-temporal-gyrus-posterior",
+        "right-supramarginal-gyrus"
+      ]
+    },
+    {
+      "structureId": "cerebral-white-matter",
+      "diseaseId": "multiple-sclerosis",
+      "associationType": "primary",
+      "distribution": "scattered",
+      "explanation": "Focal lesions are scattered through hemispheric white matter, especially periventricular and juxtacortical regions \u2014 not the entire white matter.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-ms",
+        "mp-ms"
+      ],
+      "resolvedMeshIds": [
+        "cerebral-white-matter"
+      ]
+    },
+    {
+      "structureId": "corpus-callosum",
+      "diseaseId": "multiple-sclerosis",
+      "associationType": "primary",
+      "distribution": "scattered",
+      "explanation": "Callosal lesions are characteristic.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-ms",
+        "mp-ms"
+      ],
+      "resolvedMeshIds": [
+        "corpus-callosum"
+      ]
+    },
+    {
+      "structureId": "optic-nerve",
+      "diseaseId": "multiple-sclerosis",
+      "associationType": "primary",
+      "distribution": "focal",
+      "explanation": "Optic neuritis is a common presentation.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-ms",
+        "mp-ms"
+      ],
+      "resolvedMeshIds": [
+        "left-optic-nerve",
+        "right-optic-nerve"
+      ]
+    },
+    {
+      "structureId": "lateral-ventricle",
+      "diseaseId": "multiple-sclerosis",
+      "associationType": "secondary",
+      "distribution": "scattered",
+      "explanation": "Marks the periventricular location of typical lesions (the ventricle itself is not diseased).",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-ms",
+        "mp-ms"
+      ],
+      "resolvedMeshIds": [
+        "left-lateral-ventricle",
+        "right-lateral-ventricle"
+      ]
+    },
+    {
+      "structureId": "brainstem",
+      "diseaseId": "multiple-sclerosis",
+      "associationType": "secondary",
+      "distribution": "scattered",
+      "explanation": "Infratentorial lesions cause double vision, vertigo and other brainstem symptoms.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-ms",
+        "mp-ms"
+      ],
+      "resolvedMeshIds": [
+        "cerebral-aqueduct",
+        "cerebral-peduncles",
+        "fourth-ventricle",
+        "left-inferior-colliculus",
+        "left-superior-colliculus",
+        "medulla-oblongata",
+        "midbrain-other",
+        "pons",
+        "right-inferior-colliculus",
+        "right-superior-colliculus"
+      ]
+    },
+    {
+      "structureId": "cerebellum",
+      "diseaseId": "multiple-sclerosis",
+      "associationType": "secondary",
+      "distribution": "scattered",
+      "explanation": "Cerebellar and peduncular lesions cause ataxia and tremor.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-ms",
+        "mp-ms"
+      ],
+      "resolvedMeshIds": [
+        "cerebellum"
+      ]
+    },
+    {
+      "structureId": "cerebral-white-matter",
+      "diseaseId": "acute-disseminated-encephalomyelitis",
+      "associationType": "primary",
+      "distribution": "scattered",
+      "explanation": "Multifocal white matter lesions \u2014 not the whole white matter.",
+      "evidenceLevel": "established",
+      "references": [
+        "statpearls-adem",
+        "tenembaum-adem-2013"
+      ],
+      "resolvedMeshIds": [
+        "cerebral-white-matter"
+      ]
+    },
+    {
+      "structureId": "thalamus",
+      "diseaseId": "acute-disseminated-encephalomyelitis",
+      "associationType": "secondary",
+      "distribution": "focal",
+      "explanation": "Deep grey matter lesions are common.",
+      "evidenceLevel": "established",
+      "references": [
+        "statpearls-adem",
+        "tenembaum-adem-2013"
+      ],
+      "resolvedMeshIds": [
+        "left-thalamus",
+        "right-thalamus"
+      ]
+    },
+    {
+      "structureId": "basal-nuclei",
+      "diseaseId": "acute-disseminated-encephalomyelitis",
+      "associationType": "secondary",
+      "distribution": "focal",
+      "explanation": "Basal ganglia may be involved.",
+      "evidenceLevel": "established",
+      "references": [
+        "statpearls-adem",
+        "tenembaum-adem-2013"
+      ],
+      "resolvedMeshIds": [
+        "left-caudate-nucleus",
+        "left-globus-pallidus",
+        "left-putamen",
+        "right-caudate-nucleus",
+        "right-globus-pallidus",
+        "right-putamen"
+      ]
+    },
+    {
+      "structureId": "brainstem",
+      "diseaseId": "acute-disseminated-encephalomyelitis",
+      "associationType": "secondary",
+      "distribution": "scattered",
+      "explanation": "Brainstem lesions occur.",
+      "evidenceLevel": "established",
+      "references": [
+        "statpearls-adem",
+        "tenembaum-adem-2013"
+      ],
+      "resolvedMeshIds": [
+        "cerebral-aqueduct",
+        "cerebral-peduncles",
+        "fourth-ventricle",
+        "left-inferior-colliculus",
+        "left-superior-colliculus",
+        "medulla-oblongata",
+        "midbrain-other",
+        "pons",
+        "right-inferior-colliculus",
+        "right-superior-colliculus"
+      ]
+    },
+    {
+      "structureId": "cerebellum",
+      "diseaseId": "acute-disseminated-encephalomyelitis",
+      "associationType": "secondary",
+      "distribution": "scattered",
+      "explanation": "Cerebellar involvement causes ataxia.",
+      "evidenceLevel": "established",
+      "references": [
+        "statpearls-adem",
+        "tenembaum-adem-2013"
+      ],
+      "resolvedMeshIds": [
+        "cerebellum"
+      ]
+    },
+    {
+      "structureId": "hippocampus",
+      "diseaseId": "autoimmune-encephalitis",
+      "associationType": "primary",
+      "distribution": "diffuse",
+      "explanation": "Limbic encephalitis commonly involves the hippocampi, causing memory loss and seizures.",
+      "evidenceLevel": "established",
+      "references": [
+        "cc-autoimmune-encephalitis",
+        "ninds-encephalitis"
+      ],
+      "resolvedMeshIds": [
+        "left-hippocampus",
+        "right-hippocampus"
+      ]
+    },
+    {
+      "structureId": "amygdala",
+      "diseaseId": "autoimmune-encephalitis",
+      "associationType": "primary",
+      "distribution": "diffuse",
+      "explanation": "Amygdala inflammation is common in limbic encephalitis.",
+      "evidenceLevel": "established",
+      "references": [
+        "cc-autoimmune-encephalitis",
+        "ninds-encephalitis"
+      ],
+      "resolvedMeshIds": [
+        "left-amygdala",
+        "right-amygdala"
+      ]
+    },
+    {
+      "structureId": "temporal-lobe",
+      "diseaseId": "autoimmune-encephalitis",
+      "associationType": "secondary",
+      "distribution": "regional",
+      "explanation": "Medial temporal involvement; extent varies by antibody.",
+      "evidenceLevel": "variable",
+      "references": [
+        "cc-autoimmune-encephalitis",
+        "ninds-encephalitis"
+      ],
+      "resolvedMeshIds": [
+        "left-fusiform-gyrus",
+        "left-inferior-temporal-gyrus",
+        "left-middle-temporal-gyrus",
+        "left-parahippocampal-gyrus",
+        "left-superior-temporal-gyrus-anterior",
+        "left-superior-temporal-gyrus-posterior",
+        "right-fusiform-gyrus",
+        "right-inferior-temporal-gyrus",
+        "right-middle-temporal-gyrus",
+        "right-parahippocampal-gyrus",
+        "right-superior-temporal-gyrus-anterior",
+        "right-superior-temporal-gyrus-posterior"
+      ]
+    },
+    {
+      "structureId": "lateral-ventricle",
+      "diseaseId": "meningitis",
+      "associationType": "secondary",
+      "distribution": "regional",
+      "explanation": "Hydrocephalus can complicate meningitis.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-meningitis",
+        "mp-meningitis"
+      ],
+      "resolvedMeshIds": [
+        "left-lateral-ventricle",
+        "right-lateral-ventricle"
+      ]
+    },
+    {
+      "structureId": "cerebral-hemisphere",
+      "diseaseId": "meningitis",
+      "associationType": "secondary",
+      "distribution": "regional",
+      "explanation": "The meninges overlying the hemispheres are inflamed; cortex beneath can be secondarily affected.",
+      "evidenceLevel": "variable",
+      "references": [
+        "ninds-meningitis",
+        "mp-meningitis"
+      ],
+      "resolvedMeshIds": [
+        "left-accessory-short-gyrus",
+        "left-amygdala",
+        "left-angular-gyrus",
+        "left-caudate-nucleus",
+        "left-choroid-plexus",
+        "left-cingulate-gyrus",
+        "left-fornix",
+        "left-fusiform-gyrus",
+        "left-globus-pallidus",
+        "left-hippocampus",
+        "left-inferior-temporal-gyrus",
+        "left-insula",
+        "left-internal-capsule-anterior-limb",
+        "left-lateral-ventricle",
+        "left-middle-frontal-gyrus",
+        "left-middle-temporal-gyrus",
+        "left-occipital-lobe",
+        "left-parahippocampal-gyrus",
+        "left-postcentral-gyrus",
+        "left-precentral-gyrus",
+        "left-putamen",
+        "left-superior-frontal-gyrus",
+        "left-superior-parietal-lobule-precuneus",
+        "left-superior-temporal-gyrus-anterior",
+        "left-superior-temporal-gyrus-posterior",
+        "left-supramarginal-gyrus",
+        "right-accessory-short-gyrus",
+        "right-amygdala",
+        "right-angular-gyrus",
+        "right-caudate-nucleus",
+        "right-choroid-plexus",
+        "right-cingulate-gyrus",
+        "right-fornix",
+        "right-fusiform-gyrus",
+        "right-globus-pallidus",
+        "right-hippocampus",
+        "right-inferior-temporal-gyrus",
+        "right-insula",
+        "right-internal-capsule-anterior-limb",
+        "right-lateral-ventricle",
+        "right-middle-frontal-gyrus",
+        "right-middle-temporal-gyrus",
+        "right-occipital-lobe",
+        "right-parahippocampal-gyrus",
+        "right-postcentral-gyrus",
+        "right-precentral-gyrus",
+        "right-putamen",
+        "right-superior-frontal-gyrus",
+        "right-superior-parietal-lobule-precuneus",
+        "right-superior-temporal-gyrus-anterior",
+        "right-superior-temporal-gyrus-posterior",
+        "right-supramarginal-gyrus"
+      ]
+    },
+    {
+      "structureId": "hippocampus",
+      "diseaseId": "encephalitis",
+      "associationType": "subtype",
+      "distribution": "diffuse",
+      "explanation": "HSV encephalitis commonly affects medial temporal structures.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-encephalitis",
+        "mp-encephalitis"
+      ],
+      "resolvedMeshIds": [
+        "left-hippocampus",
+        "right-hippocampus"
+      ]
+    },
+    {
+      "structureId": "amygdala",
+      "diseaseId": "encephalitis",
+      "associationType": "subtype",
+      "distribution": "diffuse",
+      "explanation": "Involved in HSV encephalitis.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-encephalitis",
+        "mp-encephalitis"
+      ],
+      "resolvedMeshIds": [
+        "left-amygdala",
+        "right-amygdala"
+      ]
+    },
+    {
+      "structureId": "insula",
+      "diseaseId": "encephalitis",
+      "associationType": "subtype",
+      "distribution": "regional",
+      "explanation": "Insula is characteristically involved in HSV encephalitis.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-encephalitis",
+        "mp-encephalitis"
+      ],
+      "resolvedMeshIds": [
+        "left-accessory-short-gyrus",
+        "left-insula",
+        "right-accessory-short-gyrus",
+        "right-insula"
+      ]
+    },
+    {
+      "structureId": "orbital-and-straight-gyri",
+      "diseaseId": "encephalitis",
+      "associationType": "subtype",
+      "distribution": "regional",
+      "explanation": "Inferior frontal involvement in HSV encephalitis.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-encephalitis",
+        "mp-encephalitis"
+      ],
+      "resolvedMeshIds": [
+        "orbital-and-straight-gyri"
+      ]
+    },
+    {
+      "structureId": "thalamus",
+      "diseaseId": "encephalitis",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Some arboviral encephalitides involve the thalamus and basal ganglia.",
+      "evidenceLevel": "variable",
+      "references": [
+        "ninds-encephalitis",
+        "mp-encephalitis"
+      ],
+      "resolvedMeshIds": [
+        "left-thalamus",
+        "right-thalamus"
+      ]
+    },
+    {
+      "structureId": "frontal-lobe",
+      "diseaseId": "brain-abscess",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Common site from frontal sinus or dental spread.",
+      "evidenceLevel": "established",
+      "references": [
+        "mp-ency-brain-abscess"
+      ],
+      "resolvedMeshIds": [
+        "left-middle-frontal-gyrus",
+        "left-precentral-gyrus",
+        "left-superior-frontal-gyrus",
+        "right-middle-frontal-gyrus",
+        "right-precentral-gyrus",
+        "right-superior-frontal-gyrus"
+      ]
+    },
+    {
+      "structureId": "temporal-lobe",
+      "diseaseId": "brain-abscess",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Common site from middle ear or mastoid infection.",
+      "evidenceLevel": "established",
+      "references": [
+        "mp-ency-brain-abscess"
+      ],
+      "resolvedMeshIds": [
+        "left-fusiform-gyrus",
+        "left-inferior-temporal-gyrus",
+        "left-middle-temporal-gyrus",
+        "left-parahippocampal-gyrus",
+        "left-superior-temporal-gyrus-anterior",
+        "left-superior-temporal-gyrus-posterior",
+        "right-fusiform-gyrus",
+        "right-inferior-temporal-gyrus",
+        "right-middle-temporal-gyrus",
+        "right-parahippocampal-gyrus",
+        "right-superior-temporal-gyrus-anterior",
+        "right-superior-temporal-gyrus-posterior"
+      ]
+    },
+    {
+      "structureId": "cerebellum",
+      "diseaseId": "brain-abscess",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Can arise from ear infections.",
+      "evidenceLevel": "established",
+      "references": [
+        "mp-ency-brain-abscess"
+      ],
+      "resolvedMeshIds": [
+        "cerebellum"
+      ]
+    },
+    {
+      "structureId": "frontal-lobe",
+      "diseaseId": "glioblastoma",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "One of the most common locations.",
+      "evidenceLevel": "established",
+      "references": [
+        "acs-brain-tumor-types",
+        "ninds-tumors"
+      ],
+      "resolvedMeshIds": [
+        "left-middle-frontal-gyrus",
+        "left-precentral-gyrus",
+        "left-superior-frontal-gyrus",
+        "right-middle-frontal-gyrus",
+        "right-precentral-gyrus",
+        "right-superior-frontal-gyrus"
+      ]
+    },
+    {
+      "structureId": "temporal-lobe",
+      "diseaseId": "glioblastoma",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "One of the most common locations.",
+      "evidenceLevel": "established",
+      "references": [
+        "acs-brain-tumor-types",
+        "ninds-tumors"
+      ],
+      "resolvedMeshIds": [
+        "left-fusiform-gyrus",
+        "left-inferior-temporal-gyrus",
+        "left-middle-temporal-gyrus",
+        "left-parahippocampal-gyrus",
+        "left-superior-temporal-gyrus-anterior",
+        "left-superior-temporal-gyrus-posterior",
+        "right-fusiform-gyrus",
+        "right-inferior-temporal-gyrus",
+        "right-middle-temporal-gyrus",
+        "right-parahippocampal-gyrus",
+        "right-superior-temporal-gyrus-anterior",
+        "right-superior-temporal-gyrus-posterior"
+      ]
+    },
+    {
+      "structureId": "cerebral-white-matter",
+      "diseaseId": "glioblastoma",
+      "associationType": "secondary",
+      "distribution": "regional",
+      "explanation": "Infiltrates along white matter tracts.",
+      "evidenceLevel": "established",
+      "references": [
+        "acs-brain-tumor-types",
+        "ninds-tumors"
+      ],
+      "resolvedMeshIds": [
+        "cerebral-white-matter"
+      ]
+    },
+    {
+      "structureId": "corpus-callosum",
+      "diseaseId": "glioblastoma",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Can spread across the corpus callosum to the other hemisphere.",
+      "evidenceLevel": "established",
+      "references": [
+        "acs-brain-tumor-types",
+        "ninds-tumors"
+      ],
+      "resolvedMeshIds": [
+        "corpus-callosum"
+      ]
+    },
+    {
+      "structureId": "frontal-lobe",
+      "diseaseId": "meningioma",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Convexity, parasagittal and olfactory groove meningiomas can compress the frontal lobe.",
+      "evidenceLevel": "established",
+      "references": [
+        "acs-brain-tumor-types",
+        "ninds-tumors"
+      ],
+      "resolvedMeshIds": [
+        "left-middle-frontal-gyrus",
+        "left-precentral-gyrus",
+        "left-superior-frontal-gyrus",
+        "right-middle-frontal-gyrus",
+        "right-precentral-gyrus",
+        "right-superior-frontal-gyrus"
+      ]
+    },
+    {
+      "structureId": "optic-chiasm",
+      "diseaseId": "meningioma",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Skull-base (e.g. tuberculum sellae) meningiomas can compress the optic apparatus.",
+      "evidenceLevel": "established",
+      "references": [
+        "acs-brain-tumor-types",
+        "ninds-tumors"
+      ],
+      "resolvedMeshIds": [
+        "optic-chiasm"
+      ]
+    },
+    {
+      "structureId": "parietal-lobe",
+      "diseaseId": "meningioma",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Parasagittal and convexity tumours can compress parietal cortex.",
+      "evidenceLevel": "established",
+      "references": [
+        "acs-brain-tumor-types",
+        "ninds-tumors"
+      ],
+      "resolvedMeshIds": [
+        "left-angular-gyrus",
+        "left-postcentral-gyrus",
+        "left-superior-parietal-lobule-precuneus",
+        "left-supramarginal-gyrus",
+        "right-angular-gyrus",
+        "right-postcentral-gyrus",
+        "right-superior-parietal-lobule-precuneus",
+        "right-supramarginal-gyrus"
+      ]
+    },
+    {
+      "structureId": "cerebral-hemisphere",
+      "diseaseId": "astrocytoma",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Adult diffuse astrocytomas typically arise in the cerebral hemispheres.",
+      "evidenceLevel": "established",
+      "references": [
+        "acs-brain-tumor-types",
+        "ninds-tumors"
+      ],
+      "resolvedMeshIds": [
+        "left-accessory-short-gyrus",
+        "left-amygdala",
+        "left-angular-gyrus",
+        "left-caudate-nucleus",
+        "left-choroid-plexus",
+        "left-cingulate-gyrus",
+        "left-fornix",
+        "left-fusiform-gyrus",
+        "left-globus-pallidus",
+        "left-hippocampus",
+        "left-inferior-temporal-gyrus",
+        "left-insula",
+        "left-internal-capsule-anterior-limb",
+        "left-lateral-ventricle",
+        "left-middle-frontal-gyrus",
+        "left-middle-temporal-gyrus",
+        "left-occipital-lobe",
+        "left-parahippocampal-gyrus",
+        "left-postcentral-gyrus",
+        "left-precentral-gyrus",
+        "left-putamen",
+        "left-superior-frontal-gyrus",
+        "left-superior-parietal-lobule-precuneus",
+        "left-superior-temporal-gyrus-anterior",
+        "left-superior-temporal-gyrus-posterior",
+        "left-supramarginal-gyrus",
+        "right-accessory-short-gyrus",
+        "right-amygdala",
+        "right-angular-gyrus",
+        "right-caudate-nucleus",
+        "right-choroid-plexus",
+        "right-cingulate-gyrus",
+        "right-fornix",
+        "right-fusiform-gyrus",
+        "right-globus-pallidus",
+        "right-hippocampus",
+        "right-inferior-temporal-gyrus",
+        "right-insula",
+        "right-internal-capsule-anterior-limb",
+        "right-lateral-ventricle",
+        "right-middle-frontal-gyrus",
+        "right-middle-temporal-gyrus",
+        "right-occipital-lobe",
+        "right-parahippocampal-gyrus",
+        "right-postcentral-gyrus",
+        "right-precentral-gyrus",
+        "right-putamen",
+        "right-superior-frontal-gyrus",
+        "right-superior-parietal-lobule-precuneus",
+        "right-superior-temporal-gyrus-anterior",
+        "right-superior-temporal-gyrus-posterior",
+        "right-supramarginal-gyrus"
+      ]
+    },
+    {
+      "structureId": "cerebellum",
+      "diseaseId": "astrocytoma",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Pilocytic astrocytoma commonly arises in the cerebellum in children.",
+      "evidenceLevel": "established",
+      "references": [
+        "acs-brain-tumor-types",
+        "ninds-tumors"
+      ],
+      "resolvedMeshIds": [
+        "cerebellum"
+      ]
+    },
+    {
+      "structureId": "visual-pathway",
+      "diseaseId": "astrocytoma",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Optic pathway gliomas (often pilocytic) occur, particularly with NF1.",
+      "evidenceLevel": "established",
+      "references": [
+        "acs-brain-tumor-types",
+        "ninds-tumors"
+      ],
+      "resolvedMeshIds": [
+        "left-optic-nerve",
+        "left-optic-tract",
+        "optic-chiasm",
+        "right-optic-nerve",
+        "right-optic-tract"
+      ]
+    },
+    {
+      "structureId": "brainstem",
+      "diseaseId": "astrocytoma",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Brainstem gliomas occur, especially in children.",
+      "evidenceLevel": "established",
+      "references": [
+        "acs-brain-tumor-types",
+        "ninds-tumors"
+      ],
+      "resolvedMeshIds": [
+        "cerebral-aqueduct",
+        "cerebral-peduncles",
+        "fourth-ventricle",
+        "left-inferior-colliculus",
+        "left-superior-colliculus",
+        "medulla-oblongata",
+        "midbrain-other",
+        "pons",
+        "right-inferior-colliculus",
+        "right-superior-colliculus"
+      ]
+    },
+    {
+      "structureId": "cerebral-hemisphere",
+      "diseaseId": "brain-metastases",
+      "associationType": "primary",
+      "distribution": "scattered",
+      "explanation": "Most metastases occur in the cerebral hemispheres, often at the grey\u2013white junction.",
+      "evidenceLevel": "established",
+      "references": [
+        "acs-brain-tumor-types",
+        "ninds-tumors"
+      ],
+      "resolvedMeshIds": [
+        "left-accessory-short-gyrus",
+        "left-amygdala",
+        "left-angular-gyrus",
+        "left-caudate-nucleus",
+        "left-choroid-plexus",
+        "left-cingulate-gyrus",
+        "left-fornix",
+        "left-fusiform-gyrus",
+        "left-globus-pallidus",
+        "left-hippocampus",
+        "left-inferior-temporal-gyrus",
+        "left-insula",
+        "left-internal-capsule-anterior-limb",
+        "left-lateral-ventricle",
+        "left-middle-frontal-gyrus",
+        "left-middle-temporal-gyrus",
+        "left-occipital-lobe",
+        "left-parahippocampal-gyrus",
+        "left-postcentral-gyrus",
+        "left-precentral-gyrus",
+        "left-putamen",
+        "left-superior-frontal-gyrus",
+        "left-superior-parietal-lobule-precuneus",
+        "left-superior-temporal-gyrus-anterior",
+        "left-superior-temporal-gyrus-posterior",
+        "left-supramarginal-gyrus",
+        "right-accessory-short-gyrus",
+        "right-amygdala",
+        "right-angular-gyrus",
+        "right-caudate-nucleus",
+        "right-choroid-plexus",
+        "right-cingulate-gyrus",
+        "right-fornix",
+        "right-fusiform-gyrus",
+        "right-globus-pallidus",
+        "right-hippocampus",
+        "right-inferior-temporal-gyrus",
+        "right-insula",
+        "right-internal-capsule-anterior-limb",
+        "right-lateral-ventricle",
+        "right-middle-frontal-gyrus",
+        "right-middle-temporal-gyrus",
+        "right-occipital-lobe",
+        "right-parahippocampal-gyrus",
+        "right-postcentral-gyrus",
+        "right-precentral-gyrus",
+        "right-putamen",
+        "right-superior-frontal-gyrus",
+        "right-superior-parietal-lobule-precuneus",
+        "right-superior-temporal-gyrus-anterior",
+        "right-superior-temporal-gyrus-posterior",
+        "right-supramarginal-gyrus"
+      ]
+    },
+    {
+      "structureId": "cerebellum",
+      "diseaseId": "brain-metastases",
+      "associationType": "secondary",
+      "distribution": "focal",
+      "explanation": "A minority occur in the cerebellum.",
+      "evidenceLevel": "established",
+      "references": [
+        "acs-brain-tumor-types",
+        "ninds-tumors"
+      ],
+      "resolvedMeshIds": [
+        "cerebellum"
+      ]
+    },
+    {
+      "structureId": "orbital-and-straight-gyri",
+      "diseaseId": "traumatic-brain-injury",
+      "associationType": "primary",
+      "distribution": "focal",
+      "explanation": "Orbitofrontal contusions are typical.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-tbi",
+        "mp-tbi"
+      ],
+      "resolvedMeshIds": [
+        "orbital-and-straight-gyri"
+      ]
+    },
+    {
+      "structureId": "temporal-lobe",
+      "diseaseId": "traumatic-brain-injury",
+      "associationType": "primary",
+      "distribution": "focal",
+      "explanation": "Anterior and inferior temporal contusions are typical.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-tbi",
+        "mp-tbi"
+      ],
+      "resolvedMeshIds": [
+        "left-fusiform-gyrus",
+        "left-inferior-temporal-gyrus",
+        "left-middle-temporal-gyrus",
+        "left-parahippocampal-gyrus",
+        "left-superior-temporal-gyrus-anterior",
+        "left-superior-temporal-gyrus-posterior",
+        "right-fusiform-gyrus",
+        "right-inferior-temporal-gyrus",
+        "right-middle-temporal-gyrus",
+        "right-parahippocampal-gyrus",
+        "right-superior-temporal-gyrus-anterior",
+        "right-superior-temporal-gyrus-posterior"
+      ]
+    },
+    {
+      "structureId": "corpus-callosum",
+      "diseaseId": "traumatic-brain-injury",
+      "associationType": "secondary",
+      "distribution": "focal",
+      "explanation": "Diffuse axonal injury frequently involves the corpus callosum.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-tbi",
+        "mp-tbi"
+      ],
+      "resolvedMeshIds": [
+        "corpus-callosum"
+      ]
+    },
+    {
+      "structureId": "brainstem",
+      "diseaseId": "traumatic-brain-injury",
+      "associationType": "secondary",
+      "distribution": "focal",
+      "explanation": "Severe diffuse axonal injury may involve the dorsolateral brainstem.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-tbi",
+        "mp-tbi"
+      ],
+      "resolvedMeshIds": [
+        "cerebral-aqueduct",
+        "cerebral-peduncles",
+        "fourth-ventricle",
+        "left-inferior-colliculus",
+        "left-superior-colliculus",
+        "medulla-oblongata",
+        "midbrain-other",
+        "pons",
+        "right-inferior-colliculus",
+        "right-superior-colliculus"
+      ]
+    },
+    {
+      "structureId": "cerebrum",
+      "diseaseId": "concussion",
+      "associationType": "secondary",
+      "distribution": "network",
+      "explanation": "Diffuse transient functional disturbance; not a focal structural lesion.",
+      "evidenceLevel": "variable",
+      "references": [
+        "mp-concussion",
+        "ninds-tbi"
+      ],
+      "resolvedMeshIds": [
+        "cerebral-white-matter",
+        "commissure-of-fornix",
+        "corpus-callosum",
+        "left-accessory-short-gyrus",
+        "left-amygdala",
+        "left-angular-gyrus",
+        "left-caudate-nucleus",
+        "left-choroid-plexus",
+        "left-cingulate-gyrus",
+        "left-fornix",
+        "left-fusiform-gyrus",
+        "left-globus-pallidus",
+        "left-hippocampus",
+        "left-inferior-temporal-gyrus",
+        "left-insula",
+        "left-internal-capsule-anterior-limb",
+        "left-lateral-ventricle",
+        "left-middle-frontal-gyrus",
+        "left-middle-temporal-gyrus",
+        "left-occipital-lobe",
+        "left-parahippocampal-gyrus",
+        "left-postcentral-gyrus",
+        "left-precentral-gyrus",
+        "left-putamen",
+        "left-superior-frontal-gyrus",
+        "left-superior-parietal-lobule-precuneus",
+        "left-superior-temporal-gyrus-anterior",
+        "left-superior-temporal-gyrus-posterior",
+        "left-supramarginal-gyrus",
+        "orbital-and-straight-gyri",
+        "right-accessory-short-gyrus",
+        "right-amygdala",
+        "right-angular-gyrus",
+        "right-caudate-nucleus",
+        "right-choroid-plexus",
+        "right-cingulate-gyrus",
+        "right-fornix",
+        "right-fusiform-gyrus",
+        "right-globus-pallidus",
+        "right-hippocampus",
+        "right-inferior-temporal-gyrus",
+        "right-insula",
+        "right-internal-capsule-anterior-limb",
+        "right-lateral-ventricle",
+        "right-middle-frontal-gyrus",
+        "right-middle-temporal-gyrus",
+        "right-occipital-lobe",
+        "right-parahippocampal-gyrus",
+        "right-postcentral-gyrus",
+        "right-precentral-gyrus",
+        "right-putamen",
+        "right-superior-frontal-gyrus",
+        "right-superior-parietal-lobule-precuneus",
+        "right-superior-temporal-gyrus-anterior",
+        "right-superior-temporal-gyrus-posterior",
+        "right-supramarginal-gyrus",
+        "septum-pellucidum"
+      ]
+    },
+    {
+      "structureId": "cerebral-white-matter",
+      "diseaseId": "diffuse-axonal-injury",
+      "associationType": "primary",
+      "distribution": "scattered",
+      "explanation": "Lesions at grey\u2013white matter junctions (grade 1).",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-tbi",
+        "mp-tbi"
+      ],
+      "resolvedMeshIds": [
+        "cerebral-white-matter"
+      ]
+    },
+    {
+      "structureId": "corpus-callosum",
+      "diseaseId": "diffuse-axonal-injury",
+      "associationType": "primary",
+      "distribution": "focal",
+      "explanation": "Callosal lesions (grade 2).",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-tbi",
+        "mp-tbi"
+      ],
+      "resolvedMeshIds": [
+        "corpus-callosum"
+      ]
+    },
+    {
+      "structureId": "midbrain",
+      "diseaseId": "diffuse-axonal-injury",
+      "associationType": "primary",
+      "distribution": "focal",
+      "explanation": "Dorsolateral rostral brainstem lesions (grade 3).",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-tbi",
+        "mp-tbi"
+      ],
+      "resolvedMeshIds": [
+        "cerebral-aqueduct",
+        "cerebral-peduncles",
+        "left-inferior-colliculus",
+        "left-superior-colliculus",
+        "midbrain-other",
+        "right-inferior-colliculus",
+        "right-superior-colliculus"
+      ]
+    },
+    {
+      "structureId": "lateral-ventricle",
+      "diseaseId": "hydrocephalus",
+      "associationType": "primary",
+      "distribution": "regional",
+      "explanation": "Lateral ventricles enlarge.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-hydrocephalus",
+        "mp-hydrocephalus"
+      ],
+      "resolvedMeshIds": [
+        "left-lateral-ventricle",
+        "right-lateral-ventricle"
+      ]
+    },
+    {
+      "structureId": "third-ventricle",
+      "diseaseId": "hydrocephalus",
+      "associationType": "primary",
+      "distribution": "regional",
+      "explanation": "Third ventricle enlarges in many forms.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-hydrocephalus",
+        "mp-hydrocephalus"
+      ],
+      "resolvedMeshIds": [
+        "third-ventricle"
+      ]
+    },
+    {
+      "structureId": "cerebral-aqueduct",
+      "diseaseId": "hydrocephalus",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Aqueductal stenosis causes obstructive hydrocephalus.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-hydrocephalus",
+        "mp-hydrocephalus"
+      ],
+      "resolvedMeshIds": [
+        "cerebral-aqueduct"
+      ]
+    },
+    {
+      "structureId": "fourth-ventricle",
+      "diseaseId": "hydrocephalus",
+      "associationType": "subtype",
+      "distribution": "regional",
+      "explanation": "Enlarged in communicating hydrocephalus or outlet obstruction.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-hydrocephalus",
+        "mp-hydrocephalus"
+      ],
+      "resolvedMeshIds": [
+        "fourth-ventricle"
+      ]
+    },
+    {
+      "structureId": "cerebral-white-matter",
+      "diseaseId": "hydrocephalus",
+      "associationType": "secondary",
+      "distribution": "regional",
+      "explanation": "Periventricular white matter is compressed and may show fluid signal.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-hydrocephalus",
+        "mp-hydrocephalus"
+      ],
+      "resolvedMeshIds": [
+        "cerebral-white-matter"
+      ]
+    },
+    {
+      "structureId": "occipital-lobe",
+      "diseaseId": "migraine",
+      "associationType": "subtype",
+      "distribution": "network",
+      "explanation": "Cortical spreading depolarisation in occipital cortex is linked to visual aura (functional, not structural).",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-migraine",
+        "mp-migraine"
+      ],
+      "resolvedMeshIds": [
+        "left-occipital-lobe",
+        "right-occipital-lobe"
+      ]
+    },
+    {
+      "structureId": "brainstem",
+      "diseaseId": "migraine",
+      "associationType": "secondary",
+      "distribution": "network",
+      "explanation": "Brainstem nuclei modulate trigeminovascular pain signalling.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-migraine",
+        "mp-migraine"
+      ],
+      "resolvedMeshIds": [
+        "cerebral-aqueduct",
+        "cerebral-peduncles",
+        "fourth-ventricle",
+        "left-inferior-colliculus",
+        "left-superior-colliculus",
+        "medulla-oblongata",
+        "midbrain-other",
+        "pons",
+        "right-inferior-colliculus",
+        "right-superior-colliculus"
+      ]
+    },
+    {
+      "structureId": "hypothalamus",
+      "diseaseId": "migraine",
+      "associationType": "secondary",
+      "distribution": "network",
+      "explanation": "Hypothalamic activation is implicated in the premonitory phase.",
+      "evidenceLevel": "emerging",
+      "references": [
+        "ninds-migraine",
+        "mp-migraine"
+      ],
+      "resolvedMeshIds": [
+        "hypothalamus-other",
+        "mammillary-body",
+        "tuber-cinereum"
+      ]
+    },
+    {
+      "structureId": "thalamus",
+      "diseaseId": "migraine",
+      "associationType": "secondary",
+      "distribution": "network",
+      "explanation": "Relays and modulates head pain signals to cortex.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-migraine",
+        "mp-migraine"
+      ],
+      "resolvedMeshIds": [
+        "left-thalamus",
+        "right-thalamus"
+      ]
+    },
+    {
+      "structureId": "cerebellum",
+      "diseaseId": "chiari-malformation",
+      "associationType": "primary",
+      "distribution": "focal",
+      "explanation": "Cerebellar tonsils herniate below the foramen magnum (tonsils not separately segmented).",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-chiari",
+        "mp-chiari"
+      ],
+      "resolvedMeshIds": [
+        "cerebellum"
+      ]
+    },
+    {
+      "structureId": "medulla-oblongata",
+      "diseaseId": "chiari-malformation",
+      "associationType": "secondary",
+      "distribution": "focal",
+      "explanation": "The medulla may be compressed.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-chiari",
+        "mp-chiari"
+      ],
+      "resolvedMeshIds": [
+        "medulla-oblongata"
+      ]
+    },
+    {
+      "structureId": "fourth-ventricle",
+      "diseaseId": "chiari-malformation",
+      "associationType": "secondary",
+      "distribution": "focal",
+      "explanation": "CSF outflow at the foramen magnum can be obstructed.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-chiari",
+        "mp-chiari"
+      ],
+      "resolvedMeshIds": [
+        "fourth-ventricle"
+      ]
+    },
+    {
+      "structureId": "cerebral-white-matter",
+      "diseaseId": "cerebral-palsy",
+      "associationType": "subtype",
+      "distribution": "regional",
+      "explanation": "Periventricular white matter injury is typical in preterm-born children with spastic CP.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-cp",
+        "mp-cp"
+      ],
+      "resolvedMeshIds": [
+        "cerebral-white-matter"
+      ]
+    },
+    {
+      "structureId": "internal-capsule",
+      "diseaseId": "cerebral-palsy",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Corticospinal fibres near the ventricles and in the internal capsule are injured.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-cp",
+        "mp-cp"
+      ],
+      "resolvedMeshIds": [
+        "left-internal-capsule-anterior-limb",
+        "right-internal-capsule-anterior-limb"
+      ]
+    },
+    {
+      "structureId": "basal-nuclei",
+      "diseaseId": "cerebral-palsy",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Deep grey matter injury causes dyskinetic CP.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-cp",
+        "mp-cp"
+      ],
+      "resolvedMeshIds": [
+        "left-caudate-nucleus",
+        "left-globus-pallidus",
+        "left-putamen",
+        "right-caudate-nucleus",
+        "right-globus-pallidus",
+        "right-putamen"
+      ]
+    },
+    {
+      "structureId": "thalamus",
+      "diseaseId": "cerebral-palsy",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Thalamic injury accompanies basal ganglia injury in some.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-cp",
+        "mp-cp"
+      ],
+      "resolvedMeshIds": [
+        "left-thalamus",
+        "right-thalamus"
+      ]
+    },
+    {
+      "structureId": "cerebellum",
+      "diseaseId": "cerebral-palsy",
+      "associationType": "subtype",
+      "distribution": "focal",
+      "explanation": "Associated with ataxic CP.",
+      "evidenceLevel": "variable",
+      "references": [
+        "ninds-cp",
+        "mp-cp"
+      ],
+      "resolvedMeshIds": [
+        "cerebellum"
+      ]
+    },
+    {
+      "structureId": "hippocampus",
+      "diseaseId": "hypoxic-ischemic-brain-injury",
+      "associationType": "primary",
+      "distribution": "diffuse",
+      "explanation": "CA1 hippocampal neurons are among the most vulnerable to hypoxia-ischaemia.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-hie",
+        "mp-ency-cerebral-hypoxia"
+      ],
+      "resolvedMeshIds": [
+        "left-hippocampus",
+        "right-hippocampus"
+      ]
+    },
+    {
+      "structureId": "basal-nuclei",
+      "diseaseId": "hypoxic-ischemic-brain-injury",
+      "associationType": "primary",
+      "distribution": "diffuse",
+      "explanation": "Deep grey matter is vulnerable, especially in severe or acute insults.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-hie",
+        "mp-ency-cerebral-hypoxia"
+      ],
+      "resolvedMeshIds": [
+        "left-caudate-nucleus",
+        "left-globus-pallidus",
+        "left-putamen",
+        "right-caudate-nucleus",
+        "right-globus-pallidus",
+        "right-putamen"
+      ]
+    },
+    {
+      "structureId": "thalamus",
+      "diseaseId": "hypoxic-ischemic-brain-injury",
+      "associationType": "primary",
+      "distribution": "diffuse",
+      "explanation": "Thalamic injury is common in severe injury.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-hie",
+        "mp-ency-cerebral-hypoxia"
+      ],
+      "resolvedMeshIds": [
+        "left-thalamus",
+        "right-thalamus"
+      ]
+    },
+    {
+      "structureId": "cerebral-hemisphere",
+      "diseaseId": "hypoxic-ischemic-brain-injury",
+      "associationType": "secondary",
+      "distribution": "regional",
+      "explanation": "Cortical laminar necrosis and watershed injury occur.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-hie",
+        "mp-ency-cerebral-hypoxia"
+      ],
+      "resolvedMeshIds": [
+        "left-accessory-short-gyrus",
+        "left-amygdala",
+        "left-angular-gyrus",
+        "left-caudate-nucleus",
+        "left-choroid-plexus",
+        "left-cingulate-gyrus",
+        "left-fornix",
+        "left-fusiform-gyrus",
+        "left-globus-pallidus",
+        "left-hippocampus",
+        "left-inferior-temporal-gyrus",
+        "left-insula",
+        "left-internal-capsule-anterior-limb",
+        "left-lateral-ventricle",
+        "left-middle-frontal-gyrus",
+        "left-middle-temporal-gyrus",
+        "left-occipital-lobe",
+        "left-parahippocampal-gyrus",
+        "left-postcentral-gyrus",
+        "left-precentral-gyrus",
+        "left-putamen",
+        "left-superior-frontal-gyrus",
+        "left-superior-parietal-lobule-precuneus",
+        "left-superior-temporal-gyrus-anterior",
+        "left-superior-temporal-gyrus-posterior",
+        "left-supramarginal-gyrus",
+        "right-accessory-short-gyrus",
+        "right-amygdala",
+        "right-angular-gyrus",
+        "right-caudate-nucleus",
+        "right-choroid-plexus",
+        "right-cingulate-gyrus",
+        "right-fornix",
+        "right-fusiform-gyrus",
+        "right-globus-pallidus",
+        "right-hippocampus",
+        "right-inferior-temporal-gyrus",
+        "right-insula",
+        "right-internal-capsule-anterior-limb",
+        "right-lateral-ventricle",
+        "right-middle-frontal-gyrus",
+        "right-middle-temporal-gyrus",
+        "right-occipital-lobe",
+        "right-parahippocampal-gyrus",
+        "right-postcentral-gyrus",
+        "right-precentral-gyrus",
+        "right-putamen",
+        "right-superior-frontal-gyrus",
+        "right-superior-parietal-lobule-precuneus",
+        "right-superior-temporal-gyrus-anterior",
+        "right-superior-temporal-gyrus-posterior",
+        "right-supramarginal-gyrus"
+      ]
+    },
+    {
+      "structureId": "cerebellum",
+      "diseaseId": "hypoxic-ischemic-brain-injury",
+      "associationType": "secondary",
+      "distribution": "diffuse",
+      "explanation": "Purkinje cells are vulnerable.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-hie",
+        "mp-ency-cerebral-hypoxia"
+      ],
+      "resolvedMeshIds": [
+        "cerebellum"
+      ]
+    },
+    {
+      "structureId": "cerebellum",
+      "diseaseId": "cerebellar-ataxia",
+      "associationType": "primary",
+      "distribution": "diffuse",
+      "explanation": "Cerebellar dysfunction causes ataxia; pattern (midline vs hemispheric) shapes symptoms. Vermis and hemispheres are not separately segmented here.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-ataxia",
+        "ninds-cerebellar-degeneration"
+      ],
+      "resolvedMeshIds": [
+        "cerebellum"
+      ]
+    },
+    {
+      "structureId": "pons",
+      "diseaseId": "cerebellar-ataxia",
+      "associationType": "secondary",
+      "distribution": "network",
+      "explanation": "Pontocerebellar connections.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-ataxia",
+        "ninds-cerebellar-degeneration"
+      ],
+      "resolvedMeshIds": [
+        "pons"
+      ]
+    },
+    {
+      "structureId": "medulla-oblongata",
+      "diseaseId": "cerebellar-ataxia",
+      "associationType": "secondary",
+      "distribution": "network",
+      "explanation": "Spinal and vestibular inputs via the inferior cerebellar peduncle.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-ataxia",
+        "ninds-cerebellar-degeneration"
+      ],
+      "resolvedMeshIds": [
+        "medulla-oblongata"
+      ]
+    },
+    {
+      "structureId": "thalamus",
+      "diseaseId": "cerebellar-ataxia",
+      "associationType": "secondary",
+      "distribution": "network",
+      "explanation": "Cerebellar output to motor cortex via thalamus.",
+      "evidenceLevel": "established",
+      "references": [
+        "ninds-ataxia",
+        "ninds-cerebellar-degeneration"
+      ],
+      "resolvedMeshIds": [
+        "left-thalamus",
+        "right-thalamus"
+      ]
+    }
+  ]
 }

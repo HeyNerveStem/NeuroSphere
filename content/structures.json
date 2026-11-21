@@ -1,2066 +1,2066 @@
 {
- "structures": [
-  {
-   "id": "brain",
-   "name": "Brain",
-   "parentId": null,
-   "kind": "group",
-   "hemisphere": "bilateral",
-   "groups": [],
-   "contentId": "brain",
-   "majorSelect": false,
-   "synonyms": [
-    "encephalon"
-   ]
-  },
-  {
-   "id": "cerebrum",
-   "name": "Cerebrum",
-   "parentId": "brain",
-   "kind": "group",
-   "hemisphere": "bilateral",
-   "groups": [],
-   "contentId": "cerebrum",
-   "majorSelect": false,
-   "synonyms": [
-    "telencephalon",
-    "forebrain (part)"
-   ]
-  },
-  {
-   "id": "diencephalon",
-   "name": "Diencephalon",
-   "parentId": "brain",
-   "kind": "group",
-   "hemisphere": "bilateral",
-   "groups": [
-    "diencephalon"
-   ],
-   "contentId": "diencephalon",
-   "majorSelect": false,
-   "synonyms": [
-    "interbrain"
-   ]
-  },
-  {
-   "id": "brainstem",
-   "name": "Brainstem",
-   "parentId": "brain",
-   "kind": "group",
-   "hemisphere": "bilateral",
-   "groups": [
-    "brainstem"
-   ],
-   "contentId": "brainstem",
-   "majorSelect": false,
-   "synonyms": [
-    "brain stem"
-   ]
-  },
-  {
-   "id": "visual-pathway",
-   "name": "Anterior visual pathway",
-   "parentId": "brain",
-   "kind": "group",
-   "hemisphere": "bilateral",
-   "groups": [
-    "visual-pathway"
-   ],
-   "contentId": "visual-pathway",
-   "majorSelect": false,
-   "synonyms": [
-    "optic pathway"
-   ]
-  },
-  {
-   "id": "cerebral-midline",
-   "name": "Midline & commissural structures",
-   "parentId": "cerebrum",
-   "kind": "group",
-   "hemisphere": "bilateral",
-   "groups": [],
-   "contentId": "cerebral-midline",
-   "majorSelect": false,
-   "synonyms": []
-  },
-  {
-   "id": "left-cerebral-hemisphere",
-   "name": "Left cerebral hemisphere",
-   "parentId": "cerebrum",
-   "kind": "group",
-   "hemisphere": "left",
-   "groups": [],
-   "contentId": "cerebral-hemisphere",
-   "majorSelect": false,
-   "synonyms": []
-  },
-  {
-   "id": "left-frontal-lobe",
-   "name": "Left frontal lobe",
-   "parentId": "left-cerebral-hemisphere",
-   "kind": "group",
-   "hemisphere": "left",
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "frontal-lobe",
-   "majorSelect": true,
-   "synonyms": []
-  },
-  {
-   "id": "left-parietal-lobe",
-   "name": "Left parietal lobe",
-   "parentId": "left-cerebral-hemisphere",
-   "kind": "group",
-   "hemisphere": "left",
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "parietal-lobe",
-   "majorSelect": true,
-   "synonyms": []
-  },
-  {
-   "id": "left-temporal-lobe",
-   "name": "Left temporal lobe",
-   "parentId": "left-cerebral-hemisphere",
-   "kind": "group",
-   "hemisphere": "left",
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "temporal-lobe",
-   "majorSelect": true,
-   "synonyms": []
-  },
-  {
-   "id": "left-insular-cortex",
-   "name": "Left insular cortex",
-   "parentId": "left-cerebral-hemisphere",
-   "kind": "group",
-   "hemisphere": "left",
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "insula",
-   "majorSelect": true,
-   "synonyms": [
-    "insula",
-    "island of Reil",
-    "insular lobe"
-   ]
-  },
-  {
-   "id": "left-basal-nuclei",
-   "name": "Left basal nuclei",
-   "parentId": "left-cerebral-hemisphere",
-   "kind": "group",
-   "hemisphere": "left",
-   "groups": [
-    "basal-ganglia"
-   ],
-   "contentId": "basal-nuclei",
-   "majorSelect": false,
-   "synonyms": [
-    "basal ganglia (telencephalic part)",
-    "corpus striatum + globus pallidus"
-   ]
-  },
-  {
-   "id": "left-superior-frontal-gyrus",
-   "name": "Left superior frontal gyrus",
-   "parentId": "left-frontal-lobe",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72654",
-   "layer": 0,
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "superior-frontal-gyrus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-middle-frontal-gyrus",
-   "name": "Left middle frontal gyrus",
-   "parentId": "left-frontal-lobe",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72656",
-   "layer": 0,
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "middle-frontal-gyrus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-precentral-gyrus",
-   "name": "Left precentral gyrus",
-   "parentId": "left-frontal-lobe",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72662",
-   "layer": 0,
-   "groups": [
-    "cortex",
-    "motor"
-   ],
-   "contentId": "precentral-gyrus",
-   "labelPriority": 2,
-   "synonyms": [
-    "primary motor cortex (M1)",
-    "Brodmann area 4"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-postcentral-gyrus",
-   "name": "Left postcentral gyrus",
-   "parentId": "left-parietal-lobe",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72666",
-   "layer": 0,
-   "groups": [
-    "cortex",
-    "sensory"
-   ],
-   "contentId": "postcentral-gyrus",
-   "labelPriority": 2,
-   "synonyms": [
-    "primary somatosensory cortex (S1)"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-supramarginal-gyrus",
-   "name": "Left supramarginal gyrus",
-   "parentId": "left-parietal-lobe",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72668",
-   "layer": 0,
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "supramarginal-gyrus",
-   "labelPriority": 2,
-   "synonyms": [
-    "Brodmann area 40"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-angular-gyrus",
-   "name": "Left angular gyrus",
-   "parentId": "left-parietal-lobe",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72670",
-   "layer": 0,
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "angular-gyrus",
-   "labelPriority": 2,
-   "synonyms": [
-    "Brodmann area 39"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-superior-parietal-lobule-precuneus",
-   "name": "Left superior parietal lobule & precuneus",
-   "parentId": "left-parietal-lobe",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "BP49",
-   "layer": 0,
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "superior-parietal-lobule-precuneus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": "left superior parietal lobule precuneus (BodyParts3D combined element)",
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-superior-temporal-gyrus-anterior",
-   "name": "Left superior temporal gyrus (anterior part)",
-   "parentId": "left-temporal-lobe",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72801",
-   "layer": 0,
-   "groups": [
-    "cortex",
-    "auditory"
-   ],
-   "contentId": "superior-temporal-gyrus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-superior-temporal-gyrus-posterior",
-   "name": "Left superior temporal gyrus (posterior part)",
-   "parentId": "left-temporal-lobe",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72805",
-   "layer": 0,
-   "groups": [
-    "cortex",
-    "auditory",
-    "language"
-   ],
-   "contentId": "superior-temporal-gyrus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-middle-temporal-gyrus",
-   "name": "Left middle temporal gyrus",
-   "parentId": "left-temporal-lobe",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72686",
-   "layer": 0,
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "middle-temporal-gyrus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-inferior-temporal-gyrus",
-   "name": "Left inferior temporal gyrus",
-   "parentId": "left-temporal-lobe",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72688",
-   "layer": 0,
-   "groups": [
-    "cortex",
-    "visual"
-   ],
-   "contentId": "inferior-temporal-gyrus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-fusiform-gyrus",
-   "name": "Left fusiform gyrus",
-   "parentId": "left-temporal-lobe",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72690",
-   "layer": 0,
-   "groups": [
-    "cortex",
-    "visual"
-   ],
-   "contentId": "fusiform-gyrus",
-   "labelPriority": 2,
-   "synonyms": [
-    "occipitotemporal gyrus (lateral)"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-parahippocampal-gyrus",
-   "name": "Left parahippocampal gyrus",
-   "parentId": "left-temporal-lobe",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72706",
-   "layer": 1,
-   "groups": [
-    "cortex",
-    "limbic",
-    "memory"
-   ],
-   "contentId": "parahippocampal-gyrus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-occipital-lobe",
-   "name": "Left occipital lobe",
-   "parentId": "left-cerebral-hemisphere",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72976",
-   "layer": 0,
-   "groups": [
-    "cortex",
-    "visual"
-   ],
-   "contentId": "occipital-lobe",
-   "labelPriority": 1,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-insula",
-   "name": "Left insula (main gyri)",
-   "parentId": "left-insular-cortex",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72978",
-   "layer": 1,
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "insula",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-accessory-short-gyrus",
-   "name": "Left accessory short gyrus of insula",
-   "parentId": "left-insular-cortex",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72702",
-   "layer": 1,
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "insula",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-cingulate-gyrus",
-   "name": "Left cingulate gyrus",
-   "parentId": "left-cerebral-hemisphere",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72718",
-   "layer": 1,
-   "groups": [
-    "cortex",
-    "limbic"
-   ],
-   "contentId": "cingulate-gyrus",
-   "labelPriority": 1,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-hippocampus",
-   "name": "Left hippocampus",
-   "parentId": "left-cerebral-hemisphere",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72714",
-   "layer": 2,
-   "groups": [
-    "limbic",
-    "memory"
-   ],
-   "contentId": "hippocampus",
-   "labelPriority": 1,
-   "synonyms": [
-    "hippocampal formation (part)",
-    "cornu Ammonis"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-amygdala",
-   "name": "Left amygdala",
-   "parentId": "left-cerebral-hemisphere",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72833",
-   "layer": 2,
-   "groups": [
-    "limbic",
-    "emotion"
-   ],
-   "contentId": "amygdala",
-   "labelPriority": 1,
-   "synonyms": [
-    "amygdaloid body",
-    "amygdaloid complex"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-caudate-nucleus",
-   "name": "Left caudate nucleus",
-   "parentId": "left-basal-nuclei",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72827",
-   "layer": 2,
-   "groups": [
-    "basal-ganglia",
-    "motor"
-   ],
-   "contentId": "caudate-nucleus",
-   "labelPriority": 1,
-   "synonyms": [
-    "caudate"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-putamen",
-   "name": "Left putamen",
-   "parentId": "left-basal-nuclei",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72829",
-   "layer": 2,
-   "groups": [
-    "basal-ganglia",
-    "motor"
-   ],
-   "contentId": "putamen",
-   "labelPriority": 1,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-globus-pallidus",
-   "name": "Left globus pallidus",
-   "parentId": "left-basal-nuclei",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72831",
-   "layer": 2,
-   "groups": [
-    "basal-ganglia",
-    "motor"
-   ],
-   "contentId": "globus-pallidus",
-   "labelPriority": 1,
-   "synonyms": [
-    "pallidum",
-    "paleostriatum"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-fornix",
-   "name": "Left fornix",
-   "parentId": "left-cerebral-hemisphere",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72925",
-   "layer": 2,
-   "groups": [
-    "limbic",
-    "white-matter",
-    "memory"
-   ],
-   "contentId": "fornix",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-internal-capsule-anterior-limb",
-   "name": "Left internal capsule (anterior limb)",
-   "parentId": "left-cerebral-hemisphere",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA72909",
-   "layer": 2,
-   "groups": [
-    "white-matter"
-   ],
-   "contentId": "internal-capsule",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-lateral-ventricle",
-   "name": "Left lateral ventricle",
-   "parentId": "left-cerebral-hemisphere",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA78450",
-   "layer": 2,
-   "groups": [
-    "ventricular"
-   ],
-   "contentId": "lateral-ventricle",
-   "labelPriority": 1,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-choroid-plexus",
-   "name": "Left choroid plexus (lateral ventricle)",
-   "parentId": "left-cerebral-hemisphere",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA274029",
-   "layer": 2,
-   "groups": [
-    "ventricular"
-   ],
-   "contentId": "choroid-plexus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-thalamus",
-   "name": "Left thalamus",
-   "parentId": "diencephalon",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA258716",
-   "layer": 3,
-   "groups": [
-    "diencephalon",
-    "sensory"
-   ],
-   "contentId": "thalamus",
-   "labelPriority": 1,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-lateral-geniculate-body",
-   "name": "Left lateral geniculate body",
-   "parentId": "diencephalon",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA73304",
-   "layer": 3,
-   "groups": [
-    "diencephalon",
-    "visual",
-    "visual-pathway"
-   ],
-   "contentId": "lateral-geniculate-body",
-   "labelPriority": 2,
-   "synonyms": [
-    "lateral geniculate nucleus (LGN)"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-medial-geniculate-body",
-   "name": "Left medial geniculate body",
-   "parentId": "diencephalon",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA73310",
-   "layer": 3,
-   "groups": [
-    "diencephalon",
-    "auditory"
-   ],
-   "contentId": "medial-geniculate-body",
-   "labelPriority": 2,
-   "synonyms": [
-    "medial geniculate nucleus (MGN)"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-superior-colliculus",
-   "name": "Left superior colliculus",
-   "parentId": "midbrain",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA73423",
-   "layer": 4,
-   "groups": [
-    "brainstem",
-    "visual"
-   ],
-   "contentId": "superior-colliculus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-inferior-colliculus",
-   "name": "Left inferior colliculus",
-   "parentId": "midbrain",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA73435",
-   "layer": 4,
-   "groups": [
-    "brainstem",
-    "auditory"
-   ],
-   "contentId": "inferior-colliculus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-optic-nerve",
-   "name": "Left optic nerve (CN II)",
-   "parentId": "visual-pathway",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA50878",
-   "layer": 3,
-   "groups": [
-    "visual-pathway",
-    "cranial-nerve",
-    "visual"
-   ],
-   "contentId": "optic-nerve",
-   "labelPriority": 2,
-   "synonyms": [
-    "cranial nerve II",
-    "CN II"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "left-optic-tract",
-   "name": "Left optic tract",
-   "parentId": "visual-pathway",
-   "kind": "mesh",
-   "hemisphere": "left",
-   "fma": "FMA67936",
-   "layer": 3,
-   "groups": [
-    "visual-pathway",
-    "visual"
-   ],
-   "contentId": "optic-tract",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-cerebral-hemisphere",
-   "name": "Right cerebral hemisphere",
-   "parentId": "cerebrum",
-   "kind": "group",
-   "hemisphere": "right",
-   "groups": [],
-   "contentId": "cerebral-hemisphere",
-   "majorSelect": false,
-   "synonyms": []
-  },
-  {
-   "id": "right-frontal-lobe",
-   "name": "Right frontal lobe",
-   "parentId": "right-cerebral-hemisphere",
-   "kind": "group",
-   "hemisphere": "right",
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "frontal-lobe",
-   "majorSelect": true,
-   "synonyms": []
-  },
-  {
-   "id": "right-parietal-lobe",
-   "name": "Right parietal lobe",
-   "parentId": "right-cerebral-hemisphere",
-   "kind": "group",
-   "hemisphere": "right",
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "parietal-lobe",
-   "majorSelect": true,
-   "synonyms": []
-  },
-  {
-   "id": "right-temporal-lobe",
-   "name": "Right temporal lobe",
-   "parentId": "right-cerebral-hemisphere",
-   "kind": "group",
-   "hemisphere": "right",
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "temporal-lobe",
-   "majorSelect": true,
-   "synonyms": []
-  },
-  {
-   "id": "right-insular-cortex",
-   "name": "Right insular cortex",
-   "parentId": "right-cerebral-hemisphere",
-   "kind": "group",
-   "hemisphere": "right",
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "insula",
-   "majorSelect": true,
-   "synonyms": [
-    "insula",
-    "island of Reil",
-    "insular lobe"
-   ]
-  },
-  {
-   "id": "right-basal-nuclei",
-   "name": "Right basal nuclei",
-   "parentId": "right-cerebral-hemisphere",
-   "kind": "group",
-   "hemisphere": "right",
-   "groups": [
-    "basal-ganglia"
-   ],
-   "contentId": "basal-nuclei",
-   "majorSelect": false,
-   "synonyms": [
-    "basal ganglia (telencephalic part)",
-    "corpus striatum + globus pallidus"
-   ]
-  },
-  {
-   "id": "right-superior-frontal-gyrus",
-   "name": "Right superior frontal gyrus",
-   "parentId": "right-frontal-lobe",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72653",
-   "layer": 0,
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "superior-frontal-gyrus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-middle-frontal-gyrus",
-   "name": "Right middle frontal gyrus",
-   "parentId": "right-frontal-lobe",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72655",
-   "layer": 0,
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "middle-frontal-gyrus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-precentral-gyrus",
-   "name": "Right precentral gyrus",
-   "parentId": "right-frontal-lobe",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72661",
-   "layer": 0,
-   "groups": [
-    "cortex",
-    "motor"
-   ],
-   "contentId": "precentral-gyrus",
-   "labelPriority": 2,
-   "synonyms": [
-    "primary motor cortex (M1)",
-    "Brodmann area 4"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-postcentral-gyrus",
-   "name": "Right postcentral gyrus",
-   "parentId": "right-parietal-lobe",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72665",
-   "layer": 0,
-   "groups": [
-    "cortex",
-    "sensory"
-   ],
-   "contentId": "postcentral-gyrus",
-   "labelPriority": 2,
-   "synonyms": [
-    "primary somatosensory cortex (S1)"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-supramarginal-gyrus",
-   "name": "Right supramarginal gyrus",
-   "parentId": "right-parietal-lobe",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72667",
-   "layer": 0,
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "supramarginal-gyrus",
-   "labelPriority": 2,
-   "synonyms": [
-    "Brodmann area 40"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-angular-gyrus",
-   "name": "Right angular gyrus",
-   "parentId": "right-parietal-lobe",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72669",
-   "layer": 0,
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "angular-gyrus",
-   "labelPriority": 2,
-   "synonyms": [
-    "Brodmann area 39"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-superior-parietal-lobule-precuneus",
-   "name": "Right superior parietal lobule & precuneus",
-   "parentId": "right-parietal-lobe",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "BP50",
-   "layer": 0,
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "superior-parietal-lobule-precuneus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": "right superior parietal lobule precuneus (BodyParts3D combined element)",
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-superior-temporal-gyrus-anterior",
-   "name": "Right superior temporal gyrus (anterior part)",
-   "parentId": "right-temporal-lobe",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72800",
-   "layer": 0,
-   "groups": [
-    "cortex",
-    "auditory"
-   ],
-   "contentId": "superior-temporal-gyrus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-superior-temporal-gyrus-posterior",
-   "name": "Right superior temporal gyrus (posterior part)",
-   "parentId": "right-temporal-lobe",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72804",
-   "layer": 0,
-   "groups": [
-    "cortex",
-    "auditory",
-    "language"
-   ],
-   "contentId": "superior-temporal-gyrus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-middle-temporal-gyrus",
-   "name": "Right middle temporal gyrus",
-   "parentId": "right-temporal-lobe",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72685",
-   "layer": 0,
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "middle-temporal-gyrus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-inferior-temporal-gyrus",
-   "name": "Right inferior temporal gyrus",
-   "parentId": "right-temporal-lobe",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72687",
-   "layer": 0,
-   "groups": [
-    "cortex",
-    "visual"
-   ],
-   "contentId": "inferior-temporal-gyrus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-fusiform-gyrus",
-   "name": "Right fusiform gyrus",
-   "parentId": "right-temporal-lobe",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72689",
-   "layer": 0,
-   "groups": [
-    "cortex",
-    "visual"
-   ],
-   "contentId": "fusiform-gyrus",
-   "labelPriority": 2,
-   "synonyms": [
-    "occipitotemporal gyrus (lateral)"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-parahippocampal-gyrus",
-   "name": "Right parahippocampal gyrus",
-   "parentId": "right-temporal-lobe",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72705",
-   "layer": 1,
-   "groups": [
-    "cortex",
-    "limbic",
-    "memory"
-   ],
-   "contentId": "parahippocampal-gyrus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-occipital-lobe",
-   "name": "Right occipital lobe",
-   "parentId": "right-cerebral-hemisphere",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72975",
-   "layer": 0,
-   "groups": [
-    "cortex",
-    "visual"
-   ],
-   "contentId": "occipital-lobe",
-   "labelPriority": 1,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-insula",
-   "name": "Right insula (main gyri)",
-   "parentId": "right-insular-cortex",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72977",
-   "layer": 1,
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "insula",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-accessory-short-gyrus",
-   "name": "Right accessory short gyrus of insula",
-   "parentId": "right-insular-cortex",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72701",
-   "layer": 1,
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "insula",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-cingulate-gyrus",
-   "name": "Right cingulate gyrus",
-   "parentId": "right-cerebral-hemisphere",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72717",
-   "layer": 1,
-   "groups": [
-    "cortex",
-    "limbic"
-   ],
-   "contentId": "cingulate-gyrus",
-   "labelPriority": 1,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-hippocampus",
-   "name": "Right hippocampus",
-   "parentId": "right-cerebral-hemisphere",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72713",
-   "layer": 2,
-   "groups": [
-    "limbic",
-    "memory"
-   ],
-   "contentId": "hippocampus",
-   "labelPriority": 1,
-   "synonyms": [
-    "hippocampal formation (part)",
-    "cornu Ammonis"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-amygdala",
-   "name": "Right amygdala",
-   "parentId": "right-cerebral-hemisphere",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72832",
-   "layer": 2,
-   "groups": [
-    "limbic",
-    "emotion"
-   ],
-   "contentId": "amygdala",
-   "labelPriority": 1,
-   "synonyms": [
-    "amygdaloid body",
-    "amygdaloid complex"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-caudate-nucleus",
-   "name": "Right caudate nucleus",
-   "parentId": "right-basal-nuclei",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72826",
-   "layer": 2,
-   "groups": [
-    "basal-ganglia",
-    "motor"
-   ],
-   "contentId": "caudate-nucleus",
-   "labelPriority": 1,
-   "synonyms": [
-    "caudate"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-putamen",
-   "name": "Right putamen",
-   "parentId": "right-basal-nuclei",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72828",
-   "layer": 2,
-   "groups": [
-    "basal-ganglia",
-    "motor"
-   ],
-   "contentId": "putamen",
-   "labelPriority": 1,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-globus-pallidus",
-   "name": "Right globus pallidus",
-   "parentId": "right-basal-nuclei",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72830",
-   "layer": 2,
-   "groups": [
-    "basal-ganglia",
-    "motor"
-   ],
-   "contentId": "globus-pallidus",
-   "labelPriority": 1,
-   "synonyms": [
-    "pallidum",
-    "paleostriatum"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-fornix",
-   "name": "Right fornix",
-   "parentId": "right-cerebral-hemisphere",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72924",
-   "layer": 2,
-   "groups": [
-    "limbic",
-    "white-matter",
-    "memory"
-   ],
-   "contentId": "fornix",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-internal-capsule-anterior-limb",
-   "name": "Right internal capsule (anterior limb)",
-   "parentId": "right-cerebral-hemisphere",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA72908",
-   "layer": 2,
-   "groups": [
-    "white-matter"
-   ],
-   "contentId": "internal-capsule",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-lateral-ventricle",
-   "name": "Right lateral ventricle",
-   "parentId": "right-cerebral-hemisphere",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA78449",
-   "layer": 2,
-   "groups": [
-    "ventricular"
-   ],
-   "contentId": "lateral-ventricle",
-   "labelPriority": 1,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-choroid-plexus",
-   "name": "Right choroid plexus (lateral ventricle)",
-   "parentId": "right-cerebral-hemisphere",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA274027",
-   "layer": 2,
-   "groups": [
-    "ventricular"
-   ],
-   "contentId": "choroid-plexus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-thalamus",
-   "name": "Right thalamus",
-   "parentId": "diencephalon",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA258714",
-   "layer": 3,
-   "groups": [
-    "diencephalon",
-    "sensory"
-   ],
-   "contentId": "thalamus",
-   "labelPriority": 1,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-lateral-geniculate-body",
-   "name": "Right lateral geniculate body",
-   "parentId": "diencephalon",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA73303",
-   "layer": 3,
-   "groups": [
-    "diencephalon",
-    "visual",
-    "visual-pathway"
-   ],
-   "contentId": "lateral-geniculate-body",
-   "labelPriority": 2,
-   "synonyms": [
-    "lateral geniculate nucleus (LGN)"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-medial-geniculate-body",
-   "name": "Right medial geniculate body",
-   "parentId": "diencephalon",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA73309",
-   "layer": 3,
-   "groups": [
-    "diencephalon",
-    "auditory"
-   ],
-   "contentId": "medial-geniculate-body",
-   "labelPriority": 2,
-   "synonyms": [
-    "medial geniculate nucleus (MGN)"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-superior-colliculus",
-   "name": "Right superior colliculus",
-   "parentId": "midbrain",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA73422",
-   "layer": 4,
-   "groups": [
-    "brainstem",
-    "visual"
-   ],
-   "contentId": "superior-colliculus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-inferior-colliculus",
-   "name": "Right inferior colliculus",
-   "parentId": "midbrain",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA73434",
-   "layer": 4,
-   "groups": [
-    "brainstem",
-    "auditory"
-   ],
-   "contentId": "inferior-colliculus",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-optic-nerve",
-   "name": "Right optic nerve (CN II)",
-   "parentId": "visual-pathway",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA50875",
-   "layer": 3,
-   "groups": [
-    "visual-pathway",
-    "cranial-nerve",
-    "visual"
-   ],
-   "contentId": "optic-nerve",
-   "labelPriority": 2,
-   "synonyms": [
-    "cranial nerve II",
-    "CN II"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "right-optic-tract",
-   "name": "Right optic tract",
-   "parentId": "visual-pathway",
-   "kind": "mesh",
-   "hemisphere": "right",
-   "fma": "FMA62382",
-   "layer": 3,
-   "groups": [
-    "visual-pathway",
-    "visual"
-   ],
-   "contentId": "optic-tract",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "orbital-and-straight-gyri",
-   "name": "Orbital & straight gyri (both hemispheres)",
-   "parentId": "cerebrum",
-   "kind": "mesh",
-   "hemisphere": "bilateral",
-   "fma": "BP51",
-   "layer": 0,
-   "groups": [
-    "cortex"
-   ],
-   "contentId": "orbital-and-straight-gyri",
-   "labelPriority": 1,
-   "synonyms": [
-    "orbitofrontal cortex (part)",
-    "gyrus rectus"
-   ],
-   "sourceName": "orbital gyri straight gyrus (BodyParts3D combined bilateral element)",
-   "note": "Single bilateral element in the source asset; not split by hemisphere.",
-   "majorSelect": false
-  },
-  {
-   "id": "cerebral-white-matter",
-   "name": "Cerebral white matter",
-   "parentId": "cerebral-midline",
-   "kind": "mesh",
-   "hemisphere": "bilateral",
-   "fma": "FMA61822",
-   "layer": 1,
-   "groups": [
-    "white-matter"
-   ],
-   "contentId": "cerebral-white-matter",
-   "labelPriority": 3,
-   "synonyms": [
-    "white matter of cerebral hemisphere",
-    "centrum semiovale (part)"
-   ],
-   "sourceName": null,
-   "note": "Single bilateral surface in the source asset; it is a coarse envelope, not a tractography model.",
-   "majorSelect": false
-  },
-  {
-   "id": "corpus-callosum",
-   "name": "Corpus callosum",
-   "parentId": "cerebral-midline",
-   "kind": "mesh",
-   "hemisphere": "midline",
-   "fma": "FMA86464",
-   "layer": 1,
-   "groups": [
-    "white-matter",
-    "commissural"
-   ],
-   "contentId": "corpus-callosum",
-   "labelPriority": 1,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "commissure-of-fornix",
-   "name": "Commissure of fornix",
-   "parentId": "cerebral-midline",
-   "kind": "mesh",
-   "hemisphere": "midline",
-   "fma": "FMA61970",
-   "layer": 2,
-   "groups": [
-    "limbic",
-    "white-matter",
-    "commissural"
-   ],
-   "contentId": "fornix",
-   "labelPriority": 2,
-   "synonyms": [
-    "hippocampal commissure",
-    "psalterium"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "septum-pellucidum",
-   "name": "Septum pellucidum",
-   "parentId": "cerebral-midline",
-   "kind": "mesh",
-   "hemisphere": "midline",
-   "fma": "FMA61844",
-   "layer": 2,
-   "groups": [
-    "ventricular"
-   ],
-   "contentId": "septum-pellucidum",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "hypothalamus",
-   "name": "Hypothalamus",
-   "parentId": "diencephalon",
-   "kind": "group",
-   "hemisphere": "midline",
-   "groups": [
-    "diencephalon",
-    "autonomic"
-   ],
-   "contentId": "hypothalamus",
-   "majorSelect": true,
-   "synonyms": []
-  },
-  {
-   "id": "hypothalamus-other",
-   "name": "Hypothalamus (remaining parts)",
-   "parentId": "hypothalamus",
-   "kind": "mesh",
-   "hemisphere": "midline",
-   "fma": "FMA62008nsn",
-   "layer": 3,
-   "groups": [
-    "diencephalon",
-    "autonomic"
-   ],
-   "contentId": "hypothalamus",
-   "labelPriority": 1,
-   "synonyms": [],
-   "sourceName": "hypothalamus, nsn (not otherwise specified)",
-   "note": "BodyParts3D element for hypothalamic tissue other than the separately modelled mammillary body and tuber cinereum.",
-   "majorSelect": false
-  },
-  {
-   "id": "mammillary-body",
-   "name": "Mammillary bodies",
-   "parentId": "hypothalamus",
-   "kind": "mesh",
-   "hemisphere": "midline",
-   "fma": "FMA74877",
-   "layer": 3,
-   "groups": [
-    "diencephalon",
-    "memory",
-    "limbic"
-   ],
-   "contentId": "mammillary-body",
-   "labelPriority": 2,
-   "synonyms": [
-    "corpora mammillaria"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "tuber-cinereum",
-   "name": "Tuber cinereum",
-   "parentId": "hypothalamus",
-   "kind": "mesh",
-   "hemisphere": "midline",
-   "fma": "FMA62327",
-   "layer": 3,
-   "groups": [
-    "diencephalon",
-    "autonomic"
-   ],
-   "contentId": "tuber-cinereum",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "pituitary-gland",
-   "name": "Pituitary gland",
-   "parentId": "diencephalon",
-   "kind": "mesh",
-   "hemisphere": "midline",
-   "fma": "FMA13889",
-   "layer": 3,
-   "groups": [
-    "endocrine"
-   ],
-   "contentId": "pituitary-gland",
-   "labelPriority": 1,
-   "synonyms": [
-    "hypophysis"
-   ],
-   "sourceName": null,
-   "note": "Endocrine gland suspended from the hypothalamus by the infundibulum; grouped here for navigation.",
-   "majorSelect": false
-  },
-  {
-   "id": "epithalamus",
-   "name": "Epithalamus",
-   "parentId": "diencephalon",
-   "kind": "group",
-   "hemisphere": "midline",
-   "groups": [
-    "diencephalon"
-   ],
-   "contentId": "epithalamus",
-   "majorSelect": true,
-   "synonyms": []
-  },
-  {
-   "id": "pineal-gland",
-   "name": "Pineal gland",
-   "parentId": "epithalamus",
-   "kind": "mesh",
-   "hemisphere": "midline",
-   "fma": "FMA62033",
-   "layer": 3,
-   "groups": [
-    "diencephalon",
-    "endocrine"
-   ],
-   "contentId": "pineal-gland",
-   "labelPriority": 1,
-   "synonyms": [
-    "pineal body",
-    "epiphysis cerebri"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "habenula",
-   "name": "Habenula",
-   "parentId": "epithalamus",
-   "kind": "mesh",
-   "hemisphere": "midline",
-   "fma": "FMA62032",
-   "layer": 3,
-   "groups": [
-    "diencephalon"
-   ],
-   "contentId": "habenula",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": "Modelled as a single midline element in the source asset.",
-   "majorSelect": false
-  },
-  {
-   "id": "third-ventricle",
-   "name": "Third ventricle",
-   "parentId": "diencephalon",
-   "kind": "mesh",
-   "hemisphere": "midline",
-   "fma": "FMA78454",
-   "layer": 3,
-   "groups": [
-    "ventricular"
-   ],
-   "contentId": "third-ventricle",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "optic-chiasm",
-   "name": "Optic chiasm",
-   "parentId": "visual-pathway",
-   "kind": "mesh",
-   "hemisphere": "midline",
-   "fma": "FMA62045",
-   "layer": 3,
-   "groups": [
-    "visual-pathway",
-    "visual"
-   ],
-   "contentId": "optic-chiasm",
-   "labelPriority": 1,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "midbrain",
-   "name": "Midbrain",
-   "parentId": "brainstem",
-   "kind": "group",
-   "hemisphere": "midline",
-   "groups": [
-    "brainstem"
-   ],
-   "contentId": "midbrain",
-   "majorSelect": true,
-   "synonyms": [
-    "mesencephalon"
-   ]
-  },
-  {
-   "id": "midbrain-other",
-   "name": "Midbrain (remaining parts)",
-   "parentId": "midbrain",
-   "kind": "mesh",
-   "hemisphere": "midline",
-   "fma": "FMA61993nsn",
-   "layer": 4,
-   "groups": [
-    "brainstem"
-   ],
-   "contentId": "midbrain",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": "midbrain, nsn (not otherwise specified)",
-   "note": "Midbrain tissue not covered by the separately modelled colliculi and cerebral peduncles.",
-   "majorSelect": false
-  },
-  {
-   "id": "cerebral-peduncles",
-   "name": "Cerebral peduncles",
-   "parentId": "midbrain",
-   "kind": "mesh",
-   "hemisphere": "midline",
-   "fma": "FMA62394",
-   "layer": 4,
-   "groups": [
-    "brainstem",
-    "motor"
-   ],
-   "contentId": "cerebral-peduncle",
-   "labelPriority": 2,
-   "synonyms": [
-    "peduncle of midbrain",
-    "crus cerebri (part)"
-   ],
-   "sourceName": null,
-   "note": "Single element covering both peduncles. The substantia nigra lies within this region but is NOT separately segmented in the source asset.",
-   "majorSelect": false
-  },
-  {
-   "id": "cerebral-aqueduct",
-   "name": "Cerebral aqueduct",
-   "parentId": "midbrain",
-   "kind": "mesh",
-   "hemisphere": "midline",
-   "fma": "FMA78467",
-   "layer": 4,
-   "groups": [
-    "ventricular",
-    "brainstem"
-   ],
-   "contentId": "cerebral-aqueduct",
-   "labelPriority": 2,
-   "synonyms": [
-    "aqueduct of Sylvius",
-    "mesencephalic duct"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "pons",
-   "name": "Pons",
-   "parentId": "brainstem",
-   "kind": "mesh",
-   "hemisphere": "midline",
-   "fma": "FMA67943",
-   "layer": 4,
-   "groups": [
-    "brainstem"
-   ],
-   "contentId": "pons",
-   "labelPriority": 1,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "medulla-oblongata",
-   "name": "Medulla oblongata",
-   "parentId": "brainstem",
-   "kind": "mesh",
-   "hemisphere": "midline",
-   "fma": "FMA62004",
-   "layer": 4,
-   "groups": [
-    "brainstem",
-    "autonomic"
-   ],
-   "contentId": "medulla-oblongata",
-   "labelPriority": 1,
-   "synonyms": [
-    "medulla",
-    "myelencephalon"
-   ],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "fourth-ventricle",
-   "name": "Fourth ventricle",
-   "parentId": "brainstem",
-   "kind": "mesh",
-   "hemisphere": "midline",
-   "fma": "FMA78469",
-   "layer": 4,
-   "groups": [
-    "ventricular"
-   ],
-   "contentId": "fourth-ventricle",
-   "labelPriority": 2,
-   "synonyms": [],
-   "sourceName": null,
-   "note": null,
-   "majorSelect": false
-  },
-  {
-   "id": "cerebellum",
-   "name": "Cerebellum",
-   "parentId": "brain",
-   "kind": "mesh",
-   "hemisphere": "bilateral",
-   "fma": "FMA67944",
-   "layer": 5,
-   "groups": [
-    "cerebellum",
-    "motor"
-   ],
-   "contentId": "cerebellum",
-   "labelPriority": 1,
-   "synonyms": [
-    "little brain"
-   ],
-   "sourceName": null,
-   "note": "Single element in the source asset: cerebellar hemispheres and vermis are not separately segmented.",
-   "majorSelect": false
+  "structures": [
+    {
+      "id": "brain",
+      "name": "Brain",
+      "parentId": null,
+      "kind": "group",
+      "hemisphere": "bilateral",
+      "groups": [],
+      "contentId": "brain",
+      "majorSelect": false,
+      "synonyms": [
+        "encephalon"
+      ]
+    },
+    {
+      "id": "cerebrum",
+      "name": "Cerebrum",
+      "parentId": "brain",
+      "kind": "group",
+      "hemisphere": "bilateral",
+      "groups": [],
+      "contentId": "cerebrum",
+      "majorSelect": false,
+      "synonyms": [
+        "telencephalon",
+        "forebrain (part)"
+      ]
+    },
+    {
+      "id": "diencephalon",
+      "name": "Diencephalon",
+      "parentId": "brain",
+      "kind": "group",
+      "hemisphere": "bilateral",
+      "groups": [
+        "diencephalon"
+      ],
+      "contentId": "diencephalon",
+      "majorSelect": false,
+      "synonyms": [
+        "interbrain"
+      ]
+    },
+    {
+      "id": "brainstem",
+      "name": "Brainstem",
+      "parentId": "brain",
+      "kind": "group",
+      "hemisphere": "bilateral",
+      "groups": [
+        "brainstem"
+      ],
+      "contentId": "brainstem",
+      "majorSelect": false,
+      "synonyms": [
+        "brain stem"
+      ]
+    },
+    {
+      "id": "visual-pathway",
+      "name": "Anterior visual pathway",
+      "parentId": "brain",
+      "kind": "group",
+      "hemisphere": "bilateral",
+      "groups": [
+        "visual-pathway"
+      ],
+      "contentId": "visual-pathway",
+      "majorSelect": false,
+      "synonyms": [
+        "optic pathway"
+      ]
+    },
+    {
+      "id": "cerebral-midline",
+      "name": "Midline & commissural structures",
+      "parentId": "cerebrum",
+      "kind": "group",
+      "hemisphere": "bilateral",
+      "groups": [],
+      "contentId": "cerebral-midline",
+      "majorSelect": false,
+      "synonyms": []
+    },
+    {
+      "id": "left-cerebral-hemisphere",
+      "name": "Left cerebral hemisphere",
+      "parentId": "cerebrum",
+      "kind": "group",
+      "hemisphere": "left",
+      "groups": [],
+      "contentId": "cerebral-hemisphere",
+      "majorSelect": false,
+      "synonyms": []
+    },
+    {
+      "id": "left-frontal-lobe",
+      "name": "Left frontal lobe",
+      "parentId": "left-cerebral-hemisphere",
+      "kind": "group",
+      "hemisphere": "left",
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "frontal-lobe",
+      "majorSelect": true,
+      "synonyms": []
+    },
+    {
+      "id": "left-parietal-lobe",
+      "name": "Left parietal lobe",
+      "parentId": "left-cerebral-hemisphere",
+      "kind": "group",
+      "hemisphere": "left",
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "parietal-lobe",
+      "majorSelect": true,
+      "synonyms": []
+    },
+    {
+      "id": "left-temporal-lobe",
+      "name": "Left temporal lobe",
+      "parentId": "left-cerebral-hemisphere",
+      "kind": "group",
+      "hemisphere": "left",
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "temporal-lobe",
+      "majorSelect": true,
+      "synonyms": []
+    },
+    {
+      "id": "left-insular-cortex",
+      "name": "Left insular cortex",
+      "parentId": "left-cerebral-hemisphere",
+      "kind": "group",
+      "hemisphere": "left",
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "insula",
+      "majorSelect": true,
+      "synonyms": [
+        "insula",
+        "island of Reil",
+        "insular lobe"
+      ]
+    },
+    {
+      "id": "left-basal-nuclei",
+      "name": "Left basal nuclei",
+      "parentId": "left-cerebral-hemisphere",
+      "kind": "group",
+      "hemisphere": "left",
+      "groups": [
+        "basal-ganglia"
+      ],
+      "contentId": "basal-nuclei",
+      "majorSelect": false,
+      "synonyms": [
+        "basal ganglia (telencephalic part)",
+        "corpus striatum + globus pallidus"
+      ]
+    },
+    {
+      "id": "left-superior-frontal-gyrus",
+      "name": "Left superior frontal gyrus",
+      "parentId": "left-frontal-lobe",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72654",
+      "layer": 0,
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "superior-frontal-gyrus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-middle-frontal-gyrus",
+      "name": "Left middle frontal gyrus",
+      "parentId": "left-frontal-lobe",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72656",
+      "layer": 0,
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "middle-frontal-gyrus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-precentral-gyrus",
+      "name": "Left precentral gyrus",
+      "parentId": "left-frontal-lobe",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72662",
+      "layer": 0,
+      "groups": [
+        "cortex",
+        "motor"
+      ],
+      "contentId": "precentral-gyrus",
+      "labelPriority": 2,
+      "synonyms": [
+        "primary motor cortex (M1)",
+        "Brodmann area 4"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-postcentral-gyrus",
+      "name": "Left postcentral gyrus",
+      "parentId": "left-parietal-lobe",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72666",
+      "layer": 0,
+      "groups": [
+        "cortex",
+        "sensory"
+      ],
+      "contentId": "postcentral-gyrus",
+      "labelPriority": 2,
+      "synonyms": [
+        "primary somatosensory cortex (S1)"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-supramarginal-gyrus",
+      "name": "Left supramarginal gyrus",
+      "parentId": "left-parietal-lobe",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72668",
+      "layer": 0,
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "supramarginal-gyrus",
+      "labelPriority": 2,
+      "synonyms": [
+        "Brodmann area 40"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-angular-gyrus",
+      "name": "Left angular gyrus",
+      "parentId": "left-parietal-lobe",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72670",
+      "layer": 0,
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "angular-gyrus",
+      "labelPriority": 2,
+      "synonyms": [
+        "Brodmann area 39"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-superior-parietal-lobule-precuneus",
+      "name": "Left superior parietal lobule & precuneus",
+      "parentId": "left-parietal-lobe",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "BP49",
+      "layer": 0,
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "superior-parietal-lobule-precuneus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": "left superior parietal lobule precuneus (BodyParts3D combined element)",
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-superior-temporal-gyrus-anterior",
+      "name": "Left superior temporal gyrus (anterior part)",
+      "parentId": "left-temporal-lobe",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72801",
+      "layer": 0,
+      "groups": [
+        "cortex",
+        "auditory"
+      ],
+      "contentId": "superior-temporal-gyrus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-superior-temporal-gyrus-posterior",
+      "name": "Left superior temporal gyrus (posterior part)",
+      "parentId": "left-temporal-lobe",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72805",
+      "layer": 0,
+      "groups": [
+        "cortex",
+        "auditory",
+        "language"
+      ],
+      "contentId": "superior-temporal-gyrus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-middle-temporal-gyrus",
+      "name": "Left middle temporal gyrus",
+      "parentId": "left-temporal-lobe",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72686",
+      "layer": 0,
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "middle-temporal-gyrus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-inferior-temporal-gyrus",
+      "name": "Left inferior temporal gyrus",
+      "parentId": "left-temporal-lobe",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72688",
+      "layer": 0,
+      "groups": [
+        "cortex",
+        "visual"
+      ],
+      "contentId": "inferior-temporal-gyrus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-fusiform-gyrus",
+      "name": "Left fusiform gyrus",
+      "parentId": "left-temporal-lobe",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72690",
+      "layer": 0,
+      "groups": [
+        "cortex",
+        "visual"
+      ],
+      "contentId": "fusiform-gyrus",
+      "labelPriority": 2,
+      "synonyms": [
+        "occipitotemporal gyrus (lateral)"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-parahippocampal-gyrus",
+      "name": "Left parahippocampal gyrus",
+      "parentId": "left-temporal-lobe",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72706",
+      "layer": 1,
+      "groups": [
+        "cortex",
+        "limbic",
+        "memory"
+      ],
+      "contentId": "parahippocampal-gyrus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-occipital-lobe",
+      "name": "Left occipital lobe",
+      "parentId": "left-cerebral-hemisphere",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72976",
+      "layer": 0,
+      "groups": [
+        "cortex",
+        "visual"
+      ],
+      "contentId": "occipital-lobe",
+      "labelPriority": 1,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-insula",
+      "name": "Left insula (main gyri)",
+      "parentId": "left-insular-cortex",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72978",
+      "layer": 1,
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "insula",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-accessory-short-gyrus",
+      "name": "Left accessory short gyrus of insula",
+      "parentId": "left-insular-cortex",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72702",
+      "layer": 1,
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "insula",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-cingulate-gyrus",
+      "name": "Left cingulate gyrus",
+      "parentId": "left-cerebral-hemisphere",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72718",
+      "layer": 1,
+      "groups": [
+        "cortex",
+        "limbic"
+      ],
+      "contentId": "cingulate-gyrus",
+      "labelPriority": 1,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-hippocampus",
+      "name": "Left hippocampus",
+      "parentId": "left-cerebral-hemisphere",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72714",
+      "layer": 2,
+      "groups": [
+        "limbic",
+        "memory"
+      ],
+      "contentId": "hippocampus",
+      "labelPriority": 1,
+      "synonyms": [
+        "hippocampal formation (part)",
+        "cornu Ammonis"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-amygdala",
+      "name": "Left amygdala",
+      "parentId": "left-cerebral-hemisphere",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72833",
+      "layer": 2,
+      "groups": [
+        "limbic",
+        "emotion"
+      ],
+      "contentId": "amygdala",
+      "labelPriority": 1,
+      "synonyms": [
+        "amygdaloid body",
+        "amygdaloid complex"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-caudate-nucleus",
+      "name": "Left caudate nucleus",
+      "parentId": "left-basal-nuclei",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72827",
+      "layer": 2,
+      "groups": [
+        "basal-ganglia",
+        "motor"
+      ],
+      "contentId": "caudate-nucleus",
+      "labelPriority": 1,
+      "synonyms": [
+        "caudate"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-putamen",
+      "name": "Left putamen",
+      "parentId": "left-basal-nuclei",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72829",
+      "layer": 2,
+      "groups": [
+        "basal-ganglia",
+        "motor"
+      ],
+      "contentId": "putamen",
+      "labelPriority": 1,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-globus-pallidus",
+      "name": "Left globus pallidus",
+      "parentId": "left-basal-nuclei",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72831",
+      "layer": 2,
+      "groups": [
+        "basal-ganglia",
+        "motor"
+      ],
+      "contentId": "globus-pallidus",
+      "labelPriority": 1,
+      "synonyms": [
+        "pallidum",
+        "paleostriatum"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-fornix",
+      "name": "Left fornix",
+      "parentId": "left-cerebral-hemisphere",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72925",
+      "layer": 2,
+      "groups": [
+        "limbic",
+        "white-matter",
+        "memory"
+      ],
+      "contentId": "fornix",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-internal-capsule-anterior-limb",
+      "name": "Left internal capsule (anterior limb)",
+      "parentId": "left-cerebral-hemisphere",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA72909",
+      "layer": 2,
+      "groups": [
+        "white-matter"
+      ],
+      "contentId": "internal-capsule",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-lateral-ventricle",
+      "name": "Left lateral ventricle",
+      "parentId": "left-cerebral-hemisphere",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA78450",
+      "layer": 2,
+      "groups": [
+        "ventricular"
+      ],
+      "contentId": "lateral-ventricle",
+      "labelPriority": 1,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-choroid-plexus",
+      "name": "Left choroid plexus (lateral ventricle)",
+      "parentId": "left-cerebral-hemisphere",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA274029",
+      "layer": 2,
+      "groups": [
+        "ventricular"
+      ],
+      "contentId": "choroid-plexus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-thalamus",
+      "name": "Left thalamus",
+      "parentId": "diencephalon",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA258716",
+      "layer": 3,
+      "groups": [
+        "diencephalon",
+        "sensory"
+      ],
+      "contentId": "thalamus",
+      "labelPriority": 1,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-lateral-geniculate-body",
+      "name": "Left lateral geniculate body",
+      "parentId": "diencephalon",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA73304",
+      "layer": 3,
+      "groups": [
+        "diencephalon",
+        "visual",
+        "visual-pathway"
+      ],
+      "contentId": "lateral-geniculate-body",
+      "labelPriority": 2,
+      "synonyms": [
+        "lateral geniculate nucleus (LGN)"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-medial-geniculate-body",
+      "name": "Left medial geniculate body",
+      "parentId": "diencephalon",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA73310",
+      "layer": 3,
+      "groups": [
+        "diencephalon",
+        "auditory"
+      ],
+      "contentId": "medial-geniculate-body",
+      "labelPriority": 2,
+      "synonyms": [
+        "medial geniculate nucleus (MGN)"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-superior-colliculus",
+      "name": "Left superior colliculus",
+      "parentId": "midbrain",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA73423",
+      "layer": 4,
+      "groups": [
+        "brainstem",
+        "visual"
+      ],
+      "contentId": "superior-colliculus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-inferior-colliculus",
+      "name": "Left inferior colliculus",
+      "parentId": "midbrain",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA73435",
+      "layer": 4,
+      "groups": [
+        "brainstem",
+        "auditory"
+      ],
+      "contentId": "inferior-colliculus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-optic-nerve",
+      "name": "Left optic nerve (CN II)",
+      "parentId": "visual-pathway",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA50878",
+      "layer": 3,
+      "groups": [
+        "visual-pathway",
+        "cranial-nerve",
+        "visual"
+      ],
+      "contentId": "optic-nerve",
+      "labelPriority": 2,
+      "synonyms": [
+        "cranial nerve II",
+        "CN II"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "left-optic-tract",
+      "name": "Left optic tract",
+      "parentId": "visual-pathway",
+      "kind": "mesh",
+      "hemisphere": "left",
+      "fma": "FMA67936",
+      "layer": 3,
+      "groups": [
+        "visual-pathway",
+        "visual"
+      ],
+      "contentId": "optic-tract",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-cerebral-hemisphere",
+      "name": "Right cerebral hemisphere",
+      "parentId": "cerebrum",
+      "kind": "group",
+      "hemisphere": "right",
+      "groups": [],
+      "contentId": "cerebral-hemisphere",
+      "majorSelect": false,
+      "synonyms": []
+    },
+    {
+      "id": "right-frontal-lobe",
+      "name": "Right frontal lobe",
+      "parentId": "right-cerebral-hemisphere",
+      "kind": "group",
+      "hemisphere": "right",
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "frontal-lobe",
+      "majorSelect": true,
+      "synonyms": []
+    },
+    {
+      "id": "right-parietal-lobe",
+      "name": "Right parietal lobe",
+      "parentId": "right-cerebral-hemisphere",
+      "kind": "group",
+      "hemisphere": "right",
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "parietal-lobe",
+      "majorSelect": true,
+      "synonyms": []
+    },
+    {
+      "id": "right-temporal-lobe",
+      "name": "Right temporal lobe",
+      "parentId": "right-cerebral-hemisphere",
+      "kind": "group",
+      "hemisphere": "right",
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "temporal-lobe",
+      "majorSelect": true,
+      "synonyms": []
+    },
+    {
+      "id": "right-insular-cortex",
+      "name": "Right insular cortex",
+      "parentId": "right-cerebral-hemisphere",
+      "kind": "group",
+      "hemisphere": "right",
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "insula",
+      "majorSelect": true,
+      "synonyms": [
+        "insula",
+        "island of Reil",
+        "insular lobe"
+      ]
+    },
+    {
+      "id": "right-basal-nuclei",
+      "name": "Right basal nuclei",
+      "parentId": "right-cerebral-hemisphere",
+      "kind": "group",
+      "hemisphere": "right",
+      "groups": [
+        "basal-ganglia"
+      ],
+      "contentId": "basal-nuclei",
+      "majorSelect": false,
+      "synonyms": [
+        "basal ganglia (telencephalic part)",
+        "corpus striatum + globus pallidus"
+      ]
+    },
+    {
+      "id": "right-superior-frontal-gyrus",
+      "name": "Right superior frontal gyrus",
+      "parentId": "right-frontal-lobe",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72653",
+      "layer": 0,
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "superior-frontal-gyrus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-middle-frontal-gyrus",
+      "name": "Right middle frontal gyrus",
+      "parentId": "right-frontal-lobe",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72655",
+      "layer": 0,
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "middle-frontal-gyrus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-precentral-gyrus",
+      "name": "Right precentral gyrus",
+      "parentId": "right-frontal-lobe",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72661",
+      "layer": 0,
+      "groups": [
+        "cortex",
+        "motor"
+      ],
+      "contentId": "precentral-gyrus",
+      "labelPriority": 2,
+      "synonyms": [
+        "primary motor cortex (M1)",
+        "Brodmann area 4"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-postcentral-gyrus",
+      "name": "Right postcentral gyrus",
+      "parentId": "right-parietal-lobe",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72665",
+      "layer": 0,
+      "groups": [
+        "cortex",
+        "sensory"
+      ],
+      "contentId": "postcentral-gyrus",
+      "labelPriority": 2,
+      "synonyms": [
+        "primary somatosensory cortex (S1)"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-supramarginal-gyrus",
+      "name": "Right supramarginal gyrus",
+      "parentId": "right-parietal-lobe",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72667",
+      "layer": 0,
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "supramarginal-gyrus",
+      "labelPriority": 2,
+      "synonyms": [
+        "Brodmann area 40"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-angular-gyrus",
+      "name": "Right angular gyrus",
+      "parentId": "right-parietal-lobe",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72669",
+      "layer": 0,
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "angular-gyrus",
+      "labelPriority": 2,
+      "synonyms": [
+        "Brodmann area 39"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-superior-parietal-lobule-precuneus",
+      "name": "Right superior parietal lobule & precuneus",
+      "parentId": "right-parietal-lobe",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "BP50",
+      "layer": 0,
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "superior-parietal-lobule-precuneus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": "right superior parietal lobule precuneus (BodyParts3D combined element)",
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-superior-temporal-gyrus-anterior",
+      "name": "Right superior temporal gyrus (anterior part)",
+      "parentId": "right-temporal-lobe",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72800",
+      "layer": 0,
+      "groups": [
+        "cortex",
+        "auditory"
+      ],
+      "contentId": "superior-temporal-gyrus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-superior-temporal-gyrus-posterior",
+      "name": "Right superior temporal gyrus (posterior part)",
+      "parentId": "right-temporal-lobe",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72804",
+      "layer": 0,
+      "groups": [
+        "cortex",
+        "auditory",
+        "language"
+      ],
+      "contentId": "superior-temporal-gyrus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-middle-temporal-gyrus",
+      "name": "Right middle temporal gyrus",
+      "parentId": "right-temporal-lobe",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72685",
+      "layer": 0,
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "middle-temporal-gyrus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-inferior-temporal-gyrus",
+      "name": "Right inferior temporal gyrus",
+      "parentId": "right-temporal-lobe",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72687",
+      "layer": 0,
+      "groups": [
+        "cortex",
+        "visual"
+      ],
+      "contentId": "inferior-temporal-gyrus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-fusiform-gyrus",
+      "name": "Right fusiform gyrus",
+      "parentId": "right-temporal-lobe",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72689",
+      "layer": 0,
+      "groups": [
+        "cortex",
+        "visual"
+      ],
+      "contentId": "fusiform-gyrus",
+      "labelPriority": 2,
+      "synonyms": [
+        "occipitotemporal gyrus (lateral)"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-parahippocampal-gyrus",
+      "name": "Right parahippocampal gyrus",
+      "parentId": "right-temporal-lobe",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72705",
+      "layer": 1,
+      "groups": [
+        "cortex",
+        "limbic",
+        "memory"
+      ],
+      "contentId": "parahippocampal-gyrus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-occipital-lobe",
+      "name": "Right occipital lobe",
+      "parentId": "right-cerebral-hemisphere",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72975",
+      "layer": 0,
+      "groups": [
+        "cortex",
+        "visual"
+      ],
+      "contentId": "occipital-lobe",
+      "labelPriority": 1,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-insula",
+      "name": "Right insula (main gyri)",
+      "parentId": "right-insular-cortex",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72977",
+      "layer": 1,
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "insula",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-accessory-short-gyrus",
+      "name": "Right accessory short gyrus of insula",
+      "parentId": "right-insular-cortex",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72701",
+      "layer": 1,
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "insula",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-cingulate-gyrus",
+      "name": "Right cingulate gyrus",
+      "parentId": "right-cerebral-hemisphere",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72717",
+      "layer": 1,
+      "groups": [
+        "cortex",
+        "limbic"
+      ],
+      "contentId": "cingulate-gyrus",
+      "labelPriority": 1,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-hippocampus",
+      "name": "Right hippocampus",
+      "parentId": "right-cerebral-hemisphere",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72713",
+      "layer": 2,
+      "groups": [
+        "limbic",
+        "memory"
+      ],
+      "contentId": "hippocampus",
+      "labelPriority": 1,
+      "synonyms": [
+        "hippocampal formation (part)",
+        "cornu Ammonis"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-amygdala",
+      "name": "Right amygdala",
+      "parentId": "right-cerebral-hemisphere",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72832",
+      "layer": 2,
+      "groups": [
+        "limbic",
+        "emotion"
+      ],
+      "contentId": "amygdala",
+      "labelPriority": 1,
+      "synonyms": [
+        "amygdaloid body",
+        "amygdaloid complex"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-caudate-nucleus",
+      "name": "Right caudate nucleus",
+      "parentId": "right-basal-nuclei",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72826",
+      "layer": 2,
+      "groups": [
+        "basal-ganglia",
+        "motor"
+      ],
+      "contentId": "caudate-nucleus",
+      "labelPriority": 1,
+      "synonyms": [
+        "caudate"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-putamen",
+      "name": "Right putamen",
+      "parentId": "right-basal-nuclei",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72828",
+      "layer": 2,
+      "groups": [
+        "basal-ganglia",
+        "motor"
+      ],
+      "contentId": "putamen",
+      "labelPriority": 1,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-globus-pallidus",
+      "name": "Right globus pallidus",
+      "parentId": "right-basal-nuclei",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72830",
+      "layer": 2,
+      "groups": [
+        "basal-ganglia",
+        "motor"
+      ],
+      "contentId": "globus-pallidus",
+      "labelPriority": 1,
+      "synonyms": [
+        "pallidum",
+        "paleostriatum"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-fornix",
+      "name": "Right fornix",
+      "parentId": "right-cerebral-hemisphere",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72924",
+      "layer": 2,
+      "groups": [
+        "limbic",
+        "white-matter",
+        "memory"
+      ],
+      "contentId": "fornix",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-internal-capsule-anterior-limb",
+      "name": "Right internal capsule (anterior limb)",
+      "parentId": "right-cerebral-hemisphere",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA72908",
+      "layer": 2,
+      "groups": [
+        "white-matter"
+      ],
+      "contentId": "internal-capsule",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-lateral-ventricle",
+      "name": "Right lateral ventricle",
+      "parentId": "right-cerebral-hemisphere",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA78449",
+      "layer": 2,
+      "groups": [
+        "ventricular"
+      ],
+      "contentId": "lateral-ventricle",
+      "labelPriority": 1,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-choroid-plexus",
+      "name": "Right choroid plexus (lateral ventricle)",
+      "parentId": "right-cerebral-hemisphere",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA274027",
+      "layer": 2,
+      "groups": [
+        "ventricular"
+      ],
+      "contentId": "choroid-plexus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-thalamus",
+      "name": "Right thalamus",
+      "parentId": "diencephalon",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA258714",
+      "layer": 3,
+      "groups": [
+        "diencephalon",
+        "sensory"
+      ],
+      "contentId": "thalamus",
+      "labelPriority": 1,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-lateral-geniculate-body",
+      "name": "Right lateral geniculate body",
+      "parentId": "diencephalon",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA73303",
+      "layer": 3,
+      "groups": [
+        "diencephalon",
+        "visual",
+        "visual-pathway"
+      ],
+      "contentId": "lateral-geniculate-body",
+      "labelPriority": 2,
+      "synonyms": [
+        "lateral geniculate nucleus (LGN)"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-medial-geniculate-body",
+      "name": "Right medial geniculate body",
+      "parentId": "diencephalon",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA73309",
+      "layer": 3,
+      "groups": [
+        "diencephalon",
+        "auditory"
+      ],
+      "contentId": "medial-geniculate-body",
+      "labelPriority": 2,
+      "synonyms": [
+        "medial geniculate nucleus (MGN)"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-superior-colliculus",
+      "name": "Right superior colliculus",
+      "parentId": "midbrain",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA73422",
+      "layer": 4,
+      "groups": [
+        "brainstem",
+        "visual"
+      ],
+      "contentId": "superior-colliculus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-inferior-colliculus",
+      "name": "Right inferior colliculus",
+      "parentId": "midbrain",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA73434",
+      "layer": 4,
+      "groups": [
+        "brainstem",
+        "auditory"
+      ],
+      "contentId": "inferior-colliculus",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-optic-nerve",
+      "name": "Right optic nerve (CN II)",
+      "parentId": "visual-pathway",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA50875",
+      "layer": 3,
+      "groups": [
+        "visual-pathway",
+        "cranial-nerve",
+        "visual"
+      ],
+      "contentId": "optic-nerve",
+      "labelPriority": 2,
+      "synonyms": [
+        "cranial nerve II",
+        "CN II"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "right-optic-tract",
+      "name": "Right optic tract",
+      "parentId": "visual-pathway",
+      "kind": "mesh",
+      "hemisphere": "right",
+      "fma": "FMA62382",
+      "layer": 3,
+      "groups": [
+        "visual-pathway",
+        "visual"
+      ],
+      "contentId": "optic-tract",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "orbital-and-straight-gyri",
+      "name": "Orbital & straight gyri (both hemispheres)",
+      "parentId": "cerebrum",
+      "kind": "mesh",
+      "hemisphere": "bilateral",
+      "fma": "BP51",
+      "layer": 0,
+      "groups": [
+        "cortex"
+      ],
+      "contentId": "orbital-and-straight-gyri",
+      "labelPriority": 1,
+      "synonyms": [
+        "orbitofrontal cortex (part)",
+        "gyrus rectus"
+      ],
+      "sourceName": "orbital gyri straight gyrus (BodyParts3D combined bilateral element)",
+      "note": "Single bilateral element in the source asset; not split by hemisphere.",
+      "majorSelect": false
+    },
+    {
+      "id": "cerebral-white-matter",
+      "name": "Cerebral white matter",
+      "parentId": "cerebral-midline",
+      "kind": "mesh",
+      "hemisphere": "bilateral",
+      "fma": "FMA61822",
+      "layer": 1,
+      "groups": [
+        "white-matter"
+      ],
+      "contentId": "cerebral-white-matter",
+      "labelPriority": 3,
+      "synonyms": [
+        "white matter of cerebral hemisphere",
+        "centrum semiovale (part)"
+      ],
+      "sourceName": null,
+      "note": "Single bilateral surface in the source asset; it is a coarse envelope, not a tractography model.",
+      "majorSelect": false
+    },
+    {
+      "id": "corpus-callosum",
+      "name": "Corpus callosum",
+      "parentId": "cerebral-midline",
+      "kind": "mesh",
+      "hemisphere": "midline",
+      "fma": "FMA86464",
+      "layer": 1,
+      "groups": [
+        "white-matter",
+        "commissural"
+      ],
+      "contentId": "corpus-callosum",
+      "labelPriority": 1,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "commissure-of-fornix",
+      "name": "Commissure of fornix",
+      "parentId": "cerebral-midline",
+      "kind": "mesh",
+      "hemisphere": "midline",
+      "fma": "FMA61970",
+      "layer": 2,
+      "groups": [
+        "limbic",
+        "white-matter",
+        "commissural"
+      ],
+      "contentId": "fornix",
+      "labelPriority": 2,
+      "synonyms": [
+        "hippocampal commissure",
+        "psalterium"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "septum-pellucidum",
+      "name": "Septum pellucidum",
+      "parentId": "cerebral-midline",
+      "kind": "mesh",
+      "hemisphere": "midline",
+      "fma": "FMA61844",
+      "layer": 2,
+      "groups": [
+        "ventricular"
+      ],
+      "contentId": "septum-pellucidum",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "hypothalamus",
+      "name": "Hypothalamus",
+      "parentId": "diencephalon",
+      "kind": "group",
+      "hemisphere": "midline",
+      "groups": [
+        "diencephalon",
+        "autonomic"
+      ],
+      "contentId": "hypothalamus",
+      "majorSelect": true,
+      "synonyms": []
+    },
+    {
+      "id": "hypothalamus-other",
+      "name": "Hypothalamus (remaining parts)",
+      "parentId": "hypothalamus",
+      "kind": "mesh",
+      "hemisphere": "midline",
+      "fma": "FMA62008nsn",
+      "layer": 3,
+      "groups": [
+        "diencephalon",
+        "autonomic"
+      ],
+      "contentId": "hypothalamus",
+      "labelPriority": 1,
+      "synonyms": [],
+      "sourceName": "hypothalamus, nsn (not otherwise specified)",
+      "note": "BodyParts3D element for hypothalamic tissue other than the separately modelled mammillary body and tuber cinereum.",
+      "majorSelect": false
+    },
+    {
+      "id": "mammillary-body",
+      "name": "Mammillary bodies",
+      "parentId": "hypothalamus",
+      "kind": "mesh",
+      "hemisphere": "midline",
+      "fma": "FMA74877",
+      "layer": 3,
+      "groups": [
+        "diencephalon",
+        "memory",
+        "limbic"
+      ],
+      "contentId": "mammillary-body",
+      "labelPriority": 2,
+      "synonyms": [
+        "corpora mammillaria"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "tuber-cinereum",
+      "name": "Tuber cinereum",
+      "parentId": "hypothalamus",
+      "kind": "mesh",
+      "hemisphere": "midline",
+      "fma": "FMA62327",
+      "layer": 3,
+      "groups": [
+        "diencephalon",
+        "autonomic"
+      ],
+      "contentId": "tuber-cinereum",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "pituitary-gland",
+      "name": "Pituitary gland",
+      "parentId": "diencephalon",
+      "kind": "mesh",
+      "hemisphere": "midline",
+      "fma": "FMA13889",
+      "layer": 3,
+      "groups": [
+        "endocrine"
+      ],
+      "contentId": "pituitary-gland",
+      "labelPriority": 1,
+      "synonyms": [
+        "hypophysis"
+      ],
+      "sourceName": null,
+      "note": "Endocrine gland suspended from the hypothalamus by the infundibulum; grouped here for navigation.",
+      "majorSelect": false
+    },
+    {
+      "id": "epithalamus",
+      "name": "Epithalamus",
+      "parentId": "diencephalon",
+      "kind": "group",
+      "hemisphere": "midline",
+      "groups": [
+        "diencephalon"
+      ],
+      "contentId": "epithalamus",
+      "majorSelect": true,
+      "synonyms": []
+    },
+    {
+      "id": "pineal-gland",
+      "name": "Pineal gland",
+      "parentId": "epithalamus",
+      "kind": "mesh",
+      "hemisphere": "midline",
+      "fma": "FMA62033",
+      "layer": 3,
+      "groups": [
+        "diencephalon",
+        "endocrine"
+      ],
+      "contentId": "pineal-gland",
+      "labelPriority": 1,
+      "synonyms": [
+        "pineal body",
+        "epiphysis cerebri"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "habenula",
+      "name": "Habenula",
+      "parentId": "epithalamus",
+      "kind": "mesh",
+      "hemisphere": "midline",
+      "fma": "FMA62032",
+      "layer": 3,
+      "groups": [
+        "diencephalon"
+      ],
+      "contentId": "habenula",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": "Modelled as a single midline element in the source asset.",
+      "majorSelect": false
+    },
+    {
+      "id": "third-ventricle",
+      "name": "Third ventricle",
+      "parentId": "diencephalon",
+      "kind": "mesh",
+      "hemisphere": "midline",
+      "fma": "FMA78454",
+      "layer": 3,
+      "groups": [
+        "ventricular"
+      ],
+      "contentId": "third-ventricle",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "optic-chiasm",
+      "name": "Optic chiasm",
+      "parentId": "visual-pathway",
+      "kind": "mesh",
+      "hemisphere": "midline",
+      "fma": "FMA62045",
+      "layer": 3,
+      "groups": [
+        "visual-pathway",
+        "visual"
+      ],
+      "contentId": "optic-chiasm",
+      "labelPriority": 1,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "midbrain",
+      "name": "Midbrain",
+      "parentId": "brainstem",
+      "kind": "group",
+      "hemisphere": "midline",
+      "groups": [
+        "brainstem"
+      ],
+      "contentId": "midbrain",
+      "majorSelect": true,
+      "synonyms": [
+        "mesencephalon"
+      ]
+    },
+    {
+      "id": "midbrain-other",
+      "name": "Midbrain (remaining parts)",
+      "parentId": "midbrain",
+      "kind": "mesh",
+      "hemisphere": "midline",
+      "fma": "FMA61993nsn",
+      "layer": 4,
+      "groups": [
+        "brainstem"
+      ],
+      "contentId": "midbrain",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": "midbrain, nsn (not otherwise specified)",
+      "note": "Midbrain tissue not covered by the separately modelled colliculi and cerebral peduncles.",
+      "majorSelect": false
+    },
+    {
+      "id": "cerebral-peduncles",
+      "name": "Cerebral peduncles",
+      "parentId": "midbrain",
+      "kind": "mesh",
+      "hemisphere": "midline",
+      "fma": "FMA62394",
+      "layer": 4,
+      "groups": [
+        "brainstem",
+        "motor"
+      ],
+      "contentId": "cerebral-peduncle",
+      "labelPriority": 2,
+      "synonyms": [
+        "peduncle of midbrain",
+        "crus cerebri (part)"
+      ],
+      "sourceName": null,
+      "note": "Single element covering both peduncles. The substantia nigra lies within this region but is NOT separately segmented in the source asset.",
+      "majorSelect": false
+    },
+    {
+      "id": "cerebral-aqueduct",
+      "name": "Cerebral aqueduct",
+      "parentId": "midbrain",
+      "kind": "mesh",
+      "hemisphere": "midline",
+      "fma": "FMA78467",
+      "layer": 4,
+      "groups": [
+        "ventricular",
+        "brainstem"
+      ],
+      "contentId": "cerebral-aqueduct",
+      "labelPriority": 2,
+      "synonyms": [
+        "aqueduct of Sylvius",
+        "mesencephalic duct"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "pons",
+      "name": "Pons",
+      "parentId": "brainstem",
+      "kind": "mesh",
+      "hemisphere": "midline",
+      "fma": "FMA67943",
+      "layer": 4,
+      "groups": [
+        "brainstem"
+      ],
+      "contentId": "pons",
+      "labelPriority": 1,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "medulla-oblongata",
+      "name": "Medulla oblongata",
+      "parentId": "brainstem",
+      "kind": "mesh",
+      "hemisphere": "midline",
+      "fma": "FMA62004",
+      "layer": 4,
+      "groups": [
+        "brainstem",
+        "autonomic"
+      ],
+      "contentId": "medulla-oblongata",
+      "labelPriority": 1,
+      "synonyms": [
+        "medulla",
+        "myelencephalon"
+      ],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "fourth-ventricle",
+      "name": "Fourth ventricle",
+      "parentId": "brainstem",
+      "kind": "mesh",
+      "hemisphere": "midline",
+      "fma": "FMA78469",
+      "layer": 4,
+      "groups": [
+        "ventricular"
+      ],
+      "contentId": "fourth-ventricle",
+      "labelPriority": 2,
+      "synonyms": [],
+      "sourceName": null,
+      "note": null,
+      "majorSelect": false
+    },
+    {
+      "id": "cerebellum",
+      "name": "Cerebellum",
+      "parentId": "brain",
+      "kind": "mesh",
+      "hemisphere": "bilateral",
+      "fma": "FMA67944",
+      "layer": 5,
+      "groups": [
+        "cerebellum",
+        "motor"
+      ],
+      "contentId": "cerebellum",
+      "labelPriority": 1,
+      "synonyms": [
+        "little brain"
+      ],
+      "sourceName": null,
+      "note": "Single element in the source asset: cerebellar hemispheres and vermis are not separately segmented.",
+      "majorSelect": false
+    }
+  ],
+  "unavailable": [
+    {
+      "id": "left-cerebellar-hemisphere",
+      "name": "Left cerebellar hemisphere",
+      "parentId": "cerebellum",
+      "reason": "BodyParts3D 3.0 models the cerebellum as one element.",
+      "requiredAsset": "A cerebellar parcellation (e.g. SUIT atlas lobules) converted to surface meshes."
+    },
+    {
+      "id": "right-cerebellar-hemisphere",
+      "name": "Right cerebellar hemisphere",
+      "parentId": "cerebellum",
+      "reason": "BodyParts3D 3.0 models the cerebellum as one element.",
+      "requiredAsset": "A cerebellar parcellation (e.g. SUIT atlas lobules) converted to surface meshes."
+    },
+    {
+      "id": "cerebellar-vermis",
+      "name": "Cerebellar vermis",
+      "parentId": "cerebellum",
+      "reason": "BodyParts3D 3.0 models the cerebellum as one element.",
+      "requiredAsset": "A cerebellar parcellation separating vermis from hemispheres."
+    },
+    {
+      "id": "inferior-frontal-gyrus",
+      "name": "Inferior frontal gyrus (incl. Broca's area)",
+      "parentId": "cerebrum",
+      "reason": "Not present as an element in BodyParts3D 3.0; the frontal lobe groups contain only superior, middle and precentral gyri plus the bilateral orbital/straight gyri element.",
+      "requiredAsset": "A cortical parcellation including the pars opercularis/triangularis/orbitalis (e.g. Desikan-Killiany surfaces)."
+    },
+    {
+      "id": "substantia-nigra",
+      "name": "Substantia nigra",
+      "parentId": "midbrain",
+      "reason": "Lies within the cerebral peduncle element; not separately segmented.",
+      "requiredAsset": "A high-resolution midbrain atlas (e.g. CIT168 subcortical atlas) converted to meshes."
+    },
+    {
+      "id": "nucleus-accumbens",
+      "name": "Nucleus accumbens",
+      "parentId": "cerebrum",
+      "reason": "Not present as an element in BodyParts3D 3.0.",
+      "requiredAsset": "A subcortical atlas with ventral striatum labels (e.g. CIT168 or Harvard-Oxford subcortical)."
+    },
+    {
+      "id": "medial-occipital-subdivisions",
+      "name": "Cuneus / lingual gyrus / calcarine cortex",
+      "parentId": "cerebrum",
+      "reason": "BodyParts3D provides each occipital lobe as a single element.",
+      "requiredAsset": "A cortical parcellation with medial occipital labels."
+    },
+    {
+      "id": "cranial-nerves-iii-xii",
+      "name": "Cranial nerves III\u2013XII",
+      "parentId": "brainstem",
+      "reason": "Only the optic nerve (CN II) was integrated; other cranial-nerve elements were not part of this build.",
+      "requiredAsset": "BodyParts3D cranial nerve elements or a dedicated cranial-nerve model, re-registered to the brain."
+    },
+    {
+      "id": "major-white-matter-tracts",
+      "name": "Major white-matter tracts (tractography)",
+      "parentId": "cerebrum",
+      "reason": "Only a coarse white-matter envelope, corpus callosum, fornix and anterior limb of internal capsule exist in the asset.",
+      "requiredAsset": "A tractography atlas (e.g. HCP-842) converted to streamline or tube meshes."
+    }
+  ],
+  "coordinateSystem": {
+    "x": "patient left",
+    "y": "superior",
+    "z": "anterior",
+    "units": "decimetres (source mm \u00d7 0.01)"
   }
- ],
- "unavailable": [
-  {
-   "id": "left-cerebellar-hemisphere",
-   "name": "Left cerebellar hemisphere",
-   "parentId": "cerebellum",
-   "reason": "BodyParts3D 3.0 models the cerebellum as one element.",
-   "requiredAsset": "A cerebellar parcellation (e.g. SUIT atlas lobules) converted to surface meshes."
-  },
-  {
-   "id": "right-cerebellar-hemisphere",
-   "name": "Right cerebellar hemisphere",
-   "parentId": "cerebellum",
-   "reason": "BodyParts3D 3.0 models the cerebellum as one element.",
-   "requiredAsset": "A cerebellar parcellation (e.g. SUIT atlas lobules) converted to surface meshes."
-  },
-  {
-   "id": "cerebellar-vermis",
-   "name": "Cerebellar vermis",
-   "parentId": "cerebellum",
-   "reason": "BodyParts3D 3.0 models the cerebellum as one element.",
-   "requiredAsset": "A cerebellar parcellation separating vermis from hemispheres."
-  },
-  {
-   "id": "inferior-frontal-gyrus",
-   "name": "Inferior frontal gyrus (incl. Broca's area)",
-   "parentId": "cerebrum",
-   "reason": "Not present as an element in BodyParts3D 3.0; the frontal lobe groups contain only superior, middle and precentral gyri plus the bilateral orbital/straight gyri element.",
-   "requiredAsset": "A cortical parcellation including the pars opercularis/triangularis/orbitalis (e.g. Desikan-Killiany surfaces)."
-  },
-  {
-   "id": "substantia-nigra",
-   "name": "Substantia nigra",
-   "parentId": "midbrain",
-   "reason": "Lies within the cerebral peduncle element; not separately segmented.",
-   "requiredAsset": "A high-resolution midbrain atlas (e.g. CIT168 subcortical atlas) converted to meshes."
-  },
-  {
-   "id": "nucleus-accumbens",
-   "name": "Nucleus accumbens",
-   "parentId": "cerebrum",
-   "reason": "Not present as an element in BodyParts3D 3.0.",
-   "requiredAsset": "A subcortical atlas with ventral striatum labels (e.g. CIT168 or Harvard-Oxford subcortical)."
-  },
-  {
-   "id": "medial-occipital-subdivisions",
-   "name": "Cuneus / lingual gyrus / calcarine cortex",
-   "parentId": "cerebrum",
-   "reason": "BodyParts3D provides each occipital lobe as a single element.",
-   "requiredAsset": "A cortical parcellation with medial occipital labels."
-  },
-  {
-   "id": "cranial-nerves-iii-xii",
-   "name": "Cranial nerves III\u2013XII",
-   "parentId": "brainstem",
-   "reason": "Only the optic nerve (CN II) was integrated; other cranial-nerve elements were not part of this build.",
-   "requiredAsset": "BodyParts3D cranial nerve elements or a dedicated cranial-nerve model, re-registered to the brain."
-  },
-  {
-   "id": "major-white-matter-tracts",
-   "name": "Major white-matter tracts (tractography)",
-   "parentId": "cerebrum",
-   "reason": "Only a coarse white-matter envelope, corpus callosum, fornix and anterior limb of internal capsule exist in the asset.",
-   "requiredAsset": "A tractography atlas (e.g. HCP-842) converted to streamline or tube meshes."
-  }
- ],
- "coordinateSystem": {
-  "x": "patient left",
-  "y": "superior",
-  "z": "anterior",
-  "units": "decimetres (source mm \u00d7 0.01)"
- }
 }

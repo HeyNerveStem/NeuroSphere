@@ -1,6 +1,22 @@
 import {
-  Camera, ChevronsLeftRight, Expand, Lock, Maximize, Minimize2, Move3d, Pause, Play, Redo2, RefreshCcw, Repeat,
-  Rotate3d, RotateCcw, SkipBack, SkipForward, Undo2, Magnet,
+  Camera,
+  ChevronsLeftRight,
+  Expand,
+  Lock,
+  Maximize,
+  Minimize2,
+  Move3d,
+  Pause,
+  Play,
+  Redo2,
+  RefreshCcw,
+  Repeat,
+  Rotate3d,
+  RotateCcw,
+  SkipBack,
+  SkipForward,
+  Undo2,
+  Magnet,
 } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { LAYER_NAMES } from '@/lib/explode'
@@ -65,8 +81,14 @@ export function GuidedCaption() {
   }, [mode, phase]) // eslint-disable-line react-hooks/exhaustive-deps
   if (mode !== 'guided' || progress === 0) return null
   return (
-    <div className="glass absolute bottom-3 left-1/2 z-10 w-[min(36rem,92%)] -translate-x-1/2 rounded-xl p-3 text-sm" role="status" aria-live="polite">
-      <p className="text-xs font-semibold uppercase tracking-wide text-[var(--accent)]">Layer {phase + 1} of 6 · {LAYER_NAMES[phase]}</p>
+    <div
+      className="glass absolute bottom-3 left-1/2 z-10 w-[min(36rem,92%)] -translate-x-1/2 rounded-xl p-3 text-sm"
+      role="status"
+      aria-live="polite"
+    >
+      <p className="text-xs font-semibold uppercase tracking-wide text-[var(--accent)]">
+        Layer {phase + 1} of 6 · {LAYER_NAMES[phase]}
+      </p>
       <p className="mt-1 leading-snug">{GUIDED_TEXT[phase]}</p>
     </div>
   )
@@ -89,7 +111,11 @@ export function Toolbar({ fullscreenTarget }: { fullscreenTarget?: () => HTMLEle
   const selectedLocked = v.selectedId ? meshesOf(v.selectedId).every((m) => v.locked[m]) : false
 
   return (
-    <div className="glass flex flex-col gap-2 rounded-xl p-2 text-xs" role="toolbar" aria-label="Disassembly and animation controls">
+    <div
+      className="glass flex flex-col gap-2 rounded-xl p-2 text-xs"
+      role="toolbar"
+      aria-label="Disassembly and animation controls"
+    >
       <div className="flex flex-wrap items-center gap-1.5">
         <select
           className="btn py-1"
@@ -101,11 +127,24 @@ export function Toolbar({ fullscreenTarget }: { fullscreenTarget?: () => HTMLEle
             if (m !== 'guided') useViewer.getState().clearHighlight()
           }}
         >
-          {(Object.keys(MODE_LABELS) as ExplodeMode[]).map((k) => <option key={k} value={k}>{MODE_LABELS[k]}</option>)}
+          {(Object.keys(MODE_LABELS) as ExplodeMode[]).map((k) => (
+            <option key={k} value={k}>
+              {MODE_LABELS[k]}
+            </option>
+          ))}
         </select>
         {a.mode === 'selected' && (
-          <select className="btn max-w-44 py-1" value={a.activeGroup ?? ''} onChange={(e) => a.setMode('selected', e.target.value)} aria-label="Region to disassemble">
-            {groupOptions.map((g) => <option key={g.id} value={g.id}>{g.name}</option>)}
+          <select
+            className="btn max-w-44 py-1"
+            value={a.activeGroup ?? ''}
+            onChange={(e) => a.setMode('selected', e.target.value)}
+            aria-label="Region to disassemble"
+          >
+            {groupOptions.map((g) => (
+              <option key={g.id} value={g.id}>
+                {g.name}
+              </option>
+            ))}
           </select>
         )}
         <button
@@ -123,66 +162,162 @@ export function Toolbar({ fullscreenTarget }: { fullscreenTarget?: () => HTMLEle
           <Minimize2 size={14} /> Assemble
         </button>
         <span className="mx-0.5 h-5 w-px bg-[var(--border)]" aria-hidden />
-        <button className="btn lg:hidden" onClick={() => setMore(!more)} aria-expanded={more} aria-label="More controls">{more ? 'Less' : 'More'}</button>
-        <button className="btn btn-icon" onClick={() => a.step(-1)} aria-label="Step backward"><SkipBack size={14} /></button>
-        <button className="btn btn-icon" onClick={a.toggle} aria-label={a.playing ? 'Pause' : 'Play'} data-testid="play">
+        <button
+          className="btn lg:hidden"
+          onClick={() => setMore(!more)}
+          aria-expanded={more}
+          aria-label="More controls"
+        >
+          {more ? 'Less' : 'More'}
+        </button>
+        <button className="btn btn-icon" onClick={() => a.step(-1)} aria-label="Step backward">
+          <SkipBack size={14} />
+        </button>
+        <button
+          className="btn btn-icon"
+          onClick={a.toggle}
+          aria-label={a.playing ? 'Pause' : 'Play'}
+          data-testid="play"
+        >
           {a.playing ? <Pause size={14} /> : <Play size={14} />}
         </button>
-        <button className="btn btn-icon" onClick={() => a.step(1)} aria-label="Step forward"><SkipForward size={14} /></button>
-        <button className={`btn btn-icon ${a.direction < 0 ? 'btn-active' : ''}`} onClick={a.reverse} aria-label="Reverse direction" data-testid="reverse">
+        <button className="btn btn-icon" onClick={() => a.step(1)} aria-label="Step forward">
+          <SkipForward size={14} />
+        </button>
+        <button
+          className={`btn btn-icon ${a.direction < 0 ? 'btn-active' : ''}`}
+          onClick={a.reverse}
+          aria-label="Reverse direction"
+          data-testid="reverse"
+        >
           <ChevronsLeftRight size={14} />
         </button>
-        <button className="btn btn-icon" onClick={a.restart} aria-label="Restart animation"><Repeat size={14} /></button>
+        <button className="btn btn-icon" onClick={a.restart} aria-label="Restart animation">
+          <Repeat size={14} />
+        </button>
         <div className="flex min-w-40 flex-1 items-center gap-2">
           <input
-            type="range" min={0} max={1} step={0.001} value={a.progress} className="w-full"
-            aria-label="Animation timeline" data-testid="timeline"
+            type="range"
+            min={0}
+            max={1}
+            step={0.001}
+            value={a.progress}
+            className="w-full"
+            aria-label="Animation timeline"
+            data-testid="timeline"
             onChange={(e) => a.setProgress(+e.target.value)}
           />
           <span className="w-9 tabular-nums text-[var(--text-2)]">{Math.round(a.progress * 100)}%</span>
         </div>
-        <select className="btn py-1" value={a.playbackSpeed} onChange={(e) => a.setSpeed(+e.target.value)} aria-label="Animation speed">
-          {SPEEDS.map((s) => <option key={s} value={s}>{s}×</option>)}
+        <select
+          className="btn py-1"
+          value={a.playbackSpeed}
+          onChange={(e) => a.setSpeed(+e.target.value)}
+          aria-label="Animation speed"
+        >
+          {SPEEDS.map((s) => (
+            <option key={s} value={s}>
+              {s}×
+            </option>
+          ))}
         </select>
       </div>
       <div className={`flex-wrap items-center gap-x-3 gap-y-1.5 ${more ? 'flex' : 'hidden'}`}>
         <label className="flex items-center gap-1.5">
           <span className="text-[var(--text-2)]">Explosion</span>
-          <input type="range" min={0.2} max={2} step={0.05} value={a.explosionDistance} onChange={(e) => a.setDistance(+e.target.value)} aria-label="Exploded-view distance" />
+          <input
+            type="range"
+            min={0.2}
+            max={2}
+            step={0.05}
+            value={a.explosionDistance}
+            onChange={(e) => a.setDistance(+e.target.value)}
+            aria-label="Exploded-view distance"
+          />
         </label>
         <label className="flex items-center gap-1.5">
           <span className="text-[var(--text-2)]">Cortex opacity</span>
           <input
-            type="range" min={0.05} max={1} step={0.05} value={cortexOpacity} aria-label="Cortex transparency"
+            type="range"
+            min={0.05}
+            max={1}
+            step={0.05}
+            value={cortexOpacity}
+            aria-label="Cortex transparency"
             onChange={(e) => {
               const val = +e.target.value
               setCortexOpacity(val)
-              for (const id of MESH_IDS) if (byId.get(id)!.groups.includes('cortex')) useViewer.getState().setOpacity(id, val)
+              for (const id of MESH_IDS)
+                if (byId.get(id)!.groups.includes('cortex')) useViewer.getState().setOpacity(id, val)
             }}
           />
         </label>
         <span className="flex-1" />
         {v.mode === 'dissect' && (
           <div className="flex flex-wrap items-center gap-1" role="group" aria-label="Manual dissection">
-            <button className={`btn btn-icon ${v.gizmoMode === 'translate' ? 'btn-active' : ''}`} onClick={() => v.setGizmoMode('translate')} aria-label="Move tool"><Move3d size={14} /></button>
-            <button className={`btn btn-icon ${v.gizmoMode === 'rotate' ? 'btn-active' : ''}`} onClick={() => v.setGizmoMode('rotate')} aria-label="Rotate tool"><Rotate3d size={14} /></button>
-            <button className={`btn btn-icon ${v.snap ? 'btn-active' : ''}`} onClick={() => v.setSnap(!v.snap)} aria-label="Snap to grid" aria-pressed={v.snap}><Magnet size={14} /></button>
-            <button className={`btn btn-icon ${selectedLocked ? 'btn-active' : ''}`} disabled={!v.selectedId} onClick={() => v.selectedId && v.toggleLocked(v.selectedId)} aria-label="Lock selected position" aria-pressed={selectedLocked}><Lock size={14} /></button>
-            <button className="btn btn-icon" disabled={!meta.canUndo} onClick={transforms.undo} aria-label="Undo move"><Undo2 size={14} /></button>
-            <button className="btn btn-icon" disabled={!meta.canRedo} onClick={transforms.redo} aria-label="Redo move"><Redo2 size={14} /></button>
+            <button
+              className={`btn btn-icon ${v.gizmoMode === 'translate' ? 'btn-active' : ''}`}
+              onClick={() => v.setGizmoMode('translate')}
+              aria-label="Move tool"
+            >
+              <Move3d size={14} />
+            </button>
+            <button
+              className={`btn btn-icon ${v.gizmoMode === 'rotate' ? 'btn-active' : ''}`}
+              onClick={() => v.setGizmoMode('rotate')}
+              aria-label="Rotate tool"
+            >
+              <Rotate3d size={14} />
+            </button>
+            <button
+              className={`btn btn-icon ${v.snap ? 'btn-active' : ''}`}
+              onClick={() => v.setSnap(!v.snap)}
+              aria-label="Snap to grid"
+              aria-pressed={v.snap}
+            >
+              <Magnet size={14} />
+            </button>
+            <button
+              className={`btn btn-icon ${selectedLocked ? 'btn-active' : ''}`}
+              disabled={!v.selectedId}
+              onClick={() => v.selectedId && v.toggleLocked(v.selectedId)}
+              aria-label="Lock selected position"
+              aria-pressed={selectedLocked}
+            >
+              <Lock size={14} />
+            </button>
+            <button className="btn btn-icon" disabled={!meta.canUndo} onClick={transforms.undo} aria-label="Undo move">
+              <Undo2 size={14} />
+            </button>
+            <button className="btn btn-icon" disabled={!meta.canRedo} onClick={transforms.redo} aria-label="Redo move">
+              <Redo2 size={14} />
+            </button>
             {!v.selectedId && <span className="text-[var(--text-2)]">Select a structure to drag it</span>}
-            {v.selectedId && <span className="max-w-40 truncate text-[var(--text-2)]">Moving: {structureName(v.selectedId)}</span>}
+            {v.selectedId && (
+              <span className="max-w-40 truncate text-[var(--text-2)]">Moving: {structureName(v.selectedId)}</span>
+            )}
           </div>
         )}
-        <button className="btn" disabled={!meta.moved} onClick={() => transforms.returnToOriginal(MESH_IDS)} data-testid="reassemble-all">
+        <button
+          className="btn"
+          disabled={!meta.moved}
+          onClick={() => transforms.returnToOriginal(MESH_IDS)}
+          data-testid="reassemble-all"
+        >
           <RotateCcw size={14} /> Reassemble all {meta.moved ? `(${meta.moved})` : ''}
         </button>
-        <button className="btn" onClick={resetAll} data-testid="reset-all"><RefreshCcw size={14} /> Reset all</button>
-        <button className="btn btn-icon" onClick={screenshot} aria-label="Save screenshot"><Camera size={14} /></button>
+        <button className="btn" onClick={resetAll} data-testid="reset-all">
+          <RefreshCcw size={14} /> Reset all
+        </button>
+        <button className="btn btn-icon" onClick={screenshot} aria-label="Save screenshot">
+          <Camera size={14} />
+        </button>
         <button
           className="btn btn-icon"
           aria-label={isFs ? 'Exit fullscreen' : 'Fullscreen'}
-          onClick={() => (document.fullscreenElement ? document.exitFullscreen() : fullscreenTarget?.()?.requestFullscreen?.())}
+          onClick={() =>
+            document.fullscreenElement ? document.exitFullscreen() : fullscreenTarget?.()?.requestFullscreen?.()
+          }
         >
           <Maximize size={14} />
         </button>

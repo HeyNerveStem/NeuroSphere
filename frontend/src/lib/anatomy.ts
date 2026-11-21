@@ -11,8 +11,16 @@ import learningJson from '@content/learning.json'
 import animationsJson from '@content/animations.json'
 import manifestJson from '@/data/model-manifest.json'
 import type {
-  AnatomyEntry, Disease, DiseaseAnimation, LearningModule, ManifestMesh, ModelManifest,
-  Reference, Relationship, StructureDef, UnavailableStructure,
+  AnatomyEntry,
+  Disease,
+  DiseaseAnimation,
+  LearningModule,
+  ManifestMesh,
+  ModelManifest,
+  Reference,
+  Relationship,
+  StructureDef,
+  UnavailableStructure,
 } from '@/types'
 
 export const STRUCTURES = structuresJson.structures as unknown as StructureDef[]
@@ -148,6 +156,38 @@ export const CATEGORY_LABELS: Record<string, string> = {
   neoplastic: 'Neoplastic conditions',
   traumatic: 'Traumatic conditions',
   other: 'Other neurological conditions',
+}
+
+/**
+ * Structures on layers 1–3 that are nonetheless visible on the intact brain's surface
+ * (inferior view: visual pathway, hypophysis, mammillary bodies; medial-inferior temporal surface).
+ */
+const SURFACE_VISIBLE = new Set([
+  'left-optic-nerve',
+  'right-optic-nerve',
+  'optic-chiasm',
+  'left-optic-tract',
+  'right-optic-tract',
+  'pituitary-gland',
+  'mammillary-body',
+  'tuber-cinereum',
+  'left-parahippocampal-gyrus',
+  'right-parahippocampal-gyrus',
+])
+
+/**
+ * True when a structure is hidden inside the intact brain and needs X-ray, sectioning or disassembly to see.
+ * Cortex (layer 0), brainstem (4) and cerebellum (5) are on the surface; layers 1–3 are buried unless listed above.
+ */
+export function isBuried(id: string): boolean {
+  const ids = meshesOf(id)
+  return (
+    ids.length > 0 &&
+    ids.every((m) => {
+      const layer = byId.get(m)?.layer ?? 0
+      return layer >= 1 && layer <= 3 && !SURFACE_VISIBLE.has(m)
+    })
+  )
 }
 
 export const brainCenter: [number, number, number] = [0, 0, 0]

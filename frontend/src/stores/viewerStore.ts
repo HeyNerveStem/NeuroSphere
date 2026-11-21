@@ -1,6 +1,13 @@
 import { create } from 'zustand'
 import type {
-  CameraPreset, ColorMode, HighlightStyle, LabelMode, LearningLevel, Quality, SelectGranularity, Vec3,
+  CameraPreset,
+  ColorMode,
+  HighlightStyle,
+  LabelMode,
+  LearningLevel,
+  Quality,
+  SelectGranularity,
+  Vec3,
 } from '@/types'
 import { meshesOf } from '@/lib/anatomy'
 
@@ -11,7 +18,11 @@ export type CameraRequest =
   | { kind: 'reset'; nonce: number }
   | { kind: 'overview'; scale: number; nonce: number }
 
-export interface Lesion { position: Vec3; radius: number; massEffect: number }
+export interface Lesion {
+  position: Vec3
+  radius: number
+  massEffect: number
+}
 
 interface Settings {
   level: LearningLevel
@@ -31,7 +42,8 @@ function loadSettings(): Partial<Settings> {
     return {}
   }
 }
-const prefersReduced = typeof window !== 'undefined' && !!window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+const prefersReduced =
+  typeof window !== 'undefined' && !!window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
 
 export interface ViewerState extends Settings {
   selectedId: string | null
@@ -72,7 +84,13 @@ export interface ViewerState extends Settings {
   clearHighlight: () => void
   setPulse: (v: boolean) => void
   setClip: (c: Partial<{ mode: ClipMode; offset: number }>) => void
-  requestCamera: (r: { kind: 'preset'; preset: CameraPreset } | { kind: 'focus'; id: string } | { kind: 'reset' } | { kind: 'overview'; scale: number }) => void
+  requestCamera: (
+    r:
+      | { kind: 'preset'; preset: CameraPreset }
+      | { kind: 'focus'; id: string }
+      | { kind: 'reset' }
+      | { kind: 'overview'; scale: number },
+  ) => void
   setLesion: (l: Lesion | null) => void
   setPanel: (side: 'left' | 'right', open: boolean) => void
   setShowConnections: (v: boolean) => void
@@ -82,8 +100,13 @@ export interface ViewerState extends Settings {
 
 let nonce = 0
 const defaults: Settings = {
-  level: 'intermediate', quality: 'high', theme: 'dark', reducedMotion: prefersReduced,
-  colorMode: 'realistic', labelMode: 'selected', showOrientation: true,
+  level: 'intermediate',
+  quality: 'high',
+  theme: 'dark',
+  reducedMotion: prefersReduced,
+  colorMode: 'realistic',
+  labelMode: 'selected',
+  showOrientation: true,
 }
 
 export const useViewer = create<ViewerState>((set, get) => ({
@@ -151,7 +174,8 @@ export const useViewer = create<ViewerState>((set, get) => ({
   setMode: (mode) => set({ mode }),
   setGizmoMode: (gizmoMode) => set({ gizmoMode }),
   setSnap: (snap) => set({ snap }),
-  setHighlight: (highlight, caption = null, dim = true) => set({ highlight, highlightCaption: caption, dimOthers: dim }),
+  setHighlight: (highlight, caption = null, dim = true) =>
+    set({ highlight, highlightCaption: caption, dimOthers: dim }),
   clearHighlight: () => set({ highlight: {}, highlightCaption: null, dimOthers: false, pulse: false }),
   setPulse: (pulse) => set({ pulse }),
   setClip: (c) => set((s) => ({ clip: { ...s.clip, ...c } })),
@@ -163,15 +187,29 @@ export const useViewer = create<ViewerState>((set, get) => ({
     set(s)
     const { level, quality, theme, reducedMotion, colorMode, labelMode, showOrientation } = { ...get() }
     try {
-      localStorage.setItem(SETTINGS_KEY, JSON.stringify({ level, quality, theme, reducedMotion, colorMode, labelMode, showOrientation }))
+      localStorage.setItem(
+        SETTINGS_KEY,
+        JSON.stringify({ level, quality, theme, reducedMotion, colorMode, labelMode, showOrientation }),
+      )
     } catch {
       /* storage unavailable (private mode / sandbox) — settings stay in memory */
     }
   },
   resetView: () =>
     set({
-      selectedId: null, hidden: {}, opacity: {}, locked: {}, isolated: null, xray: false,
-      highlight: {}, highlightCaption: null, dimOthers: false, pulse: false, clip: { mode: 'none', offset: 0 },
-      lesion: null, showConnections: false, mode: 'explore',
+      selectedId: null,
+      hidden: {},
+      opacity: {},
+      locked: {},
+      isolated: null,
+      xray: false,
+      highlight: {},
+      highlightCaption: null,
+      dimOthers: false,
+      pulse: false,
+      clip: { mode: 'none', offset: 0 },
+      lesion: null,
+      showConnections: false,
+      mode: 'explore',
     }),
 }))

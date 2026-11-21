@@ -9,10 +9,18 @@ export function ReferenceList({ ids }: { ids: string[] }) {
         if (!r) return null
         return (
           <li key={id}>
-            <a href={r.url} target="_blank" rel="noreferrer noopener" className="font-medium text-[var(--accent)] hover:underline">
+            <a
+              href={r.url}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="font-medium text-[var(--accent)] hover:underline"
+            >
               {r.title} <ExternalLink size={11} className="inline" aria-hidden />
             </a>
-            <span className="text-[var(--text-2)]"> — {r.organization}. {r.type}.</span>
+            <span className="text-[var(--text-2)]">
+              {' '}
+              — {r.organization}. {r.type}.
+            </span>
           </li>
         )
       })}

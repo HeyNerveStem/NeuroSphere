@@ -1,4 +1,5 @@
 """Unified search across structures, diseases, symptoms and learning modules (same scoring as the frontend)."""
+
 from __future__ import annotations
 
 import unicodedata
@@ -50,7 +51,9 @@ def search(db: Session, query: str, limit: int = 10) -> dict:
                 best, match = sc, why
         if best:
             bias = (2 if s.kind == "group" else 0) + (-0.5 if s.hemisphere == "right" else 0)
-            out["structures"].append({"id": s.id, "name": s.name, "type": "structure", "score": best + bias, "match": match})
+            out["structures"].append(
+                {"id": s.id, "name": s.name, "type": "structure", "score": best + bias, "match": match}
+            )
     symptoms: dict[str, list[str]] = {}
     for d in db.scalars(select(orm.Disease)):
         data = d.data
@@ -70,10 +73,18 @@ def search(db: Session, query: str, limit: int = 10) -> dict:
                 if q in norm(s):
                     symptoms.setdefault(s, []).append(d.name)
     for m in db.scalars(select(orm.LearningModule)):
-        sc = max([score_text(q, m.title, 40), score_text(q, m.data["summary"], 15)] + [score_text(q, st["text"], 6) for st in m.data["steps"]])
+        sc = max(
+            [score_text(q, m.title, 40), score_text(q, m.data["summary"], 15)]
+            + [score_text(q, st["text"], 6) for st in m.data["steps"]]
+        )
         if sc:
-            out["modules"].append({"id": m.id, "name": m.title, "type": "module", "score": sc, "match": m.data["summary"]})
-    out["symptoms"] = [{"id": k, "name": k, "type": "symptom", "score": 10.0, "match": "Seen in: " + ", ".join(v)} for k, v in list(symptoms.items())[:8]]
+            out["modules"].append(
+                {"id": m.id, "name": m.title, "type": "module", "score": sc, "match": m.data["summary"]}
+            )
+    out["symptoms"] = [
+        {"id": k, "name": k, "type": "symptom", "score": 10.0, "match": "Seen in: " + ", ".join(v)}
+        for k, v in list(symptoms.items())[:8]
+    ]
     for k in ("structures", "diseases", "modules"):
         out[k] = sorted(out[k], key=lambda h: (-h["score"], h["name"]))[:limit]
     return out

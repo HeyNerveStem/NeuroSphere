@@ -1,66 +1,281 @@
 {
- "_meta": {"disclaimer": "Educational schematic. Not a patient-specific simulation, not a validated prediction of disease progression, and not a diagnostic tool."},
- "animations": [
-  {
-   "diseaseId": "alzheimers-disease", "title": "Conceptual spread of Alzheimer-type pathology", "kind": "sequence",
-   "steps": [
-    {"caption": "Stage A — entorhinal cortex (anterior parahippocampal gyrus): early tau pathology.", "highlight": [{"target": "parahippocampal-gyrus", "style": "primary"}], "camera": "inferior", "explode": 0.4, "durationMs": 3500},
-    {"caption": "Stage B — hippocampus becomes involved; difficulty forming new memories.", "highlight": [{"target": "parahippocampal-gyrus", "style": "primary"}, {"target": "hippocampus", "style": "primary"}], "camera": "inferior", "explode": 0.4, "durationMs": 3500},
-    {"caption": "Stage C — lateral temporal and parietal association cortex, precuneus and posterior cingulate.", "highlight": [{"target": "hippocampus", "style": "primary"}, {"target": "temporal-lobe", "style": "secondary"}, {"target": "superior-parietal-lobule-precuneus", "style": "secondary"}, {"target": "cingulate-gyrus", "style": "secondary"}], "camera": "left-lateral", "explode": 0, "durationMs": 4000},
-    {"caption": "Stage D — frontal association cortex; primary motor, sensory and visual cortex relatively spared until late.", "highlight": [{"target": "temporal-lobe", "style": "primary"}, {"target": "parietal-lobe", "style": "secondary"}, {"target": "frontal-lobe", "style": "secondary"}], "camera": "left-lateral", "explode": 0, "durationMs": 4000}
-   ]
+  "_meta": {
+    "disclaimer": "Educational schematic. Not a patient-specific simulation, not a validated prediction of disease progression, and not a diagnostic tool."
   },
-  {
-   "diseaseId": "parkinsons-disease", "title": "Nigrostriatal dopamine loss and basal ganglia circuitry", "kind": "sequence",
-   "steps": [
-    {"caption": "The substantia nigra pars compacta lies within the cerebral peduncle region (not separately segmented — schematic).", "highlight": [{"target": "cerebral-peduncles", "style": "primary"}], "camera": "anterior", "xray": true, "durationMs": 3500},
-    {"caption": "Nigrostriatal neurons project dopamine to the striatum — most importantly the putamen.", "highlight": [{"target": "cerebral-peduncles", "style": "primary"}, {"target": "putamen", "style": "primary"}, {"target": "caudate-nucleus", "style": "secondary"}], "camera": "anterior", "xray": true, "pulse": true, "durationMs": 4000},
-    {"caption": "Reduced dopamine alters output from the globus pallidus to the thalamus…", "highlight": [{"target": "globus-pallidus", "style": "primary"}, {"target": "thalamus", "style": "secondary"}], "camera": "anterior", "xray": true, "pulse": true, "durationMs": 3500},
-    {"caption": "…and thalamocortical drive to motor cortex, producing slowness and rigidity.", "highlight": [{"target": "thalamus", "style": "secondary"}, {"target": "precentral-gyrus", "style": "secondary"}], "camera": "left-lateral", "durationMs": 3500}
-   ]
-  },
-  {
-   "diseaseId": "ischemic-stroke", "title": "Conceptual middle cerebral artery territory ischaemia", "kind": "sequence",
-   "steps": [
-    {"caption": "Normal perfusion (vessels not modelled).", "highlight": [], "camera": "left-lateral", "durationMs": 2500},
-    {"caption": "An embolus blocks the left middle cerebral artery: the core (deep structures) is affected first.", "highlight": [{"target": "left-basal-nuclei", "style": "primary"}, {"target": "left-internal-capsule-anterior-limb", "style": "primary"}, {"target": "left-insular-cortex", "style": "primary"}], "camera": "anterior", "xray": true, "durationMs": 4000},
-    {"caption": "Surrounding cortex in the MCA territory is at risk (penumbra) — potentially salvageable with rapid treatment.", "highlight": [{"target": "left-basal-nuclei", "style": "primary"}, {"target": "left-insular-cortex", "style": "primary"}, {"target": "left-frontal-lobe", "style": "secondary"}, {"target": "left-parietal-lobe", "style": "secondary"}, {"target": "left-temporal-lobe", "style": "secondary"}], "camera": "left-lateral", "pulse": true, "durationMs": 4500},
-    {"caption": "Result: right-sided weakness and sensory loss; language impairment is likely when the dominant (usually left) hemisphere is affected.", "highlight": [{"target": "left-precentral-gyrus", "style": "primary"}, {"target": "left-postcentral-gyrus", "style": "primary"}, {"target": "left-superior-temporal-gyrus-posterior", "style": "secondary"}], "camera": "left-lateral", "durationMs": 4500}
-   ]
-  },
-  {
-   "diseaseId": "epilepsy", "title": "Conceptual focal seizure spread", "kind": "sequence",
-   "steps": [
-    {"caption": "Focal onset in the left hippocampus (example of a common focus).", "highlight": [{"target": "left-hippocampus", "style": "primary"}], "camera": "left-lateral", "xray": true, "pulse": true, "durationMs": 3000},
-    {"caption": "Spread within the medial temporal network: amygdala and parahippocampal gyrus (aura, impaired awareness).", "highlight": [{"target": "left-hippocampus", "style": "primary"}, {"target": "left-amygdala", "style": "primary"}, {"target": "left-parahippocampal-gyrus", "style": "secondary"}], "camera": "left-lateral", "xray": true, "pulse": true, "durationMs": 3500},
-    {"caption": "Spread to lateral temporal and insular cortex.", "highlight": [{"target": "left-temporal-lobe", "style": "primary"}, {"target": "left-insular-cortex", "style": "secondary"}], "camera": "left-lateral", "pulse": true, "durationMs": 3500},
-    {"caption": "Possible propagation via thalamus to both hemispheres (focal to bilateral tonic-clonic seizure).", "highlight": [{"target": "thalamus", "style": "primary"}, {"target": "left-cerebral-hemisphere", "style": "secondary"}, {"target": "right-cerebral-hemisphere", "style": "secondary"}], "camera": "anterior", "pulse": true, "durationMs": 4000}
-   ]
-  },
-  {
-   "diseaseId": "glioblastoma", "title": "Illustrative frontal lesion with mass effect", "kind": "sequence",
-   "steps": [
-    {"caption": "An illustrative lesion is placed in the right frontal white matter. Real tumours vary in location, shape and infiltration.", "highlight": [{"target": "right-frontal-lobe", "style": "secondary"}], "camera": "anterior", "xray": true, "lesion": {"near": "right-middle-frontal-gyrus", "inset": 0.45, "radius": 0.12}, "durationMs": 3500},
-    {"caption": "As the lesion and surrounding oedema grow, neighbouring structures are pushed away (mass effect).", "highlight": [{"target": "right-frontal-lobe", "style": "primary"}, {"target": "right-lateral-ventricle", "style": "secondary"}], "camera": "anterior", "xray": true, "lesion": {"near": "right-middle-frontal-gyrus", "inset": 0.45, "radius": 0.22, "massEffect": 0.05}, "durationMs": 4500},
-    {"caption": "Infiltrating tumours can spread along white matter, including across the corpus callosum.", "highlight": [{"target": "corpus-callosum", "style": "secondary"}, {"target": "right-frontal-lobe", "style": "primary"}], "camera": "superior", "xray": true, "lesion": {"near": "right-middle-frontal-gyrus", "inset": 0.45, "radius": 0.22, "massEffect": 0.05}, "durationMs": 4000}
-   ]
-  },
-  {
-   "diseaseId": "meningioma", "title": "Illustrative extra-axial lesion compressing the brain", "kind": "sequence",
-   "steps": [
-    {"caption": "Meningiomas arise from the meninges, outside brain tissue. Illustrative convexity lesion over the left frontal lobe.", "highlight": [], "camera": "left-lateral", "lesion": {"near": "left-superior-frontal-gyrus", "inset": -0.12, "radius": 0.1}, "durationMs": 3500},
-    {"caption": "Slow growth compresses the underlying cortex rather than invading it.", "highlight": [{"target": "left-superior-frontal-gyrus", "style": "primary"}], "camera": "left-lateral", "lesion": {"near": "left-superior-frontal-gyrus", "inset": -0.12, "radius": 0.18, "massEffect": 0.04}, "durationMs": 4000}
-   ]
-  },
-  {
-   "diseaseId": "multiple-sclerosis", "title": "Demyelination along an axon (separate microscopic schematic)", "kind": "axon",
-   "steps": [
-    {"caption": "A healthy myelinated axon: impulses jump between nodes of Ranvier (saltatory conduction).", "durationMs": 4000, "demyelinated": 0},
-    {"caption": "Immune cells attack myelin, creating a focal demyelinated segment.", "durationMs": 4000, "demyelinated": 0.5},
-    {"caption": "Conduction slows or fails across the damaged segment; the axon itself may later be injured.", "durationMs": 4500, "demyelinated": 1},
-    {"caption": "Partial remyelination can occur, often with thinner myelin.", "durationMs": 4000, "demyelinated": 0.6}
-   ],
-   "note": "Demyelination is microscopic. It is NOT visible as a change in a whole lobe; the 3D view shows typical lesion locations only."
-  }
- ]
+  "animations": [
+    {
+      "diseaseId": "alzheimers-disease",
+      "title": "Conceptual spread of Alzheimer-type pathology",
+      "kind": "sequence",
+      "steps": [
+        {
+          "caption": "Stage A — entorhinal cortex (anterior parahippocampal gyrus): early tau pathology.",
+          "highlight": [{ "target": "parahippocampal-gyrus", "style": "primary" }],
+          "camera": "inferior",
+          "explode": 0.4,
+          "durationMs": 3500
+        },
+        {
+          "caption": "Stage B — hippocampus becomes involved; difficulty forming new memories.",
+          "highlight": [
+            { "target": "parahippocampal-gyrus", "style": "primary" },
+            { "target": "hippocampus", "style": "primary" }
+          ],
+          "camera": "inferior",
+          "explode": 0.4,
+          "durationMs": 3500
+        },
+        {
+          "caption": "Stage C — lateral temporal and parietal association cortex, precuneus and posterior cingulate.",
+          "highlight": [
+            { "target": "hippocampus", "style": "primary" },
+            { "target": "temporal-lobe", "style": "secondary" },
+            { "target": "superior-parietal-lobule-precuneus", "style": "secondary" },
+            { "target": "cingulate-gyrus", "style": "secondary" }
+          ],
+          "camera": "left-lateral",
+          "explode": 0,
+          "durationMs": 4000
+        },
+        {
+          "caption": "Stage D — frontal association cortex; primary motor, sensory and visual cortex relatively spared until late.",
+          "highlight": [
+            { "target": "temporal-lobe", "style": "primary" },
+            { "target": "parietal-lobe", "style": "secondary" },
+            { "target": "frontal-lobe", "style": "secondary" }
+          ],
+          "camera": "left-lateral",
+          "explode": 0,
+          "durationMs": 4000
+        }
+      ]
+    },
+    {
+      "diseaseId": "parkinsons-disease",
+      "title": "Nigrostriatal dopamine loss and basal ganglia circuitry",
+      "kind": "sequence",
+      "steps": [
+        {
+          "caption": "The substantia nigra pars compacta lies within the cerebral peduncle region (not separately segmented — schematic).",
+          "highlight": [{ "target": "cerebral-peduncles", "style": "primary" }],
+          "camera": "anterior",
+          "xray": true,
+          "durationMs": 3500
+        },
+        {
+          "caption": "Nigrostriatal neurons project dopamine to the striatum — most importantly the putamen.",
+          "highlight": [
+            { "target": "cerebral-peduncles", "style": "primary" },
+            { "target": "putamen", "style": "primary" },
+            { "target": "caudate-nucleus", "style": "secondary" }
+          ],
+          "camera": "anterior",
+          "xray": true,
+          "pulse": true,
+          "durationMs": 4000
+        },
+        {
+          "caption": "Reduced dopamine alters output from the globus pallidus to the thalamus…",
+          "highlight": [
+            { "target": "globus-pallidus", "style": "primary" },
+            { "target": "thalamus", "style": "secondary" }
+          ],
+          "camera": "anterior",
+          "xray": true,
+          "pulse": true,
+          "durationMs": 3500
+        },
+        {
+          "caption": "…and thalamocortical drive to motor cortex, producing slowness and rigidity.",
+          "highlight": [
+            { "target": "thalamus", "style": "secondary" },
+            { "target": "precentral-gyrus", "style": "secondary" }
+          ],
+          "camera": "left-lateral",
+          "durationMs": 3500
+        }
+      ]
+    },
+    {
+      "diseaseId": "ischemic-stroke",
+      "title": "Conceptual middle cerebral artery territory ischaemia",
+      "kind": "sequence",
+      "steps": [
+        {
+          "caption": "Normal perfusion (vessels not modelled).",
+          "highlight": [],
+          "camera": "left-lateral",
+          "durationMs": 2500
+        },
+        {
+          "caption": "An embolus blocks the left middle cerebral artery: the core (deep structures) is affected first.",
+          "highlight": [
+            { "target": "left-basal-nuclei", "style": "primary" },
+            { "target": "left-internal-capsule-anterior-limb", "style": "primary" },
+            { "target": "left-insular-cortex", "style": "primary" }
+          ],
+          "camera": "anterior",
+          "xray": true,
+          "durationMs": 4000
+        },
+        {
+          "caption": "Surrounding cortex in the MCA territory is at risk (penumbra) — potentially salvageable with rapid treatment.",
+          "highlight": [
+            { "target": "left-basal-nuclei", "style": "primary" },
+            { "target": "left-insular-cortex", "style": "primary" },
+            { "target": "left-frontal-lobe", "style": "secondary" },
+            { "target": "left-parietal-lobe", "style": "secondary" },
+            { "target": "left-temporal-lobe", "style": "secondary" }
+          ],
+          "camera": "left-lateral",
+          "pulse": true,
+          "durationMs": 4500
+        },
+        {
+          "caption": "Result: right-sided weakness and sensory loss; language impairment is likely when the dominant (usually left) hemisphere is affected.",
+          "highlight": [
+            { "target": "left-precentral-gyrus", "style": "primary" },
+            { "target": "left-postcentral-gyrus", "style": "primary" },
+            { "target": "left-superior-temporal-gyrus-posterior", "style": "secondary" }
+          ],
+          "camera": "left-lateral",
+          "durationMs": 4500
+        }
+      ]
+    },
+    {
+      "diseaseId": "epilepsy",
+      "title": "Conceptual focal seizure spread",
+      "kind": "sequence",
+      "steps": [
+        {
+          "caption": "Focal onset in the left hippocampus (example of a common focus).",
+          "highlight": [{ "target": "left-hippocampus", "style": "primary" }],
+          "camera": "left-lateral",
+          "xray": true,
+          "pulse": true,
+          "durationMs": 3000
+        },
+        {
+          "caption": "Spread within the medial temporal network: amygdala and parahippocampal gyrus (aura, impaired awareness).",
+          "highlight": [
+            { "target": "left-hippocampus", "style": "primary" },
+            { "target": "left-amygdala", "style": "primary" },
+            { "target": "left-parahippocampal-gyrus", "style": "secondary" }
+          ],
+          "camera": "left-lateral",
+          "xray": true,
+          "pulse": true,
+          "durationMs": 3500
+        },
+        {
+          "caption": "Spread to lateral temporal and insular cortex.",
+          "highlight": [
+            { "target": "left-temporal-lobe", "style": "primary" },
+            { "target": "left-insular-cortex", "style": "secondary" }
+          ],
+          "camera": "left-lateral",
+          "pulse": true,
+          "durationMs": 3500
+        },
+        {
+          "caption": "Possible propagation via thalamus to both hemispheres (focal to bilateral tonic-clonic seizure).",
+          "highlight": [
+            { "target": "thalamus", "style": "primary" },
+            { "target": "left-cerebral-hemisphere", "style": "secondary" },
+            { "target": "right-cerebral-hemisphere", "style": "secondary" }
+          ],
+          "camera": "anterior",
+          "pulse": true,
+          "durationMs": 4000
+        }
+      ]
+    },
+    {
+      "diseaseId": "glioblastoma",
+      "title": "Illustrative frontal lesion with mass effect",
+      "kind": "sequence",
+      "steps": [
+        {
+          "caption": "An illustrative lesion is placed in the right frontal white matter. Real tumours vary in location, shape and infiltration.",
+          "highlight": [{ "target": "right-frontal-lobe", "style": "secondary" }],
+          "camera": "anterior",
+          "xray": true,
+          "lesion": { "near": "right-middle-frontal-gyrus", "inset": 0.45, "radius": 0.12 },
+          "durationMs": 3500
+        },
+        {
+          "caption": "As the lesion and surrounding oedema grow, neighbouring structures are pushed away (mass effect).",
+          "highlight": [
+            { "target": "right-frontal-lobe", "style": "primary" },
+            { "target": "right-lateral-ventricle", "style": "secondary" }
+          ],
+          "camera": "anterior",
+          "xray": true,
+          "lesion": { "near": "right-middle-frontal-gyrus", "inset": 0.45, "radius": 0.22, "massEffect": 0.05 },
+          "durationMs": 4500
+        },
+        {
+          "caption": "Infiltrating tumours can spread along white matter, including across the corpus callosum.",
+          "highlight": [
+            { "target": "corpus-callosum", "style": "secondary" },
+            { "target": "right-frontal-lobe", "style": "primary" }
+          ],
+          "camera": "superior",
+          "xray": true,
+          "lesion": { "near": "right-middle-frontal-gyrus", "inset": 0.45, "radius": 0.22, "massEffect": 0.05 },
+          "durationMs": 4000
+        }
+      ]
+    },
+    {
+      "diseaseId": "meningioma",
+      "title": "Illustrative extra-axial lesion compressing the brain",
+      "kind": "sequence",
+      "steps": [
+        {
+          "caption": "Meningiomas arise from the meninges, outside brain tissue. Illustrative convexity lesion over the left frontal lobe.",
+          "highlight": [],
+          "camera": "left-lateral",
+          "lesion": { "near": "left-superior-frontal-gyrus", "inset": -0.12, "radius": 0.1 },
+          "durationMs": 3500
+        },
+        {
+          "caption": "Slow growth compresses the underlying cortex rather than invading it.",
+          "highlight": [{ "target": "left-superior-frontal-gyrus", "style": "primary" }],
+          "camera": "left-lateral",
+          "lesion": { "near": "left-superior-frontal-gyrus", "inset": -0.12, "radius": 0.18, "massEffect": 0.04 },
+          "durationMs": 4000
+        }
+      ]
+    },
+    {
+      "diseaseId": "multiple-sclerosis",
+      "title": "Demyelination along an axon (separate microscopic schematic)",
+      "kind": "axon",
+      "steps": [
+        {
+          "caption": "A healthy myelinated axon: impulses jump between nodes of Ranvier (saltatory conduction).",
+          "durationMs": 4000,
+          "demyelinated": 0
+        },
+        {
+          "caption": "Immune cells attack myelin, creating a focal demyelinated segment.",
+          "durationMs": 4000,
+          "demyelinated": 0.5
+        },
+        {
+          "caption": "Conduction slows or fails across the damaged segment; the axon itself may later be injured.",
+          "durationMs": 4500,
+          "demyelinated": 1
+        },
+        {
+          "caption": "Partial remyelination can occur, often with thinner myelin.",
+          "durationMs": 4000,
+          "demyelinated": 0.6
+        }
+      ],
+      "note": "Demyelination is microscopic. It is NOT visible as a change in a whole lobe; the 3D view shows typical lesion locations only."
+    }
+  ]
 }

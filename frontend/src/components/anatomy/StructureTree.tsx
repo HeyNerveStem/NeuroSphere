@@ -5,9 +5,16 @@ import { searchStructures } from '@/lib/search'
 import { useViewer } from '@/stores/viewerStore'
 
 const FILTERS: [string, string][] = [
-  ['all', 'All'], ['cortex', 'Cortex'], ['basal-ganglia', 'Basal nuclei'], ['limbic', 'Limbic'],
-  ['diencephalon', 'Diencephalon'], ['brainstem', 'Brainstem'], ['ventricular', 'Ventricles'],
-  ['white-matter', 'White matter'], ['visual', 'Visual'], ['motor', 'Motor'],
+  ['all', 'All'],
+  ['cortex', 'Cortex'],
+  ['basal-ganglia', 'Basal nuclei'],
+  ['limbic', 'Limbic'],
+  ['diencephalon', 'Diencephalon'],
+  ['brainstem', 'Brainstem'],
+  ['ventricular', 'Ventricles'],
+  ['white-matter', 'White matter'],
+  ['visual', 'Visual'],
+  ['motor', 'Motor'],
 ]
 
 function Node({ id, depth, filter }: { id: string; depth: number; filter: string }) {
@@ -26,7 +33,11 @@ function Node({ id, depth, filter }: { id: string; depth: number; filter: string
         style={{ paddingLeft: depth * 12 + 2 }}
       >
         {kids.length ? (
-          <button className="rounded p-0.5 text-[var(--text-2)]" onClick={() => setOpen(!open)} aria-label={`${open ? 'Collapse' : 'Expand'} ${s.name}`}>
+          <button
+            className="rounded p-0.5 text-[var(--text-2)]"
+            onClick={() => setOpen(!open)}
+            aria-label={`${open ? 'Collapse' : 'Expand'} ${s.name}`}
+          >
             <ChevronRight size={13} className={`transition-transform ${open ? 'rotate-90' : ''}`} />
           </button>
         ) : (
@@ -50,9 +61,16 @@ function Node({ id, depth, filter }: { id: string; depth: number; filter: string
       </div>
       {open && kids.length > 0 && (
         <ul role="group">
-          {kids.map((k) => <Node key={k} id={k} depth={depth + 1} filter={filter} />)}
+          {kids.map((k) => (
+            <Node key={k} id={k} depth={depth + 1} filter={filter} />
+          ))}
           {UNAVAILABLE.filter((u) => u.parentId === id).map((u) => (
-            <li key={u.id} className="flex items-center gap-1 py-0.5 text-[12px] text-[var(--text-2)]" style={{ paddingLeft: (depth + 1) * 12 + 19 }} title={`${u.reason} Required: ${u.requiredAsset}`}>
+            <li
+              key={u.id}
+              className="flex items-center gap-1 py-0.5 text-[12px] text-[var(--text-2)]"
+              style={{ paddingLeft: (depth + 1) * 12 + 19 }}
+              title={`${u.reason} Required: ${u.requiredAsset}`}
+            >
               <CircleSlash size={11} aria-hidden /> <span className="truncate italic">{u.name}</span>
               <span className="sr-only">— unavailable in this model: {u.reason}</span>
             </li>
@@ -84,7 +102,14 @@ export function StructureTree() {
         {!q && (
           <div className="mt-2 flex flex-wrap gap-1" role="radiogroup" aria-label="Filter by anatomical group">
             {FILTERS.map(([k, l]) => (
-              <button key={k} className={`chip ${filter === k ? 'btn-active' : ''}`} aria-pressed={filter === k} onClick={() => setFilter(k)}>{l}</button>
+              <button
+                key={k}
+                className={`chip ${filter === k ? 'btn-active' : ''}`}
+                aria-pressed={filter === k}
+                onClick={() => setFilter(k)}
+              >
+                {l}
+              </button>
             ))}
           </div>
         )}
@@ -92,7 +117,9 @@ export function StructureTree() {
       <div className="scrollbar-thin min-h-0 flex-1 overflow-y-auto px-1.5 pb-3">
         {q ? (
           <ul className="space-y-0.5" aria-label="Search results" data-testid="structure-results">
-            {results.length === 0 && <li className="px-2 py-3 text-sm text-[var(--text-2)]">No matching structures.</li>}
+            {results.length === 0 && (
+              <li className="px-2 py-3 text-sm text-[var(--text-2)]">No matching structures.</li>
+            )}
             {results.map((r) => (
               <li key={r.id}>
                 <button
@@ -121,7 +148,8 @@ export function StructureTree() {
         )}
       </div>
       <p className="border-t border-[var(--border)] px-3 py-2 text-[10.5px] leading-snug text-[var(--text-2)]">
-        {STRUCTURES.filter((s) => s.kind === 'mesh').length} selectable meshes · <CircleSlash size={10} className="inline" /> items are not in the source asset.
+        {STRUCTURES.filter((s) => s.kind === 'mesh').length} selectable meshes ·{' '}
+        <CircleSlash size={10} className="inline" /> items are not in the source asset.
       </p>
     </div>
   )

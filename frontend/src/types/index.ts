@@ -63,7 +63,10 @@ export interface Reference {
   type: string
 }
 
-export interface Connection { to: string; text: string }
+export interface Connection {
+  to: string
+  text: string
+}
 
 export interface AnatomyEntry {
   summary: string
@@ -78,8 +81,14 @@ export interface AnatomyEntry {
 }
 
 export type DiseaseCategory =
-  | 'neurodegenerative' | 'cerebrovascular' | 'seizure' | 'demyelinating'
-  | 'infectious' | 'neoplastic' | 'traumatic' | 'other'
+  | 'neurodegenerative'
+  | 'cerebrovascular'
+  | 'seizure'
+  | 'demyelinating'
+  | 'infectious'
+  | 'neoplastic'
+  | 'traumatic'
+  | 'other'
 
 export type AssociationType = 'primary' | 'secondary' | 'subtype'
 export type Distribution = 'diffuse' | 'regional' | 'focal' | 'scattered' | 'network'
@@ -133,8 +142,15 @@ export interface Relationship {
 }
 
 export type CameraPreset =
-  | 'anterior' | 'posterior' | 'superior' | 'inferior'
-  | 'left-lateral' | 'right-lateral' | 'sagittal' | 'coronal' | 'axial'
+  | 'anterior'
+  | 'posterior'
+  | 'superior'
+  | 'inferior'
+  | 'left-lateral'
+  | 'right-lateral'
+  | 'sagittal'
+  | 'coronal'
+  | 'axial'
 
 export interface TourStep {
   title: string
@@ -147,7 +163,12 @@ export interface TourStep {
   disease?: string
 }
 
-export interface QuizQuestion { q: string; options: string[]; answer: number; explain: string }
+export interface QuizQuestion {
+  q: string
+  options: string[]
+  answer: number
+  explain: string
+}
 
 export interface LearningModule {
   id: string

@@ -38,7 +38,12 @@ export function AxonAnimation({ demyelinated, running }: { demyelinated: number;
 
   return (
     <figure className="mt-2">
-      <svg viewBox={`0 0 ${width + 40} 120`} className="w-full" role="img" aria-label={`Schematic axon; ${Math.round(demyelinated * 100)}% of the middle segment demyelinated`}>
+      <svg
+        viewBox={`0 0 ${width + 40} 120`}
+        className="w-full"
+        role="img"
+        aria-label={`Schematic axon; ${Math.round(demyelinated * 100)}% of the middle segment demyelinated`}
+      >
         <rect x={0} y={0} width={width + 40} height={120} rx={10} fill="var(--bg)" />
         <circle cx={14} cy={60} r={12} fill="#8B5CF6" opacity={0.8} />
         <line x1={20} y1={60} x2={width + 20} y2={60} stroke="#94a3b8" strokeWidth={6} strokeLinecap="round" />
@@ -49,19 +54,34 @@ export function AxonAnimation({ demyelinated, running }: { demyelinated: number;
           const w = seg - 12
           return (
             <g key={i}>
-              <rect x={x + (w * (1 - keep)) / 2} y={44} width={Math.max(0, w * keep)} height={32} rx={14} fill="#f8e7c9" stroke="#e2c891" opacity={0.95} />
+              <rect
+                x={x + (w * (1 - keep)) / 2}
+                y={44}
+                width={Math.max(0, w * keep)}
+                height={32}
+                rx={14}
+                fill="#f8e7c9"
+                stroke="#e2c891"
+                opacity={0.95}
+              />
               {isDam && demyelinated > 0.05 && (
-                <text x={x + w / 2} y={100} textAnchor="middle" fontSize={11} fill="var(--warn)">demyelinated</text>
+                <text x={x + w / 2} y={100} textAnchor="middle" fontSize={11} fill="var(--warn)">
+                  demyelinated
+                </text>
               )}
             </g>
           )
         })}
         {Array.from({ length: segments + 1 }).map((_, i) => (
-          <text key={i} x={20 + i * seg} y={30} fontSize={9} textAnchor="middle" fill="var(--text-2)">node</text>
+          <text key={i} x={20 + i * seg} y={30} fontSize={9} textAnchor="middle" fill="var(--text-2)">
+            node
+          </text>
         ))}
         <circle ref={pulse} cx={20} cy={60} r={6} fill="#22D3EE" />
       </svg>
-      <figcaption className="text-[11px] text-[var(--text-2)]">Myelin (cream) lets impulses jump between nodes of Ranvier. Not to scale.</figcaption>
+      <figcaption className="text-[11px] text-[var(--text-2)]">
+        Myelin (cream) lets impulses jump between nodes of Ranvier. Not to scale.
+      </figcaption>
     </figure>
   )
 }

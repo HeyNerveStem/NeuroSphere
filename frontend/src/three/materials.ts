@@ -18,9 +18,21 @@ export function realisticColor(s: StructureDef): string {
 }
 
 const REGION: Record<string, string> = {
-  frontal: '#5b9cf6', parietal: '#34d399', temporal: '#f5b83d', occipital: '#f472b6', insula: '#a78bfa',
-  cingulate: '#fb7185', orbital: '#93c5fd', basal: '#fb923c', limbic: '#e879f9', diencephalon: '#facc15',
-  brainstem: '#a3e635', cerebellum: '#2dd4bf', ventricular: '#38bdf8', white: '#e2e8f0', visual: '#fde68a',
+  frontal: '#5b9cf6',
+  parietal: '#34d399',
+  temporal: '#f5b83d',
+  occipital: '#f472b6',
+  insula: '#a78bfa',
+  cingulate: '#fb7185',
+  orbital: '#93c5fd',
+  basal: '#fb923c',
+  limbic: '#e879f9',
+  diencephalon: '#facc15',
+  brainstem: '#a3e635',
+  cerebellum: '#2dd4bf',
+  ventricular: '#38bdf8',
+  white: '#e2e8f0',
+  visual: '#fde68a',
   endocrine: '#fca5a5',
 }
 

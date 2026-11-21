@@ -6,7 +6,16 @@ import { searchDiseases } from '@/lib/search'
 import { useDiseaseCatalog } from '@/services/api'
 import { DISCLAIMER } from '@/components/ui/ReferenceList'
 
-const ORDER = ['neurodegenerative', 'cerebrovascular', 'seizure', 'demyelinating', 'infectious', 'neoplastic', 'traumatic', 'other']
+const ORDER = [
+  'neurodegenerative',
+  'cerebrovascular',
+  'seizure',
+  'demyelinating',
+  'infectious',
+  'neoplastic',
+  'traumatic',
+  'other',
+]
 
 export default function DiseaseCatalog() {
   const [params, setParams] = useSearchParams()
@@ -30,10 +39,14 @@ export default function DiseaseCatalog() {
         <header className="mb-6">
           <h1 className="text-2xl font-semibold tracking-tight md:text-3xl">Neurological Disease Explorer</h1>
           <p className="mt-2 max-w-3xl text-[var(--text-2)]">
-            {items.length} conditions organised by clinical category. Each page explains pathophysiology, typical brain regions involved,
-            symptoms, diagnosis and treatment — and links to the 3D model with a schematic, clearly-labelled regional association.
+            {items.length} conditions organised by clinical category. Each page explains pathophysiology, typical brain
+            regions involved, symptoms, diagnosis and treatment — and links to the 3D model with a schematic,
+            clearly-labelled regional association.
           </p>
-          <p className="mt-2 text-xs text-[var(--text-2)]"><Database size={12} className="inline" /> Source: {source === 'api' ? 'NeuroSphere content API' : 'bundled offline content'} · {DISCLAIMER}</p>
+          <p className="mt-2 text-xs text-[var(--text-2)]">
+            <Database size={12} className="inline" /> Source:{' '}
+            {source === 'api' ? 'NeuroSphere content API' : 'bundled offline content'} · {DISCLAIMER}
+          </p>
         </header>
         <div className="mb-5 flex flex-col gap-3 md:flex-row md:items-center">
           <label className="relative flex-1">
@@ -50,9 +63,16 @@ export default function DiseaseCatalog() {
             />
           </label>
           <div className="flex flex-wrap gap-1" role="radiogroup" aria-label="Filter by category">
-            <button className={`chip ${cat === 'all' ? 'btn-active' : ''}`} onClick={() => setCat('all')}>All</button>
+            <button className={`chip ${cat === 'all' ? 'btn-active' : ''}`} onClick={() => setCat('all')}>
+              All
+            </button>
             {ORDER.map((c) => (
-              <button key={c} className={`chip ${cat === c ? 'btn-active' : ''}`} onClick={() => setCat(c)} aria-pressed={cat === c}>
+              <button
+                key={c}
+                className={`chip ${cat === c ? 'btn-active' : ''}`}
+                onClick={() => setCat(c)}
+                aria-pressed={cat === c}
+              >
                 {CATEGORY_LABELS[c].replace(' conditions', '').replace('Other neurological', 'Other')}
               </button>
             ))}
@@ -60,21 +80,33 @@ export default function DiseaseCatalog() {
         </div>
         {ORDER.filter((c) => filtered.some((d) => d.category === c)).map((c) => (
           <section key={c} className="mb-8" aria-labelledby={`cat-${c}`}>
-            <h2 id={`cat-${c}`} className="mb-3 text-sm font-semibold uppercase tracking-wider text-[var(--text-2)]">{CATEGORY_LABELS[c]}</h2>
+            <h2 id={`cat-${c}`} className="mb-3 text-sm font-semibold uppercase tracking-wider text-[var(--text-2)]">
+              {CATEGORY_LABELS[c]}
+            </h2>
             <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {filtered.filter((d) => d.category === c).map((d) => {
-                const full = diseaseById.get(d.id)
-                return (
-                  <li key={d.id}>
-                    <Link to={`/diseases/${d.id}`} className="glass block h-full rounded-xl p-4 transition-colors hover:border-[var(--accent)]" data-testid={`disease-card-${d.id}`}>
-                      <h3 className="font-semibold">{d.name}</h3>
-                      <p className="mt-0.5 text-[11.5px] text-[var(--accent)]">{d.classification}</p>
-                      <p className="mt-2 line-clamp-3 text-[13px] leading-snug text-[var(--text-2)]">{d.overview}</p>
-                      {full && <p className="mt-2 text-[11px] text-[var(--text-2)]">{full.associations.length} mapped brain-region associations</p>}
-                    </Link>
-                  </li>
-                )
-              })}
+              {filtered
+                .filter((d) => d.category === c)
+                .map((d) => {
+                  const full = diseaseById.get(d.id)
+                  return (
+                    <li key={d.id}>
+                      <Link
+                        to={`/diseases/${d.id}`}
+                        className="glass block h-full rounded-xl p-4 transition-colors hover:border-[var(--accent)]"
+                        data-testid={`disease-card-${d.id}`}
+                      >
+                        <h3 className="font-semibold">{d.name}</h3>
+                        <p className="mt-0.5 text-[11.5px] text-[var(--accent)]">{d.classification}</p>
+                        <p className="mt-2 line-clamp-3 text-[13px] leading-snug text-[var(--text-2)]">{d.overview}</p>
+                        {full && (
+                          <p className="mt-2 text-[11px] text-[var(--text-2)]">
+                            {full.associations.length} mapped brain-region associations
+                          </p>
+                        )}
+                      </Link>
+                    </li>
+                  )
+                })}
             </ul>
           </section>
         ))}

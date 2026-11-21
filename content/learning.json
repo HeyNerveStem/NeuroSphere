@@ -1,141 +1,512 @@
 {
- "_meta": {"lastReviewed": "2026-11-20", "note": "Tours drive the same 3D viewer as the Anatomy Lab. 'highlight' and 'focus' accept structure ids, group ids or contentIds."},
- "modules": [
-  {
-   "id": "intro-human-brain", "title": "Introduction to the Human Brain", "level": "beginner", "minutes": 5,
-   "summary": "Meet the four major divisions of the brain and learn how to orient yourself in 3D.",
-   "steps": [
-    {"title": "Welcome", "text": "This is a 3D model of an adult human brain built from the BodyParts3D anatomical database. Drag to rotate, scroll to zoom. You are looking from the front (anterior view): the patient's left is on your right.", "camera": "anterior", "highlight": []},
-    {"title": "The cerebrum", "text": "The cerebrum is the large, folded upper part, made of two hemispheres. Its surface — the cerebral cortex — is folded into ridges (gyri) and grooves (sulci).", "camera": "left-lateral", "highlight": ["cerebrum"]},
-    {"title": "The cerebellum", "text": "Tucked under the back of the cerebrum is the cerebellum, which coordinates movement and balance.", "camera": "posterior", "highlight": ["cerebellum"]},
-    {"title": "The brainstem", "text": "The brainstem connects the brain to the spinal cord and controls vital functions such as breathing and heart rate.", "camera": "left-lateral", "highlight": ["brainstem"]},
-    {"title": "The diencephalon", "text": "Deep in the centre, hidden by the hemispheres, is the diencephalon — including the thalamus and hypothalamus. We make the cortex transparent to see it.", "camera": "left-lateral", "highlight": ["diencephalon"], "xray": true}
-   ],
-   "quiz": [
-    {"q": "Which part of the brain coordinates balance and smooth movement?", "options": ["Cerebellum", "Pituitary gland", "Corpus callosum", "Occipital lobe"], "answer": 0, "explain": "The cerebellum coordinates timing and accuracy of movement and balance."},
-    {"q": "In an anterior view of the brain, the patient's left hemisphere appears on…", "options": ["The viewer's right", "The viewer's left", "The top", "It depends on the brain"], "answer": 0, "explain": "Facing the patient, their left is on your right."}
-   ]
+  "_meta": {
+    "lastReviewed": "2026-11-20",
+    "note": "Tours drive the same 3D viewer as the Anatomy Lab. 'highlight' and 'focus' accept structure ids, group ids or contentIds."
   },
-  {
-   "id": "cerebral-lobes", "title": "Understanding the Cerebral Lobes", "level": "beginner", "minutes": 6,
-   "summary": "Explore frontal, parietal, temporal and occipital lobes and the hidden insula.",
-   "steps": [
-    {"title": "Frontal lobe", "text": "The frontal lobe extends forward from the central sulcus. Its precentral gyrus is the primary motor cortex; further forward, prefrontal cortex supports planning and self-control.", "camera": "left-lateral", "highlight": ["left-frontal-lobe"]},
-    {"title": "Parietal lobe", "text": "Behind the central sulcus, the parietal lobe begins with the postcentral gyrus (primary somatosensory cortex) and integrates information for spatial awareness.", "camera": "left-lateral", "highlight": ["left-parietal-lobe"]},
-    {"title": "Temporal lobe", "text": "Below the lateral fissure, the temporal lobe handles hearing, language comprehension, object recognition and — medially — memory.", "camera": "left-lateral", "highlight": ["left-temporal-lobe"]},
-    {"title": "Occipital lobe", "text": "At the back, the occipital lobe contains primary visual cortex.", "camera": "posterior", "highlight": ["left-occipital-lobe", "right-occipital-lobe"]},
-    {"title": "The hidden insula", "text": "Folded inside the lateral fissure is the insula. We separate the lateral cortex so you can see it.", "camera": "left-lateral", "highlight": ["left-insular-cortex"], "explode": 0.6},
-    {"title": "Note on this model", "text": "In this anatomical asset the inferior frontal gyrus (which includes Broca's area) is not available, so the frontal lobe group contains only the superior, middle and precentral gyri plus the orbital surface.", "camera": "left-lateral", "highlight": ["left-frontal-lobe", "orbital-and-straight-gyri"]}
-   ],
-   "quiz": [
-    {"q": "The primary motor cortex is located in the…", "options": ["Precentral gyrus", "Postcentral gyrus", "Fusiform gyrus", "Cingulate gyrus"], "answer": 0, "explain": "The precentral gyrus, just in front of the central sulcus, contains primary motor cortex."},
-    {"q": "Which lobe contains primary visual cortex?", "options": ["Occipital", "Frontal", "Temporal", "Parietal"], "answer": 0, "explain": "Primary visual cortex lies along the calcarine sulcus of the occipital lobe."}
-   ]
-  },
-  {
-   "id": "brainstem", "title": "Exploring the Brainstem", "level": "intermediate", "minutes": 5,
-   "summary": "Midbrain, pons and medulla — small structures with vital roles.",
-   "steps": [
-    {"title": "Brainstem overview", "text": "The brainstem runs from the diencephalon to the spinal cord. We hide the cerebellum and make the cerebrum transparent.", "camera": "left-lateral", "highlight": ["brainstem"], "xray": true, "hide": ["cerebellum"]},
-    {"title": "Midbrain", "text": "The midbrain carries descending motor fibres in the cerebral peduncles and has the superior and inferior colliculi on its back surface for visual and auditory reflexes.", "camera": "left-lateral", "highlight": ["midbrain"], "xray": true, "hide": ["cerebellum"]},
-    {"title": "Pons", "text": "The pons links the cerebral cortex with the cerebellum and contains nuclei for facial sensation, facial movement, hearing and balance.", "camera": "left-lateral", "highlight": ["pons"], "xray": true, "hide": ["cerebellum"]},
-    {"title": "Medulla oblongata", "text": "The medulla contains centres for breathing, heart rate and swallowing, and is where most motor fibres cross to the opposite side.", "camera": "left-lateral", "highlight": ["medulla-oblongata"], "xray": true, "hide": ["cerebellum"]},
-    {"title": "Colliculi from behind", "text": "Seen from behind, the four colliculi form the tectum of the midbrain.", "camera": "posterior", "highlight": ["left-superior-colliculus", "right-superior-colliculus", "left-inferior-colliculus", "right-inferior-colliculus"], "xray": true, "hide": ["cerebellum"]}
-   ],
-   "quiz": [
-    {"q": "Which brainstem region contains centres for breathing and swallowing?", "options": ["Medulla oblongata", "Superior colliculus", "Cerebral aqueduct", "Pineal gland"], "answer": 0, "explain": "The medulla contains respiratory and swallowing centres."}
-   ]
-  },
-  {
-   "id": "limbic-system", "title": "Inside the Limbic System", "level": "intermediate", "minutes": 6,
-   "summary": "Hippocampus, amygdala, cingulate gyrus, fornix and mammillary bodies.",
-   "steps": [
-    {"title": "A distributed system", "text": "The 'limbic system' is a set of interconnected structures involved in memory and emotion — not a single anatomical unit.", "camera": "left-lateral", "highlight": ["hippocampus", "amygdala", "cingulate-gyrus", "fornix", "mammillary-body", "parahippocampal-gyrus"], "xray": true},
-    {"title": "Hippocampus", "text": "The hippocampus lies in the medial temporal lobe and is essential for forming new episodic memories.", "camera": "left-lateral", "highlight": ["hippocampus"], "xray": true},
-    {"title": "Amygdala", "text": "Just in front of the hippocampus, the amygdala helps attach emotional significance to experiences.", "camera": "anterior", "highlight": ["amygdala"], "xray": true},
-    {"title": "Fornix and mammillary bodies", "text": "The fornix carries hippocampal output in an arch to the mammillary bodies — part of the Papez circuit.", "camera": "left-lateral", "highlight": ["fornix", "mammillary-body"], "xray": true},
-    {"title": "Cingulate gyrus", "text": "The cingulate gyrus arches around the corpus callosum on the medial surface.", "camera": "sagittal", "highlight": ["cingulate-gyrus", "corpus-callosum"]}
-   ],
-   "quiz": [
-    {"q": "The main output pathway of the hippocampus is the…", "options": ["Fornix", "Optic tract", "Internal capsule", "Cerebral aqueduct"], "answer": 0, "explain": "Hippocampal output travels through the fornix."}
-   ]
-  },
-  {
-   "id": "memory-hippocampus", "title": "Memory and the Hippocampus", "level": "intermediate", "minutes": 4,
-   "summary": "How medial temporal structures support memory, and what happens when they are damaged.",
-   "steps": [
-    {"title": "Finding the hippocampus", "text": "The hippocampus is internal: we separate the temporal lobes to reveal it.", "camera": "inferior", "highlight": ["hippocampus"], "explode": 0.7},
-    {"title": "The entorhinal gateway", "text": "Cortical information reaches the hippocampus mainly through entorhinal cortex in the anterior parahippocampal gyrus.", "camera": "inferior", "highlight": ["parahippocampal-gyrus", "hippocampus"], "explode": 0.7},
-    {"title": "Clinical connections", "text": "Hippocampal involvement occurs in Alzheimer's disease, temporal lobe epilepsy with hippocampal sclerosis and hypoxic-ischaemic injury — by different mechanisms and to different degrees.", "camera": "inferior", "highlight": ["hippocampus"], "explode": 0.7}
-   ],
-   "quiz": [
-    {"q": "Which statement is most accurate?", "options": ["The hippocampus is essential for forming new episodic memories but memory relies on wider networks", "All memories are stored only in the hippocampus", "The hippocampus controls vision", "The hippocampus is part of the cerebellum"], "answer": 0, "explain": "Memory depends on distributed networks; the hippocampus is critical for forming new episodic memories."}
-   ]
-  },
-  {
-   "id": "cerebellum", "title": "Understanding the Cerebellum", "level": "beginner", "minutes": 3,
-   "summary": "The 'little brain' and its role in coordination.",
-   "steps": [
-    {"title": "Position", "text": "The cerebellum sits below the occipital lobes and behind the brainstem.", "camera": "posterior", "highlight": ["cerebellum"]},
-    {"title": "Connections", "text": "It connects to the brainstem through three pairs of peduncles: to the midbrain, pons and medulla.", "camera": "left-lateral", "highlight": ["cerebellum", "pons", "medulla-oblongata", "midbrain"]},
-    {"title": "Lift it away", "text": "In the Anatomy Lab you can drag the cerebellum away using Manual Dissection mode to see the fourth ventricle in front of it.", "camera": "posterior", "highlight": ["fourth-ventricle"], "hide": ["cerebellum"]},
-    {"title": "Model limitation", "text": "In this asset the cerebellum is one piece: the vermis and hemispheres cannot be selected separately.", "camera": "posterior", "highlight": ["cerebellum"]}
-   ],
-   "quiz": [
-    {"q": "A lesion of the left cerebellar hemisphere typically causes clumsiness of the…", "options": ["Left limbs", "Right limbs", "Both eyes only", "Face only"], "answer": 0, "explain": "Cerebellar hemispheres coordinate the same side of the body."}
-   ]
-  },
-  {
-   "id": "movement-structures", "title": "Brain Structures Involved in Movement", "level": "intermediate", "minutes": 6,
-   "summary": "Motor cortex, basal nuclei, thalamus, cerebellum and descending pathways.",
-   "steps": [
-    {"title": "Primary motor cortex", "text": "Voluntary movement commands originate largely in the precentral gyrus.", "camera": "left-lateral", "highlight": ["precentral-gyrus"]},
-    {"title": "Descending pathway", "text": "Motor fibres descend through the internal capsule and cerebral peduncles into the brainstem.", "camera": "left-lateral", "highlight": ["precentral-gyrus", "internal-capsule", "cerebral-peduncles", "pons", "medulla-oblongata"], "xray": true},
-    {"title": "Basal nuclei loop", "text": "The caudate, putamen and globus pallidus form loops with cortex and thalamus that help select and scale movements.", "camera": "anterior", "highlight": ["basal-nuclei", "thalamus"], "xray": true},
-    {"title": "Cerebellar loop", "text": "The cerebellum compares intended and actual movement and sends corrections to motor cortex via the thalamus.", "camera": "left-lateral", "highlight": ["cerebellum", "thalamus", "precentral-gyrus"], "xray": true}
-   ],
-   "quiz": [
-    {"q": "Which structure relays both basal ganglia and cerebellar output to motor cortex?", "options": ["Thalamus", "Pituitary", "Optic chiasm", "Septum pellucidum"], "answer": 0, "explain": "Ventral thalamic nuclei relay these outputs to cortex."}
-   ]
-  },
-  {
-   "id": "alzheimers-anatomy", "title": "Brain Anatomy and Alzheimer's Disease", "level": "advanced", "minutes": 5,
-   "summary": "Typical regional involvement in Alzheimer's disease, explained schematically.",
-   "steps": [
-    {"title": "Early involvement", "text": "Tau pathology typically begins in the entorhinal cortex and hippocampus. This is a generalised educational pattern, not a patient scan.", "camera": "inferior", "highlight": ["hippocampus", "parahippocampal-gyrus"], "explode": 0.5, "disease": "alzheimers-disease"},
-    {"title": "Spread to association cortex", "text": "As the disease progresses, temporal and parietal association cortex, the precuneus and posterior cingulate become involved.", "camera": "left-lateral", "highlight": ["temporal-lobe", "superior-parietal-lobule-precuneus", "cingulate-gyrus"], "disease": "alzheimers-disease"},
-    {"title": "Relatively spared areas", "text": "Primary motor, sensory and visual cortices are typically affected late, which is why movement and vision are often preserved early.", "camera": "left-lateral", "highlight": ["precentral-gyrus", "postcentral-gyrus", "occipital-lobe"]}
-   ],
-   "quiz": [
-    {"q": "Which region is typically involved earliest in Alzheimer's disease?", "options": ["Entorhinal cortex/hippocampus", "Primary visual cortex", "Cerebellum", "Pons"], "answer": 0, "explain": "Medial temporal structures are typically affected early."}
-   ]
-  },
-  {
-   "id": "understanding-stroke", "title": "Understanding Stroke", "level": "intermediate", "minutes": 5,
-   "summary": "Vascular territories and how location shapes stroke symptoms.",
-   "steps": [
-    {"title": "MCA territory (schematic)", "text": "The middle cerebral artery supplies much of the lateral frontal, parietal and temporal cortex, the insula and, through deep branches, the basal nuclei and internal capsule. Vessels are not modelled; regions are shown schematically.", "camera": "left-lateral", "highlight": ["left-frontal-lobe", "left-parietal-lobe", "left-temporal-lobe", "left-insular-cortex"], "disease": "ischemic-stroke"},
-    {"title": "Deep structures", "text": "Small deep (lacunar) infarcts in the internal capsule or basal nuclei can cause marked weakness.", "camera": "anterior", "highlight": ["left-basal-nuclei", "left-internal-capsule-anterior-limb"], "xray": true},
-    {"title": "Posterior circulation", "text": "Posterior circulation strokes can affect the occipital lobes, thalamus, brainstem and cerebellum.", "camera": "posterior", "highlight": ["occipital-lobe", "thalamus", "brainstem", "cerebellum"], "xray": true},
-    {"title": "Act fast", "text": "Sudden face drooping, arm weakness or speech difficulty is an emergency — call emergency services. This app cannot diagnose a stroke.", "camera": "anterior", "highlight": []}
-   ],
-   "quiz": [
-    {"q": "A stroke in the left occipital lobe most typically causes…", "options": ["Loss of the right visual field in both eyes", "Loss of hearing", "Left arm weakness", "Loss of smell"], "answer": 0, "explain": "Each occipital lobe processes the opposite visual field."}
-   ]
-  },
-  {
-   "id": "neurodegeneration-intro", "title": "Introduction to Neurodegenerative Diseases", "level": "advanced", "minutes": 5,
-   "summary": "Different diseases, different vulnerable regions.",
-   "steps": [
-    {"title": "Selective vulnerability", "text": "Neurodegenerative diseases affect particular neuron populations first. The pattern of early involvement explains early symptoms.", "camera": "left-lateral", "highlight": []},
-    {"title": "Alzheimer's disease", "text": "Medial temporal and association cortex.", "camera": "inferior", "highlight": ["hippocampus", "parahippocampal-gyrus"], "disease": "alzheimers-disease", "explode": 0.5},
-    {"title": "Parkinson's disease", "text": "Substantia nigra (within the cerebral peduncle region — not separately segmented) and its striatal targets.", "camera": "anterior", "highlight": ["cerebral-peduncles", "putamen", "caudate-nucleus"], "disease": "parkinsons-disease", "xray": true},
-    {"title": "Huntington's disease", "text": "Striatum — especially the caudate nucleus.", "camera": "anterior", "highlight": ["caudate-nucleus", "putamen"], "disease": "huntingtons-disease", "xray": true},
-    {"title": "ALS", "text": "Upper motor neurons in the precentral gyrus and lower motor neurons in the brainstem and spinal cord.", "camera": "left-lateral", "highlight": ["precentral-gyrus", "medulla-oblongata"], "disease": "amyotrophic-lateral-sclerosis"}
-   ],
-   "quiz": [
-    {"q": "Which disease most characteristically causes caudate atrophy?", "options": ["Huntington's disease", "Migraine", "Meningioma", "Concussion"], "answer": 0, "explain": "Striatal (especially caudate) degeneration is central to Huntington's disease."}
-   ]
-  }
- ]
+  "modules": [
+    {
+      "id": "intro-human-brain",
+      "title": "Introduction to the Human Brain",
+      "level": "beginner",
+      "minutes": 5,
+      "summary": "Meet the four major divisions of the brain and learn how to orient yourself in 3D.",
+      "steps": [
+        {
+          "title": "Welcome",
+          "text": "This is a 3D model of an adult human brain built from the BodyParts3D anatomical database. Drag to rotate, scroll to zoom. You are looking from the front (anterior view): the patient's left is on your right.",
+          "camera": "anterior",
+          "highlight": []
+        },
+        {
+          "title": "The cerebrum",
+          "text": "The cerebrum is the large, folded upper part, made of two hemispheres. Its surface — the cerebral cortex — is folded into ridges (gyri) and grooves (sulci).",
+          "camera": "left-lateral",
+          "highlight": ["cerebrum"]
+        },
+        {
+          "title": "The cerebellum",
+          "text": "Tucked under the back of the cerebrum is the cerebellum, which coordinates movement and balance.",
+          "camera": "posterior",
+          "highlight": ["cerebellum"]
+        },
+        {
+          "title": "The brainstem",
+          "text": "The brainstem connects the brain to the spinal cord and controls vital functions such as breathing and heart rate.",
+          "camera": "left-lateral",
+          "highlight": ["brainstem"]
+        },
+        {
+          "title": "The diencephalon",
+          "text": "Deep in the centre, hidden by the hemispheres, is the diencephalon — including the thalamus and hypothalamus. We make the cortex transparent to see it.",
+          "camera": "left-lateral",
+          "highlight": ["diencephalon"],
+          "xray": true
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which part of the brain coordinates balance and smooth movement?",
+          "options": ["Cerebellum", "Pituitary gland", "Corpus callosum", "Occipital lobe"],
+          "answer": 0,
+          "explain": "The cerebellum coordinates timing and accuracy of movement and balance."
+        },
+        {
+          "q": "In an anterior view of the brain, the patient's left hemisphere appears on…",
+          "options": ["The viewer's right", "The viewer's left", "The top", "It depends on the brain"],
+          "answer": 0,
+          "explain": "Facing the patient, their left is on your right."
+        }
+      ]
+    },
+    {
+      "id": "cerebral-lobes",
+      "title": "Understanding the Cerebral Lobes",
+      "level": "beginner",
+      "minutes": 6,
+      "summary": "Explore frontal, parietal, temporal and occipital lobes and the hidden insula.",
+      "steps": [
+        {
+          "title": "Frontal lobe",
+          "text": "The frontal lobe extends forward from the central sulcus. Its precentral gyrus is the primary motor cortex; further forward, prefrontal cortex supports planning and self-control.",
+          "camera": "left-lateral",
+          "highlight": ["left-frontal-lobe"]
+        },
+        {
+          "title": "Parietal lobe",
+          "text": "Behind the central sulcus, the parietal lobe begins with the postcentral gyrus (primary somatosensory cortex) and integrates information for spatial awareness.",
+          "camera": "left-lateral",
+          "highlight": ["left-parietal-lobe"]
+        },
+        {
+          "title": "Temporal lobe",
+          "text": "Below the lateral fissure, the temporal lobe handles hearing, language comprehension, object recognition and — medially — memory.",
+          "camera": "left-lateral",
+          "highlight": ["left-temporal-lobe"]
+        },
+        {
+          "title": "Occipital lobe",
+          "text": "At the back, the occipital lobe contains primary visual cortex.",
+          "camera": "posterior",
+          "highlight": ["left-occipital-lobe", "right-occipital-lobe"]
+        },
+        {
+          "title": "The hidden insula",
+          "text": "Folded inside the lateral fissure is the insula. We separate the lateral cortex so you can see it.",
+          "camera": "left-lateral",
+          "highlight": ["left-insular-cortex"],
+          "explode": 0.6
+        },
+        {
+          "title": "Note on this model",
+          "text": "In this anatomical asset the inferior frontal gyrus (which includes Broca's area) is not available, so the frontal lobe group contains only the superior, middle and precentral gyri plus the orbital surface.",
+          "camera": "left-lateral",
+          "highlight": ["left-frontal-lobe", "orbital-and-straight-gyri"]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "The primary motor cortex is located in the…",
+          "options": ["Precentral gyrus", "Postcentral gyrus", "Fusiform gyrus", "Cingulate gyrus"],
+          "answer": 0,
+          "explain": "The precentral gyrus, just in front of the central sulcus, contains primary motor cortex."
+        },
+        {
+          "q": "Which lobe contains primary visual cortex?",
+          "options": ["Occipital", "Frontal", "Temporal", "Parietal"],
+          "answer": 0,
+          "explain": "Primary visual cortex lies along the calcarine sulcus of the occipital lobe."
+        }
+      ]
+    },
+    {
+      "id": "brainstem",
+      "title": "Exploring the Brainstem",
+      "level": "intermediate",
+      "minutes": 5,
+      "summary": "Midbrain, pons and medulla — small structures with vital roles.",
+      "steps": [
+        {
+          "title": "Brainstem overview",
+          "text": "The brainstem runs from the diencephalon to the spinal cord. We hide the cerebellum and make the cerebrum transparent.",
+          "camera": "left-lateral",
+          "highlight": ["brainstem"],
+          "xray": true,
+          "hide": ["cerebellum"]
+        },
+        {
+          "title": "Midbrain",
+          "text": "The midbrain carries descending motor fibres in the cerebral peduncles and has the superior and inferior colliculi on its back surface for visual and auditory reflexes.",
+          "camera": "left-lateral",
+          "highlight": ["midbrain"],
+          "xray": true,
+          "hide": ["cerebellum"]
+        },
+        {
+          "title": "Pons",
+          "text": "The pons links the cerebral cortex with the cerebellum and contains nuclei for facial sensation, facial movement, hearing and balance.",
+          "camera": "left-lateral",
+          "highlight": ["pons"],
+          "xray": true,
+          "hide": ["cerebellum"]
+        },
+        {
+          "title": "Medulla oblongata",
+          "text": "The medulla contains centres for breathing, heart rate and swallowing, and is where most motor fibres cross to the opposite side.",
+          "camera": "left-lateral",
+          "highlight": ["medulla-oblongata"],
+          "xray": true,
+          "hide": ["cerebellum"]
+        },
+        {
+          "title": "Colliculi from behind",
+          "text": "Seen from behind, the four colliculi form the tectum of the midbrain.",
+          "camera": "posterior",
+          "highlight": [
+            "left-superior-colliculus",
+            "right-superior-colliculus",
+            "left-inferior-colliculus",
+            "right-inferior-colliculus"
+          ],
+          "xray": true,
+          "hide": ["cerebellum"]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which brainstem region contains centres for breathing and swallowing?",
+          "options": ["Medulla oblongata", "Superior colliculus", "Cerebral aqueduct", "Pineal gland"],
+          "answer": 0,
+          "explain": "The medulla contains respiratory and swallowing centres."
+        }
+      ]
+    },
+    {
+      "id": "limbic-system",
+      "title": "Inside the Limbic System",
+      "level": "intermediate",
+      "minutes": 6,
+      "summary": "Hippocampus, amygdala, cingulate gyrus, fornix and mammillary bodies.",
+      "steps": [
+        {
+          "title": "A distributed system",
+          "text": "The 'limbic system' is a set of interconnected structures involved in memory and emotion — not a single anatomical unit.",
+          "camera": "left-lateral",
+          "highlight": [
+            "hippocampus",
+            "amygdala",
+            "cingulate-gyrus",
+            "fornix",
+            "mammillary-body",
+            "parahippocampal-gyrus"
+          ],
+          "xray": true
+        },
+        {
+          "title": "Hippocampus",
+          "text": "The hippocampus lies in the medial temporal lobe and is essential for forming new episodic memories.",
+          "camera": "left-lateral",
+          "highlight": ["hippocampus"],
+          "xray": true
+        },
+        {
+          "title": "Amygdala",
+          "text": "Just in front of the hippocampus, the amygdala helps attach emotional significance to experiences.",
+          "camera": "anterior",
+          "highlight": ["amygdala"],
+          "xray": true
+        },
+        {
+          "title": "Fornix and mammillary bodies",
+          "text": "The fornix carries hippocampal output in an arch to the mammillary bodies — part of the Papez circuit.",
+          "camera": "left-lateral",
+          "highlight": ["fornix", "mammillary-body"],
+          "xray": true
+        },
+        {
+          "title": "Cingulate gyrus",
+          "text": "The cingulate gyrus arches around the corpus callosum on the medial surface.",
+          "camera": "sagittal",
+          "highlight": ["cingulate-gyrus", "corpus-callosum"]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "The main output pathway of the hippocampus is the…",
+          "options": ["Fornix", "Optic tract", "Internal capsule", "Cerebral aqueduct"],
+          "answer": 0,
+          "explain": "Hippocampal output travels through the fornix."
+        }
+      ]
+    },
+    {
+      "id": "memory-hippocampus",
+      "title": "Memory and the Hippocampus",
+      "level": "intermediate",
+      "minutes": 4,
+      "summary": "How medial temporal structures support memory, and what happens when they are damaged.",
+      "steps": [
+        {
+          "title": "Finding the hippocampus",
+          "text": "The hippocampus is internal: we separate the temporal lobes to reveal it.",
+          "camera": "inferior",
+          "highlight": ["hippocampus"],
+          "explode": 0.7
+        },
+        {
+          "title": "The entorhinal gateway",
+          "text": "Cortical information reaches the hippocampus mainly through entorhinal cortex in the anterior parahippocampal gyrus.",
+          "camera": "inferior",
+          "highlight": ["parahippocampal-gyrus", "hippocampus"],
+          "explode": 0.7
+        },
+        {
+          "title": "Clinical connections",
+          "text": "Hippocampal involvement occurs in Alzheimer's disease, temporal lobe epilepsy with hippocampal sclerosis and hypoxic-ischaemic injury — by different mechanisms and to different degrees.",
+          "camera": "inferior",
+          "highlight": ["hippocampus"],
+          "explode": 0.7
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which statement is most accurate?",
+          "options": [
+            "The hippocampus is essential for forming new episodic memories but memory relies on wider networks",
+            "All memories are stored only in the hippocampus",
+            "The hippocampus controls vision",
+            "The hippocampus is part of the cerebellum"
+          ],
+          "answer": 0,
+          "explain": "Memory depends on distributed networks; the hippocampus is critical for forming new episodic memories."
+        }
+      ]
+    },
+    {
+      "id": "cerebellum",
+      "title": "Understanding the Cerebellum",
+      "level": "beginner",
+      "minutes": 3,
+      "summary": "The 'little brain' and its role in coordination.",
+      "steps": [
+        {
+          "title": "Position",
+          "text": "The cerebellum sits below the occipital lobes and behind the brainstem.",
+          "camera": "posterior",
+          "highlight": ["cerebellum"]
+        },
+        {
+          "title": "Connections",
+          "text": "It connects to the brainstem through three pairs of peduncles: to the midbrain, pons and medulla.",
+          "camera": "left-lateral",
+          "highlight": ["cerebellum", "pons", "medulla-oblongata", "midbrain"]
+        },
+        {
+          "title": "Lift it away",
+          "text": "In the Anatomy Lab you can drag the cerebellum away using Manual Dissection mode to see the fourth ventricle in front of it.",
+          "camera": "posterior",
+          "highlight": ["fourth-ventricle"],
+          "hide": ["cerebellum"]
+        },
+        {
+          "title": "Model limitation",
+          "text": "In this asset the cerebellum is one piece: the vermis and hemispheres cannot be selected separately.",
+          "camera": "posterior",
+          "highlight": ["cerebellum"]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A lesion of the left cerebellar hemisphere typically causes clumsiness of the…",
+          "options": ["Left limbs", "Right limbs", "Both eyes only", "Face only"],
+          "answer": 0,
+          "explain": "Cerebellar hemispheres coordinate the same side of the body."
+        }
+      ]
+    },
+    {
+      "id": "movement-structures",
+      "title": "Brain Structures Involved in Movement",
+      "level": "intermediate",
+      "minutes": 6,
+      "summary": "Motor cortex, basal nuclei, thalamus, cerebellum and descending pathways.",
+      "steps": [
+        {
+          "title": "Primary motor cortex",
+          "text": "Voluntary movement commands originate largely in the precentral gyrus.",
+          "camera": "left-lateral",
+          "highlight": ["precentral-gyrus"]
+        },
+        {
+          "title": "Descending pathway",
+          "text": "Motor fibres descend through the internal capsule and cerebral peduncles into the brainstem.",
+          "camera": "left-lateral",
+          "highlight": ["precentral-gyrus", "internal-capsule", "cerebral-peduncles", "pons", "medulla-oblongata"],
+          "xray": true
+        },
+        {
+          "title": "Basal nuclei loop",
+          "text": "The caudate, putamen and globus pallidus form loops with cortex and thalamus that help select and scale movements.",
+          "camera": "anterior",
+          "highlight": ["basal-nuclei", "thalamus"],
+          "xray": true
+        },
+        {
+          "title": "Cerebellar loop",
+          "text": "The cerebellum compares intended and actual movement and sends corrections to motor cortex via the thalamus.",
+          "camera": "left-lateral",
+          "highlight": ["cerebellum", "thalamus", "precentral-gyrus"],
+          "xray": true
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which structure relays both basal ganglia and cerebellar output to motor cortex?",
+          "options": ["Thalamus", "Pituitary", "Optic chiasm", "Septum pellucidum"],
+          "answer": 0,
+          "explain": "Ventral thalamic nuclei relay these outputs to cortex."
+        }
+      ]
+    },
+    {
+      "id": "alzheimers-anatomy",
+      "title": "Brain Anatomy and Alzheimer's Disease",
+      "level": "advanced",
+      "minutes": 5,
+      "summary": "Typical regional involvement in Alzheimer's disease, explained schematically.",
+      "steps": [
+        {
+          "title": "Early involvement",
+          "text": "Tau pathology typically begins in the entorhinal cortex and hippocampus. This is a generalised educational pattern, not a patient scan.",
+          "camera": "inferior",
+          "highlight": ["hippocampus", "parahippocampal-gyrus"],
+          "explode": 0.5,
+          "disease": "alzheimers-disease"
+        },
+        {
+          "title": "Spread to association cortex",
+          "text": "As the disease progresses, temporal and parietal association cortex, the precuneus and posterior cingulate become involved.",
+          "camera": "left-lateral",
+          "highlight": ["temporal-lobe", "superior-parietal-lobule-precuneus", "cingulate-gyrus"],
+          "disease": "alzheimers-disease"
+        },
+        {
+          "title": "Relatively spared areas",
+          "text": "Primary motor, sensory and visual cortices are typically affected late, which is why movement and vision are often preserved early.",
+          "camera": "left-lateral",
+          "highlight": ["precentral-gyrus", "postcentral-gyrus", "occipital-lobe"]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which region is typically involved earliest in Alzheimer's disease?",
+          "options": ["Entorhinal cortex/hippocampus", "Primary visual cortex", "Cerebellum", "Pons"],
+          "answer": 0,
+          "explain": "Medial temporal structures are typically affected early."
+        }
+      ]
+    },
+    {
+      "id": "understanding-stroke",
+      "title": "Understanding Stroke",
+      "level": "intermediate",
+      "minutes": 5,
+      "summary": "Vascular territories and how location shapes stroke symptoms.",
+      "steps": [
+        {
+          "title": "MCA territory (schematic)",
+          "text": "The middle cerebral artery supplies much of the lateral frontal, parietal and temporal cortex, the insula and, through deep branches, the basal nuclei and internal capsule. Vessels are not modelled; regions are shown schematically.",
+          "camera": "left-lateral",
+          "highlight": ["left-frontal-lobe", "left-parietal-lobe", "left-temporal-lobe", "left-insular-cortex"],
+          "disease": "ischemic-stroke"
+        },
+        {
+          "title": "Deep structures",
+          "text": "Small deep (lacunar) infarcts in the internal capsule or basal nuclei can cause marked weakness.",
+          "camera": "anterior",
+          "highlight": ["left-basal-nuclei", "left-internal-capsule-anterior-limb"],
+          "xray": true
+        },
+        {
+          "title": "Posterior circulation",
+          "text": "Posterior circulation strokes can affect the occipital lobes, thalamus, brainstem and cerebellum.",
+          "camera": "posterior",
+          "highlight": ["occipital-lobe", "thalamus", "brainstem", "cerebellum"],
+          "xray": true
+        },
+        {
+          "title": "Act fast",
+          "text": "Sudden face drooping, arm weakness or speech difficulty is an emergency — call emergency services. This app cannot diagnose a stroke.",
+          "camera": "anterior",
+          "highlight": []
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A stroke in the left occipital lobe most typically causes…",
+          "options": [
+            "Loss of the right visual field in both eyes",
+            "Loss of hearing",
+            "Left arm weakness",
+            "Loss of smell"
+          ],
+          "answer": 0,
+          "explain": "Each occipital lobe processes the opposite visual field."
+        }
+      ]
+    },
+    {
+      "id": "neurodegeneration-intro",
+      "title": "Introduction to Neurodegenerative Diseases",
+      "level": "advanced",
+      "minutes": 5,
+      "summary": "Different diseases, different vulnerable regions.",
+      "steps": [
+        {
+          "title": "Selective vulnerability",
+          "text": "Neurodegenerative diseases affect particular neuron populations first. The pattern of early involvement explains early symptoms.",
+          "camera": "left-lateral",
+          "highlight": []
+        },
+        {
+          "title": "Alzheimer's disease",
+          "text": "Medial temporal and association cortex.",
+          "camera": "inferior",
+          "highlight": ["hippocampus", "parahippocampal-gyrus"],
+          "disease": "alzheimers-disease",
+          "explode": 0.5
+        },
+        {
+          "title": "Parkinson's disease",
+          "text": "Substantia nigra (within the cerebral peduncle region — not separately segmented) and its striatal targets.",
+          "camera": "anterior",
+          "highlight": ["cerebral-peduncles", "putamen", "caudate-nucleus"],
+          "disease": "parkinsons-disease",
+          "xray": true
+        },
+        {
+          "title": "Huntington's disease",
+          "text": "Striatum — especially the caudate nucleus.",
+          "camera": "anterior",
+          "highlight": ["caudate-nucleus", "putamen"],
+          "disease": "huntingtons-disease",
+          "xray": true
+        },
+        {
+          "title": "ALS",
+          "text": "Upper motor neurons in the precentral gyrus and lower motor neurons in the brainstem and spinal cord.",
+          "camera": "left-lateral",
+          "highlight": ["precentral-gyrus", "medulla-oblongata"],
+          "disease": "amyotrophic-lateral-sclerosis"
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which disease most characteristically causes caudate atrophy?",
+          "options": ["Huntington's disease", "Migraine", "Meningioma", "Concussion"],
+          "answer": 0,
+          "explain": "Striatal (especially caudate) degeneration is central to Huntington's disease."
+        }
+      ]
+    }
+  ]
 }

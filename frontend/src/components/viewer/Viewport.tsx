@@ -48,7 +48,12 @@ function LabelLayer() {
   }, [])
   return (
     <>
-      <svg ref={svg} className="pointer-events-none absolute inset-0 h-full w-full" style={{ display: 'none' }} aria-hidden>
+      <svg
+        ref={svg}
+        className="pointer-events-none absolute inset-0 h-full w-full"
+        style={{ display: 'none' }}
+        aria-hidden
+      >
         <line stroke="#22D3EE" strokeWidth={1.5} />
         <circle r={3.5} fill="#22D3EE" />
       </svg>
@@ -82,12 +87,24 @@ function OrientationWidget() {
   if (!show) return null
   const colors = ['#f87171', '#4ade80', '#60a5fa']
   return (
-    <div className="glass pointer-events-none absolute bottom-3 left-3 rounded-full p-1" aria-label="Orientation indicator">
+    <div
+      className="glass pointer-events-none absolute bottom-3 left-3 rounded-full p-1"
+      aria-label="Orientation indicator"
+    >
       <svg ref={ref} viewBox="-44 -44 88 88" width={84} height={84} role="img">
         <title>Anatomical orientation: L left, R right, S superior, I inferior, A anterior, P posterior</title>
         {[0, 1, 2].map((i) => (
           <g key={i}>
-            <line data-axis={i} x1={0} y1={0} x2={0} y2={0} stroke={colors[i]} strokeWidth={2.5} strokeLinecap="round" />
+            <line
+              data-axis={i}
+              x1={0}
+              y1={0}
+              x2={0}
+              y2={0}
+              stroke={colors[i]}
+              strokeWidth={2.5}
+              strokeLinecap="round"
+            />
             <text data-label={`${i}p`} fontSize={10} fontWeight={700} fill={colors[i]} textAnchor="middle">
               {['L', 'S', 'A'][i]}
             </text>
@@ -102,7 +119,15 @@ function OrientationWidget() {
   )
 }
 
-export function Viewport({ interactive = true, autoRotate = false, children }: { interactive?: boolean; autoRotate?: boolean; children?: ReactNode }) {
+export function Viewport({
+  interactive = true,
+  autoRotate = false,
+  children,
+}: {
+  interactive?: boolean
+  autoRotate?: boolean
+  children?: ReactNode
+}) {
   return (
     <div className="relative h-full w-full overflow-hidden" data-testid="viewport">
       <ViewerErrorBoundary>

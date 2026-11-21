@@ -1,416 +1,1261 @@
 [
- {
-  "id": "alzheimers-disease", "name": "Alzheimer's disease", "category": "neurodegenerative", "classification": "Neurodegenerative disease (most common cause of dementia)",
-  "synonyms": ["AD", "Alzheimer disease"],
-  "overview": "Alzheimer's disease is a progressive neurodegenerative disease in which accumulation of abnormal proteins and loss of synapses and neurons gradually impair memory, thinking and, eventually, the ability to carry out everyday activities.",
-  "pathophysiology": "Two hallmark pathologies are extracellular plaques of amyloid-beta and intracellular neurofibrillary tangles of hyperphosphorylated tau. Tangle pathology typically begins in the entorhinal cortex and hippocampus and later spreads to association cortex, which parallels the early memory-predominant symptoms. Synapse loss, neuroinflammation and vascular factors contribute.",
-  "causes": "Most cases are late-onset and arise from a combination of age, genetic and environmental factors. A small proportion of early-onset cases are caused by inherited mutations (APP, PSEN1, PSEN2).",
-  "riskFactors": ["Increasing age", "Family history; APOE ε4 allele increases risk", "Down syndrome", "Cardiovascular risk factors (hypertension, diabetes) — associated with higher risk", "Head injury (association)"],
-  "regionsSummary": "Medial temporal lobe (entorhinal cortex, hippocampus) early; later temporal, parietal (including precuneus/posterior cingulate) and frontal association cortex. Primary motor, sensory and visual cortex are relatively spared until late.",
-  "symptoms": ["Difficulty remembering recent events and conversations", "Repeating questions; misplacing items", "Word-finding problems", "Disorientation in time and place", "Impaired judgement, planning and problem-solving", "Changes in mood, personality or behaviour"],
-  "progression": "Usually gradual over years, from mild cognitive symptoms to moderate and severe dementia with dependence on others for daily care. Rate of progression varies widely between individuals.",
-  "diagnosis": ["Clinical history from the person and an informant", "Cognitive testing", "Blood tests to exclude other causes (e.g. thyroid, vitamin B12)", "Structural brain imaging (MRI or CT)", "In selected cases: amyloid/tau PET, CSF or blood biomarkers"],
-  "imaging": "MRI may show medial temporal (hippocampal) atrophy and generalised atrophy; FDG-PET often shows reduced metabolism in temporoparietal and posterior cingulate cortex. Imaging supports but does not by itself establish the diagnosis.",
-  "treatments": ["Cholinesterase inhibitors and memantine for symptoms", "Anti-amyloid monoclonal antibodies for selected people with early disease and confirmed amyloid pathology, with monitoring for side effects such as ARIA", "Treatment of coexisting conditions (hearing loss, depression, vascular risk factors)"],
-  "rehabilitation": "Cognitive stimulation, occupational therapy, safety planning, caregiver education and support, and advance care planning.",
-  "complications": ["Falls and injury", "Swallowing difficulty and aspiration pneumonia in late stages", "Malnutrition", "Delirium during illness"],
-  "prognosis": "Progressive and currently not curable. Survival after diagnosis varies widely depending on age and other health conditions.",
-  "prevention": "No intervention is proven to prevent Alzheimer's disease. Managing cardiovascular risk factors, physical activity, and social and cognitive engagement are associated with healthier brain ageing and are under active study.",
-  "emergingResearch": "Blood-based biomarkers, anti-tau therapies and combination approaches are under investigation.",
-  "faq": [{"q": "Is memory loss always Alzheimer's disease?", "a": "No. Memory problems have many causes, including other dementias, depression, medication effects, vitamin deficiency and normal ageing. A clinical evaluation is needed."}, {"q": "Does the hippocampus shrink in everyone with Alzheimer's?", "a": "Hippocampal atrophy is common but variable; atypical forms (e.g. posterior cortical or language-predominant variants) can begin elsewhere."}],
-  "associations": [
-   {"target": "hippocampus", "type": "primary", "distribution": "diffuse", "evidence": "established", "explanation": "Neurofibrillary tangles and neuronal loss affect the hippocampus early, matching early difficulty forming new memories."},
-   {"target": "parahippocampal-gyrus", "type": "primary", "distribution": "regional", "evidence": "established", "explanation": "Entorhinal cortex (anterior parahippocampal gyrus) is one of the earliest sites of tau pathology."},
-   {"target": "temporal-lobe", "type": "secondary", "distribution": "regional", "evidence": "established", "explanation": "Pathology spreads to lateral temporal association cortex as disease advances."},
-   {"target": "superior-parietal-lobule-precuneus", "type": "secondary", "distribution": "regional", "evidence": "established", "explanation": "Precuneus and parietal association cortex show reduced metabolism and atrophy; involvement is prominent in posterior variants."},
-   {"target": "cingulate-gyrus", "type": "secondary", "distribution": "regional", "evidence": "established", "explanation": "Posterior cingulate hypometabolism is a frequent imaging feature."},
-   {"target": "frontal-lobe", "type": "subtype", "distribution": "regional", "evidence": "variable", "explanation": "Frontal association cortex is involved later, and earlier in some atypical presentations."}
-  ],
-  "references": ["ninds-alzheimers", "mp-alzheimers", "mp-dementia"]
- },
- {
-  "id": "parkinsons-disease", "name": "Parkinson's disease", "category": "neurodegenerative", "classification": "Neurodegenerative disease (movement disorder)",
-  "synonyms": ["PD", "Parkinson disease"],
-  "overview": "Parkinson's disease is a progressive neurodegenerative disorder best known for slowness of movement, rigidity, tremor at rest and postural instability, often accompanied by non-motor symptoms.",
-  "pathophysiology": "Degeneration of dopamine-producing neurons in the substantia nigra pars compacta reduces dopamine in the striatum (especially the putamen), disrupting basal ganglia–thalamocortical motor loops. Abnormal alpha-synuclein aggregates (Lewy bodies and neurites) are found in affected neurons and also in other brain regions and the peripheral autonomic nervous system.",
-  "causes": "In most people the cause is unknown and likely involves genetic susceptibility with environmental factors. Several genes (for example LRRK2, GBA1, SNCA, PRKN) are associated with inherited or increased risk.",
-  "riskFactors": ["Increasing age", "Male sex (higher incidence)", "Family history and specific gene variants", "Certain environmental exposures (e.g. some pesticides) — associations under study"],
-  "regionsSummary": "Substantia nigra pars compacta (within the midbrain cerebral peduncle region — not separately segmented in this model) and its striatal targets (putamen > caudate); Lewy pathology also affects brainstem nuclei and, later, limbic and cortical regions.",
-  "symptoms": ["Bradykinesia (slowness and reduced amplitude of movement)", "Rigidity", "Rest tremor, often starting on one side", "Postural instability and gait changes (later)", "Non-motor: reduced sense of smell, constipation, REM sleep behaviour disorder, depression, anxiety, cognitive changes"],
-  "progression": "Typically begins on one side and progresses slowly over years. Non-motor symptoms may precede motor diagnosis. Course and severity vary substantially.",
-  "diagnosis": ["Clinical diagnosis based on history and neurological examination", "Response to dopaminergic medication supports the diagnosis", "Imaging to exclude other causes when needed", "Dopamine transporter imaging in selected uncertain cases"],
-  "imaging": "Routine MRI is often normal. Dopamine transporter SPECT can show reduced striatal uptake but does not distinguish Parkinson's disease from some other parkinsonian syndromes.",
-  "treatments": ["Levodopa (with carbidopa or benserazide)", "Dopamine agonists, MAO-B inhibitors, COMT inhibitors", "Deep brain stimulation (subthalamic nucleus or globus pallidus internus) for selected patients", "Treatment of non-motor symptoms"],
-  "rehabilitation": "Physiotherapy (gait, balance, exercise), occupational therapy, speech and swallowing therapy.",
-  "complications": ["Motor fluctuations and dyskinesia with long-term treatment", "Falls", "Swallowing difficulties", "Dementia in some people", "Orthostatic hypotension"],
-  "prognosis": "Progressive but highly variable; many people maintain function for years with treatment.",
-  "prevention": "No proven preventive measure. Regular physical activity is associated with lower risk and benefits people with the condition.",
-  "emergingResearch": "Alpha-synuclein seed amplification assays, disease-modifying therapies targeting alpha-synuclein or LRRK2, and cell-based therapies are being studied.",
-  "faq": [{"q": "Why is the substantia nigra not highlighted on its own?", "a": "The source anatomical model does not segment it separately; the cerebral peduncle element that contains it is highlighted as a schematic association."}],
-  "associations": [
-   {"target": "cerebral-peduncles", "type": "primary", "distribution": "focal", "evidence": "established", "explanation": "Contains the substantia nigra pars compacta, where dopaminergic neuron loss defines the disease. Schematic: the nigra itself is not segmented; the whole peduncle is NOT uniformly affected."},
-   {"target": "putamen", "type": "primary", "distribution": "diffuse", "evidence": "established", "explanation": "Loss of nigrostriatal dopamine is most marked in the putamen, producing the motor signs."},
-   {"target": "caudate-nucleus", "type": "secondary", "distribution": "diffuse", "evidence": "established", "explanation": "Dopamine depletion also affects the caudate, generally less than the putamen."},
-   {"target": "globus-pallidus", "type": "secondary", "distribution": "network", "evidence": "established", "explanation": "Altered pallidal output is part of basal ganglia circuit dysfunction; it is a DBS target."},
-   {"target": "thalamus", "type": "secondary", "distribution": "network", "evidence": "established", "explanation": "Abnormal basal ganglia output alters thalamocortical motor signalling."},
-   {"target": "medulla-oblongata", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Lewy pathology often involves lower brainstem nuclei (e.g. dorsal motor nucleus of vagus), linked to non-motor symptoms."}
-  ],
-  "references": ["ninds-parkinsons", "mp-parkinsons", "mp-movement"]
- },
- {
-  "id": "huntingtons-disease", "name": "Huntington's disease", "category": "neurodegenerative", "classification": "Inherited neurodegenerative disease",
-  "synonyms": ["HD", "Huntington disease", "Huntington's chorea"],
-  "overview": "Huntington's disease is an inherited, progressive brain disorder that causes involuntary movements, psychiatric symptoms and cognitive decline.",
-  "pathophysiology": "An expanded CAG trinucleotide repeat in the HTT gene produces mutant huntingtin protein. Medium spiny neurons of the striatum are particularly vulnerable, with early and marked degeneration of the caudate and putamen, followed by wider cortical involvement.",
-  "causes": "Autosomal dominant inheritance: each child of an affected parent has a 50% chance of inheriting the expanded gene.",
-  "riskFactors": ["Having a parent with Huntington's disease", "Longer CAG repeat length is associated with earlier onset"],
-  "regionsSummary": "Striatum (caudate nucleus earliest and most marked, then putamen); later cerebral cortex and other regions.",
-  "symptoms": ["Chorea (involuntary, irregular movements)", "Impaired coordination and gait", "Depression, irritability, apathy, obsessive behaviour", "Problems with planning, organisation and attention", "Speech and swallowing difficulties (later)"],
-  "progression": "Typically begins in mid-adulthood and progresses over many years; a juvenile form begins before age 20.",
-  "diagnosis": ["Clinical evaluation and family history", "Genetic testing for the HTT CAG expansion (with genetic counselling)", "Brain imaging"],
-  "imaging": "MRI/CT may show caudate atrophy with enlargement of the frontal horns of the lateral ventricles, and generalised atrophy later.",
-  "treatments": ["Medications to reduce chorea (e.g. VMAT2 inhibitors)", "Treatment of depression, irritability and other psychiatric symptoms", "No disease-modifying therapy is currently approved"],
-  "rehabilitation": "Physiotherapy, occupational and speech therapy, nutritional support, psychological and social support for families.",
-  "complications": ["Falls", "Aspiration pneumonia", "Weight loss", "Suicide risk related to depression"],
-  "prognosis": "Progressive; course typically spans many years after symptom onset.",
-  "prevention": "No prevention of disease in gene carriers; genetic counselling and reproductive options are available for families.",
-  "emergingResearch": "Huntingtin-lowering therapies (antisense oligonucleotides, gene therapies) are in clinical trials.",
-  "faq": [{"q": "Why does caudate shrinkage enlarge the ventricles?", "a": "The caudate forms the lateral wall of the lateral ventricle; as it atrophies, the frontal horn expands."}],
-  "associations": [
-   {"target": "caudate-nucleus", "type": "primary", "distribution": "diffuse", "evidence": "established", "explanation": "Earliest and most severe neuronal loss in the striatum, especially the caudate."},
-   {"target": "putamen", "type": "primary", "distribution": "diffuse", "evidence": "established", "explanation": "Putaminal medium spiny neurons also degenerate."},
-   {"target": "globus-pallidus", "type": "secondary", "distribution": "network", "evidence": "established", "explanation": "Downstream basal ganglia output is disrupted."},
-   {"target": "lateral-ventricle", "type": "secondary", "distribution": "regional", "evidence": "established", "explanation": "Frontal horns enlarge secondary to caudate atrophy (imaging sign, not primary pathology)."},
-   {"target": "frontal-lobe", "type": "secondary", "distribution": "regional", "evidence": "established", "explanation": "Cortical atrophy develops as disease advances, contributing to cognitive and behavioural symptoms."}
-  ],
-  "references": ["ninds-huntingtons", "mp-huntingtons"]
- },
- {
-  "id": "amyotrophic-lateral-sclerosis", "name": "Amyotrophic lateral sclerosis", "category": "neurodegenerative", "classification": "Neurodegenerative motor neuron disease",
-  "synonyms": ["ALS", "motor neuron disease (MND)", "Lou Gehrig's disease"],
-  "overview": "ALS is a progressive disease that destroys upper motor neurons in the brain and lower motor neurons in the brainstem and spinal cord, leading to weakness, muscle wasting and eventually respiratory failure.",
-  "pathophysiology": "Degeneration of corticospinal (upper) motor neurons in the primary motor cortex and of lower motor neurons in brainstem motor nuclei and spinal anterior horns. TDP-43 protein aggregates are found in most cases. There is clinical and genetic overlap with frontotemporal dementia.",
-  "causes": "Most cases are sporadic. About one in ten is familial; genes include C9orf72, SOD1, TARDBP and FUS.",
-  "riskFactors": ["Increasing age (peak onset in later middle age)", "Family history", "Military service (association reported)"],
-  "regionsSummary": "Primary motor cortex (precentral gyrus) and corticospinal pathways (internal capsule, cerebral peduncles, pons, medulla), brainstem motor nuclei, spinal cord (not modelled); frontal and temporal cortex in ALS–FTD overlap.",
-  "symptoms": ["Painless progressive weakness of limbs", "Muscle twitching (fasciculations) and cramps", "Slurred speech and swallowing difficulty (bulbar onset)", "Spasticity and brisk reflexes", "Breathing difficulty (later)", "Cognitive or behavioural change in some people"],
-  "progression": "Progressive, with spread to other body regions. Rate varies considerably.",
-  "diagnosis": ["Clinical examination for upper and lower motor neuron signs", "Electromyography and nerve conduction studies", "MRI and blood tests to exclude mimics", "Genetic testing where appropriate"],
-  "imaging": "MRI is mainly used to exclude other causes; some people show signal change along the corticospinal tracts.",
-  "treatments": ["Riluzole and edaravone (disease-slowing therapies approved in some countries)", "Tofersen for SOD1-related ALS", "Non-invasive ventilation and nutritional support (e.g. gastrostomy)", "Symptom management (spasticity, saliva, cramps)"],
-  "rehabilitation": "Multidisciplinary care: physiotherapy, occupational therapy, speech and communication aids, respiratory care, palliative care.",
-  "complications": ["Respiratory failure", "Aspiration pneumonia", "Malnutrition", "Loss of communication"],
-  "prognosis": "Progressive and life-limiting; survival varies widely, and a minority live many years.",
-  "prevention": "No known prevention.",
-  "emergingResearch": "Gene-targeted therapies (e.g. for C9orf72) and biomarkers such as neurofilament light are under study.",
-  "faq": [{"q": "Is ALS a disease of muscles?", "a": "No. Muscles weaken because the motor neurons that control them degenerate."}],
-  "associations": [
-   {"target": "precentral-gyrus", "type": "primary", "distribution": "diffuse", "evidence": "established", "explanation": "Upper motor neurons in primary motor cortex degenerate."},
-   {"target": "cerebral-peduncles", "type": "secondary", "distribution": "focal", "evidence": "established", "explanation": "Descending corticospinal fibres degenerate along their course."},
-   {"target": "internal-capsule", "type": "secondary", "distribution": "focal", "evidence": "variable", "explanation": "Corticospinal tract involvement (mainly posterior limb, which is not modelled; anterior limb shown for orientation only)."},
-   {"target": "medulla-oblongata", "type": "primary", "distribution": "focal", "evidence": "established", "explanation": "Brainstem motor nuclei (e.g. hypoglossal) are affected, causing bulbar symptoms."},
-   {"target": "pons", "type": "secondary", "distribution": "focal", "evidence": "established", "explanation": "Motor nuclei and descending tracts in the pons are involved."},
-   {"target": "frontal-lobe", "type": "subtype", "distribution": "regional", "evidence": "established", "explanation": "Frontal involvement in people with ALS–FTD overlap."}
-  ],
-  "references": ["ninds-als", "mp-als"]
- },
- {
-  "id": "frontotemporal-dementia", "name": "Frontotemporal dementia", "category": "neurodegenerative", "classification": "Group of neurodegenerative disorders (clinical syndromes)",
-  "synonyms": ["FTD", "frontotemporal lobar degeneration (FTLD)", "Pick's disease (historical, one subtype)"],
-  "overview": "Frontotemporal dementia is a group of disorders caused by progressive degeneration of the frontal and/or temporal lobes, producing changes in behaviour, personality or language.",
-  "pathophysiology": "Neuronal loss with abnormal protein inclusions — most commonly tau, TDP-43 or (rarely) FUS — in frontal and anterior temporal cortex. The clinical variant depends on which regions degenerate first.",
-  "causes": "Many cases are sporadic; a substantial proportion are familial, with mutations in genes such as MAPT, GRN and C9orf72.",
-  "riskFactors": ["Family history of FTD or ALS", "Onset is often younger than in Alzheimer's disease"],
-  "regionsSummary": "Behavioural variant: frontal (especially orbitofrontal and medial) and anterior temporal cortex, insula. Semantic variant: anterior temporal lobe (often left). Non-fluent variant: left posterior frontal and insular cortex.",
-  "symptoms": ["Disinhibition, apathy, loss of empathy (behavioural variant)", "Compulsive behaviours and dietary changes", "Loss of word meaning (semantic variant)", "Effortful, halting speech (non-fluent variant)", "Relatively preserved memory early in many cases"],
-  "progression": "Progressive over years; symptoms broaden as degeneration spreads.",
-  "diagnosis": ["Clinical history (informant essential)", "Neuropsychological and language assessment", "MRI and sometimes FDG-PET", "Genetic testing when indicated"],
-  "imaging": "MRI may show focal frontal and/or anterior temporal atrophy, sometimes asymmetric; FDG-PET shows corresponding hypometabolism.",
-  "treatments": ["No disease-modifying treatment currently approved", "Symptomatic treatment of behavioural symptoms", "Speech and language therapy"],
-  "rehabilitation": "Behavioural strategies, caregiver support and education, communication aids, safety planning.",
-  "complications": ["Unsafe behaviours", "Swallowing problems later", "Coexisting motor neuron disease or parkinsonism in some people"],
-  "prognosis": "Progressive; duration varies by subtype and individual.",
-  "prevention": "No known prevention.",
-  "emergingResearch": "Gene-targeted therapies for GRN and C9orf72 mutation carriers are in trials.",
-  "faq": [{"q": "Is FTD the same as Alzheimer's disease?", "a": "No. They differ in pathology, typical age of onset and early symptoms, although symptoms can overlap."}],
-  "associations": [
-   {"target": "frontal-lobe", "type": "primary", "distribution": "regional", "evidence": "established", "explanation": "Frontal atrophy underlies behavioural and executive changes."},
-   {"target": "orbital-and-straight-gyri", "type": "primary", "distribution": "regional", "evidence": "established", "explanation": "Orbitofrontal cortex is commonly affected in the behavioural variant."},
-   {"target": "temporal-lobe", "type": "subtype", "distribution": "regional", "evidence": "established", "explanation": "Anterior temporal atrophy is characteristic of the semantic variant."},
-   {"target": "insula", "type": "secondary", "distribution": "regional", "evidence": "established", "explanation": "Insular involvement is common, especially in behavioural and non-fluent variants."},
-   {"target": "cingulate-gyrus", "type": "secondary", "distribution": "regional", "evidence": "established", "explanation": "Anterior cingulate involvement relates to apathy."}
-  ],
-  "references": ["ninds-ftd", "mp-dementia"]
- },
- {
-  "id": "dementia-with-lewy-bodies", "name": "Dementia with Lewy bodies", "category": "neurodegenerative", "classification": "Neurodegenerative disease (Lewy body disease)",
-  "synonyms": ["DLB", "Lewy body dementia (umbrella term including Parkinson's disease dementia)"],
-  "overview": "Dementia with Lewy bodies is a progressive dementia characterised by fluctuating attention, visual hallucinations, REM sleep behaviour disorder and parkinsonism.",
-  "pathophysiology": "Alpha-synuclein aggregates (Lewy bodies) accumulate in brainstem, limbic and neocortical neurons. Cholinergic deficits are prominent; coexisting Alzheimer-type pathology is common.",
-  "causes": "Usually sporadic; genetic factors (e.g. GBA1, APOE ε4) increase risk.",
-  "riskFactors": ["Increasing age", "Male sex", "REM sleep behaviour disorder (strong association)"],
-  "regionsSummary": "Distributed: brainstem (including substantia nigra), limbic structures (amygdala, cingulate) and neocortex; occipital hypometabolism is common on imaging. Hippocampus is often relatively preserved compared with Alzheimer's disease.",
-  "symptoms": ["Fluctuating cognition and alertness", "Recurrent well-formed visual hallucinations", "REM sleep behaviour disorder", "Parkinsonism", "Visuospatial and attention problems", "Sensitivity to antipsychotic medications"],
-  "progression": "Progressive; symptoms fluctuate day to day.",
-  "diagnosis": ["Clinical criteria based on core and supportive features", "Dopamine transporter imaging, cardiac MIBG scintigraphy or polysomnography in selected cases"],
-  "imaging": "Relative preservation of medial temporal lobes on MRI compared with Alzheimer's disease; reduced striatal dopamine transporter uptake; occipital hypometabolism on FDG-PET.",
-  "treatments": ["Cholinesterase inhibitors", "Cautious use of levodopa for parkinsonism", "Avoidance or extreme caution with antipsychotics", "Treatment of sleep and autonomic symptoms"],
-  "rehabilitation": "Physiotherapy for falls prevention, occupational therapy, caregiver support.",
-  "complications": ["Falls", "Severe reactions to antipsychotic drugs", "Autonomic dysfunction (orthostatic hypotension)"],
-  "prognosis": "Progressive; course varies.",
-  "prevention": "No known prevention.",
-  "emergingResearch": "Alpha-synuclein biomarkers (skin biopsy, seed amplification assays) are being evaluated.",
-  "faq": [{"q": "How does DLB differ from Parkinson's disease dementia?", "a": "By convention, DLB is diagnosed when dementia begins before or within about a year of parkinsonism; otherwise the term Parkinson's disease dementia is used."}],
-  "associations": [
-   {"target": "cerebral-peduncles", "type": "primary", "distribution": "focal", "evidence": "established", "explanation": "Substantia nigra (within this element; schematic) shows Lewy pathology and neuron loss, causing parkinsonism."},
-   {"target": "amygdala", "type": "secondary", "distribution": "diffuse", "evidence": "established", "explanation": "Limbic Lewy pathology is common."},
-   {"target": "cingulate-gyrus", "type": "secondary", "distribution": "regional", "evidence": "established", "explanation": "Cingulate cortex is a typical site of cortical Lewy bodies."},
-   {"target": "occipital-lobe", "type": "secondary", "distribution": "regional", "evidence": "variable", "explanation": "Occipital hypometabolism on imaging, linked to visual symptoms; pathology is not uniform."},
-   {"target": "putamen", "type": "secondary", "distribution": "diffuse", "evidence": "established", "explanation": "Reduced striatal dopamine transporter uptake reflects nigrostriatal degeneration."}
-  ],
-  "references": ["ninds-lbd", "mp-lbd"]
- },
- {
-  "id": "ischemic-stroke", "name": "Ischemic stroke", "category": "cerebrovascular", "classification": "Acute cerebrovascular event (medical emergency)",
-  "synonyms": ["cerebral infarction", "brain attack"],
-  "overview": "An ischemic stroke occurs when blood flow to part of the brain is blocked, depriving brain tissue of oxygen and glucose. It is a medical emergency: rapid treatment can reduce brain damage.",
-  "pathophysiology": "Arterial occlusion by thrombosis, embolism or small-vessel disease reduces perfusion. A core of irreversibly injured tissue may be surrounded by a penumbra of at-risk tissue that can be salvaged if flow is restored quickly. Deficits correspond to the vascular territory involved.",
-  "causes": "Large-artery atherosclerosis, cardioembolism (e.g. atrial fibrillation), small-vessel (lacunar) disease, arterial dissection and other less common causes.",
-  "riskFactors": ["High blood pressure", "Atrial fibrillation and other heart disease", "Diabetes", "Smoking", "High cholesterol", "Physical inactivity and obesity", "Increasing age", "Previous stroke or TIA"],
-  "regionsSummary": "Depends on the artery: middle cerebral artery territory (lateral frontal, parietal and temporal cortex, insula, deep basal ganglia and internal capsule) is most commonly affected; anterior cerebral (medial frontal/parietal), posterior cerebral (occipital, medial temporal, thalamus) and posterior circulation (brainstem, cerebellum) strokes also occur.",
-  "symptoms": ["Sudden weakness or numbness of face, arm or leg, especially on one side", "Sudden trouble speaking or understanding", "Sudden vision loss", "Sudden dizziness, loss of balance or coordination", "Sudden severe headache (more typical of haemorrhage)"],
-  "progression": "Onset is sudden. Deficits may improve over weeks to months with recovery and rehabilitation; some remain permanent.",
-  "diagnosis": ["Emergency clinical assessment (stroke scales)", "Urgent brain imaging (CT or MRI) to exclude haemorrhage", "CT or MR angiography to identify vessel occlusion", "Cardiac evaluation and blood tests to find the cause"],
-  "imaging": "Early CT may be normal; diffusion-weighted MRI detects acute infarction within minutes to hours. Angiography shows occluded vessels.",
-  "treatments": ["Intravenous thrombolysis within established time windows for eligible patients", "Mechanical thrombectomy for large-vessel occlusion in eligible patients", "Antiplatelet or anticoagulant therapy for secondary prevention as appropriate", "Blood pressure, glucose and lipid management"],
-  "rehabilitation": "Physiotherapy, occupational therapy, speech and language therapy and neuropsychological support, beginning early.",
-  "complications": ["Brain swelling", "Haemorrhagic transformation", "Aspiration pneumonia", "Deep vein thrombosis", "Depression", "Seizures"],
-  "prognosis": "Varies widely with stroke size, location, speed of treatment and rehabilitation.",
-  "prevention": "Control of blood pressure, treatment of atrial fibrillation, not smoking, diabetes and cholesterol management, physical activity.",
-  "emergingResearch": "Extended treatment windows guided by perfusion imaging and neuroprotective strategies are under study.",
-  "faq": [{"q": "What should I do if I suspect a stroke?", "a": "Call emergency services immediately. This application cannot assess or diagnose a stroke."}],
-  "associations": [
-   {"target": "frontal-lobe", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Lateral frontal cortex lies in the MCA territory; medial frontal in the ACA territory."},
-   {"target": "parietal-lobe", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Lateral parietal cortex is commonly involved in MCA strokes."},
-   {"target": "temporal-lobe", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Lateral temporal cortex lies in the MCA territory."},
-   {"target": "insula", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Insula is frequently involved in proximal MCA occlusion."},
-   {"target": "basal-nuclei", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Deep lenticulostriate branches supply the basal nuclei; lacunar infarcts are common here."},
-   {"target": "internal-capsule", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Small capsular infarcts can cause marked weakness."},
-   {"target": "occipital-lobe", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Posterior cerebral artery strokes cause contralateral visual field loss."},
-   {"target": "thalamus", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Thalamic infarcts arise from posterior circulation branches."},
-   {"target": "brainstem", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Vertebrobasilar strokes affect the brainstem."},
-   {"target": "cerebellum", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Cerebellar infarcts cause ataxia and can cause dangerous swelling."}
-  ],
-  "references": ["ninds-stroke", "mp-ischemic-stroke", "mp-stroke", "openstax-13-3"]
- },
- {
-  "id": "hemorrhagic-stroke", "name": "Hemorrhagic stroke", "category": "cerebrovascular", "classification": "Acute cerebrovascular event (medical emergency)",
-  "synonyms": ["intracerebral hemorrhage (ICH)", "brain bleed"],
-  "overview": "A hemorrhagic stroke occurs when a blood vessel ruptures and bleeds into or around the brain. Intracerebral haemorrhage bleeds into brain tissue; subarachnoid haemorrhage (covered separately) bleeds around it.",
-  "pathophysiology": "Blood forms a haematoma that destroys and compresses surrounding tissue, raises intracranial pressure and can expand in the first hours. Chronic hypertension damages small penetrating arteries, explaining the typical deep locations.",
-  "causes": "Chronic hypertension (deep haemorrhages), cerebral amyloid angiopathy (lobar haemorrhages in older adults), anticoagulant use, vascular malformations, tumours, and drug use (e.g. cocaine).",
-  "riskFactors": ["High blood pressure", "Anticoagulant medications", "Increasing age", "Heavy alcohol use", "Vascular malformations"],
-  "regionsSummary": "Hypertensive haemorrhages: putamen, thalamus, pons and cerebellum. Amyloid angiopathy: cortical-subcortical (lobar) regions.",
-  "symptoms": ["Sudden severe headache", "Sudden weakness or numbness", "Vomiting", "Decreased consciousness", "Seizures"],
-  "progression": "Sudden onset; early deterioration can occur from haematoma expansion or swelling.",
-  "diagnosis": ["Emergency non-contrast CT", "CT/MR angiography to look for an underlying vascular lesion", "Coagulation tests"],
-  "imaging": "CT shows acute blood as a hyperdense area; MRI sequences can detect old microbleeds suggesting the underlying cause.",
-  "treatments": ["Blood pressure lowering according to guidelines", "Rapid reversal of anticoagulation", "Neurosurgery in selected cases (e.g. cerebellar haemorrhage)", "Management of intracranial pressure"],
-  "rehabilitation": "Multidisciplinary stroke rehabilitation.",
-  "complications": ["Raised intracranial pressure and herniation", "Hydrocephalus (intraventricular extension)", "Seizures", "Recurrence"],
-  "prognosis": "Depends on haematoma size, location, consciousness level and age; often more severe than ischaemic stroke.",
-  "prevention": "Blood pressure control is the most important preventive measure.",
-  "emergingResearch": "Minimally invasive haematoma evacuation and haemostatic therapies are being studied.",
-  "faq": [{"q": "Can a stroke be identified as haemorrhagic without a scan?", "a": "No. Brain imaging is required to distinguish haemorrhagic from ischaemic stroke."}],
-  "associations": [
-   {"target": "putamen", "type": "primary", "distribution": "focal", "evidence": "established", "explanation": "Most common site of hypertensive haemorrhage."},
-   {"target": "thalamus", "type": "primary", "distribution": "focal", "evidence": "established", "explanation": "Common site of hypertensive haemorrhage."},
-   {"target": "pons", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Pontine haemorrhage can be devastating."},
-   {"target": "cerebellum", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Cerebellar haemorrhage may require urgent surgery."},
-   {"target": "cerebral-white-matter", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Lobar (subcortical) haemorrhages occur with amyloid angiopathy."},
-   {"target": "lateral-ventricle", "type": "secondary", "distribution": "focal", "evidence": "established", "explanation": "Blood may extend into the ventricles and cause hydrocephalus."}
-  ],
-  "references": ["ninds-stroke", "mp-hemorrhagic-stroke", "mp-stroke"]
- },
- {
-  "id": "subarachnoid-hemorrhage", "name": "Subarachnoid hemorrhage", "category": "cerebrovascular", "classification": "Acute cerebrovascular event (medical emergency)",
-  "synonyms": ["SAH"],
-  "overview": "Subarachnoid haemorrhage is bleeding into the subarachnoid space between the arachnoid membrane and the brain surface, most often from a ruptured aneurysm when not caused by trauma.",
-  "pathophysiology": "Blood under arterial pressure enters CSF spaces around the base of the brain, causing a sudden rise in intracranial pressure, meningeal irritation and possible later complications such as vasospasm and hydrocephalus.",
-  "causes": "Ruptured cerebral aneurysm (most common non-traumatic cause), head injury, arteriovenous malformation, and other less common causes.",
-  "riskFactors": ["Unruptured aneurysm", "High blood pressure", "Smoking", "Family history of aneurysm", "Polycystic kidney disease and some connective tissue disorders"],
-  "regionsSummary": "Subarachnoid spaces around the brain (not modelled as structures). Secondary effects may involve the ventricular system (hydrocephalus) and any territory affected by delayed ischaemia.",
-  "symptoms": ["Sudden, severe 'worst-ever' headache", "Neck stiffness", "Nausea and vomiting", "Sensitivity to light", "Confusion or loss of consciousness", "Seizure"],
-  "progression": "Abrupt onset; risk of rebleeding and delayed complications in the following days to weeks.",
-  "diagnosis": ["Urgent non-contrast head CT", "Lumbar puncture if CT is negative but suspicion remains", "CT angiography or catheter angiography to find the source"],
-  "imaging": "CT shows blood in the basal cisterns and sulci; angiography identifies aneurysms.",
-  "treatments": ["Securing a ruptured aneurysm by endovascular coiling or surgical clipping", "Nimodipine to reduce delayed ischaemic complications", "Management of hydrocephalus (e.g. ventricular drain)", "Intensive care monitoring"],
-  "rehabilitation": "Rehabilitation for physical and cognitive deficits; support for fatigue and mood.",
-  "complications": ["Rebleeding", "Delayed cerebral ischaemia (vasospasm)", "Hydrocephalus", "Seizures", "Hyponatraemia"],
-  "prognosis": "Variable; depends on severity at presentation, age and complications.",
-  "prevention": "Blood pressure control and not smoking; management of known aneurysms by specialists.",
-  "emergingResearch": "Strategies to prevent delayed cerebral ischaemia are under investigation.",
-  "faq": [{"q": "Why isn't a structure highlighted for the bleed itself?", "a": "The bleed is in the subarachnoid space around the brain, which is not a segmented structure in the model. The ventricles are shown as a secondary association (hydrocephalus)."}],
-  "associations": [
-   {"target": "third-ventricle", "type": "secondary", "distribution": "regional", "evidence": "established", "explanation": "Hydrocephalus after SAH enlarges the ventricular system."},
-   {"target": "lateral-ventricle", "type": "secondary", "distribution": "regional", "evidence": "established", "explanation": "Ventricular enlargement from impaired CSF absorption or flow."},
-   {"target": "frontal-lobe", "type": "subtype", "distribution": "focal", "evidence": "variable", "explanation": "Delayed ischaemia or haematoma can affect territories near the ruptured aneurysm, e.g. anterior communicating artery aneurysms near the medial frontal lobes."}
-  ],
-  "references": ["mp-ency-sah", "ninds-aneurysm", "ninds-stroke"]
- },
- {
-  "id": "cerebral-aneurysm", "name": "Cerebral aneurysm", "category": "cerebrovascular", "classification": "Structural vascular abnormality",
-  "synonyms": ["brain aneurysm", "intracranial aneurysm", "berry aneurysm"],
-  "overview": "A cerebral aneurysm is a weak, bulging area in the wall of an artery in the brain. Most never rupture, but rupture causes subarachnoid haemorrhage.",
-  "pathophysiology": "Saccular aneurysms usually form at branch points of arteries in the circle of Willis, where haemodynamic stress and wall weakness combine. Size, location, shape and growth influence rupture risk.",
-  "causes": "Acquired wall degeneration; associated with genetic and connective tissue conditions in some people.",
-  "riskFactors": ["Smoking", "High blood pressure", "Family history", "Polycystic kidney disease", "Female sex", "Heavy alcohol use"],
-  "regionsSummary": "Arteries of the circle of Willis at the base of the brain (vessels are not modelled). Large aneurysms can compress nearby structures such as the optic chiasm or nerves.",
-  "symptoms": ["Usually none until rupture", "Large unruptured aneurysms: headache, vision changes, eye movement problems from nerve compression", "Rupture: sudden severe headache (see subarachnoid haemorrhage)"],
-  "progression": "Many remain stable; some grow. Rupture is a sudden event.",
-  "diagnosis": ["CT angiography", "MR angiography", "Catheter (digital subtraction) angiography"],
-  "imaging": "Angiographic imaging shows the aneurysm sac and its relation to parent vessels.",
-  "treatments": ["Observation with imaging surveillance for selected small aneurysms", "Endovascular coiling or flow-diverting stents", "Surgical clipping", "Risk factor control"],
-  "rehabilitation": "Only needed after rupture or treatment complications.",
-  "complications": ["Rupture and subarachnoid haemorrhage", "Compression of cranial nerves", "Treatment-related stroke"],
-  "prognosis": "Unruptured aneurysms often have a good outlook; ruptured aneurysms carry serious risk.",
-  "prevention": "Not smoking and blood pressure control reduce growth and rupture risk.",
-  "emergingResearch": "Better tools for predicting rupture risk are being developed.",
-  "faq": [{"q": "Does everyone with an aneurysm need surgery?", "a": "No. Specialists weigh size, location, shape and personal factors."}],
-  "associations": [
-   {"target": "optic-chiasm", "type": "subtype", "distribution": "focal", "evidence": "variable", "explanation": "Large aneurysms near the circle of Willis can compress the chiasm, causing visual field loss."},
-   {"target": "midbrain", "type": "subtype", "distribution": "focal", "evidence": "variable", "explanation": "Posterior communicating artery aneurysms can compress the oculomotor nerve as it leaves the midbrain (nerve not modelled)."}
-  ],
-  "references": ["ninds-aneurysm", "mp-aneurysm"]
- },
- {
-  "id": "cerebral-arteriovenous-malformation", "name": "Cerebral arteriovenous malformation", "category": "cerebrovascular", "classification": "Structural vascular malformation (usually congenital)",
-  "synonyms": ["AVM", "brain AVM"],
-  "overview": "A brain AVM is a tangle of abnormal blood vessels in which arteries connect directly to veins without an intervening capillary bed.",
-  "pathophysiology": "High-flow shunting through a nidus of abnormal vessels can lead to haemorrhage, seizures through irritation of surrounding cortex, or deficits from altered blood flow.",
-  "causes": "Usually thought to arise during development; most are not inherited. Some occur in hereditary haemorrhagic telangiectasia.",
-  "riskFactors": ["Hereditary haemorrhagic telangiectasia (for some AVMs)"],
-  "regionsSummary": "Can occur anywhere in the brain; cerebral hemispheres are most common. Location strongly influences symptoms and treatment options.",
-  "symptoms": ["Headache", "Seizures", "Focal neurological deficits", "Haemorrhage (sudden headache, weakness, decreased consciousness)", "Often discovered incidentally"],
-  "progression": "May remain silent for years; haemorrhage risk persists over a lifetime.",
-  "diagnosis": ["MRI", "CT or MR angiography", "Catheter angiography to define the architecture"],
-  "imaging": "Flow voids on MRI and a vascular nidus with early draining veins on angiography.",
-  "treatments": ["Microsurgical resection", "Stereotactic radiosurgery", "Endovascular embolisation", "Observation for selected unruptured AVMs"],
-  "rehabilitation": "After haemorrhage or treatment as needed.",
-  "complications": ["Intracerebral or subarachnoid haemorrhage", "Epilepsy", "Treatment-related deficits"],
-  "prognosis": "Varies with size, location, venous drainage and haemorrhage history.",
-  "prevention": "No known prevention.",
-  "emergingResearch": "Molecular studies of AVM formation (e.g. KRAS mutations) may lead to drug therapies.",
-  "faq": [{"q": "Where is the AVM in the model?", "a": "AVMs are patient-specific and vessels are not modelled, so no structure is highlighted as affected."}],
-  "associations": [
-   {"target": "cerebral-hemisphere", "type": "subtype", "distribution": "focal", "evidence": "variable", "explanation": "Most brain AVMs are located in the cerebral hemispheres; exact site varies by patient."}
-  ],
-  "references": ["ninds-avm", "mp-avm"]
- },
- {
-  "id": "epilepsy", "name": "Epilepsy", "category": "seizure", "classification": "Chronic neurological disease (tendency to recurrent unprovoked seizures)",
-  "synonyms": ["seizure disorder"],
-  "overview": "Epilepsy is a brain condition characterised by an enduring predisposition to recurrent unprovoked seizures. A seizure is a transient episode of abnormal, excessive or synchronous neuronal activity.",
-  "pathophysiology": "An imbalance between excitation and inhibition in neural networks allows abnormal synchronous discharges. Seizures may start in one network (focal) or engage bilateral networks from onset (generalised).",
-  "causes": "Structural (stroke, tumour, trauma, malformations, hippocampal sclerosis), genetic, infectious, metabolic, immune, or unknown.",
-  "riskFactors": ["Brain injury, stroke or infection", "Family history", "Developmental brain abnormalities", "Neurodegenerative disease in older adults"],
-  "regionsSummary": "Any cortical network can be involved. Focal epilepsies most often arise from the temporal and frontal lobes; generalised epilepsies involve bilateral thalamocortical networks.",
-  "symptoms": ["Seizures that vary by type: convulsions, staring spells, brief jerks, altered awareness, unusual sensations or emotions", "Temporary confusion after a seizure"],
-  "progression": "Many people become seizure-free with treatment; some epilepsies are drug-resistant.",
-  "diagnosis": ["Detailed description of events (eyewitness)", "EEG", "MRI", "Blood tests and genetic testing as indicated"],
-  "imaging": "MRI may reveal a cause (e.g. hippocampal sclerosis, cortical dysplasia, tumour) but is normal in many people.",
-  "treatments": ["Anti-seizure medications", "Epilepsy surgery for selected drug-resistant focal epilepsy", "Neuromodulation (vagus nerve, responsive or deep brain stimulation)", "Dietary therapy (e.g. ketogenic diet)"],
-  "rehabilitation": "Education, safety planning, psychological support, attention to memory and mood.",
-  "complications": ["Injury during seizures", "Status epilepticus", "Sudden unexpected death in epilepsy (SUDEP)", "Depression and anxiety"],
-  "prognosis": "Highly variable by cause and syndrome.",
-  "prevention": "Preventing head injury, stroke and CNS infections reduces some acquired epilepsies.",
-  "emergingResearch": "Gene therapies for specific genetic epilepsies and closed-loop stimulation.",
-  "faq": [{"q": "Is one seizure the same as epilepsy?", "a": "Not necessarily. Epilepsy implies an enduring tendency to recurrent unprovoked seizures; a clinician makes this diagnosis."}],
-  "associations": [
-   {"target": "temporal-lobe", "type": "primary", "distribution": "network", "evidence": "established", "explanation": "The most common origin of focal seizures in adults."},
-   {"target": "frontal-lobe", "type": "secondary", "distribution": "network", "evidence": "established", "explanation": "Second most common origin of focal seizures."},
-   {"target": "thalamus", "type": "subtype", "distribution": "network", "evidence": "established", "explanation": "Thalamocortical networks are central to generalised seizures such as absence seizures."},
-   {"target": "hippocampus", "type": "subtype", "distribution": "focal", "evidence": "established", "explanation": "Hippocampal sclerosis is a common cause of drug-resistant temporal lobe epilepsy."}
-  ],
-  "references": ["ninds-epilepsy", "mp-epilepsy", "mp-seizures"]
- },
- {
-  "id": "temporal-lobe-epilepsy", "name": "Temporal lobe epilepsy", "category": "seizure", "classification": "Focal epilepsy syndrome",
-  "synonyms": ["TLE", "mesial temporal lobe epilepsy (MTLE, subtype)"],
-  "overview": "Temporal lobe epilepsy is a form of focal epilepsy in which seizures arise from the temporal lobe — most often its medial structures.",
-  "pathophysiology": "Medial temporal lobe epilepsy is frequently associated with hippocampal sclerosis (neuronal loss and gliosis). Lateral (neocortical) TLE arises from lateral temporal cortex.",
-  "causes": "Hippocampal sclerosis, tumours, vascular malformations, cortical dysplasia, prior infection or injury, autoimmune encephalitis, or unknown.",
-  "riskFactors": ["History of prolonged febrile seizures in childhood (association with hippocampal sclerosis)", "Brain infection or injury"],
-  "regionsSummary": "Hippocampus, amygdala and parahippocampal gyrus (medial TLE); lateral temporal neocortex (lateral TLE).",
-  "symptoms": ["Auras such as a rising abdominal sensation, déjà vu, fear, or unusual smells", "Focal impaired-awareness seizures with staring", "Automatisms (lip smacking, fumbling)", "Post-ictal confusion; language difficulty if dominant side", "Memory difficulties between seizures"],
-  "progression": "May respond to medication; medial TLE with hippocampal sclerosis is often drug-resistant.",
-  "diagnosis": ["Seizure semiology", "EEG (including video-EEG monitoring)", "High-resolution MRI", "Neuropsychological testing and functional imaging before surgery"],
-  "imaging": "Hippocampal sclerosis appears as hippocampal atrophy with increased T2/FLAIR signal on MRI.",
-  "treatments": ["Anti-seizure medications", "Anterior temporal lobectomy or selective amygdalohippocampectomy for drug-resistant cases", "Laser interstitial thermal therapy", "Neurostimulation"],
-  "rehabilitation": "Memory strategies, psychological support.",
-  "complications": ["Memory impairment", "Mood disorders", "Injury", "SUDEP"],
-  "prognosis": "Surgery offers a good chance of seizure freedom for well-selected patients; outcomes vary.",
-  "prevention": "Not generally preventable.",
-  "emergingResearch": "Minimally invasive ablation techniques and network mapping.",
-  "faq": [{"q": "Does every person with TLE have hippocampal sclerosis?", "a": "No. It is common in medial TLE, but other causes exist and some people have normal MRI."}],
-  "associations": [
-   {"target": "hippocampus", "type": "primary", "distribution": "focal", "evidence": "established", "explanation": "Hippocampal sclerosis is the most common pathology in medial TLE."},
-   {"target": "amygdala", "type": "primary", "distribution": "focal", "evidence": "established", "explanation": "Seizures often involve the amygdala, producing emotional auras."},
-   {"target": "parahippocampal-gyrus", "type": "secondary", "distribution": "network", "evidence": "established", "explanation": "Part of the medial temporal seizure network."},
-   {"target": "temporal-lobe", "type": "subtype", "distribution": "network", "evidence": "established", "explanation": "Lateral temporal neocortex in lateral TLE."}
-  ],
-  "references": ["ninds-epilepsy", "mp-epilepsy"]
- },
- {
-  "id": "focal-epilepsy", "name": "Focal epilepsy", "category": "seizure", "classification": "Epilepsy type (seizures originating in one hemisphere's network)",
-  "synonyms": ["partial epilepsy (older term)"],
-  "overview": "In focal epilepsy, seizures start within networks limited to one hemisphere. Symptoms reflect the function of the region where seizures begin and spread.",
-  "pathophysiology": "A localised epileptogenic zone generates abnormal discharges that may remain focal or spread to bilateral networks (focal to bilateral tonic-clonic seizure).",
-  "causes": "Structural lesions (tumour, stroke, trauma, dysplasia, hippocampal sclerosis), infections, immune causes, genetic causes, or unknown.",
-  "riskFactors": ["Prior brain injury, stroke or infection", "Cortical malformations"],
-  "regionsSummary": "Any cortical region; temporal and frontal lobes are most common. The motor features depend on location (e.g. precentral gyrus seizures cause contralateral jerking).",
-  "symptoms": ["Focal aware seizures (e.g. jerking, tingling, visual phenomena)", "Focal impaired-awareness seizures", "Focal to bilateral tonic-clonic seizures"],
-  "progression": "Variable; depends on cause.",
-  "diagnosis": ["History and semiology", "EEG", "MRI to identify a lesion"],
-  "imaging": "MRI may show the causative lesion.",
-  "treatments": ["Anti-seizure medications", "Resective or ablative surgery for drug-resistant cases with an identified focus", "Neuromodulation"],
-  "rehabilitation": "Depends on deficits and comorbidities.",
-  "complications": ["Spread to bilateral convulsions", "Injury", "SUDEP"],
-  "prognosis": "Variable.",
-  "prevention": "Prevention of underlying causes where possible.",
-  "emergingResearch": "Improved localisation with high-density EEG and stereo-EEG.",
-  "faq": [{"q": "Why does a seizure in one area cause specific symptoms?", "a": "Because the seizure temporarily disrupts or activates the functions of that region — for example, visual phenomena from occipital cortex."}],
-  "associations": [
-   {"target": "temporal-lobe", "type": "primary", "distribution": "network", "evidence": "established", "explanation": "Most common lobe of seizure onset."},
-   {"target": "frontal-lobe", "type": "primary", "distribution": "network", "evidence": "established", "explanation": "Frontal lobe seizures are often brief and may occur in sleep."},
-   {"target": "parietal-lobe", "type": "subtype", "distribution": "network", "evidence": "established", "explanation": "Parietal seizures can cause sensory symptoms."},
-   {"target": "occipital-lobe", "type": "subtype", "distribution": "network", "evidence": "established", "explanation": "Occipital seizures can cause visual phenomena."}
-  ],
-  "references": ["ninds-epilepsy", "mp-epilepsy", "mp-seizures"]
- },
- {
-  "id": "generalized-epilepsy", "name": "Generalized epilepsy", "category": "seizure", "classification": "Epilepsy type (seizures engaging bilateral networks from onset)",
-  "synonyms": ["idiopathic generalized epilepsy (genetic subgroup)"],
-  "overview": "In generalised epilepsy, seizures arise within and rapidly engage bilaterally distributed networks, including thalamocortical circuits.",
-  "pathophysiology": "Abnormal oscillations in thalamocortical networks underlie seizure types such as absence seizures (spike-and-wave discharges); many generalised epilepsies have a genetic basis.",
-  "causes": "Often genetic (polygenic or single-gene); sometimes metabolic or structural.",
-  "riskFactors": ["Family history"],
-  "regionsSummary": "Bilateral, distributed networks: thalamus and widespread cortex — not a single focal region.",
-  "symptoms": ["Absence seizures (brief staring spells)", "Myoclonic jerks", "Generalised tonic-clonic seizures", "Atonic or tonic seizures in some syndromes"],
-  "progression": "Some childhood syndromes remit; others persist into adulthood.",
-  "diagnosis": ["Clinical history", "EEG showing generalised discharges", "MRI usually normal in genetic generalised epilepsies"],
-  "imaging": "Usually normal in genetic generalised epilepsies.",
-  "treatments": ["Broad-spectrum anti-seizure medications", "Avoidance of triggers such as sleep deprivation"],
-  "rehabilitation": "Education and safety measures.",
-  "complications": ["Injury", "Status epilepticus", "SUDEP"],
-  "prognosis": "Often good with appropriate medication; varies by syndrome.",
-  "prevention": "Trigger management.",
-  "emergingResearch": "Precision therapies for specific genetic causes.",
-  "faq": [{"q": "Why is the whole cortex not shown as 'damaged'?", "a": "Generalised epilepsy reflects abnormal network activity, usually without structural damage; the highlight indicates network involvement only."}],
-  "associations": [
-   {"target": "thalamus", "type": "primary", "distribution": "network", "evidence": "established", "explanation": "Thalamocortical circuits generate generalised spike-and-wave discharges."},
-   {"target": "cerebral-hemisphere", "type": "primary", "distribution": "network", "evidence": "established", "explanation": "Bilateral cortical networks are engaged from seizure onset; this is functional, not structural, involvement."}
-  ],
-  "references": ["ninds-epilepsy", "mp-epilepsy"]
- }
+  {
+    "id": "alzheimers-disease",
+    "name": "Alzheimer's disease",
+    "category": "neurodegenerative",
+    "classification": "Neurodegenerative disease (most common cause of dementia)",
+    "synonyms": ["AD", "Alzheimer disease"],
+    "overview": "Alzheimer's disease is a progressive neurodegenerative disease in which accumulation of abnormal proteins and loss of synapses and neurons gradually impair memory, thinking and, eventually, the ability to carry out everyday activities.",
+    "pathophysiology": "Two hallmark pathologies are extracellular plaques of amyloid-beta and intracellular neurofibrillary tangles of hyperphosphorylated tau. Tangle pathology typically begins in the entorhinal cortex and hippocampus and later spreads to association cortex, which parallels the early memory-predominant symptoms. Synapse loss, neuroinflammation and vascular factors contribute.",
+    "causes": "Most cases are late-onset and arise from a combination of age, genetic and environmental factors. A small proportion of early-onset cases are caused by inherited mutations (APP, PSEN1, PSEN2).",
+    "riskFactors": [
+      "Increasing age",
+      "Family history; APOE ε4 allele increases risk",
+      "Down syndrome",
+      "Cardiovascular risk factors (hypertension, diabetes) — associated with higher risk",
+      "Head injury (association)"
+    ],
+    "regionsSummary": "Medial temporal lobe (entorhinal cortex, hippocampus) early; later temporal, parietal (including precuneus/posterior cingulate) and frontal association cortex. Primary motor, sensory and visual cortex are relatively spared until late.",
+    "symptoms": [
+      "Difficulty remembering recent events and conversations",
+      "Repeating questions; misplacing items",
+      "Word-finding problems",
+      "Disorientation in time and place",
+      "Impaired judgement, planning and problem-solving",
+      "Changes in mood, personality or behaviour"
+    ],
+    "progression": "Usually gradual over years, from mild cognitive symptoms to moderate and severe dementia with dependence on others for daily care. Rate of progression varies widely between individuals.",
+    "diagnosis": [
+      "Clinical history from the person and an informant",
+      "Cognitive testing",
+      "Blood tests to exclude other causes (e.g. thyroid, vitamin B12)",
+      "Structural brain imaging (MRI or CT)",
+      "In selected cases: amyloid/tau PET, CSF or blood biomarkers"
+    ],
+    "imaging": "MRI may show medial temporal (hippocampal) atrophy and generalised atrophy; FDG-PET often shows reduced metabolism in temporoparietal and posterior cingulate cortex. Imaging supports but does not by itself establish the diagnosis.",
+    "treatments": [
+      "Cholinesterase inhibitors and memantine for symptoms",
+      "Anti-amyloid monoclonal antibodies for selected people with early disease and confirmed amyloid pathology, with monitoring for side effects such as ARIA",
+      "Treatment of coexisting conditions (hearing loss, depression, vascular risk factors)"
+    ],
+    "rehabilitation": "Cognitive stimulation, occupational therapy, safety planning, caregiver education and support, and advance care planning.",
+    "complications": [
+      "Falls and injury",
+      "Swallowing difficulty and aspiration pneumonia in late stages",
+      "Malnutrition",
+      "Delirium during illness"
+    ],
+    "prognosis": "Progressive and currently not curable. Survival after diagnosis varies widely depending on age and other health conditions.",
+    "prevention": "No intervention is proven to prevent Alzheimer's disease. Managing cardiovascular risk factors, physical activity, and social and cognitive engagement are associated with healthier brain ageing and are under active study.",
+    "emergingResearch": "Blood-based biomarkers, anti-tau therapies and combination approaches are under investigation.",
+    "faq": [
+      {
+        "q": "Is memory loss always Alzheimer's disease?",
+        "a": "No. Memory problems have many causes, including other dementias, depression, medication effects, vitamin deficiency and normal ageing. A clinical evaluation is needed."
+      },
+      {
+        "q": "Does the hippocampus shrink in everyone with Alzheimer's?",
+        "a": "Hippocampal atrophy is common but variable; atypical forms (e.g. posterior cortical or language-predominant variants) can begin elsewhere."
+      }
+    ],
+    "associations": [
+      {
+        "target": "hippocampus",
+        "type": "primary",
+        "distribution": "diffuse",
+        "evidence": "established",
+        "explanation": "Neurofibrillary tangles and neuronal loss affect the hippocampus early, matching early difficulty forming new memories."
+      },
+      {
+        "target": "parahippocampal-gyrus",
+        "type": "primary",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Entorhinal cortex (anterior parahippocampal gyrus) is one of the earliest sites of tau pathology."
+      },
+      {
+        "target": "temporal-lobe",
+        "type": "secondary",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Pathology spreads to lateral temporal association cortex as disease advances."
+      },
+      {
+        "target": "superior-parietal-lobule-precuneus",
+        "type": "secondary",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Precuneus and parietal association cortex show reduced metabolism and atrophy; involvement is prominent in posterior variants."
+      },
+      {
+        "target": "cingulate-gyrus",
+        "type": "secondary",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Posterior cingulate hypometabolism is a frequent imaging feature."
+      },
+      {
+        "target": "frontal-lobe",
+        "type": "subtype",
+        "distribution": "regional",
+        "evidence": "variable",
+        "explanation": "Frontal association cortex is involved later, and earlier in some atypical presentations."
+      }
+    ],
+    "references": ["ninds-alzheimers", "mp-alzheimers", "mp-dementia"]
+  },
+  {
+    "id": "parkinsons-disease",
+    "name": "Parkinson's disease",
+    "category": "neurodegenerative",
+    "classification": "Neurodegenerative disease (movement disorder)",
+    "synonyms": ["PD", "Parkinson disease"],
+    "overview": "Parkinson's disease is a progressive neurodegenerative disorder best known for slowness of movement, rigidity, tremor at rest and postural instability, often accompanied by non-motor symptoms.",
+    "pathophysiology": "Degeneration of dopamine-producing neurons in the substantia nigra pars compacta reduces dopamine in the striatum (especially the putamen), disrupting basal ganglia–thalamocortical motor loops. Abnormal alpha-synuclein aggregates (Lewy bodies and neurites) are found in affected neurons and also in other brain regions and the peripheral autonomic nervous system.",
+    "causes": "In most people the cause is unknown and likely involves genetic susceptibility with environmental factors. Several genes (for example LRRK2, GBA1, SNCA, PRKN) are associated with inherited or increased risk.",
+    "riskFactors": [
+      "Increasing age",
+      "Male sex (higher incidence)",
+      "Family history and specific gene variants",
+      "Certain environmental exposures (e.g. some pesticides) — associations under study"
+    ],
+    "regionsSummary": "Substantia nigra pars compacta (within the midbrain cerebral peduncle region — not separately segmented in this model) and its striatal targets (putamen > caudate); Lewy pathology also affects brainstem nuclei and, later, limbic and cortical regions.",
+    "symptoms": [
+      "Bradykinesia (slowness and reduced amplitude of movement)",
+      "Rigidity",
+      "Rest tremor, often starting on one side",
+      "Postural instability and gait changes (later)",
+      "Non-motor: reduced sense of smell, constipation, REM sleep behaviour disorder, depression, anxiety, cognitive changes"
+    ],
+    "progression": "Typically begins on one side and progresses slowly over years. Non-motor symptoms may precede motor diagnosis. Course and severity vary substantially.",
+    "diagnosis": [
+      "Clinical diagnosis based on history and neurological examination",
+      "Response to dopaminergic medication supports the diagnosis",
+      "Imaging to exclude other causes when needed",
+      "Dopamine transporter imaging in selected uncertain cases"
+    ],
+    "imaging": "Routine MRI is often normal. Dopamine transporter SPECT can show reduced striatal uptake but does not distinguish Parkinson's disease from some other parkinsonian syndromes.",
+    "treatments": [
+      "Levodopa (with carbidopa or benserazide)",
+      "Dopamine agonists, MAO-B inhibitors, COMT inhibitors",
+      "Deep brain stimulation (subthalamic nucleus or globus pallidus internus) for selected patients",
+      "Treatment of non-motor symptoms"
+    ],
+    "rehabilitation": "Physiotherapy (gait, balance, exercise), occupational therapy, speech and swallowing therapy.",
+    "complications": [
+      "Motor fluctuations and dyskinesia with long-term treatment",
+      "Falls",
+      "Swallowing difficulties",
+      "Dementia in some people",
+      "Orthostatic hypotension"
+    ],
+    "prognosis": "Progressive but highly variable; many people maintain function for years with treatment.",
+    "prevention": "No proven preventive measure. Regular physical activity is associated with lower risk and benefits people with the condition.",
+    "emergingResearch": "Alpha-synuclein seed amplification assays, disease-modifying therapies targeting alpha-synuclein or LRRK2, and cell-based therapies are being studied.",
+    "faq": [
+      {
+        "q": "Why is the substantia nigra not highlighted on its own?",
+        "a": "The source anatomical model does not segment it separately; the cerebral peduncle element that contains it is highlighted as a schematic association."
+      }
+    ],
+    "associations": [
+      {
+        "target": "cerebral-peduncles",
+        "type": "primary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Contains the substantia nigra pars compacta, where dopaminergic neuron loss defines the disease. Schematic: the nigra itself is not segmented; the whole peduncle is NOT uniformly affected."
+      },
+      {
+        "target": "putamen",
+        "type": "primary",
+        "distribution": "diffuse",
+        "evidence": "established",
+        "explanation": "Loss of nigrostriatal dopamine is most marked in the putamen, producing the motor signs."
+      },
+      {
+        "target": "caudate-nucleus",
+        "type": "secondary",
+        "distribution": "diffuse",
+        "evidence": "established",
+        "explanation": "Dopamine depletion also affects the caudate, generally less than the putamen."
+      },
+      {
+        "target": "globus-pallidus",
+        "type": "secondary",
+        "distribution": "network",
+        "evidence": "established",
+        "explanation": "Altered pallidal output is part of basal ganglia circuit dysfunction; it is a DBS target."
+      },
+      {
+        "target": "thalamus",
+        "type": "secondary",
+        "distribution": "network",
+        "evidence": "established",
+        "explanation": "Abnormal basal ganglia output alters thalamocortical motor signalling."
+      },
+      {
+        "target": "medulla-oblongata",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Lewy pathology often involves lower brainstem nuclei (e.g. dorsal motor nucleus of vagus), linked to non-motor symptoms."
+      }
+    ],
+    "references": ["ninds-parkinsons", "mp-parkinsons", "mp-movement"]
+  },
+  {
+    "id": "huntingtons-disease",
+    "name": "Huntington's disease",
+    "category": "neurodegenerative",
+    "classification": "Inherited neurodegenerative disease",
+    "synonyms": ["HD", "Huntington disease", "Huntington's chorea"],
+    "overview": "Huntington's disease is an inherited, progressive brain disorder that causes involuntary movements, psychiatric symptoms and cognitive decline.",
+    "pathophysiology": "An expanded CAG trinucleotide repeat in the HTT gene produces mutant huntingtin protein. Medium spiny neurons of the striatum are particularly vulnerable, with early and marked degeneration of the caudate and putamen, followed by wider cortical involvement.",
+    "causes": "Autosomal dominant inheritance: each child of an affected parent has a 50% chance of inheriting the expanded gene.",
+    "riskFactors": [
+      "Having a parent with Huntington's disease",
+      "Longer CAG repeat length is associated with earlier onset"
+    ],
+    "regionsSummary": "Striatum (caudate nucleus earliest and most marked, then putamen); later cerebral cortex and other regions.",
+    "symptoms": [
+      "Chorea (involuntary, irregular movements)",
+      "Impaired coordination and gait",
+      "Depression, irritability, apathy, obsessive behaviour",
+      "Problems with planning, organisation and attention",
+      "Speech and swallowing difficulties (later)"
+    ],
+    "progression": "Typically begins in mid-adulthood and progresses over many years; a juvenile form begins before age 20.",
+    "diagnosis": [
+      "Clinical evaluation and family history",
+      "Genetic testing for the HTT CAG expansion (with genetic counselling)",
+      "Brain imaging"
+    ],
+    "imaging": "MRI/CT may show caudate atrophy with enlargement of the frontal horns of the lateral ventricles, and generalised atrophy later.",
+    "treatments": [
+      "Medications to reduce chorea (e.g. VMAT2 inhibitors)",
+      "Treatment of depression, irritability and other psychiatric symptoms",
+      "No disease-modifying therapy is currently approved"
+    ],
+    "rehabilitation": "Physiotherapy, occupational and speech therapy, nutritional support, psychological and social support for families.",
+    "complications": ["Falls", "Aspiration pneumonia", "Weight loss", "Suicide risk related to depression"],
+    "prognosis": "Progressive; course typically spans many years after symptom onset.",
+    "prevention": "No prevention of disease in gene carriers; genetic counselling and reproductive options are available for families.",
+    "emergingResearch": "Huntingtin-lowering therapies (antisense oligonucleotides, gene therapies) are in clinical trials.",
+    "faq": [
+      {
+        "q": "Why does caudate shrinkage enlarge the ventricles?",
+        "a": "The caudate forms the lateral wall of the lateral ventricle; as it atrophies, the frontal horn expands."
+      }
+    ],
+    "associations": [
+      {
+        "target": "caudate-nucleus",
+        "type": "primary",
+        "distribution": "diffuse",
+        "evidence": "established",
+        "explanation": "Earliest and most severe neuronal loss in the striatum, especially the caudate."
+      },
+      {
+        "target": "putamen",
+        "type": "primary",
+        "distribution": "diffuse",
+        "evidence": "established",
+        "explanation": "Putaminal medium spiny neurons also degenerate."
+      },
+      {
+        "target": "globus-pallidus",
+        "type": "secondary",
+        "distribution": "network",
+        "evidence": "established",
+        "explanation": "Downstream basal ganglia output is disrupted."
+      },
+      {
+        "target": "lateral-ventricle",
+        "type": "secondary",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Frontal horns enlarge secondary to caudate atrophy (imaging sign, not primary pathology)."
+      },
+      {
+        "target": "frontal-lobe",
+        "type": "secondary",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Cortical atrophy develops as disease advances, contributing to cognitive and behavioural symptoms."
+      }
+    ],
+    "references": ["ninds-huntingtons", "mp-huntingtons"]
+  },
+  {
+    "id": "amyotrophic-lateral-sclerosis",
+    "name": "Amyotrophic lateral sclerosis",
+    "category": "neurodegenerative",
+    "classification": "Neurodegenerative motor neuron disease",
+    "synonyms": ["ALS", "motor neuron disease (MND)", "Lou Gehrig's disease"],
+    "overview": "ALS is a progressive disease that destroys upper motor neurons in the brain and lower motor neurons in the brainstem and spinal cord, leading to weakness, muscle wasting and eventually respiratory failure.",
+    "pathophysiology": "Degeneration of corticospinal (upper) motor neurons in the primary motor cortex and of lower motor neurons in brainstem motor nuclei and spinal anterior horns. TDP-43 protein aggregates are found in most cases. There is clinical and genetic overlap with frontotemporal dementia.",
+    "causes": "Most cases are sporadic. About one in ten is familial; genes include C9orf72, SOD1, TARDBP and FUS.",
+    "riskFactors": [
+      "Increasing age (peak onset in later middle age)",
+      "Family history",
+      "Military service (association reported)"
+    ],
+    "regionsSummary": "Primary motor cortex (precentral gyrus) and corticospinal pathways (internal capsule, cerebral peduncles, pons, medulla), brainstem motor nuclei, spinal cord (not modelled); frontal and temporal cortex in ALS–FTD overlap.",
+    "symptoms": [
+      "Painless progressive weakness of limbs",
+      "Muscle twitching (fasciculations) and cramps",
+      "Slurred speech and swallowing difficulty (bulbar onset)",
+      "Spasticity and brisk reflexes",
+      "Breathing difficulty (later)",
+      "Cognitive or behavioural change in some people"
+    ],
+    "progression": "Progressive, with spread to other body regions. Rate varies considerably.",
+    "diagnosis": [
+      "Clinical examination for upper and lower motor neuron signs",
+      "Electromyography and nerve conduction studies",
+      "MRI and blood tests to exclude mimics",
+      "Genetic testing where appropriate"
+    ],
+    "imaging": "MRI is mainly used to exclude other causes; some people show signal change along the corticospinal tracts.",
+    "treatments": [
+      "Riluzole and edaravone (disease-slowing therapies approved in some countries)",
+      "Tofersen for SOD1-related ALS",
+      "Non-invasive ventilation and nutritional support (e.g. gastrostomy)",
+      "Symptom management (spasticity, saliva, cramps)"
+    ],
+    "rehabilitation": "Multidisciplinary care: physiotherapy, occupational therapy, speech and communication aids, respiratory care, palliative care.",
+    "complications": ["Respiratory failure", "Aspiration pneumonia", "Malnutrition", "Loss of communication"],
+    "prognosis": "Progressive and life-limiting; survival varies widely, and a minority live many years.",
+    "prevention": "No known prevention.",
+    "emergingResearch": "Gene-targeted therapies (e.g. for C9orf72) and biomarkers such as neurofilament light are under study.",
+    "faq": [
+      {
+        "q": "Is ALS a disease of muscles?",
+        "a": "No. Muscles weaken because the motor neurons that control them degenerate."
+      }
+    ],
+    "associations": [
+      {
+        "target": "precentral-gyrus",
+        "type": "primary",
+        "distribution": "diffuse",
+        "evidence": "established",
+        "explanation": "Upper motor neurons in primary motor cortex degenerate."
+      },
+      {
+        "target": "cerebral-peduncles",
+        "type": "secondary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Descending corticospinal fibres degenerate along their course."
+      },
+      {
+        "target": "internal-capsule",
+        "type": "secondary",
+        "distribution": "focal",
+        "evidence": "variable",
+        "explanation": "Corticospinal tract involvement (mainly posterior limb, which is not modelled; anterior limb shown for orientation only)."
+      },
+      {
+        "target": "medulla-oblongata",
+        "type": "primary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Brainstem motor nuclei (e.g. hypoglossal) are affected, causing bulbar symptoms."
+      },
+      {
+        "target": "pons",
+        "type": "secondary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Motor nuclei and descending tracts in the pons are involved."
+      },
+      {
+        "target": "frontal-lobe",
+        "type": "subtype",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Frontal involvement in people with ALS–FTD overlap."
+      }
+    ],
+    "references": ["ninds-als", "mp-als"]
+  },
+  {
+    "id": "frontotemporal-dementia",
+    "name": "Frontotemporal dementia",
+    "category": "neurodegenerative",
+    "classification": "Group of neurodegenerative disorders (clinical syndromes)",
+    "synonyms": ["FTD", "frontotemporal lobar degeneration (FTLD)", "Pick's disease (historical, one subtype)"],
+    "overview": "Frontotemporal dementia is a group of disorders caused by progressive degeneration of the frontal and/or temporal lobes, producing changes in behaviour, personality or language.",
+    "pathophysiology": "Neuronal loss with abnormal protein inclusions — most commonly tau, TDP-43 or (rarely) FUS — in frontal and anterior temporal cortex. The clinical variant depends on which regions degenerate first.",
+    "causes": "Many cases are sporadic; a substantial proportion are familial, with mutations in genes such as MAPT, GRN and C9orf72.",
+    "riskFactors": ["Family history of FTD or ALS", "Onset is often younger than in Alzheimer's disease"],
+    "regionsSummary": "Behavioural variant: frontal (especially orbitofrontal and medial) and anterior temporal cortex, insula. Semantic variant: anterior temporal lobe (often left). Non-fluent variant: left posterior frontal and insular cortex.",
+    "symptoms": [
+      "Disinhibition, apathy, loss of empathy (behavioural variant)",
+      "Compulsive behaviours and dietary changes",
+      "Loss of word meaning (semantic variant)",
+      "Effortful, halting speech (non-fluent variant)",
+      "Relatively preserved memory early in many cases"
+    ],
+    "progression": "Progressive over years; symptoms broaden as degeneration spreads.",
+    "diagnosis": [
+      "Clinical history (informant essential)",
+      "Neuropsychological and language assessment",
+      "MRI and sometimes FDG-PET",
+      "Genetic testing when indicated"
+    ],
+    "imaging": "MRI may show focal frontal and/or anterior temporal atrophy, sometimes asymmetric; FDG-PET shows corresponding hypometabolism.",
+    "treatments": [
+      "No disease-modifying treatment currently approved",
+      "Symptomatic treatment of behavioural symptoms",
+      "Speech and language therapy"
+    ],
+    "rehabilitation": "Behavioural strategies, caregiver support and education, communication aids, safety planning.",
+    "complications": [
+      "Unsafe behaviours",
+      "Swallowing problems later",
+      "Coexisting motor neuron disease or parkinsonism in some people"
+    ],
+    "prognosis": "Progressive; duration varies by subtype and individual.",
+    "prevention": "No known prevention.",
+    "emergingResearch": "Gene-targeted therapies for GRN and C9orf72 mutation carriers are in trials.",
+    "faq": [
+      {
+        "q": "Is FTD the same as Alzheimer's disease?",
+        "a": "No. They differ in pathology, typical age of onset and early symptoms, although symptoms can overlap."
+      }
+    ],
+    "associations": [
+      {
+        "target": "frontal-lobe",
+        "type": "primary",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Frontal atrophy underlies behavioural and executive changes."
+      },
+      {
+        "target": "orbital-and-straight-gyri",
+        "type": "primary",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Orbitofrontal cortex is commonly affected in the behavioural variant."
+      },
+      {
+        "target": "temporal-lobe",
+        "type": "subtype",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Anterior temporal atrophy is characteristic of the semantic variant."
+      },
+      {
+        "target": "insula",
+        "type": "secondary",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Insular involvement is common, especially in behavioural and non-fluent variants."
+      },
+      {
+        "target": "cingulate-gyrus",
+        "type": "secondary",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Anterior cingulate involvement relates to apathy."
+      }
+    ],
+    "references": ["ninds-ftd", "mp-dementia"]
+  },
+  {
+    "id": "dementia-with-lewy-bodies",
+    "name": "Dementia with Lewy bodies",
+    "category": "neurodegenerative",
+    "classification": "Neurodegenerative disease (Lewy body disease)",
+    "synonyms": ["DLB", "Lewy body dementia (umbrella term including Parkinson's disease dementia)"],
+    "overview": "Dementia with Lewy bodies is a progressive dementia characterised by fluctuating attention, visual hallucinations, REM sleep behaviour disorder and parkinsonism.",
+    "pathophysiology": "Alpha-synuclein aggregates (Lewy bodies) accumulate in brainstem, limbic and neocortical neurons. Cholinergic deficits are prominent; coexisting Alzheimer-type pathology is common.",
+    "causes": "Usually sporadic; genetic factors (e.g. GBA1, APOE ε4) increase risk.",
+    "riskFactors": ["Increasing age", "Male sex", "REM sleep behaviour disorder (strong association)"],
+    "regionsSummary": "Distributed: brainstem (including substantia nigra), limbic structures (amygdala, cingulate) and neocortex; occipital hypometabolism is common on imaging. Hippocampus is often relatively preserved compared with Alzheimer's disease.",
+    "symptoms": [
+      "Fluctuating cognition and alertness",
+      "Recurrent well-formed visual hallucinations",
+      "REM sleep behaviour disorder",
+      "Parkinsonism",
+      "Visuospatial and attention problems",
+      "Sensitivity to antipsychotic medications"
+    ],
+    "progression": "Progressive; symptoms fluctuate day to day.",
+    "diagnosis": [
+      "Clinical criteria based on core and supportive features",
+      "Dopamine transporter imaging, cardiac MIBG scintigraphy or polysomnography in selected cases"
+    ],
+    "imaging": "Relative preservation of medial temporal lobes on MRI compared with Alzheimer's disease; reduced striatal dopamine transporter uptake; occipital hypometabolism on FDG-PET.",
+    "treatments": [
+      "Cholinesterase inhibitors",
+      "Cautious use of levodopa for parkinsonism",
+      "Avoidance or extreme caution with antipsychotics",
+      "Treatment of sleep and autonomic symptoms"
+    ],
+    "rehabilitation": "Physiotherapy for falls prevention, occupational therapy, caregiver support.",
+    "complications": [
+      "Falls",
+      "Severe reactions to antipsychotic drugs",
+      "Autonomic dysfunction (orthostatic hypotension)"
+    ],
+    "prognosis": "Progressive; course varies.",
+    "prevention": "No known prevention.",
+    "emergingResearch": "Alpha-synuclein biomarkers (skin biopsy, seed amplification assays) are being evaluated.",
+    "faq": [
+      {
+        "q": "How does DLB differ from Parkinson's disease dementia?",
+        "a": "By convention, DLB is diagnosed when dementia begins before or within about a year of parkinsonism; otherwise the term Parkinson's disease dementia is used."
+      }
+    ],
+    "associations": [
+      {
+        "target": "cerebral-peduncles",
+        "type": "primary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Substantia nigra (within this element; schematic) shows Lewy pathology and neuron loss, causing parkinsonism."
+      },
+      {
+        "target": "amygdala",
+        "type": "secondary",
+        "distribution": "diffuse",
+        "evidence": "established",
+        "explanation": "Limbic Lewy pathology is common."
+      },
+      {
+        "target": "cingulate-gyrus",
+        "type": "secondary",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Cingulate cortex is a typical site of cortical Lewy bodies."
+      },
+      {
+        "target": "occipital-lobe",
+        "type": "secondary",
+        "distribution": "regional",
+        "evidence": "variable",
+        "explanation": "Occipital hypometabolism on imaging, linked to visual symptoms; pathology is not uniform."
+      },
+      {
+        "target": "putamen",
+        "type": "secondary",
+        "distribution": "diffuse",
+        "evidence": "established",
+        "explanation": "Reduced striatal dopamine transporter uptake reflects nigrostriatal degeneration."
+      }
+    ],
+    "references": ["ninds-lbd", "mp-lbd"]
+  },
+  {
+    "id": "ischemic-stroke",
+    "name": "Ischemic stroke",
+    "category": "cerebrovascular",
+    "classification": "Acute cerebrovascular event (medical emergency)",
+    "synonyms": ["cerebral infarction", "brain attack"],
+    "overview": "An ischemic stroke occurs when blood flow to part of the brain is blocked, depriving brain tissue of oxygen and glucose. It is a medical emergency: rapid treatment can reduce brain damage.",
+    "pathophysiology": "Arterial occlusion by thrombosis, embolism or small-vessel disease reduces perfusion. A core of irreversibly injured tissue may be surrounded by a penumbra of at-risk tissue that can be salvaged if flow is restored quickly. Deficits correspond to the vascular territory involved.",
+    "causes": "Large-artery atherosclerosis, cardioembolism (e.g. atrial fibrillation), small-vessel (lacunar) disease, arterial dissection and other less common causes.",
+    "riskFactors": [
+      "High blood pressure",
+      "Atrial fibrillation and other heart disease",
+      "Diabetes",
+      "Smoking",
+      "High cholesterol",
+      "Physical inactivity and obesity",
+      "Increasing age",
+      "Previous stroke or TIA"
+    ],
+    "regionsSummary": "Depends on the artery: middle cerebral artery territory (lateral frontal, parietal and temporal cortex, insula, deep basal ganglia and internal capsule) is most commonly affected; anterior cerebral (medial frontal/parietal), posterior cerebral (occipital, medial temporal, thalamus) and posterior circulation (brainstem, cerebellum) strokes also occur.",
+    "symptoms": [
+      "Sudden weakness or numbness of face, arm or leg, especially on one side",
+      "Sudden trouble speaking or understanding",
+      "Sudden vision loss",
+      "Sudden dizziness, loss of balance or coordination",
+      "Sudden severe headache (more typical of haemorrhage)"
+    ],
+    "progression": "Onset is sudden. Deficits may improve over weeks to months with recovery and rehabilitation; some remain permanent.",
+    "diagnosis": [
+      "Emergency clinical assessment (stroke scales)",
+      "Urgent brain imaging (CT or MRI) to exclude haemorrhage",
+      "CT or MR angiography to identify vessel occlusion",
+      "Cardiac evaluation and blood tests to find the cause"
+    ],
+    "imaging": "Early CT may be normal; diffusion-weighted MRI detects acute infarction within minutes to hours. Angiography shows occluded vessels.",
+    "treatments": [
+      "Intravenous thrombolysis within established time windows for eligible patients",
+      "Mechanical thrombectomy for large-vessel occlusion in eligible patients",
+      "Antiplatelet or anticoagulant therapy for secondary prevention as appropriate",
+      "Blood pressure, glucose and lipid management"
+    ],
+    "rehabilitation": "Physiotherapy, occupational therapy, speech and language therapy and neuropsychological support, beginning early.",
+    "complications": [
+      "Brain swelling",
+      "Haemorrhagic transformation",
+      "Aspiration pneumonia",
+      "Deep vein thrombosis",
+      "Depression",
+      "Seizures"
+    ],
+    "prognosis": "Varies widely with stroke size, location, speed of treatment and rehabilitation.",
+    "prevention": "Control of blood pressure, treatment of atrial fibrillation, not smoking, diabetes and cholesterol management, physical activity.",
+    "emergingResearch": "Extended treatment windows guided by perfusion imaging and neuroprotective strategies are under study.",
+    "faq": [
+      {
+        "q": "What should I do if I suspect a stroke?",
+        "a": "Call emergency services immediately. This application cannot assess or diagnose a stroke."
+      }
+    ],
+    "associations": [
+      {
+        "target": "frontal-lobe",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Lateral frontal cortex lies in the MCA territory; medial frontal in the ACA territory."
+      },
+      {
+        "target": "parietal-lobe",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Lateral parietal cortex is commonly involved in MCA strokes."
+      },
+      {
+        "target": "temporal-lobe",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Lateral temporal cortex lies in the MCA territory."
+      },
+      {
+        "target": "insula",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Insula is frequently involved in proximal MCA occlusion."
+      },
+      {
+        "target": "basal-nuclei",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Deep lenticulostriate branches supply the basal nuclei; lacunar infarcts are common here."
+      },
+      {
+        "target": "internal-capsule",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Small capsular infarcts can cause marked weakness."
+      },
+      {
+        "target": "occipital-lobe",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Posterior cerebral artery strokes cause contralateral visual field loss."
+      },
+      {
+        "target": "thalamus",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Thalamic infarcts arise from posterior circulation branches."
+      },
+      {
+        "target": "brainstem",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Vertebrobasilar strokes affect the brainstem."
+      },
+      {
+        "target": "cerebellum",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Cerebellar infarcts cause ataxia and can cause dangerous swelling."
+      }
+    ],
+    "references": ["ninds-stroke", "mp-ischemic-stroke", "mp-stroke", "openstax-13-3"]
+  },
+  {
+    "id": "hemorrhagic-stroke",
+    "name": "Hemorrhagic stroke",
+    "category": "cerebrovascular",
+    "classification": "Acute cerebrovascular event (medical emergency)",
+    "synonyms": ["intracerebral hemorrhage (ICH)", "brain bleed"],
+    "overview": "A hemorrhagic stroke occurs when a blood vessel ruptures and bleeds into or around the brain. Intracerebral haemorrhage bleeds into brain tissue; subarachnoid haemorrhage (covered separately) bleeds around it.",
+    "pathophysiology": "Blood forms a haematoma that destroys and compresses surrounding tissue, raises intracranial pressure and can expand in the first hours. Chronic hypertension damages small penetrating arteries, explaining the typical deep locations.",
+    "causes": "Chronic hypertension (deep haemorrhages), cerebral amyloid angiopathy (lobar haemorrhages in older adults), anticoagulant use, vascular malformations, tumours, and drug use (e.g. cocaine).",
+    "riskFactors": [
+      "High blood pressure",
+      "Anticoagulant medications",
+      "Increasing age",
+      "Heavy alcohol use",
+      "Vascular malformations"
+    ],
+    "regionsSummary": "Hypertensive haemorrhages: putamen, thalamus, pons and cerebellum. Amyloid angiopathy: cortical-subcortical (lobar) regions.",
+    "symptoms": [
+      "Sudden severe headache",
+      "Sudden weakness or numbness",
+      "Vomiting",
+      "Decreased consciousness",
+      "Seizures"
+    ],
+    "progression": "Sudden onset; early deterioration can occur from haematoma expansion or swelling.",
+    "diagnosis": [
+      "Emergency non-contrast CT",
+      "CT/MR angiography to look for an underlying vascular lesion",
+      "Coagulation tests"
+    ],
+    "imaging": "CT shows acute blood as a hyperdense area; MRI sequences can detect old microbleeds suggesting the underlying cause.",
+    "treatments": [
+      "Blood pressure lowering according to guidelines",
+      "Rapid reversal of anticoagulation",
+      "Neurosurgery in selected cases (e.g. cerebellar haemorrhage)",
+      "Management of intracranial pressure"
+    ],
+    "rehabilitation": "Multidisciplinary stroke rehabilitation.",
+    "complications": [
+      "Raised intracranial pressure and herniation",
+      "Hydrocephalus (intraventricular extension)",
+      "Seizures",
+      "Recurrence"
+    ],
+    "prognosis": "Depends on haematoma size, location, consciousness level and age; often more severe than ischaemic stroke.",
+    "prevention": "Blood pressure control is the most important preventive measure.",
+    "emergingResearch": "Minimally invasive haematoma evacuation and haemostatic therapies are being studied.",
+    "faq": [
+      {
+        "q": "Can a stroke be identified as haemorrhagic without a scan?",
+        "a": "No. Brain imaging is required to distinguish haemorrhagic from ischaemic stroke."
+      }
+    ],
+    "associations": [
+      {
+        "target": "putamen",
+        "type": "primary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Most common site of hypertensive haemorrhage."
+      },
+      {
+        "target": "thalamus",
+        "type": "primary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Common site of hypertensive haemorrhage."
+      },
+      {
+        "target": "pons",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Pontine haemorrhage can be devastating."
+      },
+      {
+        "target": "cerebellum",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Cerebellar haemorrhage may require urgent surgery."
+      },
+      {
+        "target": "cerebral-white-matter",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Lobar (subcortical) haemorrhages occur with amyloid angiopathy."
+      },
+      {
+        "target": "lateral-ventricle",
+        "type": "secondary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Blood may extend into the ventricles and cause hydrocephalus."
+      }
+    ],
+    "references": ["ninds-stroke", "mp-hemorrhagic-stroke", "mp-stroke"]
+  },
+  {
+    "id": "subarachnoid-hemorrhage",
+    "name": "Subarachnoid hemorrhage",
+    "category": "cerebrovascular",
+    "classification": "Acute cerebrovascular event (medical emergency)",
+    "synonyms": ["SAH"],
+    "overview": "Subarachnoid haemorrhage is bleeding into the subarachnoid space between the arachnoid membrane and the brain surface, most often from a ruptured aneurysm when not caused by trauma.",
+    "pathophysiology": "Blood under arterial pressure enters CSF spaces around the base of the brain, causing a sudden rise in intracranial pressure, meningeal irritation and possible later complications such as vasospasm and hydrocephalus.",
+    "causes": "Ruptured cerebral aneurysm (most common non-traumatic cause), head injury, arteriovenous malformation, and other less common causes.",
+    "riskFactors": [
+      "Unruptured aneurysm",
+      "High blood pressure",
+      "Smoking",
+      "Family history of aneurysm",
+      "Polycystic kidney disease and some connective tissue disorders"
+    ],
+    "regionsSummary": "Subarachnoid spaces around the brain (not modelled as structures). Secondary effects may involve the ventricular system (hydrocephalus) and any territory affected by delayed ischaemia.",
+    "symptoms": [
+      "Sudden, severe 'worst-ever' headache",
+      "Neck stiffness",
+      "Nausea and vomiting",
+      "Sensitivity to light",
+      "Confusion or loss of consciousness",
+      "Seizure"
+    ],
+    "progression": "Abrupt onset; risk of rebleeding and delayed complications in the following days to weeks.",
+    "diagnosis": [
+      "Urgent non-contrast head CT",
+      "Lumbar puncture if CT is negative but suspicion remains",
+      "CT angiography or catheter angiography to find the source"
+    ],
+    "imaging": "CT shows blood in the basal cisterns and sulci; angiography identifies aneurysms.",
+    "treatments": [
+      "Securing a ruptured aneurysm by endovascular coiling or surgical clipping",
+      "Nimodipine to reduce delayed ischaemic complications",
+      "Management of hydrocephalus (e.g. ventricular drain)",
+      "Intensive care monitoring"
+    ],
+    "rehabilitation": "Rehabilitation for physical and cognitive deficits; support for fatigue and mood.",
+    "complications": [
+      "Rebleeding",
+      "Delayed cerebral ischaemia (vasospasm)",
+      "Hydrocephalus",
+      "Seizures",
+      "Hyponatraemia"
+    ],
+    "prognosis": "Variable; depends on severity at presentation, age and complications.",
+    "prevention": "Blood pressure control and not smoking; management of known aneurysms by specialists.",
+    "emergingResearch": "Strategies to prevent delayed cerebral ischaemia are under investigation.",
+    "faq": [
+      {
+        "q": "Why isn't a structure highlighted for the bleed itself?",
+        "a": "The bleed is in the subarachnoid space around the brain, which is not a segmented structure in the model. The ventricles are shown as a secondary association (hydrocephalus)."
+      }
+    ],
+    "associations": [
+      {
+        "target": "third-ventricle",
+        "type": "secondary",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Hydrocephalus after SAH enlarges the ventricular system."
+      },
+      {
+        "target": "lateral-ventricle",
+        "type": "secondary",
+        "distribution": "regional",
+        "evidence": "established",
+        "explanation": "Ventricular enlargement from impaired CSF absorption or flow."
+      },
+      {
+        "target": "frontal-lobe",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "variable",
+        "explanation": "Delayed ischaemia or haematoma can affect territories near the ruptured aneurysm, e.g. anterior communicating artery aneurysms near the medial frontal lobes."
+      }
+    ],
+    "references": ["mp-ency-sah", "ninds-aneurysm", "ninds-stroke"]
+  },
+  {
+    "id": "cerebral-aneurysm",
+    "name": "Cerebral aneurysm",
+    "category": "cerebrovascular",
+    "classification": "Structural vascular abnormality",
+    "synonyms": ["brain aneurysm", "intracranial aneurysm", "berry aneurysm"],
+    "overview": "A cerebral aneurysm is a weak, bulging area in the wall of an artery in the brain. Most never rupture, but rupture causes subarachnoid haemorrhage.",
+    "pathophysiology": "Saccular aneurysms usually form at branch points of arteries in the circle of Willis, where haemodynamic stress and wall weakness combine. Size, location, shape and growth influence rupture risk.",
+    "causes": "Acquired wall degeneration; associated with genetic and connective tissue conditions in some people.",
+    "riskFactors": [
+      "Smoking",
+      "High blood pressure",
+      "Family history",
+      "Polycystic kidney disease",
+      "Female sex",
+      "Heavy alcohol use"
+    ],
+    "regionsSummary": "Arteries of the circle of Willis at the base of the brain (vessels are not modelled). Large aneurysms can compress nearby structures such as the optic chiasm or nerves.",
+    "symptoms": [
+      "Usually none until rupture",
+      "Large unruptured aneurysms: headache, vision changes, eye movement problems from nerve compression",
+      "Rupture: sudden severe headache (see subarachnoid haemorrhage)"
+    ],
+    "progression": "Many remain stable; some grow. Rupture is a sudden event.",
+    "diagnosis": ["CT angiography", "MR angiography", "Catheter (digital subtraction) angiography"],
+    "imaging": "Angiographic imaging shows the aneurysm sac and its relation to parent vessels.",
+    "treatments": [
+      "Observation with imaging surveillance for selected small aneurysms",
+      "Endovascular coiling or flow-diverting stents",
+      "Surgical clipping",
+      "Risk factor control"
+    ],
+    "rehabilitation": "Only needed after rupture or treatment complications.",
+    "complications": [
+      "Rupture and subarachnoid haemorrhage",
+      "Compression of cranial nerves",
+      "Treatment-related stroke"
+    ],
+    "prognosis": "Unruptured aneurysms often have a good outlook; ruptured aneurysms carry serious risk.",
+    "prevention": "Not smoking and blood pressure control reduce growth and rupture risk.",
+    "emergingResearch": "Better tools for predicting rupture risk are being developed.",
+    "faq": [
+      {
+        "q": "Does everyone with an aneurysm need surgery?",
+        "a": "No. Specialists weigh size, location, shape and personal factors."
+      }
+    ],
+    "associations": [
+      {
+        "target": "optic-chiasm",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "variable",
+        "explanation": "Large aneurysms near the circle of Willis can compress the chiasm, causing visual field loss."
+      },
+      {
+        "target": "midbrain",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "variable",
+        "explanation": "Posterior communicating artery aneurysms can compress the oculomotor nerve as it leaves the midbrain (nerve not modelled)."
+      }
+    ],
+    "references": ["ninds-aneurysm", "mp-aneurysm"]
+  },
+  {
+    "id": "cerebral-arteriovenous-malformation",
+    "name": "Cerebral arteriovenous malformation",
+    "category": "cerebrovascular",
+    "classification": "Structural vascular malformation (usually congenital)",
+    "synonyms": ["AVM", "brain AVM"],
+    "overview": "A brain AVM is a tangle of abnormal blood vessels in which arteries connect directly to veins without an intervening capillary bed.",
+    "pathophysiology": "High-flow shunting through a nidus of abnormal vessels can lead to haemorrhage, seizures through irritation of surrounding cortex, or deficits from altered blood flow.",
+    "causes": "Usually thought to arise during development; most are not inherited. Some occur in hereditary haemorrhagic telangiectasia.",
+    "riskFactors": ["Hereditary haemorrhagic telangiectasia (for some AVMs)"],
+    "regionsSummary": "Can occur anywhere in the brain; cerebral hemispheres are most common. Location strongly influences symptoms and treatment options.",
+    "symptoms": [
+      "Headache",
+      "Seizures",
+      "Focal neurological deficits",
+      "Haemorrhage (sudden headache, weakness, decreased consciousness)",
+      "Often discovered incidentally"
+    ],
+    "progression": "May remain silent for years; haemorrhage risk persists over a lifetime.",
+    "diagnosis": ["MRI", "CT or MR angiography", "Catheter angiography to define the architecture"],
+    "imaging": "Flow voids on MRI and a vascular nidus with early draining veins on angiography.",
+    "treatments": [
+      "Microsurgical resection",
+      "Stereotactic radiosurgery",
+      "Endovascular embolisation",
+      "Observation for selected unruptured AVMs"
+    ],
+    "rehabilitation": "After haemorrhage or treatment as needed.",
+    "complications": ["Intracerebral or subarachnoid haemorrhage", "Epilepsy", "Treatment-related deficits"],
+    "prognosis": "Varies with size, location, venous drainage and haemorrhage history.",
+    "prevention": "No known prevention.",
+    "emergingResearch": "Molecular studies of AVM formation (e.g. KRAS mutations) may lead to drug therapies.",
+    "faq": [
+      {
+        "q": "Where is the AVM in the model?",
+        "a": "AVMs are patient-specific and vessels are not modelled, so no structure is highlighted as affected."
+      }
+    ],
+    "associations": [
+      {
+        "target": "cerebral-hemisphere",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "variable",
+        "explanation": "Most brain AVMs are located in the cerebral hemispheres; exact site varies by patient."
+      }
+    ],
+    "references": ["ninds-avm", "mp-avm"]
+  },
+  {
+    "id": "epilepsy",
+    "name": "Epilepsy",
+    "category": "seizure",
+    "classification": "Chronic neurological disease (tendency to recurrent unprovoked seizures)",
+    "synonyms": ["seizure disorder"],
+    "overview": "Epilepsy is a brain condition characterised by an enduring predisposition to recurrent unprovoked seizures. A seizure is a transient episode of abnormal, excessive or synchronous neuronal activity.",
+    "pathophysiology": "An imbalance between excitation and inhibition in neural networks allows abnormal synchronous discharges. Seizures may start in one network (focal) or engage bilateral networks from onset (generalised).",
+    "causes": "Structural (stroke, tumour, trauma, malformations, hippocampal sclerosis), genetic, infectious, metabolic, immune, or unknown.",
+    "riskFactors": [
+      "Brain injury, stroke or infection",
+      "Family history",
+      "Developmental brain abnormalities",
+      "Neurodegenerative disease in older adults"
+    ],
+    "regionsSummary": "Any cortical network can be involved. Focal epilepsies most often arise from the temporal and frontal lobes; generalised epilepsies involve bilateral thalamocortical networks.",
+    "symptoms": [
+      "Seizures that vary by type: convulsions, staring spells, brief jerks, altered awareness, unusual sensations or emotions",
+      "Temporary confusion after a seizure"
+    ],
+    "progression": "Many people become seizure-free with treatment; some epilepsies are drug-resistant.",
+    "diagnosis": [
+      "Detailed description of events (eyewitness)",
+      "EEG",
+      "MRI",
+      "Blood tests and genetic testing as indicated"
+    ],
+    "imaging": "MRI may reveal a cause (e.g. hippocampal sclerosis, cortical dysplasia, tumour) but is normal in many people.",
+    "treatments": [
+      "Anti-seizure medications",
+      "Epilepsy surgery for selected drug-resistant focal epilepsy",
+      "Neuromodulation (vagus nerve, responsive or deep brain stimulation)",
+      "Dietary therapy (e.g. ketogenic diet)"
+    ],
+    "rehabilitation": "Education, safety planning, psychological support, attention to memory and mood.",
+    "complications": [
+      "Injury during seizures",
+      "Status epilepticus",
+      "Sudden unexpected death in epilepsy (SUDEP)",
+      "Depression and anxiety"
+    ],
+    "prognosis": "Highly variable by cause and syndrome.",
+    "prevention": "Preventing head injury, stroke and CNS infections reduces some acquired epilepsies.",
+    "emergingResearch": "Gene therapies for specific genetic epilepsies and closed-loop stimulation.",
+    "faq": [
+      {
+        "q": "Is one seizure the same as epilepsy?",
+        "a": "Not necessarily. Epilepsy implies an enduring tendency to recurrent unprovoked seizures; a clinician makes this diagnosis."
+      }
+    ],
+    "associations": [
+      {
+        "target": "temporal-lobe",
+        "type": "primary",
+        "distribution": "network",
+        "evidence": "established",
+        "explanation": "The most common origin of focal seizures in adults."
+      },
+      {
+        "target": "frontal-lobe",
+        "type": "secondary",
+        "distribution": "network",
+        "evidence": "established",
+        "explanation": "Second most common origin of focal seizures."
+      },
+      {
+        "target": "thalamus",
+        "type": "subtype",
+        "distribution": "network",
+        "evidence": "established",
+        "explanation": "Thalamocortical networks are central to generalised seizures such as absence seizures."
+      },
+      {
+        "target": "hippocampus",
+        "type": "subtype",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Hippocampal sclerosis is a common cause of drug-resistant temporal lobe epilepsy."
+      }
+    ],
+    "references": ["ninds-epilepsy", "mp-epilepsy", "mp-seizures"]
+  },
+  {
+    "id": "temporal-lobe-epilepsy",
+    "name": "Temporal lobe epilepsy",
+    "category": "seizure",
+    "classification": "Focal epilepsy syndrome",
+    "synonyms": ["TLE", "mesial temporal lobe epilepsy (MTLE, subtype)"],
+    "overview": "Temporal lobe epilepsy is a form of focal epilepsy in which seizures arise from the temporal lobe — most often its medial structures.",
+    "pathophysiology": "Medial temporal lobe epilepsy is frequently associated with hippocampal sclerosis (neuronal loss and gliosis). Lateral (neocortical) TLE arises from lateral temporal cortex.",
+    "causes": "Hippocampal sclerosis, tumours, vascular malformations, cortical dysplasia, prior infection or injury, autoimmune encephalitis, or unknown.",
+    "riskFactors": [
+      "History of prolonged febrile seizures in childhood (association with hippocampal sclerosis)",
+      "Brain infection or injury"
+    ],
+    "regionsSummary": "Hippocampus, amygdala and parahippocampal gyrus (medial TLE); lateral temporal neocortex (lateral TLE).",
+    "symptoms": [
+      "Auras such as a rising abdominal sensation, déjà vu, fear, or unusual smells",
+      "Focal impaired-awareness seizures with staring",
+      "Automatisms (lip smacking, fumbling)",
+      "Post-ictal confusion; language difficulty if dominant side",
+      "Memory difficulties between seizures"
+    ],
+    "progression": "May respond to medication; medial TLE with hippocampal sclerosis is often drug-resistant.",
+    "diagnosis": [
+      "Seizure semiology",
+      "EEG (including video-EEG monitoring)",
+      "High-resolution MRI",
+      "Neuropsychological testing and functional imaging before surgery"
+    ],
+    "imaging": "Hippocampal sclerosis appears as hippocampal atrophy with increased T2/FLAIR signal on MRI.",
+    "treatments": [
+      "Anti-seizure medications",
+      "Anterior temporal lobectomy or selective amygdalohippocampectomy for drug-resistant cases",
+      "Laser interstitial thermal therapy",
+      "Neurostimulation"
+    ],
+    "rehabilitation": "Memory strategies, psychological support.",
+    "complications": ["Memory impairment", "Mood disorders", "Injury", "SUDEP"],
+    "prognosis": "Surgery offers a good chance of seizure freedom for well-selected patients; outcomes vary.",
+    "prevention": "Not generally preventable.",
+    "emergingResearch": "Minimally invasive ablation techniques and network mapping.",
+    "faq": [
+      {
+        "q": "Does every person with TLE have hippocampal sclerosis?",
+        "a": "No. It is common in medial TLE, but other causes exist and some people have normal MRI."
+      }
+    ],
+    "associations": [
+      {
+        "target": "hippocampus",
+        "type": "primary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Hippocampal sclerosis is the most common pathology in medial TLE."
+      },
+      {
+        "target": "amygdala",
+        "type": "primary",
+        "distribution": "focal",
+        "evidence": "established",
+        "explanation": "Seizures often involve the amygdala, producing emotional auras."
+      },
+      {
+        "target": "parahippocampal-gyrus",
+        "type": "secondary",
+        "distribution": "network",
+        "evidence": "established",
+        "explanation": "Part of the medial temporal seizure network."
+      },
+      {
+        "target": "temporal-lobe",
+        "type": "subtype",
+        "distribution": "network",
+        "evidence": "established",
+        "explanation": "Lateral temporal neocortex in lateral TLE."
+      }
+    ],
+    "references": ["ninds-epilepsy", "mp-epilepsy"]
+  },
+  {
+    "id": "focal-epilepsy",
+    "name": "Focal epilepsy",
+    "category": "seizure",
+    "classification": "Epilepsy type (seizures originating in one hemisphere's network)",
+    "synonyms": ["partial epilepsy (older term)"],
+    "overview": "In focal epilepsy, seizures start within networks limited to one hemisphere. Symptoms reflect the function of the region where seizures begin and spread.",
+    "pathophysiology": "A localised epileptogenic zone generates abnormal discharges that may remain focal or spread to bilateral networks (focal to bilateral tonic-clonic seizure).",
+    "causes": "Structural lesions (tumour, stroke, trauma, dysplasia, hippocampal sclerosis), infections, immune causes, genetic causes, or unknown.",
+    "riskFactors": ["Prior brain injury, stroke or infection", "Cortical malformations"],
+    "regionsSummary": "Any cortical region; temporal and frontal lobes are most common. The motor features depend on location (e.g. precentral gyrus seizures cause contralateral jerking).",
+    "symptoms": [
+      "Focal aware seizures (e.g. jerking, tingling, visual phenomena)",
+      "Focal impaired-awareness seizures",
+      "Focal to bilateral tonic-clonic seizures"
+    ],
+    "progression": "Variable; depends on cause.",
+    "diagnosis": ["History and semiology", "EEG", "MRI to identify a lesion"],
+    "imaging": "MRI may show the causative lesion.",
+    "treatments": [
+      "Anti-seizure medications",
+      "Resective or ablative surgery for drug-resistant cases with an identified focus",
+      "Neuromodulation"
+    ],
+    "rehabilitation": "Depends on deficits and comorbidities.",
+    "complications": ["Spread to bilateral convulsions", "Injury", "SUDEP"],
+    "prognosis": "Variable.",
+    "prevention": "Prevention of underlying causes where possible.",
+    "emergingResearch": "Improved localisation with high-density EEG and stereo-EEG.",
+    "faq": [
+      {
+        "q": "Why does a seizure in one area cause specific symptoms?",
+        "a": "Because the seizure temporarily disrupts or activates the functions of that region — for example, visual phenomena from occipital cortex."
+      }
+    ],
+    "associations": [
+      {
+        "target": "temporal-lobe",
+        "type": "primary",
+        "distribution": "network",
+        "evidence": "established",
+        "explanation": "Most common lobe of seizure onset."
+      },
+      {
+        "target": "frontal-lobe",
+        "type": "primary",
+        "distribution": "network",
+        "evidence": "established",
+        "explanation": "Frontal lobe seizures are often brief and may occur in sleep."
+      },
+      {
+        "target": "parietal-lobe",
+        "type": "subtype",
+        "distribution": "network",
+        "evidence": "established",
+        "explanation": "Parietal seizures can cause sensory symptoms."
+      },
+      {
+        "target": "occipital-lobe",
+        "type": "subtype",
+        "distribution": "network",
+        "evidence": "established",
+        "explanation": "Occipital seizures can cause visual phenomena."
+      }
+    ],
+    "references": ["ninds-epilepsy", "mp-epilepsy", "mp-seizures"]
+  },
+  {
+    "id": "generalized-epilepsy",
+    "name": "Generalized epilepsy",
+    "category": "seizure",
+    "classification": "Epilepsy type (seizures engaging bilateral networks from onset)",
+    "synonyms": ["idiopathic generalized epilepsy (genetic subgroup)"],
+    "overview": "In generalised epilepsy, seizures arise within and rapidly engage bilaterally distributed networks, including thalamocortical circuits.",
+    "pathophysiology": "Abnormal oscillations in thalamocortical networks underlie seizure types such as absence seizures (spike-and-wave discharges); many generalised epilepsies have a genetic basis.",
+    "causes": "Often genetic (polygenic or single-gene); sometimes metabolic or structural.",
+    "riskFactors": ["Family history"],
+    "regionsSummary": "Bilateral, distributed networks: thalamus and widespread cortex — not a single focal region.",
+    "symptoms": [
+      "Absence seizures (brief staring spells)",
+      "Myoclonic jerks",
+      "Generalised tonic-clonic seizures",
+      "Atonic or tonic seizures in some syndromes"
+    ],
+    "progression": "Some childhood syndromes remit; others persist into adulthood.",
+    "diagnosis": [
+      "Clinical history",
+      "EEG showing generalised discharges",
+      "MRI usually normal in genetic generalised epilepsies"
+    ],
+    "imaging": "Usually normal in genetic generalised epilepsies.",
+    "treatments": ["Broad-spectrum anti-seizure medications", "Avoidance of triggers such as sleep deprivation"],
+    "rehabilitation": "Education and safety measures.",
+    "complications": ["Injury", "Status epilepticus", "SUDEP"],
+    "prognosis": "Often good with appropriate medication; varies by syndrome.",
+    "prevention": "Trigger management.",
+    "emergingResearch": "Precision therapies for specific genetic causes.",
+    "faq": [
+      {
+        "q": "Why is the whole cortex not shown as 'damaged'?",
+        "a": "Generalised epilepsy reflects abnormal network activity, usually without structural damage; the highlight indicates network involvement only."
+      }
+    ],
+    "associations": [
+      {
+        "target": "thalamus",
+        "type": "primary",
+        "distribution": "network",
+        "evidence": "established",
+        "explanation": "Thalamocortical circuits generate generalised spike-and-wave discharges."
+      },
+      {
+        "target": "cerebral-hemisphere",
+        "type": "primary",
+        "distribution": "network",
+        "evidence": "established",
+        "explanation": "Bilateral cortical networks are engaged from seizure onset; this is functional, not structural, involvement."
+      }
+    ],
+    "references": ["ninds-epilepsy", "mp-epilepsy"]
+  }
 ]
