@@ -5,14 +5,11 @@
 **Interactive brain anatomy lab — rotate, slice and dissect a real segmented human brain, learn what every structure does, and see how neurological diseases relate to it.**
 
 [![CI](https://github.com/HeyNerveStem/NeuroSphere/actions/workflows/ci.yml/badge.svg)](https://github.com/HeyNerveStem/NeuroSphere/actions/workflows/ci.yml)
-[![Live demo](https://github.com/HeyNerveStem/NeuroSphere/actions/workflows/pages.yml/badge.svg)](https://heynervestem.github.io/NeuroSphere/)
 ![React](https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=white)
 ![Three.js](https://img.shields.io/badge/Three.js-R3F-black?logo=three.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?logo=typescript&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-SQLAlchemy-009688?logo=fastapi&logoColor=white)
 ![License](https://img.shields.io/badge/code-MIT-green) ![Model](https://img.shields.io/badge/3D%20model-CC%20BY--SA%202.1%20JP-orange)
-
-### [▶ Open the live demo](https://heynervestem.github.io/NeuroSphere/)
 
 <img src="docs/images/demo-disassembly.gif" alt="Layer-by-layer disassembly and reassembly of the brain model" width="640">
 
@@ -100,17 +97,17 @@ The processed brain model (`frontend/public/models/brain.glb`) is committed, so 
 
 A root `Makefile` wraps everything (`make help`):
 
-| Task                      | Make                            | Direct                                                                 |
-| ------------------------- | ------------------------------- | ---------------------------------------------------------------------- |
-| Install dependencies      | `make setup`                    | `npm ci` · `pip install -r requirements.txt`                           |
-| Run backend / frontend    | `make dev-api` · `make dev-web` | `uvicorn app.main:app --reload` · `npm run dev`                        |
-| Production build          | `make build`                    | `cd frontend && npm run build`                                         |
-| Static offline demo build | `make demo`                     | `npm run build:demo` (hash routing, no API — what GitHub Pages serves) |
-| Validators + unit tests   | `make test`                     | `npm run typecheck && npm test` · `pytest -q`                          |
-| Browser acceptance tests  | `make test-e2e`                 | `npm run build && npx playwright test`                                 |
-| Lint / format             | `make lint` · `make format`     | ESLint + Prettier · Ruff                                               |
-| Rebuild the 3D model      | `make model`                    | `fetch_bodyparts3d.sh && build_model.sh`                               |
-| Regenerate screenshots    | `make screenshots`              | `python3 scripts/dev/capture_demo.py`                                  |
+| Task                      | Make                            | Direct                                                        |
+| ------------------------- | ------------------------------- | ------------------------------------------------------------- |
+| Install dependencies      | `make setup`                    | `npm ci` · `pip install -r requirements.txt`                  |
+| Run backend / frontend    | `make dev-api` · `make dev-web` | `uvicorn app.main:app --reload` · `npm run dev`               |
+| Production build          | `make build`                    | `cd frontend && npm run build`                                |
+| Static offline demo build | `make demo`                     | `npm run build:demo` (hash routing, no API — any static host) |
+| Validators + unit tests   | `make test`                     | `npm run typecheck && npm test` · `pytest -q`                 |
+| Browser acceptance tests  | `make test-e2e`                 | `npm run build && npx playwright test`                        |
+| Lint / format             | `make lint` · `make format`     | ESLint + Prettier · Ruff                                      |
+| Rebuild the 3D model      | `make model`                    | `fetch_bodyparts3d.sh && build_model.sh`                      |
+| Regenerate screenshots    | `make screenshots`              | `python3 scripts/dev/capture_demo.py`                         |
 
 ## Project structure
 
@@ -134,7 +131,7 @@ NeuroSphere/
 ├── assets/                      model-manifest.json · attribution/ · licenses/ · source-models/ (git-ignored STLs)
 ├── scripts/                     model-optimization/ · model-validation/ · content-validation/ · dev/  (see scripts/README.md)
 ├── docs/                        architecture · anatomy-assets · animation-system · medical-content-sources · deployment
-├── .github/workflows/           ci.yml (lint, validate, test, build) · pages.yml (live demo)
+├── .github/workflows/           ci.yml (lint, validate, test, build)
 └── Makefile                     one-command tasks
 ```
 

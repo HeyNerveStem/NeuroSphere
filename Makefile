@@ -17,7 +17,7 @@ dev-web:       ## Run the Vite dev server on :5173 (proxies /api to :8000)
 build:         ## Production build of the frontend (frontend/dist)
 	cd frontend && npm run build
 
-demo:          ## Static offline demo build (hash routing, no API) — what GitHub Pages serves
+demo:          ## Static offline demo build (hash routing, no API) for any static host
 	cd frontend && npm run build:demo
 
 validate:      ## Validate the 3D model and the medical content

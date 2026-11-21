@@ -50,5 +50,4 @@ make lint         # ESLint + Ruff
 make test-e2e     # production build + Playwright acceptance tests
 ```
 
-CI (`.github/workflows/ci.yml`) runs everything except the browser tests on every push. The live demo is
-deployed by `.github/workflows/pages.yml` — enable it once under **Settings → Pages → Source: GitHub Actions**.
+CI (`.github/workflows/ci.yml`) runs everything except the browser tests on every push.
